@@ -35,7 +35,13 @@ function eventFilter() {
       if (this.view === 'map') {
         this.$nextTick(() => {
           this.initMap();
-          this.renderMarkers();
+          // Defer renderMarkers + invalidateSize until CSS layout is settled.
+          // On initial page load Leaflet can otherwise measure 0×0 px and
+          // render nothing.
+          setTimeout(() => {
+            this.map.invalidateSize();
+            this.renderMarkers();
+          }, 100);
         });
       }
     },
