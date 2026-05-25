@@ -2,7 +2,9 @@
 """Build the HybridCal static site."""
 from __future__ import annotations
 
+import subprocess
 import sys
+from datetime import datetime, date
 from pathlib import Path
 
 from hybridcal.loader import (
@@ -23,6 +25,27 @@ DATA = ROOT / "data"
 TEMPLATES = ROOT / "templates"
 STATIC = ROOT / "static"
 DIST = ROOT / "dist"
+
+
+def last_data_update_date() -> date | None:
+    """Date of the most recent commit that touched data/events/.
+
+    Returns None in environments without git history (e.g. fresh tarball).
+    """
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%cI", "--", "data/events/"],
+            capture_output=True,
+            text=True,
+            check=True,
+            cwd=ROOT,
+        )
+        timestamp = result.stdout.strip()
+        if not timestamp:
+            return None
+        return datetime.fromisoformat(timestamp).date()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
 
 
 def main() -> int:
@@ -47,8 +70,16 @@ def main() -> int:
         return 1
     print("  ok")
 
+    last_update = last_data_update_date()
+    if last_update:
+        print(f"  last event data update: {last_update}")
+
     print("Rendering site...")
-    render_site(events, formats, categories, translations, site, regions, DIST, TEMPLATES, STATIC)
+    render_site(
+        events, formats, categories, translations, site, regions,
+        DIST, TEMPLATES, STATIC,
+        last_data_update=last_update,
+    )
 
     print("Writing feeds...")
     write_ics(events, DIST / "feed.ics", site.url)

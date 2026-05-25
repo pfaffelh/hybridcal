@@ -45,6 +45,7 @@
     <hr>
     <small>
       {{ t.footer.tagline }}<br>
+      {% if last_data_update %}{{ t.footer.last_updated }}: {{ last_data_update|fmt_date }} · {% endif %}
       <a href="{{ site.base_path }}/{{ lang }}/impressum.html">{{ t.nav.imprint }}</a> ·
       <a href="{{ site.base_path }}/{{ lang }}/privacy.html">{{ t.nav.privacy }}</a> ·
       <a href="{{ site.base_path }}/feed.ics">ICS</a> ·

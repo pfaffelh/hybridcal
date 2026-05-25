@@ -35,6 +35,7 @@ def render_site(
     out_dir: Path,
     templates_dir: Path,
     static_dir: Path,
+    last_data_update=None,
 ) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     languages = list(translations.keys())
@@ -88,6 +89,7 @@ def render_site(
             "formats": formats_for_lang,
             "formats_json": formats_for_lang,
             "regions_json": regions_for_lang,
+            "last_data_update": last_data_update,
         }
 
         (lang_dir / "index.html").write_text(
