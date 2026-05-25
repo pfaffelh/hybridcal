@@ -164,11 +164,14 @@ privacy:
         jsdelivr Privacy: https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net
     - heading: Map display
       body: >
-        On the map view, map tiles are loaded from CARTO
+        On the map view, map tiles are loaded. Depending on the
+        language version, they come from different providers: the
+        German site uses OpenStreetMap Germany (FOSSGIS e.V.,
+        tile.openstreetmap.de); the English site uses CARTO
         (basemaps.cartocdn.com). When loaded, your IP address is
-        transmitted to CARTO. The map view is only loaded when you
-        actively open it. Legal basis: Art. 6 (1) (f) GDPR (map
-        functionality).
+        transmitted to the respective provider. Legal basis:
+        Art. 6 (1) (f) GDPR (map functionality).
+        OSM Germany: https://www.openstreetmap.de/datenschutz.html
         CARTO Privacy: https://carto.com/privacy
     - heading: Submission form
       body: >

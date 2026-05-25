@@ -124,11 +124,30 @@ function eventFilter() {
 
     initMap() {
       this.map = L.map('map', { preferCanvas: true }).setView([50, 9], 4);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19,
+
+      // Tile provider varies by language: OSM Germany has German place
+      // labels (München, Köln); CARTO Voyager has English (Munich, Cologne).
+      const tileConfigs = {
+        de: {
+          url: 'https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png',
+          attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · Tiles by <a href="https://www.openstreetmap.de/">OSM Germany</a>',
+          subdomains: 'abc',
+          maxZoom: 18,
+        },
+        en: {
+          url: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+          attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: 'abcd',
+          maxZoom: 19,
+        },
+      };
+      const cfg = tileConfigs[this.lang] || tileConfigs.en;
+      L.tileLayer(cfg.url, {
+        attribution: cfg.attribution,
+        subdomains: cfg.subdomains,
+        maxZoom: cfg.maxZoom,
       }).addTo(this.map);
+
       this.cluster = L.markerClusterGroup({
         showCoverageOnHover: false,
         maxClusterRadius: 50,

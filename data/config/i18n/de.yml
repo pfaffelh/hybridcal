@@ -171,11 +171,15 @@ privacy:
         jsdelivr Privacy: https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net
     - heading: Kartendarstellung
       body: >
-        Auf der Karten-Ansicht werden Kartenkacheln von CARTO geladen
-        (basemaps.cartocdn.com). Beim Laden wird deine IP-Adresse an
-        CARTO übermittelt. Die Karten-Ansicht wird erst geladen, wenn
-        du sie aktiv aufrufst. Rechtsgrundlage: Art. 6 Abs. 1 lit. f
-        DSGVO (Kartenfunktionalität).
+        Auf der Karten-Ansicht werden Kartenkacheln geladen. Je nach
+        Sprachversion kommen sie von unterschiedlichen Anbietern:
+        Auf der deutschen Seite von OpenStreetMap Deutschland
+        (FOSSGIS e.V., tile.openstreetmap.de), auf der englischen
+        Seite von CARTO (basemaps.cartocdn.com). Beim Laden wird
+        deine IP-Adresse an den jeweiligen Anbieter übermittelt.
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO
+        (Kartenfunktionalität).
+        OSM Germany: https://www.openstreetmap.de/datenschutz.html
         CARTO Privacy: https://carto.com/privacy
     - heading: Submission-Formular
       body: >
