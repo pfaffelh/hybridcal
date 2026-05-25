@@ -1,0 +1,19 @@
+slug: deadly-dozen-lee-valley-2026-07
+name: "Deadly Dozen UK: Lee Valley"
+format: deadly-dozen
+date_start: 2026-07-18
+date_end: 2026-07-18
+location:
+  city: "London"
+  country: GB
+  venue: "Lee Valley Athletics Track"
+  timezone: Europe/London
+  lat: 51.507446
+  lon: -0.127765
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races/deadly-dozen-lea-valley-athletics-track-18th-july-2026"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

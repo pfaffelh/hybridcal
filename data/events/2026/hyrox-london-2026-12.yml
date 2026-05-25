@@ -1,0 +1,24 @@
+slug: hyrox-london-2026-12
+name: "HYROX London"
+format: hyrox
+date_start: 2026-12-02
+date_end: 2026-12-06
+location:
+  city: "London"
+  country: GB
+  venue: "ExCeL London"
+  timezone: Europe/London
+  lat: 51.508113
+  lon: 0.029707
+url: "https://hyrox.com/event/london/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

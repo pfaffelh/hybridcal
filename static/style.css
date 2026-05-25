@@ -1,0 +1,129 @@
+/* Custom styles on top of Pico.css */
+
+[x-cloak] { display: none !important; }
+
+article {
+  margin-bottom: 1rem;
+}
+
+article header {
+  margin-bottom: 0.5rem;
+}
+
+mark {
+  padding: 0.1em 0.4em;
+  font-size: 0.8em;
+  border-radius: 0.2em;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+fieldset {
+  margin-bottom: 0.5rem;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-right: 1rem;
+}
+
+fieldset label.facet-zero {
+  opacity: 0.4;
+}
+
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95em;
+  color: var(--pico-muted-color);
+  cursor: help;
+  margin-left: 0.15em;
+  user-select: none;
+}
+
+.info-icon:hover,
+.info-icon:focus {
+  color: var(--pico-primary);
+  outline: none;
+}
+
+[data-tooltip] {
+  border-bottom: none !important;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.format-dot {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  margin-right: 0.25em;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.view-toggle {
+  margin: 1rem 0 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-toggle button {
+  flex: 0 1 auto;
+  margin: 0;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+
+.leaflet-popup-content {
+  margin: 0.5rem 0.75rem;
+  line-height: 1.4;
+}
+
+.leaflet-popup-content a {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 420px;
+  }
+  nav ul:first-child li:not(:first-child) {
+    display: none;
+  }
+}
+
+.lang-switch {
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.lang-switch [aria-current="true"] {
+  font-weight: 600;
+}
+
+.lang-switch .lang-sep {
+  opacity: 0.4;
+  margin: 0 0.2em;
+}
+
+.lang-switch .lang-other {
+  opacity: 0.6;
+}
+
+.lang-switch:hover .lang-other {
+  opacity: 1;
+}

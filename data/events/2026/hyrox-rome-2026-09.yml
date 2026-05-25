@@ -1,0 +1,23 @@
+slug: hyrox-rome-2026-09
+name: "HYROX Rome"
+format: hyrox
+date_start: 2026-09-24
+date_end: 2026-09-27
+location:
+  city: "Rome"
+  country: IT
+  timezone: Europe/Rome
+  lat: 41.893320
+  lon: 12.482932
+url: "https://hyrox.com/event/rome/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,23 @@
+slug: hyrox-nice-2026-10
+name: "HYROX Nice"
+format: hyrox
+date_start: 2026-10-29
+date_end: 2026-11-01
+location:
+  city: "Nice"
+  country: FR
+  timezone: Europe/Paris
+  lat: 43.700936
+  lon: 7.268391
+url: "https://hyrox.com/event/nice/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

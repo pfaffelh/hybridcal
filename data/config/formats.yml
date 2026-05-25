@@ -1,0 +1,67 @@
+hyrox:
+  name: HYROX
+  type: Indoor Functional Race
+  website: https://hyrox.com
+  color: "#e74c3c"
+  description_de: >
+    Indoor-Wettkampf mit 8 Laufabschnitten à 1 km, abwechselnd mit
+    8 funktionellen Stationen (Ski-Erg, Sled Push/Pull, Burpee Broad Jumps,
+    Rowing, Farmers Carry, Sandbag Lunges, Wall Balls).
+  description_en: >
+    Indoor race format with 8 x 1km runs alternating with 8 functional
+    workout stations.
+
+athx:
+  name: Hybrid Games ATHX
+  type: Paired Functional
+  website: https://athxgames.com
+  color: "#2c3e50"
+  description_de: >
+    Paar-Wettkampf mit drei Workouts mit Fokus auf Kraft, Ausdauer und
+    Metabolic Conditioning. Mit Erholungs- und Refuel-Stationen dazwischen.
+
+deadly-dozen:
+  name: Deadly Dozen
+  type: Hybrid Race
+  website: https://deadlydozen.com
+  color: "#9b59b6"
+  description_de: >
+    12 funktionelle Stationen ("Labours") wie Farmers Carry, Lunges,
+    Burpee Broad Jumps, Goblet Squats, Bear Crawls. Drei Varianten:
+    Deadly Strong, Deadly Run, Deadly ERG.
+
+deka:
+  name: DEKA
+  type: Functional Fitness
+  website: https://spartan.com/deka
+  color: "#27ae60"
+  description_de: >
+    10 funktionelle Stationen mit drei Varianten: DEKA FIT (mit Laufanteilen),
+    DEKA STRONG (nur Kraft), DEKA MILE (eine Meile + Stationen).
+
+turf-games:
+  name: Turf Games
+  type: Team Functional
+  color: "#3498db"
+  description_de: >
+    Team-Wettkampf mit funktionellen und CrossFit-ähnlichen Workouts.
+
+xenom:
+  name: XENOM
+  type: Hybrid Race
+  color: "#f39c12"
+  description_de: >
+    Aufstrebendes europäisches Hybrid-Format.
+
+other:
+  name: Other
+  name_de: Andere
+  name_en: Other
+  type: Other Hybrid Events
+  color: "#7f8c8d"
+  description_de: >
+    Hybrid-Events, die keinem der etablierten Formate zugeordnet sind —
+    lokale Races, neue Formate, regionale Veranstaltungen, Charity-Events.
+  description_en: >
+    Hybrid events that don't fit one of the established formats — local races,
+    new formats, regional events, charity races.

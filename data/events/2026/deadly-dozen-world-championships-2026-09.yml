@@ -1,0 +1,19 @@
+slug: deadly-dozen-world-championships-2026-09
+name: "Deadly Dozen World Championships"
+format: deadly-dozen
+date_start: 2026-09-05
+date_end: 2026-09-06
+location:
+  city: "London"
+  country: GB
+  venue: "Crystal Palace National Sports Centre"
+  timezone: Europe/London
+  lat: 51.420403
+  lon: -0.069075
+url: "https://www.deadlydozen.com/deadly-dozen-world-championship"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

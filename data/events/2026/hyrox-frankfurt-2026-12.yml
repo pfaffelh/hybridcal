@@ -1,0 +1,23 @@
+slug: hyrox-frankfurt-2026-12
+name: "HYROX Frankfurt"
+format: hyrox
+date_start: 2026-12-10
+date_end: 2026-12-13
+location:
+  city: "Frankfurt"
+  country: DE
+  timezone: Europe/Berlin
+  lat: 50.110644
+  lon: 8.682092
+url: "https://hyrox.com/event/frankfurt/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

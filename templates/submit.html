@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.submit.title }} — HybridCal{% endblock %}
+
+{% block content %}
+<h1>{{ t.submit.title }}</h1>
+
+<p>{{ t.submit.intro }}</p>
+
+<article>
+  <h3>{{ t.submit.form_heading }}</h3>
+  <p>{{ t.submit.form_intro }}</p>
+  <p>
+    <a href="{{ site.tally_form }}" role="button">
+      {{ t.submit.form_button }}
+    </a>
+  </p>
+  <p><small>{{ t.submit.form_note }}</small></p>
+</article>
+
+<article>
+  <h3>{{ t.submit.correction_heading }}</h3>
+  <p>{{ t.submit.correction_intro }}</p>
+  <p>
+    <a href="{{ site.github_repo }}/issues/new?template=correction.yml" role="button" class="secondary">
+      {{ t.submit.correction_button }}
+    </a>
+  </p>
+</article>
+
+<article>
+  <h3>{{ t.submit.pr_heading }}</h3>
+  <p>{{ t.submit.pr_intro }}</p>
+  <p>
+    <a href="{{ site.github_repo }}" role="button" class="secondary outline">
+      {{ t.submit.pr_button }}
+    </a>
+  </p>
+</article>
+{% endblock %}

@@ -1,0 +1,23 @@
+slug: hyrox-barcelona-2026-11
+name: "HYROX Barcelona"
+format: hyrox
+date_start: 2026-11-12
+date_end: 2026-11-15
+location:
+  city: "Barcelona"
+  country: ES
+  timezone: Europe/Madrid
+  lat: 41.382580
+  lon: 2.177073
+url: "https://hyrox.com/event/barcelona/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

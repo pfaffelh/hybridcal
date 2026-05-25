@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}{{ format.name }} — HybridCal{% endblock %}
+
+{% set label_key = 'label_' + lang %}
+{% set description = format['description_' + lang] or format.description_de %}
+
+{% block content %}
+<hgroup>
+  <h1>{{ format.name }}</h1>
+  <p>{{ format.type }}</p>
+</hgroup>
+
+{% if description %}
+<article>
+  <p>{{ description }}</p>
+  {% if format.website %}
+  <p>
+    <a href="{{ format.website }}" target="_blank" rel="noopener">
+      {{ format.website }}
+    </a>
+  </p>
+  {% endif %}
+</article>
+{% endif %}
+
+<h2>{{ t.format_page.events }}</h2>
+
+{% if events %}
+<ul>
+{% for event in events %}
+  <li>
+    <a href="/{{ lang }}/events/{{ event.slug }}.html"><strong>{{ event.name }}</strong></a><br>
+    <small>
+      {{ event.date_start|fmt_date }} · {{ event.location.city }}, {{ event.location.country }}
+      {% if event.status == "tentative" %} · <mark>{{ t.index.status_tentative }}</mark>{% endif %}
+    </small>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p><em>{{ t.format_page.no_events }}</em></p>
+{% endif %}
+
+{% if categories %}
+<h2>{{ t.format_page.categories_section }}</h2>
+<ul>
+  {% for cat in categories %}
+  <li>{{ cat[label_key] or cat.label_de or cat.id }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}

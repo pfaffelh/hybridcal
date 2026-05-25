@@ -1,0 +1,23 @@
+slug: hyrox-vienna-2026-02
+name: "CREAPURE HYROX Vienna"
+format: hyrox
+date_start: 2026-02-06
+date_end: 2026-02-08
+location:
+  city: "Vienna"
+  country: AT
+  timezone: Europe/Vienna
+  lat: 48.208354
+  lon: 16.372504
+url: "https://hyrox.com/event/vienna/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

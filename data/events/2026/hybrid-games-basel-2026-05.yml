@@ -1,0 +1,20 @@
+slug: hybrid-games-basel-2026-05
+name: Hybrid Games Basel
+format: other
+date_start: 2026-05-30
+date_end: 2026-05-31
+location:
+  city: Basel
+  country: CH
+  venue: Messe Basel
+  timezone: Europe/Zurich
+  lat: 47.564314
+  lon: 7.599720
+url: https://hybridgames.ch/
+status: confirmed
+source: scraped
+categories: []
+notes: |
+  Standalone Schweizer Hybrid-Event. Nicht mit Hybrid Games ATHX verbunden.
+  Kategorien: Singles, Doubles, PRO (Beginner/Intermediate/Pro tiers).
+  Multi-Station Functional auf 15.000 m².

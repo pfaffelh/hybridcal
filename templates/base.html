@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}HybridCal{% endblock %}</title>
+  <meta name="description" content="{{ t.meta.description }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="alternate" type="application/rss+xml" title="HybridCal RSS" href="/feed.rss">
+  <link rel="alternate" type="text/calendar" title="HybridCal ICS" href="/feed.ics">
+  <link rel="alternate" hreflang="de" href="/de{{ current_path }}">
+  <link rel="alternate" hreflang="en" href="/en{{ current_path }}">
+  <link rel="alternate" hreflang="x-default" href="/de{{ current_path }}">
+  {% block head_extra %}{% endblock %}
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong><a href="/{{ lang }}/" class="contrast">HybridCal</a></strong></li>
+      </ul>
+      <ul>
+        <li><a href="/{{ lang }}/">{{ t.nav.calendar }}</a></li>
+        <li><a href="/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
+        <li><a href="/{{ lang }}/about.html">{{ t.nav.about }}</a></li>
+        <li>
+          {% set other_lang = 'en' if lang == 'de' else 'de' %}
+          <a href="/{{ other_lang }}{{ current_path }}" aria-label="Switch language" class="lang-switch">
+            <span aria-current="true">{{ t.lang_switcher[lang] }}</span>
+            <span class="lang-sep">|</span>
+            <span class="lang-other">{{ t.lang_switcher[other_lang] }}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="container">
+    <hr>
+    <small>
+      {{ t.footer.tagline }} ·
+      <a href="/feed.ics">ICS</a> ·
+      <a href="/feed.rss">RSS</a> ·
+      <a href="/events.json">JSON</a>
+    </small>
+  </footer>
+</body>
+</html>

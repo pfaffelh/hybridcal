@@ -1,0 +1,22 @@
+slug: athx-liverpool-2026-10
+name: "ATHX Liverpool"
+format: athx
+date_start: 2026-10-03
+date_end: 2026-10-04
+location:
+  city: "Liverpool"
+  country: GB
+  venue: "Exhibition Centre Liverpool"
+  timezone: Europe/London
+  lat: 53.395287
+  lon: -2.990237
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

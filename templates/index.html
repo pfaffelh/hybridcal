@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.index.title }} — HybridCal{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<script defer src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+{% endblock %}
+
+{% block content %}
+<hgroup>
+  <h1>{{ t.index.title }}</h1>
+  <p>{{ t.index.subtitle }}</p>
+</hgroup>
+
+<div x-data="eventFilter()" x-init="init()">
+  <article>
+    <input type="search" x-model="search" placeholder="{{ t.index.search_placeholder }}">
+
+    <details>
+      <summary>
+        {{ t.index.filter }}
+        <span x-show="activeFilterCount > 0" x-text="`(${activeFilterCount} {{ t.index.filter_active }})`"></span>
+      </summary>
+
+      <fieldset>
+        <legend><strong>{{ t.index.filter_region }}</strong></legend>
+        <template x-for="region in regions" :key="region.id">
+          <label :class="countForRegion(region.id) === 0 && !filters.regions.includes(region.id) ? 'facet-zero' : ''">
+            <input type="checkbox" x-model="filters.regions" :value="region.id">
+            <span x-text="region.name"></span>
+            <span class="info-icon"
+                  x-show="region.countries.length > 0"
+                  :data-tooltip="region.countries.join(', ')"
+                  data-placement="bottom"
+                  tabindex="0"
+                  aria-label="Countries">&#9432;</span>
+            <small x-text="`(${countForRegion(region.id)})`" style="color: var(--pico-muted-color)"></small>
+          </label>
+        </template>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <input type="checkbox" x-model="filters.showPast">
+          {{ t.index.filter_show_past }}
+        </label>
+      </fieldset>
+
+      <button @click="reset()" class="secondary outline">{{ t.index.filter_reset }}</button>
+    </details>
+  </article>
+
+  <div class="view-toggle" role="group">
+    <button @click="setView('list')"
+            :aria-pressed="view === 'list'"
+            :class="view === 'list' ? '' : 'secondary outline'">
+      {{ t.index.view_list }}
+    </button>
+    <button @click="setView('map')"
+            :aria-pressed="view === 'map'"
+            :class="view === 'map' ? '' : 'secondary outline'">
+      {{ t.index.view_map }}
+    </button>
+  </div>
+
+  <p x-show="filtered.length === 0">
+    <em>{{ t.index.no_results }}</em>
+  </p>
+
+  <p x-show="filtered.length > 0">
+    <small><span x-text="filtered.length"></span> {{ t.index.events_count }}</small>
+  </p>
+
+  <div x-show="view === 'list'">
+    <template x-for="event in filtered" :key="event.slug">
+      <article>
+        <header style="margin-bottom: 0.5rem;">
+          <a :href="`/{{ lang }}/events/${event.slug}.html`">
+            <strong x-text="event.name"></strong>
+          </a>
+          <br>
+          <small style="color: var(--pico-muted-color)">
+            <span x-text="formatDate(event.date_start)"></span>
+            <template x-if="event.date_start !== event.date_end">
+              <span> – <span x-text="formatDate(event.date_end)"></span></span>
+            </template>
+            · <span x-text="event.location.city"></span>, <span x-text="event.location.country"></span>
+            <template x-if="event.location.venue">
+              <span> · <span x-text="event.location.venue"></span></span>
+            </template>
+          </small>
+        </header>
+        <small>
+          <span class="format-dot" :style="`background:${formats[event.format]?.color || '#888'}`"></span>
+          {{ t.index.format_label }}: <strong x-text="formats[event.format]?.name || event.format"></strong>
+          <template x-if="event.status === 'tentative'">
+            <mark>{{ t.index.status_tentative }}</mark>
+          </template>
+          <template x-if="event.status === 'cancelled'">
+            <mark>{{ t.index.status_cancelled }}</mark>
+          </template>
+        </small>
+      </article>
+    </template>
+  </div>
+
+  <div x-show="view === 'map'" x-cloak>
+    <div id="map" aria-label="Event map"></div>
+  </div>
+</div>
+
+<script>
+  window.FORMATS = {{ formats_json|tojson }};
+  window.REGIONS = {{ regions_json|tojson }};
+  window.LANG = {{ lang|tojson }};
+  window.LOCALE = {{ t.meta.locale|tojson }};
+  window.DEFAULT_REGIONS = {{ site.default_regions|tojson }};
+</script>
+<script src="/static/app.js"></script>
+{% endblock %}

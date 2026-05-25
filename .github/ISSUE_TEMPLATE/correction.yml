@@ -1,0 +1,28 @@
+name: Korrektur an bestehendem Event
+description: Fehler in einem gelisteten Event melden
+title: "[Korrektur] "
+labels: ["correction"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Event-Slug (aus der URL)
+      placeholder: hyrox-munich-2026-11
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Was ist falsch?
+      placeholder: "z.B. 'Das Datum ist eigentlich der 21.11., nicht der 14.11.'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Quelle für die Korrektur
+      placeholder: Link zur offiziellen Ankündigung, Screenshot, Newsletter, ...
+    validations:
+      required: true

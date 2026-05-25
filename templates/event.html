@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}{{ event.name }} — HybridCal{% endblock %}
+
+{% set label_key = 'label_' + lang %}
+
+{% block content %}
+<hgroup>
+  <h1>{{ event.name }}</h1>
+  <p>
+    {{ event.date_start|fmt_date }}{% if event.date_end != event.date_start %} – {{ event.date_end|fmt_date }}{% endif %}
+    · {{ event.location.city }}, {{ event.location.country }}
+  </p>
+</hgroup>
+
+{% if event.status == "tentative" %}
+<article>
+  <mark>{{ t.index.status_tentative }}</mark> — {{ t.event.tentative_full }}
+</article>
+{% elif event.status == "cancelled" %}
+<article>
+  <mark>{{ t.index.status_cancelled }}</mark> — {{ t.event.cancelled_full }}
+</article>
+{% endif %}
+
+<article>
+  <h3>{{ t.event.format }}</h3>
+  <p><a href="/{{ lang }}/{{ event.format }}.html">{{ format.name }}</a> — {{ format.type }}</p>
+
+  {% if event.location.venue %}
+  <h3>{{ t.event.location }}</h3>
+  <p>
+    {{ event.location.venue }}<br>
+    {{ event.location.city }}, {{ event.location.country }}
+  </p>
+  {% endif %}
+
+  {% if event.categories %}
+  <h3>{{ t.event.categories }}</h3>
+  <ul>
+    {% for cat_id in event.categories %}
+      {% set cat = categories | selectattr("id", "equalto", cat_id) | first %}
+      <li>{{ (cat[label_key] if cat else None) or (cat.label_de if cat else None) or cat_id }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if event.schedule %}
+  <h3>{{ t.event.schedule }}</h3>
+  <small>
+    {{ t.event.schedule_updated }}: {% if event.schedule_updated_at %}{{ event.schedule_updated_at|fmt_date }}{% else %}{{ t.event.schedule_unknown }}{% endif %}
+  </small>
+  <table>
+    <thead>
+      <tr><th>{{ t.event.schedule_day }}</th><th>{{ t.event.schedule_time }}</th><th>{{ t.event.schedule_category }}</th></tr>
+    </thead>
+    <tbody>
+    {% for s in event.schedule %}
+      {% set cat = categories | selectattr("id", "equalto", s.category) | first %}
+      <tr>
+        <td>{{ s.day|fmt_date }}</td>
+        <td>{{ s.start_time }}</td>
+        <td>{{ (cat[label_key] if cat else None) or (cat.label_de if cat else None) or s.category }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  <h3>{{ t.event.links }}</h3>
+  <ul>
+    <li><a href="{{ event.url }}" target="_blank" rel="noopener">{{ t.event.official_page }}</a></li>
+    {% if event.schedule_url %}
+    <li><a href="{{ event.schedule_url }}" target="_blank" rel="noopener">{{ t.event.official_schedule }}</a></li>
+    {% endif %}
+  </ul>
+</article>
+
+<p><a href="/{{ lang }}/">{{ t.event.back }}</a></p>
+{% endblock %}

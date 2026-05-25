@@ -1,0 +1,56 @@
+# Region groupings for the filter facet.
+# Each region has a list of ISO 3166-1 alpha-2 country codes.
+# The "world" region is the catchall — any event whose country is not
+# in any other region's list gets bucketed there.
+
+- id: dach
+  name_de: DACH
+  name_en: DACH
+  countries: [DE, AT, CH, LI]
+
+- id: british-isles
+  name_de: Britische Inseln
+  name_en: British Isles
+  countries: [GB, IE]
+
+- id: western-europe
+  name_de: Westeuropa
+  name_en: Western Europe
+  countries: [FR, BE, NL, LU, MC]
+
+- id: southern-europe
+  name_de: Südeuropa
+  name_en: Southern Europe
+  countries: [ES, PT, IT, GR, MT, CY, AD, SM, VA]
+
+- id: northern-eastern-europe
+  name_de: Nord- und Osteuropa
+  name_en: Northern & Eastern Europe
+  countries:
+    - DK
+    - SE
+    - "NO"
+    - FI
+    - IS
+    - EE
+    - LV
+    - LT
+    - PL
+    - CZ
+    - HU
+    - SK
+    - SI
+    - HR
+    - RO
+    - BG
+    - RS
+    - BA
+    - AL
+    - MK
+    - ME
+    - XK
+
+- id: world
+  name_de: Welt
+  name_en: World
+  countries: []  # catchall for anything not in another region

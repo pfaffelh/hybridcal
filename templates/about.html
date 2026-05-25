@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.about.title }} — HybridCal{% endblock %}
+
+{% block content %}
+<h1>{{ t.about.title }}</h1>
+
+<p>{{ t.about.intro }}</p>
+
+<h2>{{ t.about.listed_formats }}</h2>
+<ul>
+{% for fmt_id, fmt in formats.items() %}
+  <li><a href="/{{ lang }}/{{ fmt_id }}.html">{{ fmt.name }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>{{ t.about.how_added }}</h2>
+<ol>
+  <li>{{ t.about.path_form }} <a href="/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
+  <li>{{ t.about.path_issue }}</li>
+  <li>{{ t.about.path_pr }}</li>
+</ol>
+
+<h2>{{ t.about.open_data }}</h2>
+<p>{{ t.about.open_data_intro }}</p>
+<ul>
+  <li><a href="/feed.ics">{{ t.about.open_data_ics }}</a></li>
+  <li><a href="/feed.rss">{{ t.about.open_data_rss }}</a></li>
+  <li><a href="/events.json">{{ t.about.open_data_json }}</a></li>
+</ul>
+
+<h2>{{ t.about.imprint }}</h2>
+<p>{{ t.about.imprint_responsible }}: <em>{{ t.about.imprint_placeholder }}</em></p>
+{% endblock %}

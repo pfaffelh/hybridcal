@@ -1,0 +1,94 @@
+name: Event-Einreichung
+description: Reiche ein neues Hybrid-Sport-Event ein
+title: "[Event] "
+labels: ["submission"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Event-Name
+      placeholder: HYROX Munich
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - HYROX
+        - ATHX
+        - Deadly Dozen
+        - DEKA
+        - Turf Games
+        - XENOM
+        - Anderes
+    validations:
+      required: true
+
+  - type: input
+    id: date_start
+    attributes:
+      label: Startdatum
+      placeholder: "2026-11-14 (Format: YYYY-MM-DD)"
+    validations:
+      required: true
+
+  - type: input
+    id: date_end
+    attributes:
+      label: Enddatum (gleich wie Start, wenn 1-Tages-Event)
+      placeholder: "2026-11-15"
+    validations:
+      required: true
+
+  - type: input
+    id: city
+    attributes:
+      label: Stadt
+      placeholder: München
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: Land (ISO-Code, 2 Buchstaben)
+      placeholder: "DE"
+    validations:
+      required: true
+
+  - type: input
+    id: venue
+    attributes:
+      label: Venue (falls bekannt)
+      placeholder: Olympiahalle
+
+  - type: input
+    id: url
+    attributes:
+      label: Offizielle Event-URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: categories
+    attributes:
+      label: Kategorien (falls bekannt)
+      placeholder: "Singles Pro, Doubles Mixed, Relay Mixed"
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Quelle / Anmerkungen
+      placeholder: Woher hast du die Info? Newsletter, Instagram, eigene Teilnahme?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: is_organizer
+    attributes:
+      label: Bist du der Veranstalter?
+      options:
+        - label: Ja, ich vertrete den Veranstalter
+        - label: Nein, ich bin Athlet/Community-Mitglied

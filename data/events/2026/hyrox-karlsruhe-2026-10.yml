@@ -1,0 +1,23 @@
+slug: hyrox-karlsruhe-2026-10
+name: "HYROX Karlsruhe"
+format: hyrox
+date_start: 2026-10-01
+date_end: 2026-10-04
+location:
+  city: "Karlsruhe"
+  country: DE
+  timezone: Europe/Berlin
+  lat: 49.006870
+  lon: 8.403420
+url: "https://hyrox.com/event/karlsruhe/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

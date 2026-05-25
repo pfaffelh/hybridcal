@@ -1,0 +1,23 @@
+slug: hyrox-utrecht-2026-11
+name: "HYROX Utrecht"
+format: hyrox
+date_start: 2026-11-26
+date_end: 2026-11-29
+location:
+  city: "Utrecht"
+  country: NL
+  timezone: Europe/Amsterdam
+  lat: 52.090701
+  lon: 5.121563
+url: "https://hyrox.com/event/utrecht/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

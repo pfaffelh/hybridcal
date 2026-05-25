@@ -1,0 +1,23 @@
+slug: hyrox-milan-2026-12
+name: "HYROX Milan"
+format: hyrox
+date_start: 2026-12-05
+date_end: 2026-12-06
+location:
+  city: "Milan"
+  country: IT
+  timezone: Europe/Rome
+  lat: 45.464194
+  lon: 9.189635
+url: "https://hyrox.com/event/milan/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

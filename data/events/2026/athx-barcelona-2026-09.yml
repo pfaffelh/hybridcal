@@ -1,0 +1,22 @@
+slug: athx-barcelona-2026-09
+name: "ATHX Barcelona"
+format: athx
+date_start: 2026-09-05
+date_end: 2026-09-05
+location:
+  city: "Barcelona"
+  country: ES
+  venue: "Fira Barcelona"
+  timezone: Europe/Madrid
+  lat: 41.373496
+  lon: 2.150327
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

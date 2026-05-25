@@ -1,0 +1,61 @@
+hyrox:
+  - id: singles-pro-men
+    label_de: Singles Pro Männer
+    label_en: Singles Pro Men
+  - id: singles-pro-women
+    label_de: Singles Pro Frauen
+    label_en: Singles Pro Women
+  - id: singles-open-men
+    label_de: Singles Open Männer
+  - id: singles-open-women
+    label_de: Singles Open Frauen
+  - id: doubles-men
+    label_de: Doubles Männer
+  - id: doubles-women
+    label_de: Doubles Frauen
+  - id: doubles-mixed
+    label_de: Doubles Mixed
+  - id: relay-mixed
+    label_de: Relay Mixed
+  - id: adaptive
+    label_de: Adaptive
+
+athx:
+  - id: paired-rx-men
+    label_de: Paired RX Männer
+  - id: paired-rx-women
+    label_de: Paired RX Frauen
+  - id: paired-rx-mixed
+    label_de: Paired RX Mixed
+  - id: paired-scaled-men
+    label_de: Paired Scaled Männer
+  - id: paired-scaled-women
+    label_de: Paired Scaled Frauen
+  - id: paired-scaled-mixed
+    label_de: Paired Scaled Mixed
+
+deadly-dozen:
+  - id: deadly-strong-singles
+    label_de: Deadly Strong Singles
+  - id: deadly-strong-pairs
+    label_de: Deadly Strong Pairs
+  - id: deadly-run-singles
+    label_de: Deadly Run Singles
+  - id: deadly-erg-singles
+    label_de: Deadly ERG Singles
+
+deka:
+  - id: deka-fit-singles
+    label_de: DEKA FIT Singles
+  - id: deka-fit-pairs
+    label_de: DEKA FIT Pairs
+  - id: deka-strong-singles
+    label_de: DEKA STRONG Singles
+  - id: deka-mile
+    label_de: DEKA MILE
+
+turf-games: []
+
+xenom: []
+
+other: []

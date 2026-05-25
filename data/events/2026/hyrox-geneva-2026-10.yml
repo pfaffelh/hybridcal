@@ -1,0 +1,23 @@
+slug: hyrox-geneva-2026-10
+name: "LET'S GO FITNESS HYROX Geneva"
+format: hyrox
+date_start: 2026-10-09
+date_end: 2026-10-11
+location:
+  city: "Geneva"
+  country: CH
+  timezone: Europe/Zurich
+  lat: 46.201756
+  lon: 6.146601
+url: "https://hyrox.com/event/geneva/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

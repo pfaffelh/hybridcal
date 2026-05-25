@@ -1,0 +1,159 @@
+Barcelona, ES:
+  display_name: Barcelona, Barcelonès, Barcelona, Catalonia, Spain
+  lat: 41.38258
+  lon: 2.177073
+Bella Centre, Copenhagen, DK:
+  display_name: Copenhagen, Copenhagen Municipality, Capital Region of Denmark, 1357,
+    Denmark
+  lat: 55.686724
+  lon: 12.570072
+Berlin, DE:
+  display_name: Berlin, Germany
+  lat: 52.517389
+  lon: 13.395131
+Birmingham, GB:
+  display_name: Birmingham, West Midlands, England, United Kingdom
+  lat: 52.494899
+  lon: -1.851844
+Bordeaux, FR:
+  display_name: Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, France
+  lat: 44.841225
+  lon: -0.580036
+Cardiff Metropolitan University, Cardiff, GB:
+  display_name: Cardiff Metropolitan University, Western Avenue, Danescourt, Llandaff,
+    Cardiff, Wales, CF5 2YB, United Kingdom
+  lat: 51.49609
+  lon: -3.212835
+Crystal Palace National Sports Centre, London, GB:
+  display_name: Crystal Palace National Sports Centre, Geological strata bridge, Crystal
+    Palace, London Borough of Bromley, Greater London, England, SE20 8DN, United Kingdom
+  lat: 51.420403
+  lon: -0.069075
+Düsseldorf, DE:
+  display_name: Dusseldorf, North Rhine-Westphalia, Germany
+  lat: 51.225402
+  lon: 6.776314
+ExCeL London, London, GB:
+  display_name: ExCeL, 1, Western Gateway, Custom House, Silvertown, London Borough
+    of Newham, Greater London, England, E16 1XL, United Kingdom
+  lat: 51.508113
+  lon: 0.029707
+Exhibition Centre Liverpool, Liverpool, GB:
+  display_name: Exhibition Centre Liverpool, Kings Parade, Waterfront, Toxteth, Liverpool,
+    Liverpool City Region, England, L3 4FP, United Kingdom
+  lat: 53.395287
+  lon: -2.990237
+Fira Barcelona, Barcelona, ES:
+  display_name: Fira Barcelona, Avinguda de la Reina Maria Cristina, Montjuïc, el
+    Poble-sec, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalonia, 08015,
+    Spain
+  lat: 41.373496
+  lon: 2.150327
+Frankfurt, DE:
+  display_name: Frankfurt, Hesse, Germany
+  lat: 50.110644
+  lon: 8.682092
+Geneva, CH:
+  display_name: Geneva, Switzerland
+  lat: 46.201756
+  lon: 6.146601
+Ghent, BE:
+  display_name: Ghent, Gent, East Flanders, Flanders, Belgium
+  lat: 51.053829
+  lon: 3.725012
+K2 Crawley, Crawley, GB:
+  display_name: K2 Leisure Centre, Tilgate Drive, Southgate, Crawley, West Sussex,
+    England, RH11 9BQ, United Kingdom
+  lat: 51.097209
+  lon: -0.191296
+Karlsruhe, DE:
+  display_name: Karlsruhe, Baden-Württemberg, Germany
+  lat: 49.00687
+  lon: 8.40342
+Lee Valley Athletics Track, London, GB:
+  display_name: Greater London, England, United Kingdom
+  lat: 51.507446
+  lon: -0.127765
+Lisbon Exhibition and Congress Centre, Lisbon, PT:
+  display_name: Lisbon, Portugal
+  lat: 38.707751
+  lon: -9.136592
+Maastricht, NL:
+  display_name: Maastricht, Limburg, Netherlands
+  lat: 50.851244
+  lon: 5.690977
+Macclesfield Leisure Centre, Macclesfield, GB:
+  display_name: Macclesfield Leisure Centre, Turning Circle, Upton Priory, Macclesfield,
+    Cheshire East, England, SK10 4AF, United Kingdom
+  lat: 53.26789
+  lon: -2.161933
+Marseille Chanot, Marseille, FR:
+  display_name: Marseille Chanot - Palais des Congrès et des Expositions, Saint-Giniez,
+    8th Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan
+    France, 13008, France
+  lat: 43.272845
+  lon: 5.395677
+Meadowbank Sports Centre, Edinburgh, GB:
+  display_name: Meadowbank Sports Centre, London Road, Marionville, Meadowbank, Craigentinny/Meadowbank,
+    City of Edinburgh, Scotland, EH7 6AE, United Kingdom
+  lat: 55.956692
+  lon: -3.157525
+Messe Basel, Basel, CH:
+  display_name: Messe Basel, Messeplatz, Messe, Rosental, Kleinbasel, Basel, Basel-City,
+    4005, Switzerland
+  lat: 47.564314
+  lon: 7.59972
+Milan, IT:
+  display_name: Milan, Rodano, Milan, Lombardy, Italy
+  lat: 45.464194
+  lon: 9.189635
+NEC Birmingham, Birmingham, GB:
+  display_name: National Exhibition Centre, Station Way, Bickenhill and Marston Green,
+    Bickenhill, Birmingham, West Midlands, England, B40 1PA, United Kingdom
+  lat: 52.453843
+  lon: -1.71755
+Nice, FR:
+  display_name: Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France,
+    France
+  lat: 43.700936
+  lon: 7.268391
+OLMA Messen, St. Gallen, CH:
+  display_name: Olma Messen, St. Jakob-Strasse, St. Jakob, St. Gallen, Wahlkreis St.
+    Gallen, St. Gallen, 9007, Switzerland
+  lat: 47.43166
+  lon: 9.381563
+Paris, FR:
+  display_name: Paris, Ile-de-France, Metropolitan France, France
+  lat: 48.853495
+  lon: 2.348391
+RAI Amsterdam, Amsterdam, NL:
+  display_name: RAI Amsterdam, 24, Europaplein, Zuidas, Zuid, Amsterdam, North Holland,
+    Netherlands, 1078 GZ, Netherlands
+  lat: 52.341226
+  lon: 4.889907
+RDS Dublin, Dublin, IE:
+  display_name: Royal Dublin Society (RDS), Merrion Road, Ballsbridge, Pembroke East
+    E ED, Dublin, County Dublin, Leinster, D04 AK83, Ireland
+  lat: 53.326654
+  lon: -6.228863
+Rome, IT:
+  display_name: Rome, Roma Capitale, Lazio, Italy
+  lat: 41.89332
+  lon: 12.482932
+Scottish Event Campus, Glasgow, GB:
+  display_name: Scottish Event Campus, Finnieston, Glasgow, Glasgow City, Scotland,
+    G3 8YW, United Kingdom
+  lat: 55.860718
+  lon: -4.288015
+Utrecht, NL:
+  display_name: Utrecht, Netherlands
+  lat: 52.090701
+  lon: 5.121563
+Valencia, ES:
+  display_name: Valencia, Comarca de València, Valencia, Valencian Community, Spain
+  lat: 39.469707
+  lon: -0.376335
+Vienna, AT:
+  display_name: Vienna, Austria
+  lat: 48.208354
+  lon: 16.372504

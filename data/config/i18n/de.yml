@@ -1,0 +1,96 @@
+nav:
+  calendar: Kalender
+  submit: Einreichen
+  about: Über
+
+footer:
+  tagline: HybridCal — Community-Service, kein kommerzielles Angebot
+
+index:
+  title: Hybrid Sport Events
+  subtitle: HYROX, ATHX, Deadly Dozen, DEKA und mehr — gesammelt für die Community.
+  search_placeholder: Suche nach Stadt, Venue, Eventname...
+  filter: Filter
+  filter_active: aktiv
+  filter_format: Format
+  filter_region: Region
+  filter_show_past: Vergangene Events anzeigen
+  filter_reset: Filter zurücksetzen
+  no_results: Keine Events gefunden. Versuch's mit weniger Filtern.
+  events_count: Event(s)
+  format_label: Format
+  status_tentative: vorläufig
+  status_cancelled: abgesagt
+  view_list: Liste
+  view_map: Karte
+
+event:
+  format: Format
+  location: Ort
+  categories: Kategorien
+  schedule: Zeitplan
+  schedule_updated: Stand
+  schedule_unknown: unbekannt
+  schedule_day: Tag
+  schedule_time: Zeit (lokal)
+  schedule_category: Kategorie
+  links: Links
+  official_page: Offizielle Event-Seite
+  official_schedule: Offizieller Zeitplan
+  back: ← Zurück zur Übersicht
+  tentative_full: Vorläufig — Details noch nicht offiziell bestätigt.
+  cancelled_full: Abgesagt — Dieses Event findet nicht statt.
+
+format_page:
+  events: Events
+  no_events: Aktuell keine Events gelistet.
+  categories_section: Kategorien
+
+about:
+  title: Über HybridCal
+  intro: >
+    HybridCal ist ein Community-Service: ein kostenloser, werbefreier Kalender für
+    Hybrid-Sport-Events wie HYROX, ATHX, Deadly Dozen, DEKA und andere.
+    Kein kommerzielles Angebot, keine Affiliate-Links, keine Tracker.
+  listed_formats: Gelistete Formate
+  how_added: Wie Events reinkommen
+  path_form: Submission-Formular — der einfachste Weg.
+  path_issue: GitHub Issue — für Korrekturen an bestehenden Events.
+  path_pr: Pull Request — für tech-affine Beitragende, die direkt YAML schreiben wollen.
+  open_data: Offene Daten
+  open_data_intro: "Alle Event-Daten stehen unter CC0 zur Verfügung:"
+  open_data_ics: ICS-Kalender — zum Abonnieren in Apple Calendar, Google Calendar, etc.
+  open_data_rss: RSS-Feed — für neue Events
+  open_data_json: JSON-API — alle Events als strukturierte Daten
+  imprint: Impressum
+  imprint_responsible: Verantwortlich i.S.d. § 18 MStV
+  imprint_placeholder: "[Name + Adresse hier eintragen]"
+
+submit:
+  title: Event einreichen
+  intro: >
+    Du kennst ein Hybrid-Sport-Event, das hier noch fehlt? Schick uns die Infos —
+    wir tragen es ein. Vielen Dank!
+  form_heading: "Einfacher Weg: Formular"
+  form_intro: >
+    Über das Formular brauchst du keinen GitHub-Account. Wir sichten die
+    Submission und tragen das Event ein (~24-48h).
+  form_button: Event-Formular öffnen →
+  form_note: "(Tally-Link hier einsetzen, sobald Formular angelegt.)"
+  correction_heading: Fehler melden
+  correction_intro: "Falsches Datum, falscher Ort, fehlende Kategorie? Per GitHub Issue:"
+  correction_button: Korrektur melden →
+  pr_heading: "Für Tech-Affine: Pull Request"
+  pr_intro: >
+    Direkt eine YAML-Datei im Repo anlegen.
+    Bei Submission läuft automatische Validierung — du siehst sofort, ob deine
+    Datei korrekt ist.
+  pr_button: Zum Repository →
+
+meta:
+  description: "Community-Kalender für Hybrid-Sport-Events: HYROX, ATHX, Deadly Dozen, DEKA und mehr."
+  locale: de-DE
+
+lang_switcher:
+  de: DE
+  en: EN

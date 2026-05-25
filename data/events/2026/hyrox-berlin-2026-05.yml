@@ -1,0 +1,23 @@
+slug: hyrox-berlin-2026-05
+name: "GILLETTELABS HYROX Berlin"
+format: hyrox
+date_start: 2026-05-22
+date_end: 2026-05-31
+location:
+  city: "Berlin"
+  country: DE
+  timezone: Europe/Berlin
+  lat: 52.517389
+  lon: 13.395131
+url: "https://hyrox.com/event/berlin/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

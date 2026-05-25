@@ -1,0 +1,19 @@
+slug: deadly-dozen-cardiff-2026-05
+name: "Deadly Dozen UK: Cardiff"
+format: deadly-dozen
+date_start: 2026-05-30
+date_end: 2026-05-30
+location:
+  city: "Cardiff"
+  country: GB
+  venue: "Cardiff Metropolitan University"
+  timezone: Europe/London
+  lat: 51.496090
+  lon: -3.212835
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races/cardiff-30th-may-2026"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

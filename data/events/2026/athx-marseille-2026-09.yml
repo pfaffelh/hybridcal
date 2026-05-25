@@ -1,0 +1,22 @@
+slug: athx-marseille-2026-09
+name: "ATHX Marseille"
+format: athx
+date_start: 2026-09-19
+date_end: 2026-09-19
+location:
+  city: "Marseille"
+  country: FR
+  venue: "Marseille Chanot"
+  timezone: Europe/Paris
+  lat: 43.272845
+  lon: 5.395677
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

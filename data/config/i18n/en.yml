@@ -1,0 +1,94 @@
+nav:
+  calendar: Calendar
+  submit: Submit
+  about: About
+
+footer:
+  tagline: HybridCal — community service, not a commercial product
+
+index:
+  title: Hybrid Sport Events
+  subtitle: HYROX, ATHX, Deadly Dozen, DEKA and more — collected for the community.
+  search_placeholder: Search by city, venue, event name...
+  filter: Filter
+  filter_active: active
+  filter_format: Format
+  filter_region: Region
+  filter_show_past: Show past events
+  filter_reset: Reset filters
+  no_results: No events found. Try fewer filters.
+  events_count: event(s)
+  format_label: Format
+  status_tentative: tentative
+  status_cancelled: cancelled
+  view_list: List
+  view_map: Map
+
+event:
+  format: Format
+  location: Location
+  categories: Categories
+  schedule: Schedule
+  schedule_updated: As of
+  schedule_unknown: unknown
+  schedule_day: Day
+  schedule_time: Time (local)
+  schedule_category: Category
+  links: Links
+  official_page: Official event page
+  official_schedule: Official schedule
+  back: ← Back to overview
+  tentative_full: Tentative — details not yet officially confirmed.
+  cancelled_full: Cancelled — this event will not take place.
+
+format_page:
+  events: Events
+  no_events: No events currently listed.
+  categories_section: Categories
+
+about:
+  title: About HybridCal
+  intro: >
+    HybridCal is a community service: a free, ad-free calendar for hybrid sport
+    events like HYROX, ATHX, Deadly Dozen, DEKA and others. Not a commercial
+    product. No affiliate links, no trackers.
+  listed_formats: Listed formats
+  how_added: How events get added
+  path_form: Submission form — the easiest way.
+  path_issue: GitHub Issue — for corrections to existing events.
+  path_pr: Pull Request — for tech-savvy contributors who want to write YAML directly.
+  open_data: Open data
+  open_data_intro: "All event data is available under CC0:"
+  open_data_ics: ICS calendar — subscribe in Apple Calendar, Google Calendar, etc.
+  open_data_rss: RSS feed — for new events
+  open_data_json: JSON API — all events as structured data
+  imprint: Imprint
+  imprint_responsible: Responsible per § 18 MStV (German Interstate Media Treaty)
+  imprint_placeholder: "[Name + address here]"
+
+submit:
+  title: Submit an event
+  intro: >
+    You know a hybrid sport event that's missing here? Send us the info —
+    we'll add it. Thanks!
+  form_heading: "Easy way: Form"
+  form_intro: >
+    No GitHub account needed. We review submissions and add the event (~24-48h).
+  form_button: Open event form →
+  form_note: "(Insert Tally link once form is created.)"
+  correction_heading: Report an error
+  correction_intro: "Wrong date, wrong location, missing category? Via GitHub Issue:"
+  correction_button: Report correction →
+  pr_heading: "For tech-savvy: Pull Request"
+  pr_intro: >
+    Add a YAML file directly to the repo. Automatic validation runs on submit
+    — you'll see immediately if your file is valid.
+  pr_button: Go to repository →
+
+meta:
+  description: "Community calendar for hybrid sport events: HYROX, ATHX, Deadly Dozen, DEKA and more."
+  locale: en-US
+
+lang_switcher:
+  de: DE
+  en: EN

@@ -1,0 +1,13 @@
+# Site-level configuration — URLs and defaults
+# Language-agnostic, not per-event.
+
+url: https://hybridcal.com
+
+# External resources
+github_repo: https://github.com/PLATZHALTER/hybridcal
+tally_form: https://tally.so/r/PLATZHALTER
+
+# Defaults
+default_language: de
+default_regions:
+  - dach

@@ -1,0 +1,23 @@
+slug: hyrox-ghent-2026-12
+name: "HYROX Ghent"
+format: hyrox
+date_start: 2026-12-17
+date_end: 2026-12-20
+location:
+  city: "Ghent"
+  country: BE
+  timezone: Europe/Brussels
+  lat: 51.053829
+  lon: 3.725012
+url: "https://hyrox.com/event/ghent/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

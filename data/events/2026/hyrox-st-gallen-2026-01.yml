@@ -1,0 +1,24 @@
+slug: hyrox-st-gallen-2026-01
+name: "WELL COME FIT HYROX St. Gallen"
+format: hyrox
+date_start: 2026-01-16
+date_end: 2026-01-18
+location:
+  city: "St. Gallen"
+  country: CH
+  venue: "OLMA Messen"
+  timezone: Europe/Zurich
+  lat: 47.431660
+  lon: 9.381563
+url: "https://hyrox.com/event/st-gallen/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

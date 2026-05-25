@@ -1,0 +1,19 @@
+slug: deadly-dozen-macclesfield-2026-04
+name: "Deadly Dozen UK: Macclesfield"
+format: deadly-dozen
+date_start: 2026-04-11
+date_end: 2026-04-11
+location:
+  city: "Macclesfield"
+  country: GB
+  venue: "Macclesfield Leisure Centre"
+  timezone: Europe/London
+  lat: 53.267890
+  lon: -2.161933
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races/macclesfield-11th-april-2026"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles
