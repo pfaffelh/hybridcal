@@ -13,7 +13,7 @@ function eventFilter() {
       showPast: false,
     },
     search: '',
-    view: 'list',
+    view: 'map',
     map: null,
     cluster: null,
     _initialized: false,
@@ -33,7 +33,10 @@ function eventFilter() {
         if (this.view === 'map' && this.map) this.renderMarkers();
       });
       if (this.view === 'map') {
-        this.$nextTick(() => this.initMap());
+        this.$nextTick(() => {
+          this.initMap();
+          this.renderMarkers();
+        });
       }
     },
 
@@ -188,7 +191,8 @@ function eventFilter() {
       if (p.has('region')) this.filters.regions = p.get('region').split(',').filter(Boolean);
       if (p.has('q')) this.search = p.get('q');
       if (p.get('past') === '1') this.filters.showPast = true;
-      if (p.get('view') === 'map') this.view = 'map';
+      const viewParam = p.get('view');
+      if (viewParam === 'list' || viewParam === 'map') this.view = viewParam;
     },
 
     saveToURL() {
@@ -200,7 +204,7 @@ function eventFilter() {
       }
       if (this.search) p.set('q', this.search);
       if (this.filters.showPast) p.set('past', '1');
-      if (this.view === 'map') p.set('view', 'map');
+      if (this.view !== 'map') p.set('view', this.view);
       const qs = p.toString();
       history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
     },

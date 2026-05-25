@@ -14,5 +14,6 @@ tally_form: https://tally.so/r/PLATZHALTER
 
 # Defaults
 default_language: de
-default_regions:
-  - dach
+# Pre-selected regions on first visit. Empty list = no region filter,
+# all events shown. Add region IDs (e.g. - dach) to filter by default.
+default_regions: []
