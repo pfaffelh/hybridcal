@@ -125,7 +125,7 @@ def render_site(
                 )
             )
 
-        for page in ["about", "submit"]:
+        for page in ["about", "submit", "impressum", "privacy"]:
             (lang_dir / f"{page}.html").write_text(
                 env.get_template(f"{page}.html").render(
                     **common,

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.impressum.title }} — HybridCal{% endblock %}
+
+{% block content %}
+<h1>{{ t.impressum.title }}</h1>
+
+<p>{{ t.impressum.intro }}</p>
+
+<address>
+{{ t.impressum.name }}<br>
+{{ t.impressum.street }}<br>
+{{ t.impressum.city }}<br>
+{{ t.impressum.country }}
+</address>
+
+<h2>{{ t.impressum.contact_heading }}</h2>
+<p>
+{{ t.impressum.email_label }}:
+<a href="mailto:{{ t.impressum.email }}">{{ t.impressum.email }}</a>
+</p>
+
+{% for section in t.impressum.sections %}
+<h2>{{ section.heading }}</h2>
+<p>{{ section.body }}</p>
+{% endfor %}
+{% endblock %}

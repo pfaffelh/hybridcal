@@ -1,8 +1,3 @@
-nav:
-  calendar: Kalender
-  submit: Einreichen
-  about: Über
-
 footer:
   tagline: HybridCal — Community-Service, kein kommerzielles Angebot
 
@@ -62,9 +57,6 @@ about:
   open_data_ics: ICS-Kalender — zum Abonnieren in Apple Calendar, Google Calendar, etc.
   open_data_rss: RSS-Feed — für neue Events
   open_data_json: JSON-API — alle Events als strukturierte Daten
-  imprint: Impressum
-  imprint_responsible: Verantwortlich i.S.d. § 18 MStV
-  imprint_placeholder: "[Name + Adresse hier eintragen]"
 
 submit:
   title: Event einreichen
@@ -87,6 +79,13 @@ submit:
     Datei korrekt ist.
   pr_button: Zum Repository →
 
+nav:
+  calendar: Kalender
+  submit: Einreichen
+  about: Über
+  imprint: Impressum
+  privacy: Datenschutz
+
 meta:
   description: "Community-Kalender für Hybrid-Sport-Events: HYROX, ATHX, Deadly Dozen, DEKA und mehr."
   locale: de-DE
@@ -94,3 +93,115 @@ meta:
 lang_switcher:
   de: DE
   en: EN
+
+impressum:
+  title: Impressum
+  intro: >
+    Angaben gemäß § 5 TMG und Verantwortlicher für den Inhalt
+    gemäß § 18 Abs. 2 MStV.
+  name: "[VORNAME NACHNAME]"
+  street: "[STRASSE HAUSNUMMER]"
+  city: "[PLZ ORT]"
+  country: Deutschland
+  contact_heading: Kontakt
+  email_label: E-Mail
+  email: "[deine@email.de]"
+  sections:
+    - heading: Haftung für Inhalte
+      body: >
+        Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte
+        auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
+        §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+        verpflichtet, übermittelte oder gespeicherte fremde Informationen
+        zu überwachen oder nach Umständen zu forschen, die auf eine
+        rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung
+        oder Sperrung der Nutzung von Informationen nach den allgemeinen
+        Gesetzen bleiben hiervon unberührt.
+    - heading: Haftung für Links
+      body: >
+        Unser Angebot enthält Links zu externen Webseiten Dritter (z.B. zu
+        offiziellen Event-Seiten der Veranstalter), auf deren Inhalte wir
+        keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte
+        auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
+        ist stets der jeweilige Anbieter oder Betreiber der Seiten
+        verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der
+        Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige
+        Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+    - heading: Urheberrecht / Lizenz
+      body: >
+        Der Quellcode dieser Webseite steht unter MIT-Lizenz. Die
+        Event-Daten (data/events/) werden unter CC0 1.0 Universal
+        (Public Domain Dedication) zur Verfügung gestellt.
+    - heading: Hinweis zur Aktualität
+      body: >
+        Wir bemühen uns, die hier gelisteten Events korrekt und aktuell
+        wiederzugeben, übernehmen aber keine Gewähr für die Richtigkeit
+        oder Vollständigkeit. Für verbindliche Informationen verweisen
+        wir auf die offiziellen Webseiten der jeweiligen Veranstalter.
+
+privacy:
+  title: Datenschutzerklärung
+  intro: >
+    Diese Webseite ist ein nicht-kommerzieller Community-Service.
+    Wir setzen keine Cookies und betreiben kein Tracking. Diese
+    Datenschutzerklärung informiert dich darüber, welche Daten
+    beim Besuch der Webseite zwangsläufig anfallen.
+  controller_heading: Verantwortlicher
+  controller_text: >
+    Verantwortlicher im Sinne der DSGVO ist die im Impressum
+    genannte Person.
+  sections:
+    - heading: Server-Logs (Hosting)
+      body: >
+        Diese Webseite wird über GitHub Pages gehostet. Bei jedem Aufruf
+        werden technisch notwendige Daten in Server-Logs erfasst:
+        IP-Adresse, Datum und Uhrzeit, aufgerufene URL, Browser-Typ und
+        -Version. Diese Daten werden ausschließlich zum technischen
+        Betrieb der Webseite verarbeitet und nicht mit anderen
+        Datenquellen zusammengeführt. Rechtsgrundlage: Art. 6 Abs. 1
+        lit. f DSGVO (berechtigtes Interesse an der technischen
+        Bereitstellung).
+        GitHub Privacy Statement: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement
+    - heading: Content Delivery Networks (CDN)
+      body: >
+        Frontend-Bibliotheken (Pico.css, Alpine.js, Leaflet) werden
+        über das öffentliche CDN jsdelivr.net geladen. Beim Laden wird
+        deine IP-Adresse an jsdelivr übermittelt. Rechtsgrundlage:
+        Art. 6 Abs. 1 lit. f DSGVO (Performance der Webseite).
+        jsdelivr Privacy: https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net
+    - heading: Kartendarstellung
+      body: >
+        Auf der Karten-Ansicht werden Kartenkacheln von CARTO geladen
+        (basemaps.cartocdn.com). Beim Laden wird deine IP-Adresse an
+        CARTO übermittelt. Die Karten-Ansicht wird erst geladen, wenn
+        du sie aktiv aufrufst. Rechtsgrundlage: Art. 6 Abs. 1 lit. f
+        DSGVO (Kartenfunktionalität).
+        CARTO Privacy: https://carto.com/privacy
+    - heading: Submission-Formular
+      body: >
+        Auf der Seite /submit kann optional ein Formular von Tally.so
+        eingebettet sein. Die Datenerhebung durch Tally erfolgt nur,
+        wenn du das Formular ausfüllst und absendest. Es werden die
+        von dir eingegebenen Felder sowie technische Daten (IP, Zeit)
+        verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO
+        (Einwilligung). Du kannst die Einwilligung jederzeit
+        widerrufen.
+        Tally Privacy: https://tally.so/help/privacy-policy
+    - heading: Cookies
+      body: >
+        Wir setzen keine eigenen Cookies. Eventuelle Cookies von
+        Drittanbietern (z.B. Tally beim Absenden eines Formulars)
+        werden nur nach deiner aktiven Interaktion gesetzt.
+    - heading: Deine Rechte
+      body: >
+        Nach der DSGVO hast du folgende Rechte: Auskunft (Art. 15),
+        Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der
+        Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20),
+        Widerspruch (Art. 21) sowie das Beschwerderecht bei einer
+        Aufsichtsbehörde (Art. 77). Anfragen richtest du bitte an die
+        im Impressum genannte Kontakt-E-Mail.
+    - heading: Stand und Änderungen
+      body: >
+        Wir behalten uns vor, diese Datenschutzerklärung anzupassen,
+        wenn sich technische Voraussetzungen oder rechtliche
+        Vorgaben ändern.

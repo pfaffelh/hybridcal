@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.privacy.title }} — HybridCal{% endblock %}
+
+{% block content %}
+<h1>{{ t.privacy.title }}</h1>
+
+<p>{{ t.privacy.intro }}</p>
+
+<h2>{{ t.privacy.controller_heading }}</h2>
+<p>
+  {{ t.privacy.controller_text }}
+  <a href="/{{ lang }}/impressum.html">→ {{ t.nav.imprint }}</a>
+</p>
+
+{% for section in t.privacy.sections %}
+<h2>{{ section.heading }}</h2>
+<p>{{ section.body }}</p>
+{% endfor %}
+{% endblock %}
