@@ -1,7 +1,12 @@
 # Site-level configuration — URLs and defaults
 # Language-agnostic, not per-event.
 
-url: https://hybridcal.com
+url: https://pfaffelh.github.io/hybridcal
+
+# Base path for absolute links. Set to "/hybridcal" when deployed under
+# https://pfaffelh.github.io/hybridcal/ (project page); set to "" when
+# served from the root of a custom domain (e.g. https://hybridcal.com).
+base_path: /hybridcal
 
 # External resources
 github_repo: https://github.com/pfaffelh/hybridcal

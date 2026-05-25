@@ -10,7 +10,7 @@
 <h2>{{ t.privacy.controller_heading }}</h2>
 <p>
   {{ t.privacy.controller_text }}
-  <a href="/{{ lang }}/impressum.html">→ {{ t.nav.imprint }}</a>
+  <a href="{{ site.base_path }}/{{ lang }}/impressum.html">→ {{ t.nav.imprint }}</a>
 </p>
 
 {% for section in t.privacy.sections %}

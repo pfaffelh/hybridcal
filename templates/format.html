@@ -30,7 +30,7 @@
 <ul>
 {% for event in events %}
   <li>
-    <a href="/{{ lang }}/events/{{ event.slug }}.html"><strong>{{ event.name }}</strong></a><br>
+    <a href="{{ site.base_path }}/{{ lang }}/events/{{ event.slug }}.html"><strong>{{ event.name }}</strong></a><br>
     <small>
       {{ event.date_start|fmt_date }} · {{ event.location.city }}, {{ event.location.country }}
       {% if event.status == "tentative" %} · <mark>{{ t.index.status_tentative }}</mark>{% endif %}

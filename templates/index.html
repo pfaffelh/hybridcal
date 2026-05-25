@@ -79,7 +79,7 @@
     <template x-for="event in filtered" :key="event.slug">
       <article>
         <header style="margin-bottom: 0.5rem;">
-          <a :href="`/{{ lang }}/events/${event.slug}.html`">
+          <a :href="`{{ site.base_path }}/{{ lang }}/events/${event.slug}.html`">
             <strong x-text="event.name"></strong>
           </a>
           <br>
@@ -119,6 +119,7 @@
   window.LANG = {{ lang|tojson }};
   window.LOCALE = {{ t.meta.locale|tojson }};
   window.DEFAULT_REGIONS = {{ site.default_regions|tojson }};
+  window.BASE_PATH = {{ site.base_path|tojson }};
 </script>
-<script src="/static/app.js"></script>
+<script src="{{ site.base_path }}/static/app.js"></script>
 {% endblock %}

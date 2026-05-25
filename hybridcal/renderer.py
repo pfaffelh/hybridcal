@@ -133,17 +133,18 @@ def render_site(
                 )
             )
 
+    base = site.base_path or ""
     (out_dir / "index.html").write_text(
         f"""<!DOCTYPE html>
 <html lang="{default_lang}">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/{default_lang}/">
-  <link rel="canonical" href="/{default_lang}/">
+  <meta http-equiv="refresh" content="0; url={base}/{default_lang}/">
+  <link rel="canonical" href="{base}/{default_lang}/">
   <title>HybridCal</title>
 </head>
 <body>
-  <p><a href="/{default_lang}/">→ HybridCal</a></p>
+  <p><a href="{base}/{default_lang}/">→ HybridCal</a></p>
 </body>
 </html>
 """

@@ -10,13 +10,13 @@
 <h2>{{ t.about.listed_formats }}</h2>
 <ul>
 {% for fmt_id, fmt in formats.items() %}
-  <li><a href="/{{ lang }}/{{ fmt_id }}.html">{{ fmt.name }}</a></li>
+  <li><a href="{{ site.base_path }}/{{ lang }}/{{ fmt_id }}.html">{{ fmt.name }}</a></li>
 {% endfor %}
 </ul>
 
 <h2>{{ t.about.how_added }}</h2>
 <ol>
-  <li>{{ t.about.path_form }} <a href="/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
+  <li>{{ t.about.path_form }} <a href="{{ site.base_path }}/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
   <li>{{ t.about.path_issue }}</li>
   <li>{{ t.about.path_pr }}</li>
 </ol>
@@ -24,9 +24,9 @@
 <h2>{{ t.about.open_data }}</h2>
 <p>{{ t.about.open_data_intro }}</p>
 <ul>
-  <li><a href="/feed.ics">{{ t.about.open_data_ics }}</a></li>
-  <li><a href="/feed.rss">{{ t.about.open_data_rss }}</a></li>
-  <li><a href="/events.json">{{ t.about.open_data_json }}</a></li>
+  <li><a href="{{ site.base_path }}/feed.ics">{{ t.about.open_data_ics }}</a></li>
+  <li><a href="{{ site.base_path }}/feed.rss">{{ t.about.open_data_rss }}</a></li>
+  <li><a href="{{ site.base_path }}/events.json">{{ t.about.open_data_json }}</a></li>
 </ul>
 
 {% endblock %}

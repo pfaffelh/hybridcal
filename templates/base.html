@@ -6,12 +6,12 @@
   <title>{% block title %}HybridCal{% endblock %}</title>
   <meta name="description" content="{{ t.meta.description }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <link rel="stylesheet" href="/static/style.css">
-  <link rel="alternate" type="application/rss+xml" title="HybridCal RSS" href="/feed.rss">
-  <link rel="alternate" type="text/calendar" title="HybridCal ICS" href="/feed.ics">
-  <link rel="alternate" hreflang="de" href="/de{{ current_path }}">
-  <link rel="alternate" hreflang="en" href="/en{{ current_path }}">
-  <link rel="alternate" hreflang="x-default" href="/de{{ current_path }}">
+  <link rel="stylesheet" href="{{ site.base_path }}/static/style.css">
+  <link rel="alternate" type="application/rss+xml" title="HybridCal RSS" href="{{ site.base_path }}/feed.rss">
+  <link rel="alternate" type="text/calendar" title="HybridCal ICS" href="{{ site.base_path }}/feed.ics">
+  <link rel="alternate" hreflang="de" href="{{ site.base_path }}/de{{ current_path }}">
+  <link rel="alternate" hreflang="en" href="{{ site.base_path }}/en{{ current_path }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.base_path }}/de{{ current_path }}">
   {% block head_extra %}{% endblock %}
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
 </head>
@@ -19,15 +19,15 @@
   <header class="container">
     <nav>
       <ul>
-        <li><strong><a href="/{{ lang }}/" class="contrast">HybridCal</a></strong></li>
+        <li><strong><a href="{{ site.base_path }}/{{ lang }}/" class="contrast">HybridCal</a></strong></li>
       </ul>
       <ul>
-        <li><a href="/{{ lang }}/">{{ t.nav.calendar }}</a></li>
-        <li><a href="/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
-        <li><a href="/{{ lang }}/about.html">{{ t.nav.about }}</a></li>
+        <li><a href="{{ site.base_path }}/{{ lang }}/">{{ t.nav.calendar }}</a></li>
+        <li><a href="{{ site.base_path }}/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
+        <li><a href="{{ site.base_path }}/{{ lang }}/about.html">{{ t.nav.about }}</a></li>
         <li>
           {% set other_lang = 'en' if lang == 'de' else 'de' %}
-          <a href="/{{ other_lang }}{{ current_path }}" aria-label="Switch language" class="lang-switch">
+          <a href="{{ site.base_path }}/{{ other_lang }}{{ current_path }}" aria-label="Switch language" class="lang-switch">
             <span aria-current="true">{{ t.lang_switcher[lang] }}</span>
             <span class="lang-sep">|</span>
             <span class="lang-other">{{ t.lang_switcher[other_lang] }}</span>
@@ -45,11 +45,11 @@
     <hr>
     <small>
       {{ t.footer.tagline }}<br>
-      <a href="/{{ lang }}/impressum.html">{{ t.nav.imprint }}</a> ·
-      <a href="/{{ lang }}/privacy.html">{{ t.nav.privacy }}</a> ·
-      <a href="/feed.ics">ICS</a> ·
-      <a href="/feed.rss">RSS</a> ·
-      <a href="/events.json">JSON</a>
+      <a href="{{ site.base_path }}/{{ lang }}/impressum.html">{{ t.nav.imprint }}</a> ·
+      <a href="{{ site.base_path }}/{{ lang }}/privacy.html">{{ t.nav.privacy }}</a> ·
+      <a href="{{ site.base_path }}/feed.ics">ICS</a> ·
+      <a href="{{ site.base_path }}/feed.rss">RSS</a> ·
+      <a href="{{ site.base_path }}/events.json">JSON</a>
     </small>
   </footer>
 </body>

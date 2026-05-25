@@ -6,6 +6,7 @@ function eventFilter() {
     lang: window.LANG || 'de',
     locale: window.LOCALE || 'de-DE',
     defaultRegions: window.DEFAULT_REGIONS || ['dach'],
+    basePath: window.BASE_PATH || '',
     filters: {
       formats: [],
       regions: [],
@@ -19,7 +20,7 @@ function eventFilter() {
 
     async init() {
       this.filters.regions = [...this.defaultRegions];
-      const response = await fetch('/events.json');
+      const response = await fetch(this.basePath + '/events.json');
       this.events = await response.json();
       this.loadFromURL();
       this._initialized = true;
@@ -161,7 +162,7 @@ function eventFilter() {
         <strong>${this.escape(e.name)}</strong><br>
         <small>${dateRange}<br>${this.escape(e.location.city)}, ${e.location.country}${this.escape(venue)}</small><br>
         <small style="color:#666">${this.escape(formatName)}</small><br>
-        <a href="/${this.lang}/events/${e.slug}.html">${linkLabel}</a>
+        <a href="${this.basePath}/${this.lang}/events/${e.slug}.html">${linkLabel}</a>
       `;
     },
 
