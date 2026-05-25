@@ -97,13 +97,13 @@ impressum:
   intro: >
     Information per § 5 TMG and party responsible for the content per
     § 18 (2) MStV (German Interstate Media Treaty).
-  name: "[FIRST NAME LAST NAME]"
-  street: "[STREET + NUMBER]"
-  city: "[POSTCODE + CITY]"
+  name: "Peter Pfaffelhuber"
+  street: "Schwarzwaldstr. 47c"
+  city: "79189 Bad Krozingen"
   country: Germany
   contact_heading: Contact
   email_label: Email
-  email: "[your@email.de]"
+  email: "pfaffelh@gmail.com"
   sections:
     - heading: Liability for content
       body: >

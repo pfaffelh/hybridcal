@@ -99,13 +99,13 @@ impressum:
   intro: >
     Angaben gemäß § 5 TMG und Verantwortlicher für den Inhalt
     gemäß § 18 Abs. 2 MStV.
-  name: "[VORNAME NACHNAME]"
-  street: "[STRASSE HAUSNUMMER]"
-  city: "[PLZ ORT]"
+  name: "Peter Pfaffelhuber"
+  street: "Schwarzwaldstr. 47c"
+  city: "79189 Bad Krozingen"
   country: Deutschland
   contact_heading: Kontakt
   email_label: E-Mail
-  email: "[deine@email.de]"
+  email: "pfaffelh@gmail.com"
   sections:
     - heading: Haftung für Inhalte
       body: >
