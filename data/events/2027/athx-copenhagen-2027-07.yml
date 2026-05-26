@@ -1,0 +1,22 @@
+slug: athx-copenhagen-2027-07
+name: "ATHX Copenhagen"
+format: athx
+date_start: 2027-07-31
+date_end: 2027-08-01
+location:
+  city: "Copenhagen"
+  country: "DK"
+  venue: "Bella Centre"
+  timezone: Europe/Copenhagen
+  lat: 55.686724
+  lon: 12.570072
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

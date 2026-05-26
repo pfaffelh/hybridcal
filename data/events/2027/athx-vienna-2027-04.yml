@@ -1,0 +1,22 @@
+slug: athx-vienna-2027-04
+name: "ATHX Vienna"
+format: athx
+date_start: 2027-04-24
+date_end: 2027-04-24
+location:
+  city: "Vienna"
+  country: "AT"
+  venue: "Marx Halle"
+  timezone: Europe/Vienna
+  lat: 48.187369
+  lon: 16.405356
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

@@ -1,0 +1,22 @@
+slug: athx-lisbon-2027-06
+name: "ATHX Lisbon"
+format: athx
+date_start: 2027-06-26
+date_end: 2027-06-27
+location:
+  city: "Lisbon"
+  country: "PT"
+  venue: "Feira Internacional de Lisboa"
+  timezone: Europe/Lisbon
+  lat: 38.771766
+  lon: -9.094957
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

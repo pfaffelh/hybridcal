@@ -1,0 +1,22 @@
+slug: athx-turin-2027-09
+name: "ATHX Turin"
+format: athx
+date_start: 2027-09-25
+date_end: 2027-09-25
+location:
+  city: "Turin"
+  country: "IT"
+  venue: "Lingotto Fiere"
+  timezone: Europe/Rome
+  lat: 45.028977
+  lon: 7.663842
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

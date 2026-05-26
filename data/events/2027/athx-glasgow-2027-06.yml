@@ -1,0 +1,22 @@
+slug: athx-glasgow-2027-06
+name: "ATHX Glasgow"
+format: athx
+date_start: 2027-06-05
+date_end: 2027-06-06
+location:
+  city: "Glasgow"
+  country: "GB"
+  venue: "Scottish Event Campus"
+  timezone: Europe/London
+  lat: 55.860718
+  lon: -4.288015
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

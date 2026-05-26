@@ -1,0 +1,22 @@
+slug: athx-london-2027-01
+name: "ATHX London"
+format: athx
+date_start: 2027-01-23
+date_end: 2027-01-24
+location:
+  city: "London"
+  country: "GB"
+  venue: "ExCeL London"
+  timezone: Europe/London
+  lat: 51.508113
+  lon: 0.029707
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

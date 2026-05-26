@@ -1,0 +1,22 @@
+slug: athx-frankfurt-2027-05
+name: "ATHX Frankfurt"
+format: athx
+date_start: 2027-05-22
+date_end: 2027-05-22
+location:
+  city: "Frankfurt"
+  country: "DE"
+  venue: "Messe Frankfurt"
+  timezone: Europe/Berlin
+  lat: 50.111578
+  lon: 8.644450
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

@@ -1,0 +1,22 @@
+slug: athx-berlin-2027-08
+name: "ATHX Berlin"
+format: athx
+date_start: 2027-08-14
+date_end: 2027-08-15
+location:
+  city: "Berlin"
+  country: "DE"
+  venue: "Arena Halle Berlin"
+  timezone: Europe/Berlin
+  lat: 52.496940
+  lon: 13.454053
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

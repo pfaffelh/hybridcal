@@ -1,0 +1,15 @@
+slug: turf-games-gold-coast-engine-2026-09
+name: "Gold Coast Engine"
+format: turf-games
+date_start: 2026-09-11
+date_end: 2026-09-11
+location:
+  city: "Gold Coast"
+  country: "AU"
+  timezone: Australia/Brisbane
+  lat: -28.002373
+  lon: 153.414599
+url: "https://turfgames.com/pages/events"
+status: confirmed
+source: scraped
+categories: []

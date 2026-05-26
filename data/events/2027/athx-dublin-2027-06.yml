@@ -1,0 +1,22 @@
+slug: athx-dublin-2027-06
+name: "ATHX Dublin"
+format: athx
+date_start: 2027-06-12
+date_end: 2027-06-13
+location:
+  city: "Dublin"
+  country: "IE"
+  venue: "RDS Dublin"
+  timezone: Europe/Dublin
+  lat: 53.326654
+  lon: -6.228863
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

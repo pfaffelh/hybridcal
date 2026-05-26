@@ -1,0 +1,15 @@
+slug: turf-games-gold-coast-summer-festival-2026-09
+name: "Gold Coast Summer Festival 2026"
+format: turf-games
+date_start: 2026-09-12
+date_end: 2026-09-13
+location:
+  city: "Gold Coast"
+  country: "AU"
+  timezone: Australia/Brisbane
+  lat: -28.002373
+  lon: 153.414599
+url: "https://turfgames.com/pages/events"
+status: confirmed
+source: scraped
+categories: []

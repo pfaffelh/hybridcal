@@ -1,0 +1,22 @@
+slug: athx-liverpool-2027-10
+name: "ATHX Liverpool"
+format: athx
+date_start: 2027-10-09
+date_end: 2027-10-10
+location:
+  city: "Liverpool"
+  country: "GB"
+  venue: "ACC Liverpool"
+  timezone: Europe/London
+  lat: 53.397029
+  lon: -2.991271
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

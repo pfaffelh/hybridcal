@@ -1,0 +1,15 @@
+slug: turf-games-sydney-fittest-2026-06
+name: "Sydney Fittest in the City"
+format: turf-games
+date_start: 2026-06-06
+date_end: 2026-06-07
+location:
+  city: "Sydney"
+  country: "AU"
+  timezone: Australia/Sydney
+  lat: -33.869844
+  lon: 151.208285
+url: "https://turfgames.com/pages/events"
+status: confirmed
+source: scraped
+categories: []

@@ -1,0 +1,22 @@
+slug: athx-hamburg-2027-08
+name: "ATHX Hamburg"
+format: athx
+date_start: 2027-08-29
+date_end: 2027-08-29
+location:
+  city: "Hamburg"
+  country: "DE"
+  venue: "Hamburg Messe"
+  timezone: Europe/Berlin
+  lat: 53.560156
+  lon: 9.978443
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

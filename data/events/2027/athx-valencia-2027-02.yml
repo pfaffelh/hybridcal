@@ -1,0 +1,22 @@
+slug: athx-valencia-2027-02
+name: "ATHX Valencia"
+format: athx
+date_start: 2027-02-20
+date_end: 2027-02-20
+location:
+  city: "Valencia"
+  country: "ES"
+  venue: "Feria Valencia"
+  timezone: Europe/Madrid
+  lat: 39.503836
+  lon: -0.428408
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

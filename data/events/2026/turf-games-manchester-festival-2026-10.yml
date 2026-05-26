@@ -1,0 +1,15 @@
+slug: turf-games-manchester-festival-2026-10
+name: "Manchester Festival"
+format: turf-games
+date_start: 2026-10-10
+date_end: 2026-10-10
+location:
+  city: "Manchester"
+  country: "GB"
+  timezone: Europe/London
+  lat: 53.442462
+  lon: -2.232455
+url: "https://turfgames.com/pages/events"
+status: confirmed
+source: scraped
+categories: []

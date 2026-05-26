@@ -1,0 +1,22 @@
+slug: athx-birmingham-2027-08
+name: "ATHX Birmingham"
+format: athx
+date_start: 2027-08-20
+date_end: 2027-08-22
+location:
+  city: "Birmingham"
+  country: "GB"
+  venue: "NEC Birmingham"
+  timezone: Europe/London
+  lat: 52.453843
+  lon: -1.717550
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

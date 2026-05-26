@@ -1,0 +1,22 @@
+slug: athx-amsterdam-2027-10
+name: "ATHX Amsterdam"
+format: athx
+date_start: 2027-10-02
+date_end: 2027-10-03
+location:
+  city: "Amsterdam"
+  country: "NL"
+  venue: "RAI Amsterdam"
+  timezone: Europe/Amsterdam
+  lat: 52.341226
+  lon: 4.889907
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

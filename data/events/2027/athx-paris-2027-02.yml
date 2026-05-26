@@ -1,0 +1,22 @@
+slug: athx-paris-2027-02
+name: "ATHX Paris"
+format: athx
+date_start: 2027-02-13
+date_end: 2027-02-14
+location:
+  city: "Paris"
+  country: "FR"
+  venue: "Paris Event Centre"
+  timezone: Europe/Paris
+  lat: 48.853495
+  lon: 2.348391
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

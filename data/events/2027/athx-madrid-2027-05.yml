@@ -1,0 +1,22 @@
+slug: athx-madrid-2027-05
+name: "ATHX Madrid"
+format: athx
+date_start: 2027-05-08
+date_end: 2027-05-09
+location:
+  city: "Madrid"
+  country: "ES"
+  venue: "IFEMA Madrid"
+  timezone: Europe/Madrid
+  lat: 40.466371
+  lon: -3.617214
+url: "https://athxgames.com/events"
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

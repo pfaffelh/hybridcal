@@ -1,3 +1,8 @@
+ACC Liverpool, Liverpool, GB:
+  display_name: ACC Liverpool, Kings Parade, Waterfront, Toxteth, Liverpool, Liverpool
+    City Region, England, L3 4FP, United Kingdom
+  lat: 53.397029
+  lon: -2.991271
 Abu Dhabi, AE:
   display_name: Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates
   lat: 24.453835
@@ -10,6 +15,11 @@ Anaheim, US:
   display_name: Anaheim, Orange County, California, United States
   lat: 33.834752
   lon: -117.911732
+Arena Halle Berlin, Berlin, DE:
+  display_name: Arena Halle, 4, Eichenstraße, Kungerkiez, Alt-Treptow, Treptow-Köpenick,
+    Berlin, 12435, Germany
+  lat: 52.49694
+  lon: 13.454053
 Bangkok, TH:
   display_name: Bangkok, Thailand
   lat: 13.752494
@@ -31,6 +41,10 @@ Berlin, DE:
   display_name: Berlin, Germany
   lat: 52.517389
   lon: 13.395131
+Bilbao Exhibition Centre, Bilbao, ES:
+  display_name: Bilbao, Biscay, Autonomous Community of the Basque Country, Spain
+  lat: 43.263002
+  lon: -2.935004
 Birmingham, GB:
   display_name: Birmingham, West Midlands, England, United Kingdom
   lat: 52.494899
@@ -43,6 +57,11 @@ Boston, US:
   display_name: Boston, Suffolk County, Massachusetts, United States
   lat: 42.358834
   lon: -71.05783
+Brussels Expo, Brussels, BE:
+  display_name: Brussels Expo, Place de Belgique - Belgiëplein, Heysel - Heizel, Laeken
+    - Laken, Brussels, Brussels-Capital, 1020, Belgium
+  lat: 50.899874
+  lon: 4.337854
 Buenos Aires, AR:
   display_name: Buenos Aires, Comuna 1, Autonomous City of Buenos Aires, Argentina
   lat: -34.609558
@@ -99,6 +118,17 @@ Exhibition Centre Liverpool, Liverpool, GB:
     Liverpool City Region, England, L3 4FP, United Kingdom
   lat: 53.395287
   lon: -2.990237
+Feira Internacional de Lisboa, Lisbon, PT:
+  display_name: Feira Internacional de Lisboa, Rua do Bojador, Quinta das Laranjeiras,
+    Parque das Nações, Lisbon, 1998-010, Portugal
+  lat: 38.771766
+  lon: -9.094957
+Feria Valencia, Valencia, ES:
+  display_name: Fira València, Carrer de Santiago Calatrava (Arquitecte), Benimàmet,
+    Pobles de l'Oest, Valencia, Comarca de València, Valencia, Valencian Community,
+    46035, Spain
+  lat: 39.503836
+  lon: -0.428408
 Fira Barcelona, Barcelona, ES:
   display_name: Fira Barcelona, Avinguda de la Reina Maria Cristina, Montjuïc, el
     Poble-sec, Sants-Montjuïc, Barcelona, Barcelonès, Barcelona, Catalonia, 08015,
@@ -121,10 +151,19 @@ Ghent, BE:
   display_name: Ghent, Gent, East Flanders, Flanders, Belgium
   lat: 51.053829
   lon: 3.725012
+Gold Coast, AU:
+  display_name: Gold Coast, Queensland, 4217, Australia
+  lat: -28.002373
+  lon: 153.414599
 Guangzhou, CN:
   display_name: Guangzhou City, Guangdong, China
   lat: 23.128845
   lon: 113.259006
+Hamburg Messe, Hamburg, DE:
+  display_name: Hamburg Messe, Marktstraße, Karolinenviertel, St. Pauli, Hamburg-Mitte,
+    Hamburg, 20357, Germany
+  lat: 53.560156
+  lon: 9.978443
 Hamburg, DE:
   display_name: Hamburg, Germany
   lat: 53.550172
@@ -142,6 +181,11 @@ Helsinki, FI:
   display_name: Helsinki, Helsinki sub-region, Uusimaa, Mainland Finland, Finland
   lat: 60.16662
   lon: 24.943541
+IFEMA Madrid, Madrid, ES:
+  display_name: Trade Fair Madrid, Glorieta de Edimburgo, Corralejos, Barajas, Madrid,
+    Community of Madrid, 29043, Spain
+  lat: 40.466371
+  lon: -3.617214
 Istanbul, TR:
   display_name: Istanbul, Fatih, Istanbul, Marmara Region, 34122, Turkey
   lat: 41.006381
@@ -173,6 +217,11 @@ Lee Valley Athletics Track, London, GB:
   display_name: Greater London, England, United Kingdom
   lat: 51.507446
   lon: -0.127765
+Lingotto Fiere, Turin, IT:
+  display_name: Lingotto Fiere, Sottopassaggio del Lingotto, Nizza Millefonti, Circoscrizione
+    8, Cavoretto, Turin, Piedmont, 10127, Italy
+  lat: 45.028977
+  lon: 7.663842
 Lisbon Exhibition and Congress Centre, Lisbon, PT:
   display_name: Lisbon, Portugal
   lat: 38.707751
@@ -190,12 +239,21 @@ Macclesfield Leisure Centre, Macclesfield, GB:
     Cheshire East, England, SK10 4AF, United Kingdom
   lat: 53.26789
   lon: -2.161933
+Manchester, GB:
+  display_name: Manchester, Greater Manchester, England, United Kingdom
+  lat: 53.442462
+  lon: -2.232455
 Marseille Chanot, Marseille, FR:
   display_name: Marseille Chanot - Palais des Congrès et des Expositions, Saint-Giniez,
     8th Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan
     France, 13008, France
   lat: 43.272845
   lon: 5.395677
+Marx Halle, Vienna, AT:
+  display_name: Marx Halle, 19, Karl-Farkas-Gasse, Neu Marx, Erdberg, Katastralgemeinde
+    Landstraße, Landstraße, Vienna, 1030, Austria
+  lat: 48.187369
+  lon: 16.405356
 Meadowbank Sports Centre, Edinburgh, GB:
   display_name: Meadowbank Sports Centre, London Road, Marionville, Meadowbank, Craigentinny/Meadowbank,
     City of Edinburgh, Scotland, EH7 6AE, United Kingdom
@@ -210,6 +268,16 @@ Messe Basel, Basel, CH:
     4005, Switzerland
   lat: 47.564314
   lon: 7.59972
+Messe Frankfurt, Frankfurt, DE:
+  display_name: Messe Frankfurt, Philipp-Reis-Straße, City West, Kuhwaldsiedlung,
+    Bockenheim, Innenstadt 2, Frankfurt, Hesse, 60486, Germany
+  lat: 50.111578
+  lon: 8.64445
+Messe Stuttgart, Stuttgart, DE:
+  display_name: B&B HOTEL Stuttgart-Airport/Messe, 3, Zettachring, Fasanenhof, Fasanenhof-Ost,
+    Möhringen, Stuttgart, Baden-Württemberg, 70567, Germany
+  lat: 48.710066
+  lon: 9.169622
 Mexico City, MX:
   display_name: Mexico City, Mexico
   lat: 19.320772
@@ -249,6 +317,10 @@ Oslo, NO:
   display_name: Oslo, Norway
   lat: 59.91333
   lon: 10.73897
+Paris Event Centre, Paris, FR:
+  display_name: Paris, Ile-de-France, Metropolitan France, France
+  lat: 48.853495
+  lon: 2.348391
 Paris, FR:
   display_name: Paris, Ile-de-France, Metropolitan France, France
   lat: 48.853495
