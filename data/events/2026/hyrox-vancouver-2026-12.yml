@@ -1,0 +1,23 @@
+slug: hyrox-vancouver-2026-12
+name: "HYROX Vancouver"
+format: hyrox
+date_start: 2026-12-18
+date_end: 2026-12-20
+location:
+  city: "Vancouver"
+  country: CA
+  timezone: America/Vancouver
+  lat: 49.260872
+  lon: -123.113952
+url: "https://hyrox.com/event/vancouver/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

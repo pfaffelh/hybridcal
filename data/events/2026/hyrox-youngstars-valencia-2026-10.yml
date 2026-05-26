@@ -1,0 +1,15 @@
+slug: hyrox-youngstars-valencia-2026-10
+name: "HYROX Youngstars Valencia"
+format: hyrox
+date_start: 2026-10-17
+date_end: 2026-10-18
+location:
+  city: "Valencia"
+  country: ES
+  timezone: Europe/Madrid
+  lat: 39.469707
+  lon: -0.376335
+url: "https://hyrox.com/event/valencia/"
+status: confirmed
+source: scraped
+categories: []

@@ -1,0 +1,23 @@
+slug: hyrox-boston-2026-10
+name: "HWPO HYROX Boston"
+format: hyrox
+date_start: 2026-10-08
+date_end: 2026-10-11
+location:
+  city: "Boston"
+  country: US
+  timezone: America/New_York
+  lat: 42.358834
+  lon: -71.057830
+url: "https://hyrox.com/event/boston/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

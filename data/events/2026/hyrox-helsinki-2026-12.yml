@@ -1,0 +1,23 @@
+slug: hyrox-helsinki-2026-12
+name: "HYROX Helsinki"
+format: hyrox
+date_start: 2026-12-18
+date_end: 2026-12-20
+location:
+  city: "Helsinki"
+  country: FI
+  timezone: Europe/Helsinki
+  lat: 60.166620
+  lon: 24.943541
+url: "https://hyrox.com/event/helsinki/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

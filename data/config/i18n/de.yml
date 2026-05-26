@@ -23,6 +23,7 @@ index:
 event:
   format: Format
   location: Ort
+  date_tba: Termin offen (TBA)
   categories: Kategorien
   schedule: Zeitplan
   schedule_updated: Stand
@@ -50,9 +51,8 @@ about:
     Kein kommerzielles Angebot, keine Affiliate-Links, keine Tracker.
   listed_formats: Gelistete Formate
   how_added: Wie Events reinkommen
-  path_form: Submission-Formular — der einfachste Weg.
-  path_issue: GitHub Issue — für Korrekturen an bestehenden Events.
-  path_pr: Pull Request — für tech-affine Beitragende, die direkt YAML schreiben wollen.
+  how_added_text: "Neue Events einreichen oder Fehler an bestehenden Einträgen melden:"
+  how_added_link: Zum Formular →
   open_data: Offene Daten
   open_data_intro: "Alle Event-Daten stehen unter CC0 zur Verfügung:"
   open_data_ics: ICS-Kalender — zum Abonnieren in Apple Calendar, Google Calendar, etc.
@@ -92,14 +92,18 @@ submit:
   error_message: Die Submission konnte nicht gesendet werden. Bitte versuche es nochmal oder schreib eine Mail.
   error_retry: Nochmal versuchen
   correction_heading: Fehler in einem bestehenden Event melden
-  correction_intro: "Falsches Datum, falscher Ort, fehlende Kategorie? Per GitHub Issue:"
-  correction_button: Korrektur melden →
-  pr_heading: "Für Tech-Affine: Pull Request"
-  pr_intro: >
-    Direkt eine YAML-Datei im Repo anlegen.
-    Bei Submission läuft automatische Validierung — du siehst sofort, ob deine
-    Datei korrekt ist.
-  pr_button: Zum Repository →
+  correction_intro: "Falsches Datum, falscher Ort, fehlende Kategorie? Sag uns Bescheid:"
+  correction_field_event: Event (Name, URL oder Slug)
+  correction_field_event_placeholder: "z. B. HYROX Munich oder hyrox-munich-2026-11"
+  correction_field_issue: Was ist falsch?
+  correction_field_issue_placeholder: "z. B. Das Datum ist eigentlich der 21.11., nicht der 14.11."
+  correction_field_source: Quelle für die Korrektur (optional)
+  correction_field_source_placeholder: "Link zur Ankündigung, Newsletter-Datum, ..."
+  correction_field_email: Deine Email (optional)
+  correction_field_email_help: Nur für Rückfragen. Keine Newsletter, keine Weitergabe.
+  correction_button: Korrektur senden
+  correction_success_heading: Danke!
+  correction_success_message: Deine Korrektur ist angekommen. Wir prüfen sie und passen den Eintrag an.
 
 nav:
   calendar: Kalender

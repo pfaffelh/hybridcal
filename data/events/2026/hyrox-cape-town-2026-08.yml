@@ -1,0 +1,23 @@
+slug: hyrox-cape-town-2026-08
+name: "Virgin Active HYROX Cape Town"
+format: hyrox
+date_start: 2026-08-14
+date_end: 2026-08-15
+location:
+  city: "Cape Town"
+  country: ZA
+  timezone: Africa/Johannesburg
+  lat: -33.928830
+  lon: 18.417220
+url: "https://hyrox.com/event/cape-town/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

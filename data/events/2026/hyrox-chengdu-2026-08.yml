@@ -1,0 +1,23 @@
+slug: hyrox-chengdu-2026-08
+name: "HYROX Chengdu"
+format: hyrox
+date_start: 2026-08-01
+date_end: 2026-08-02
+location:
+  city: "Chengdu"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 30.659867
+  lon: 104.063315
+url: "https://hyrox.com/event/chengdu/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

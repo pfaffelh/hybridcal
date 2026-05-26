@@ -24,14 +24,15 @@ fieldset {
   margin-bottom: 0.5rem;
 }
 
-fieldset label {
+/* Filter UI: checkbox labels flow horizontally with gap. */
+.filter-ui fieldset label {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
   margin-right: 1rem;
 }
 
-fieldset label.facet-zero {
+.filter-ui fieldset label.facet-zero {
   opacity: 0.4;
 }
 
@@ -79,6 +80,23 @@ footer {
 .view-toggle button {
   flex: 0 1 auto;
   margin: 0;
+}
+
+/* Form submit area: spacing from consent + compact button.
+   Use the same flex pattern as .view-toggle so the button gets its
+   intrinsic width and isn't stretched by Pico's form flex column. */
+.form-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-actions button {
+  flex: 0 1 auto;
+  width: auto;
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 #map {

@@ -1,0 +1,19 @@
+slug: deadly-dozen-berlin-2026-07
+name: "Deadly Dozen GER: Berlin"
+format: deadly-dozen
+date_start: 2026-07-18
+date_end: 2026-07-18
+location:
+  city: Berlin
+  country: DE
+  venue: Sportpark Rosenstraße (Falkensee)
+  timezone: Europe/Berlin
+  lat: 52.517389
+  lon: 13.395131
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races/deadly-dozen-berlin-18-jul-26"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

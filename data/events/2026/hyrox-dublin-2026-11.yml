@@ -1,0 +1,23 @@
+slug: hyrox-dublin-2026-11
+name: "HYROX Dublin"
+format: hyrox
+date_start: 2026-11-11
+date_end: 2026-11-15
+location:
+  city: "Dublin"
+  country: IE
+  timezone: Europe/Dublin
+  lat: 53.349379
+  lon: -6.260559
+url: "https://hyrox.com/event/dublin/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

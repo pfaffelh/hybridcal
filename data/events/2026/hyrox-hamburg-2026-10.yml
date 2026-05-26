@@ -1,0 +1,23 @@
+slug: hyrox-hamburg-2026-10
+name: "Intersport HYROX Hamburg"
+format: hyrox
+date_start: 2026-10-28
+date_end: 2026-11-01
+location:
+  city: "Hamburg"
+  country: DE
+  timezone: Europe/Berlin
+  lat: 53.550172
+  lon: 10.001316
+url: "https://hyrox.com/event/hamburg/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

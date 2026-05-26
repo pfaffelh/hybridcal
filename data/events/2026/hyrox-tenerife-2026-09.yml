@@ -1,0 +1,23 @@
+slug: hyrox-tenerife-2026-09
+name: "HYROX Tenerife"
+format: hyrox
+date_start: 2026-09-04
+date_end: 2026-09-06
+location:
+  city: "Santa Cruz de Tenerife"
+  country: ES
+  timezone: Atlantic/Canary
+  lat: 28.467178
+  lon: -16.250784
+url: "https://hyrox.com/event/santa-cruz-de-tenerife/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

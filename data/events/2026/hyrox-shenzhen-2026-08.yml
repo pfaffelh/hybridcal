@@ -1,0 +1,23 @@
+slug: hyrox-shenzhen-2026-08
+name: "HYROX Shenzhen"
+format: hyrox
+date_start: 2026-08-15
+date_end: 2026-08-16
+location:
+  city: "Shenzhen"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 22.544574
+  lon: 114.054543
+url: "https://hyrox.com/event/shenzhen/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

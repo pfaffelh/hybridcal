@@ -1,0 +1,23 @@
+slug: hyrox-new-york-2026-05
+name: "NYU Langone Health HYROX New York"
+format: hyrox
+date_start: 2026-05-28
+date_end: 2026-06-07
+location:
+  city: "New York"
+  country: US
+  timezone: America/New_York
+  lat: 40.712728
+  lon: -74.006015
+url: "https://hyrox.com/event/new-york/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,15 @@
+slug: hyrox-youngstars-berlin-2026-05
+name: "HYROX Youngstars Berlin"
+format: hyrox
+date_start: 2026-05-30
+date_end: 2026-05-31
+location:
+  city: "Berlin"
+  country: DE
+  timezone: Europe/Berlin
+  lat: 52.517389
+  lon: 13.395131
+url: "https://hyrox.com/event/berlin/"
+status: confirmed
+source: scraped
+categories: []

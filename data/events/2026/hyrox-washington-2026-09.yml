@@ -1,0 +1,23 @@
+slug: hyrox-washington-2026-09
+name: "Amazfit HYROX Washington D.C."
+format: hyrox
+date_start: 2026-09-03
+date_end: 2026-09-07
+location:
+  city: "Washington D.C."
+  country: US
+  timezone: America/New_York
+  lat: 38.895098
+  lon: -77.036385
+url: "https://hyrox.com/event/washington-dc/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

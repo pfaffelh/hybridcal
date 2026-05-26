@@ -1,0 +1,23 @@
+slug: hyrox-istanbul-2026-08
+name: "HYROX Istanbul"
+format: hyrox
+date_start: 2026-08-01
+date_end: 2026-08-02
+location:
+  city: "Istanbul"
+  country: TR
+  timezone: Europe/Istanbul
+  lat: 41.006381
+  lon: 28.975872
+url: "https://hyrox.com/event/istanbul/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

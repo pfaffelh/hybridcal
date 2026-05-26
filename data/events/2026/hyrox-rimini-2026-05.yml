@@ -1,0 +1,23 @@
+slug: hyrox-rimini-2026-05
+name: "HYROX Rimini"
+format: hyrox
+date_start: 2026-05-28
+date_end: 2026-05-31
+location:
+  city: "Rimini"
+  country: IT
+  timezone: Europe/Rome
+  lat: 43.946543
+  lon: 12.630749
+url: "https://hyrox.com/event/rimini/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,7 +1,27 @@
+Abu Dhabi, AE:
+  display_name: Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates
+  lat: 24.453835
+  lon: 54.377401
+Acapulco, MX:
+  display_name: Acapulco, Acapulco de Juárez, Guerrero, 39300, Mexico
+  lat: 16.86805
+  lon: -99.894018
+Anaheim, US:
+  display_name: Anaheim, Orange County, California, United States
+  lat: 33.834752
+  lon: -117.911732
+Bangkok, TH:
+  display_name: Bangkok, Thailand
+  lat: 13.752494
+  lon: 100.493509
 Barcelona, ES:
   display_name: Barcelona, Barcelonès, Barcelona, Catalonia, Spain
   lat: 41.38258
   lon: 2.177073
+Beijing, CN:
+  display_name: Beijing, China
+  lat: 39.905714
+  lon: 116.391297
 Bella Centre, Copenhagen, DK:
   display_name: Copenhagen, Copenhagen Municipality, Capital Region of Denmark, 1357,
     Denmark
@@ -19,16 +39,52 @@ Bordeaux, FR:
   display_name: Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, France
   lat: 44.841225
   lon: -0.580036
+Boston, US:
+  display_name: Boston, Suffolk County, Massachusetts, United States
+  lat: 42.358834
+  lon: -71.05783
+Buenos Aires, AR:
+  display_name: Buenos Aires, Comuna 1, Autonomous City of Buenos Aires, Argentina
+  lat: -34.609558
+  lon: -58.38879
+Cape Town, ZA:
+  display_name: Cape Town, City of Cape Town, Western Cape, 8001, South Africa
+  lat: -33.92883
+  lon: 18.41722
 Cardiff Metropolitan University, Cardiff, GB:
   display_name: Cardiff Metropolitan University, Western Avenue, Danescourt, Llandaff,
     Cardiff, Wales, CF5 2YB, United Kingdom
   lat: 51.49609
   lon: -3.212835
+Chengdu, CN:
+  display_name: Chengdu, Sichuan, China
+  lat: 30.659867
+  lon: 104.063315
+Chiba, JP:
+  display_name: Chiba Prefecture, Japan
+  lat: 35.549399
+  lon: 140.26473
 Crystal Palace National Sports Centre, London, GB:
   display_name: Crystal Palace National Sports Centre, Geological strata bridge, Crystal
     Palace, London Borough of Bromley, Greater London, England, SE20 8DN, United Kingdom
   lat: 51.420403
   lon: -0.069075
+Dallas, US:
+  display_name: Dallas, Dallas County, Texas, United States
+  lat: 32.776272
+  lon: -96.796856
+Delhi, IN:
+  display_name: New Delhi, Delhi, India
+  lat: 28.613895
+  lon: 77.209006
+Denver, US:
+  display_name: Denver, Colorado, United States
+  lat: 39.739236
+  lon: -104.984862
+Dublin, IE:
+  display_name: Dublin, County Dublin, Leinster, Ireland
+  lat: 53.349379
+  lon: -6.260559
 Düsseldorf, DE:
   display_name: Dusseldorf, North Rhine-Westphalia, Germany
   lat: 51.225402
@@ -53,6 +109,10 @@ Frankfurt, DE:
   display_name: Frankfurt, Hesse, Germany
   lat: 50.110644
   lon: 8.682092
+Gdańsk, PL:
+  display_name: Gdańsk, Pomeranian Voivodeship, Poland
+  lat: 54.428803
+  lon: 18.798327
 Geneva, CH:
   display_name: Geneva, Switzerland
   lat: 46.201756
@@ -61,6 +121,40 @@ Ghent, BE:
   display_name: Ghent, Gent, East Flanders, Flanders, Belgium
   lat: 51.053829
   lon: 3.725012
+Guangzhou, CN:
+  display_name: Guangzhou City, Guangdong, China
+  lat: 23.128845
+  lon: 113.259006
+Hamburg, DE:
+  display_name: Hamburg, Germany
+  lat: 53.550172
+  lon: 10.001316
+Hangzhou, CN:
+  display_name: Hangzhou City, Zhejiang, China
+  lat: 30.248963
+  lon: 120.205234
+Hans-Bretz-Stadion (Ettlingen), Karlsruhe, DE:
+  display_name: Hans-Bretz-Stadion, Dieselstraße, Ettlingen, Landkreis Karlsruhe,
+    Baden-Württemberg, 76275, Germany
+  lat: 48.937898
+  lon: 8.393579
+Helsinki, FI:
+  display_name: Helsinki, Helsinki sub-region, Uusimaa, Mainland Finland, Finland
+  lat: 60.16662
+  lon: 24.943541
+Istanbul, TR:
+  display_name: Istanbul, Fatih, Istanbul, Marmara Region, 34122, Turkey
+  lat: 41.006381
+  lon: 28.975872
+Jakarta, ID:
+  display_name: Special Capital Region of Jakarta, Java, Indonesia
+  lat: -6.175405
+  lon: 106.827168
+Johannesburg, ZA:
+  display_name: Johannesburg, City of Johannesburg Metropolitan Municipality, Gauteng,
+    2001, South Africa
+  lat: -26.205
+  lon: 28.049722
 K2 Crawley, Crawley, GB:
   display_name: K2 Leisure Centre, Tilgate Drive, Southgate, Crawley, West Sussex,
     England, RH11 9BQ, United Kingdom
@@ -70,6 +164,11 @@ Karlsruhe, DE:
   display_name: Karlsruhe, Baden-Württemberg, Germany
   lat: 49.00687
   lon: 8.40342
+LAC Degerloch, Stuttgart, DE:
+  display_name: Calisthenics Park des LAC Degerloch, Bopseräcker, Hoffeld, Degerloch,
+    Stuttgart, Baden-Württemberg, 70597, Germany
+  lat: 48.733784
+  lon: 9.173719
 Lee Valley Athletics Track, London, GB:
   display_name: Greater London, England, United Kingdom
   lat: 51.507446
@@ -78,6 +177,10 @@ Lisbon Exhibition and Congress Centre, Lisbon, PT:
   display_name: Lisbon, Portugal
   lat: 38.707751
   lon: -9.136592
+London, GB:
+  display_name: Greater London, England, United Kingdom
+  lat: 51.507446
+  lon: -0.127765
 Maastricht, NL:
   display_name: Maastricht, Limburg, Netherlands
   lat: 50.851244
@@ -98,20 +201,40 @@ Meadowbank Sports Centre, Edinburgh, GB:
     City of Edinburgh, Scotland, EH7 6AE, United Kingdom
   lat: 55.956692
   lon: -3.157525
+Melbourne, AU:
+  display_name: Melbourne, Victoria, Australia
+  lat: -37.814245
+  lon: 144.963173
 Messe Basel, Basel, CH:
   display_name: Messe Basel, Messeplatz, Messe, Rosental, Kleinbasel, Basel, Basel-City,
     4005, Switzerland
   lat: 47.564314
   lon: 7.59972
+Mexico City, MX:
+  display_name: Mexico City, Mexico
+  lat: 19.320772
+  lon: -99.151468
 Milan, IT:
   display_name: Milan, Rodano, Milan, Lombardy, Italy
   lat: 45.464194
   lon: 9.189635
+Mumbai, IN:
+  display_name: Mumbai, Mumbai Suburban District, Maharashtra, 400051, India
+  lat: 19.054999
+  lon: 72.869203
 NEC Birmingham, Birmingham, GB:
   display_name: National Exhibition Centre, Station Way, Bickenhill and Marston Green,
     Bickenhill, Birmingham, West Midlands, England, B40 1PA, United Kingdom
   lat: 52.453843
   lon: -1.71755
+Nashville, US:
+  display_name: Nashville, Davidson County, Middle Tennessee, Tennessee, United States
+  lat: 36.162277
+  lon: -86.774298
+New York, US:
+  display_name: New York, United States
+  lat: 40.712728
+  lon: -74.006015
 Nice, FR:
   display_name: Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France,
     France
@@ -122,10 +245,22 @@ OLMA Messen, St. Gallen, CH:
     Gallen, St. Gallen, 9007, Switzerland
   lat: 47.43166
   lon: 9.381563
+Oslo, NO:
+  display_name: Oslo, Norway
+  lat: 59.91333
+  lon: 10.73897
 Paris, FR:
   display_name: Paris, Ile-de-France, Metropolitan France, France
   lat: 48.853495
   lon: 2.348391
+Perth, AU:
+  display_name: Perth, Western Australia, 6000, Australia
+  lat: -31.955897
+  lon: 115.860578
+Poznań, PL:
+  display_name: Poznań, Poznań County, Greater Poland Voivodeship, Poland
+  lat: 52.400663
+  lon: 16.919733
 RAI Amsterdam, Amsterdam, NL:
   display_name: RAI Amsterdam, 24, Europaplein, Zuidas, Zuid, Amsterdam, North Holland,
     Netherlands, 1078 GZ, Netherlands
@@ -136,15 +271,79 @@ RDS Dublin, Dublin, IE:
     E ED, Dublin, County Dublin, Leinster, D04 AK83, Ireland
   lat: 53.326654
   lon: -6.228863
+Riga, LV:
+  display_name: Riga, Latvia
+  lat: 56.949398
+  lon: 24.105185
+Rimini, IT:
+  display_name: Rimini, Emilia-Romagna, Italy
+  lat: 43.946543
+  lon: 12.630749
+Rio de Janeiro, BR:
+  display_name: Rio de Janeiro, Southeast Region, Brazil
+  lat: -22.911014
+  lon: -43.209373
 Rome, IT:
   display_name: Rome, Roma Capitale, Lazio, Italy
   lat: 41.89332
   lon: 12.482932
+Salt Lake City, US:
+  display_name: Salt Lake City, Salt Lake County, Utah, United States
+  lat: 40.75962
+  lon: -111.886797
+Santa Cruz de Tenerife, ES:
+  display_name: Santa Cruz de Tenerife, Canary Islands, Spain
+  lat: 28.467178
+  lon: -16.250784
+Sanya, CN:
+  display_name: Sanya City, Hainan, China
+  lat: 18.253466
+  lon: 109.503439
 Scottish Event Campus, Glasgow, GB:
   display_name: Scottish Event Campus, Finnieston, Glasgow, Glasgow City, Scotland,
     G3 8YW, United Kingdom
   lat: 55.860718
   lon: -4.288015
+Seoul, KR:
+  display_name: Seoul, South Korea
+  lat: 37.566679
+  lon: 126.978291
+Shanghai, CN:
+  display_name: Shanghai, China
+  lat: 31.231271
+  lon: 121.470015
+Shenzhen, CN:
+  display_name: Shenzhen, Guangdong, China
+  lat: 22.544574
+  lon: 114.054543
+Singapore, SG:
+  display_name: Singapore
+  lat: 1.289918
+  lon: 103.851907
+Sportpark Rosenstraße (Falkensee), Berlin, DE:
+  display_name: Berlin, Germany
+  lat: 52.517389
+  lon: 13.395131
+Stockholm, SE:
+  display_name: Stockholm, Stockholm Municipality, Stockholm County, 111 29, Sweden
+  lat: 59.325117
+  lon: 18.071093
+Sydney, AU:
+  display_name: Sydney, New South Wales, Australia
+  lat: -33.869844
+  lon: 151.208285
+São Paulo, BR:
+  display_name: São Paulo, Southeast Region, Brazil
+  lat: -23.550651
+  lon: -46.633382
+Tampa, US:
+  display_name: Tampa, Hillsborough County, Florida, United States
+  lat: 27.944985
+  lon: -82.458311
+Toronto, CA:
+  display_name: Toronto, Golden Horseshoe, Ontario, Canada
+  lat: 43.653482
+  lon: -79.383935
 Utrecht, NL:
   display_name: Utrecht, Netherlands
   lat: 52.090701
@@ -153,7 +352,15 @@ Valencia, ES:
   display_name: Valencia, Comarca de València, Valencia, Valencian Community, Spain
   lat: 39.469707
   lon: -0.376335
+Vancouver, CA:
+  display_name: Vancouver, Metro Vancouver Regional District, British Columbia, Canada
+  lat: 49.260872
+  lon: -123.113952
 Vienna, AT:
   display_name: Vienna, Austria
   lat: 48.208354
   lon: 16.372504
+Washington D.C., US:
+  display_name: Washington, District of Columbia, United States
+  lat: 38.895098
+  lon: -77.036385

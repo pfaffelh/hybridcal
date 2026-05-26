@@ -1,0 +1,23 @@
+slug: hyrox-denver-2026-11
+name: "HYROX Denver"
+format: hyrox
+date_start: 2026-11-12
+date_end: 2026-11-15
+location:
+  city: "Denver"
+  country: US
+  timezone: America/Denver
+  lat: 39.739236
+  lon: -104.984862
+url: "https://hyrox.com/event/denver/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

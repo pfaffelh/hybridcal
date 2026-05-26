@@ -1,0 +1,23 @@
+slug: hyrox-abu-dhabi-2026-tba
+name: HYROX Abu Dhabi
+format: hyrox
+# date_start/date_end intentionally omitted — TBA on hyrox.com as of 2026-05-26
+location:
+  city: Abu Dhabi
+  country: AE
+  timezone: Asia/Dubai
+  lat: 24.453835
+  lon: 54.377401
+url: "https://hyrox.com/event/abu-dhabi/"
+status: tentative
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed
+notes: Datum laut hyroxdach.com noch nicht angekündigt ("Date coming soon!").

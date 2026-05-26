@@ -1,0 +1,23 @@
+slug: hyrox-toronto-2026-10
+name: "GoodLife HYROX Toronto"
+format: hyrox
+date_start: 2026-10-01
+date_end: 2026-10-04
+location:
+  city: "Toronto"
+  country: CA
+  timezone: America/Toronto
+  lat: 43.653482
+  lon: -79.383935
+url: "https://hyrox.com/event/toronto/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

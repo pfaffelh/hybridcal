@@ -1,0 +1,23 @@
+slug: hyrox-mexico-city-2026-10
+name: "HYROX Mexico City"
+format: hyrox
+date_start: 2026-10-30
+date_end: 2026-11-01
+location:
+  city: "Mexico City"
+  country: MX
+  timezone: America/Mexico_City
+  lat: 19.320772
+  lon: -99.151468
+url: "https://hyrox.com/event/mexico-city/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

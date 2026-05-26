@@ -1,0 +1,23 @@
+slug: hyrox-delhi-2026-07
+name: "Masters' Union HYROX Delhi"
+format: hyrox
+date_start: 2026-07-24
+date_end: 2026-07-26
+location:
+  city: "Delhi"
+  country: IN
+  timezone: Asia/Kolkata
+  lat: 28.613895
+  lon: 77.209006
+url: "https://hyrox.com/event/delhi/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

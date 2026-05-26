@@ -1,0 +1,19 @@
+slug: deadly-dozen-karlsruhe-2026-04
+name: "Deadly Dozen GER: Karlsruhe"
+format: deadly-dozen
+date_start: 2026-04-25
+date_end: 2026-04-25
+location:
+  city: Karlsruhe
+  country: DE
+  venue: Hans-Bretz-Stadion (Ettlingen)
+  timezone: Europe/Berlin
+  lat: 48.937898
+  lon: 8.393579
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races/deadly-dozen-karlsruhe-25april-2t6cz-a427h"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

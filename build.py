@@ -2,6 +2,7 @@
 """Build the HybridCal static site."""
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 from datetime import datetime, date
@@ -51,6 +52,10 @@ def last_data_update_date() -> date | None:
 def main() -> int:
     print("Loading data...")
     site = load_site(DATA)
+    if "BASE_PATH" in os.environ:
+        # Local dev override: BASE_PATH= python build.py serves cleanly from /
+        site = site.model_copy(update={"base_path": os.environ["BASE_PATH"]})
+        print(f"  base_path overridden via env: {site.base_path!r}")
     regions = load_regions(DATA)
     formats = load_formats(DATA)
     categories = load_categories(DATA)

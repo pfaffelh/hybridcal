@@ -13,7 +13,10 @@ def load_events(data_dir: Path) -> list[Event]:
             events.append(Event(**data))
         except Exception as e:
             raise ValueError(f"Failed to load {path}: {e}") from e
-    return sorted(events, key=lambda e: e.date_start)
+    # Sort by date; TBA events (date_start is None) go to the end.
+    from datetime import date as _date
+    _FAR_FUTURE = _date(9999, 1, 1)
+    return sorted(events, key=lambda e: (e.date_start is None, e.date_start or _FAR_FUTURE))
 
 
 def load_formats(data_dir: Path) -> dict[str, Format]:

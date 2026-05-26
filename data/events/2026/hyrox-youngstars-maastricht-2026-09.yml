@@ -1,0 +1,15 @@
+slug: hyrox-youngstars-maastricht-2026-09
+name: "HYROX Youngstars Maastricht"
+format: hyrox
+date_start: 2026-09-19
+date_end: 2026-09-20
+location:
+  city: "Maastricht"
+  country: NL
+  timezone: Europe/Amsterdam
+  lat: 50.851244
+  lon: 5.690977
+url: "https://hyrox.com/event/maastricht/"
+status: confirmed
+source: scraped
+categories: []

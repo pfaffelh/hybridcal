@@ -1,0 +1,23 @@
+slug: hyrox-johannesburg-2026-11
+name: "Virgin Active HYROX Johannesburg"
+format: hyrox
+date_start: 2026-11-28
+date_end: 2026-11-29
+location:
+  city: "Johannesburg"
+  country: ZA
+  timezone: Africa/Johannesburg
+  lat: -26.205000
+  lon: 28.049722
+url: "https://hyrox.com/event/johannesburg/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

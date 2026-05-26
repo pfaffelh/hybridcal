@@ -1,0 +1,23 @@
+slug: hyrox-seoul-2026-11
+name: "AirAsia HYROX Seoul"
+format: hyrox
+date_start: 2026-11-14
+date_end: 2026-11-15
+location:
+  city: "Seoul"
+  country: KR
+  timezone: Asia/Seoul
+  lat: 37.566679
+  lon: 126.978291
+url: "https://hyrox.com/event/seoul/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

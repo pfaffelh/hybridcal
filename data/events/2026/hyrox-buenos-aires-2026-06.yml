@@ -1,0 +1,23 @@
+slug: hyrox-buenos-aires-2026-06
+name: "HYROX Buenos Aires"
+format: hyrox
+date_start: 2026-06-13
+date_end: 2026-06-13
+location:
+  city: "Buenos Aires"
+  country: AR
+  timezone: America/Argentina/Buenos_Aires
+  lat: -34.609558
+  lon: -58.388790
+url: "https://hyrox.com/event/buenos-aires/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

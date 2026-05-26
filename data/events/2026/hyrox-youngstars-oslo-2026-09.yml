@@ -1,0 +1,15 @@
+slug: hyrox-youngstars-oslo-2026-09
+name: "HYROX Youngstars Oslo"
+format: hyrox
+date_start: 2026-09-26
+date_end: 2026-09-27
+location:
+  city: "Oslo"
+  country: "NO"
+  timezone: Europe/Oslo
+  lat: 59.913330
+  lon: 10.738970
+url: "https://hyrox.com/event/oslo/"
+status: confirmed
+source: scraped
+categories: []

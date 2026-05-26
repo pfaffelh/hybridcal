@@ -1,0 +1,23 @@
+slug: hyrox-beijing-2026-09
+name: "HYROX Beijing"
+format: hyrox
+date_start: 2026-09-12
+date_end: 2026-09-13
+location:
+  city: "Beijing"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 39.905714
+  lon: 116.391297
+url: "https://hyrox.com/event/beijing/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,23 @@
+slug: hyrox-gdansk-2026-10
+name: "HYROX Gdańsk"
+format: hyrox
+date_start: 2026-10-10
+date_end: 2026-10-11
+location:
+  city: "Gdańsk"
+  country: PL
+  timezone: Europe/Warsaw
+  lat: 54.428803
+  lon: 18.798327
+url: "https://hyrox.com/event/gdańsk/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

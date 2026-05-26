@@ -1,0 +1,23 @@
+slug: hyrox-chiba-2026-08
+name: "AirAsia HYROX Chiba"
+format: hyrox
+date_start: 2026-08-06
+date_end: 2026-08-09
+location:
+  city: "Chiba"
+  country: JP
+  timezone: Asia/Tokyo
+  lat: 35.549399
+  lon: 140.264730
+url: "https://hyrox.com/event/chiba/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

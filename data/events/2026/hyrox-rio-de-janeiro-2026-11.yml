@@ -1,0 +1,23 @@
+slug: hyrox-rio-de-janeiro-2026-11
+name: "HYROX Rio de Janeiro"
+format: hyrox
+date_start: 2026-11-21
+date_end: 2026-11-21
+location:
+  city: "Rio de Janeiro"
+  country: BR
+  timezone: America/Sao_Paulo
+  lat: -22.911014
+  lon: -43.209373
+url: "https://hyrox.com/event/rio-de-janeiro/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

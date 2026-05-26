@@ -23,6 +23,7 @@ index:
 event:
   format: Format
   location: Location
+  date_tba: Date TBA
   categories: Categories
   schedule: Schedule
   schedule_updated: As of
@@ -50,9 +51,8 @@ about:
     product. No affiliate links, no trackers.
   listed_formats: Listed formats
   how_added: How events get added
-  path_form: Submission form — the easiest way.
-  path_issue: GitHub Issue — for corrections to existing events.
-  path_pr: Pull Request — for tech-savvy contributors who want to write YAML directly.
+  how_added_text: "To suggest a new event or report an error in an existing entry:"
+  how_added_link: To the form →
   open_data: Open data
   open_data_intro: "All event data is available under CC0:"
   open_data_ics: ICS calendar — subscribe in Apple Calendar, Google Calendar, etc.
@@ -92,13 +92,18 @@ submit:
   error_message: The submission could not be sent. Please try again or contact us via email.
   error_retry: Try again
   correction_heading: Report an error in an existing event
-  correction_intro: "Wrong date, wrong location, missing category? Via GitHub Issue:"
-  correction_button: Report correction →
-  pr_heading: "For tech-savvy: Pull Request"
-  pr_intro: >
-    Add a YAML file directly to the repo. Automatic validation runs on submit
-    — you'll see immediately if your file is valid.
-  pr_button: Go to repository →
+  correction_intro: "Wrong date, wrong location, missing category? Let us know:"
+  correction_field_event: Event (name, URL or slug)
+  correction_field_event_placeholder: "e.g. HYROX Munich or hyrox-munich-2026-11"
+  correction_field_issue: What's wrong?
+  correction_field_issue_placeholder: "e.g. The date is actually 21 Nov, not 14 Nov."
+  correction_field_source: Source for the correction (optional)
+  correction_field_source_placeholder: "Link to announcement, newsletter date, ..."
+  correction_field_email: Your email (optional)
+  correction_field_email_help: Only for follow-up questions. No newsletter, no sharing.
+  correction_button: Send correction
+  correction_success_heading: Thanks!
+  correction_success_message: Your correction has been received. We'll review and update the entry.
 
 nav:
   calendar: Calendar

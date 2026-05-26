@@ -1,0 +1,23 @@
+slug: hyrox-bangkok-2026-08
+name: "BYD HYROX Bangkok"
+format: hyrox
+date_start: 2026-08-13
+date_end: 2026-08-16
+location:
+  city: "Bangkok"
+  country: TH
+  timezone: Asia/Bangkok
+  lat: 13.752494
+  lon: 100.493509
+url: "https://hyrox.com/event/bangkok/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

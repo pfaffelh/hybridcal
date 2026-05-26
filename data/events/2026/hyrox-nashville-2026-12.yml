@@ -1,0 +1,23 @@
+slug: hyrox-nashville-2026-12
+name: "HYROX Nashville"
+format: hyrox
+date_start: 2026-12-10
+date_end: 2026-12-13
+location:
+  city: "Nashville"
+  country: US
+  timezone: America/Chicago
+  lat: 36.162277
+  lon: -86.774298
+url: "https://hyrox.com/event/nashville/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -31,8 +31,24 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python build.py
-# Output in dist/, mit z.B. python -m http.server -d dist anschauen
+python -m http.server -d dist 8000
+# → http://localhost:8000/de/
 ```
+
+### Lokale Vorschau ohne base_path-Mismatch
+
+Im Produktions-Build steht in `site.yml` `base_path: /hybridcal` (GitHub Pages
+serviert unter `pfaffelh.github.io/hybridcal/`). Lokal liefert
+`http.server` aber von `/` aus — alle Links wären kaputt. Lösung: beim Build
+`BASE_PATH` als leere Umgebungsvariable setzen:
+
+```bash
+BASE_PATH= python build.py
+python -m http.server -d dist 8000
+# → http://localhost:8000/  funktioniert mit allen Links
+```
+
+CI bleibt davon unberührt (Env-Var dort nicht gesetzt → `site.yml` greift).
 
 ## Build & Deploy
 

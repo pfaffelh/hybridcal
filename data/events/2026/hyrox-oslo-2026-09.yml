@@ -1,0 +1,23 @@
+slug: hyrox-oslo-2026-09
+name: "HYROX Oslo"
+format: hyrox
+date_start: 2026-09-25
+date_end: 2026-09-27
+location:
+  city: "Oslo"
+  country: "NO"
+  timezone: Europe/Oslo
+  lat: 59.913330
+  lon: 10.738970
+url: "https://hyrox.com/event/oslo/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

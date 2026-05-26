@@ -1,0 +1,23 @@
+slug: hyrox-dallas-2026-11
+name: "HYROX Dallas"
+format: hyrox
+date_start: 2026-11-18
+date_end: 2026-11-22
+location:
+  city: "Dallas"
+  country: US
+  timezone: America/Chicago
+  lat: 32.776272
+  lon: -96.796856
+url: "https://hyrox.com/event/dallas/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

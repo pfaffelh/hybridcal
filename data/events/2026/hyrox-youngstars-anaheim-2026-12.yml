@@ -1,0 +1,15 @@
+slug: hyrox-youngstars-anaheim-2026-12
+name: "HYROX Youngstars Anaheim"
+format: hyrox
+date_start: 2026-12-05
+date_end: 2026-12-06
+location:
+  city: "Anaheim"
+  country: US
+  timezone: America/Los_Angeles
+  lat: 33.834752
+  lon: -117.911732
+url: "https://hyrox.com/event/anaheim/"
+status: confirmed
+source: scraped
+categories: []

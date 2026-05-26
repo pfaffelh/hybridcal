@@ -1,0 +1,23 @@
+slug: hyrox-hangzhou-2026-07
+name: "TORRAS HYROX Hangzhou"
+format: hyrox
+date_start: 2026-07-04
+date_end: 2026-07-05
+location:
+  city: "Hangzhou"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 30.248963
+  lon: 120.205234
+url: "https://hyrox.com/event/hangzhou/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

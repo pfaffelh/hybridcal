@@ -1,0 +1,23 @@
+slug: hyrox-poznan-2026-11
+name: "HYROX Poznań"
+format: hyrox
+date_start: 2026-11-20
+date_end: 2026-11-22
+location:
+  city: "Poznań"
+  country: PL
+  timezone: Europe/Warsaw
+  lat: 52.400663
+  lon: 16.919733
+url: "https://hyrox.com/event/poznań/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

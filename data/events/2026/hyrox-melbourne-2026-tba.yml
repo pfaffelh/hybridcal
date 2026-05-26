@@ -1,0 +1,22 @@
+slug: hyrox-melbourne-2026-tba
+name: HYROX Melbourne
+format: hyrox
+location:
+  city: Melbourne
+  country: AU
+  timezone: Australia/Melbourne
+  lat: -37.814245
+  lon: 144.963173
+url: "https://hyrox.com/event/melbourne/"
+status: tentative
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed
+notes: Datum laut hyroxdach.com noch nicht angekündigt.

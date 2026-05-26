@@ -7,6 +7,7 @@ function eventFilter() {
     locale: window.LOCALE || 'de-DE',
     defaultRegions: window.DEFAULT_REGIONS || ['dach'],
     basePath: window.BASE_PATH || '',
+    tbaLabel: window.DATE_TBA_LABEL || 'TBA',
     filters: {
       formats: [],
       regions: [],
@@ -68,7 +69,8 @@ function eventFilter() {
       const showPast = overrides.showPast ?? this.filters.showPast;
       const search = (overrides.search ?? this.search).toLowerCase().trim();
 
-      if (!showPast && e.date_end < today) return false;
+      // TBA events (date_end null) are never "past" — always visible.
+      if (!showPast && e.date_end && e.date_end < today) return false;
       if (formats.length > 0 && !formats.includes(e.format)) return false;
       if (regions.length > 0 && !regions.includes(e.region)) return false;
       if (search) {
@@ -101,6 +103,7 @@ function eventFilter() {
     },
 
     formatDate(iso) {
+      if (!iso) return this.tbaLabel;
       const d = new Date(iso);
       return d.toLocaleDateString(this.locale, {
         weekday: 'short',
@@ -182,9 +185,14 @@ function eventFilter() {
     popupHtml(e) {
       const formatName = this.formats[e.format]?.name || e.format;
       const venue = e.location.venue ? ` · ${e.location.venue}` : '';
-      const dateRange = e.date_start === e.date_end
-        ? this.formatDate(e.date_start)
-        : `${this.formatDate(e.date_start)} – ${this.formatDate(e.date_end)}`;
+      let dateRange;
+      if (!e.date_start) {
+        dateRange = this.tbaLabel;
+      } else if (e.date_start === e.date_end) {
+        dateRange = this.formatDate(e.date_start);
+      } else {
+        dateRange = `${this.formatDate(e.date_start)} – ${this.formatDate(e.date_end)}`;
+      }
       const linkLabel = 'Details →';
       return `
         <strong>${this.escape(e.name)}</strong><br>

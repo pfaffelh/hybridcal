@@ -1,0 +1,23 @@
+slug: hyrox-riga-2026-05
+name: "LEMON GYM HYROX Riga"
+format: hyrox
+date_start: 2026-05-30
+date_end: 2026-05-31
+location:
+  city: "Riga"
+  country: LV
+  timezone: Europe/Riga
+  lat: 56.949398
+  lon: 24.105185
+url: "https://hyrox.com/event/riga/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

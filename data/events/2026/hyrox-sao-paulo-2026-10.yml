@@ -1,0 +1,23 @@
+slug: hyrox-sao-paulo-2026-10
+name: "HYROX São Paulo"
+format: hyrox
+date_start: 2026-10-17
+date_end: 2026-10-17
+location:
+  city: "São Paulo"
+  country: BR
+  timezone: America/Sao_Paulo
+  lat: -23.550651
+  lon: -46.633382
+url: "https://hyrox.com/event/são-paulo/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

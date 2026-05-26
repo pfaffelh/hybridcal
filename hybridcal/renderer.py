@@ -157,8 +157,8 @@ def render_site(
             "slug": e.slug,
             "name": e.name,
             "format": e.format,
-            "date_start": e.date_start.isoformat(),
-            "date_end": e.date_end.isoformat(),
+            "date_start": e.date_start.isoformat() if e.date_start else None,
+            "date_end": e.date_end.isoformat() if e.date_end else None,
             "location": {
                 "city": e.location.city,
                 "country": e.location.country,

@@ -1,0 +1,23 @@
+slug: hyrox-perth-2026-08
+name: "AirAsia HYROX Perth"
+format: hyrox
+date_start: 2026-08-21
+date_end: 2026-08-23
+location:
+  city: "Perth"
+  country: AU
+  timezone: Australia/Perth
+  lat: -31.955897
+  lon: 115.860578
+url: "https://hyrox.com/event/perth/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -8,7 +8,7 @@
 <hgroup>
   <h1>{{ event.name }}</h1>
   <p>
-    {{ event.date_start|fmt_date }}{% if event.date_end != event.date_start %} – {{ event.date_end|fmt_date }}{% endif %}
+    {% if event.date_start %}{{ event.date_start|fmt_date }}{% if event.date_end != event.date_start %} – {{ event.date_end|fmt_date }}{% endif %}{% else %}{{ t.event.date_tba }}{% endif %}
     · {{ event.location.city }}, {{ event.location.country }}
   </p>
 </hgroup>

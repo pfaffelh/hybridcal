@@ -1,0 +1,23 @@
+slug: hyrox-singapore-2026-11
+name: "AIA HYROX Singapore"
+format: hyrox
+date_start: 2026-11-27
+date_end: 2026-11-29
+location:
+  city: "Singapore"
+  country: SG
+  timezone: Asia/Singapore
+  lat: 1.289918
+  lon: 103.851907
+url: "https://hyrox.com/event/singapore/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

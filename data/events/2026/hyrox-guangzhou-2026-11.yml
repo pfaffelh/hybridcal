@@ -1,0 +1,23 @@
+slug: hyrox-guangzhou-2026-11
+name: "HYROX Guangzhou"
+format: hyrox
+date_start: 2026-11-21
+date_end: 2026-11-22
+location:
+  city: "Guangzhou"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 23.128845
+  lon: 113.259006
+url: "https://hyrox.com/event/guangzhou/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,23 @@
+slug: hyrox-shanghai-2026-10
+name: "HYROX Shanghai"
+format: hyrox
+date_start: 2026-10-31
+date_end: 2026-11-01
+location:
+  city: "Shanghai"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 31.231271
+  lon: 121.470015
+url: "https://hyrox.com/event/shanghai/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

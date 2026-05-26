@@ -1,0 +1,19 @@
+slug: deadly-dozen-stuttgart-2026-06
+name: "Deadly Dozen GER: Stuttgart"
+format: deadly-dozen
+date_start: 2026-06-13
+date_end: 2026-06-13
+location:
+  city: Stuttgart
+  country: DE
+  venue: LAC Degerloch
+  timezone: Europe/Berlin
+  lat: 48.733784
+  lon: 9.173719
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races/deadly-dozen-stuttgart-13-june-25"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

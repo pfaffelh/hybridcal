@@ -20,7 +20,7 @@
   <article>
     <input type="search" x-model="search" placeholder="{{ t.index.search_placeholder }}">
 
-    <details>
+    <details class="filter-ui">
       <summary>
         {{ t.index.filter }}
         <span x-show="activeFilterCount > 0" x-text="`(${activeFilterCount} {{ t.index.filter_active }})`"></span>
@@ -120,6 +120,7 @@
   window.LOCALE = {{ t.meta.locale|tojson }};
   window.DEFAULT_REGIONS = {{ site.default_regions|tojson }};
   window.BASE_PATH = {{ site.base_path|tojson }};
+  window.DATE_TBA_LABEL = {{ t.event.date_tba|tojson }};
 </script>
 <script src="{{ site.base_path }}/static/app.js"></script>
 {% endblock %}

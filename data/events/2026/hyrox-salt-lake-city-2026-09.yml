@@ -1,0 +1,23 @@
+slug: hyrox-salt-lake-city-2026-09
+name: "InBody HYROX Salt Lake City"
+format: hyrox
+date_start: 2026-09-18
+date_end: 2026-09-20
+location:
+  city: "Salt Lake City"
+  country: US
+  timezone: America/Denver
+  lat: 40.759620
+  lon: -111.886797
+url: "https://hyrox.com/event/salt-lake-city/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

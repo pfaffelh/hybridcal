@@ -1,6 +1,6 @@
 from datetime import date
 from typing import Literal
-from pydantic import BaseModel, Field, field_validator, ValidationInfo
+from pydantic import BaseModel, Field, field_validator, model_validator, ValidationInfo
 import zoneinfo
 
 EventStatus = Literal["confirmed", "tentative", "cancelled"]
@@ -35,8 +35,10 @@ class Event(BaseModel):
     slug: str = Field(..., pattern=r"^[a-z0-9-]+$")
     name: str
     format: str
-    date_start: date
-    date_end: date
+    # Both null = TBA (date not yet announced). If only one is provided,
+    # the other is filled to match (single-day event convenience).
+    date_start: date | None = None
+    date_end: date | None = None
     location: Location
     url: str
     status: EventStatus = "confirmed"
@@ -47,13 +49,21 @@ class Event(BaseModel):
     schedule: list[ScheduleEntry] = Field(default_factory=list)
     notes: str | None = None
 
-    @field_validator("date_end")
-    @classmethod
-    def end_after_start(cls, v: date, info: ValidationInfo) -> date:
-        start = info.data.get("date_start")
-        if start and v < start:
+    @model_validator(mode="after")
+    def normalize_dates(self):
+        # If exactly one date is set, mirror it into the other.
+        if self.date_start is None and self.date_end is not None:
+            self.date_start = self.date_end
+        elif self.date_end is None and self.date_start is not None:
+            self.date_end = self.date_start
+        # If both are set, ensure end >= start.
+        if self.date_start and self.date_end and self.date_end < self.date_start:
             raise ValueError("date_end must be >= date_start")
-        return v
+        return self
+
+    @property
+    def is_tba(self) -> bool:
+        return self.date_start is None
 
 
 class Format(BaseModel):

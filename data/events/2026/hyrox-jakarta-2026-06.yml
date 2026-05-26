@@ -1,0 +1,23 @@
+slug: hyrox-jakarta-2026-06
+name: "AirAsia HYROX Jakarta"
+format: hyrox
+date_start: 2026-06-27
+date_end: 2026-06-28
+location:
+  city: "Jakarta"
+  country: ID
+  timezone: Asia/Jakarta
+  lat: -6.175405
+  lon: 106.827168
+url: "https://hyrox.com/event/jakarta/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

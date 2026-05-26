@@ -1,0 +1,23 @@
+slug: hyrox-sanya-2026-12
+name: "HYROX Sanya"
+format: hyrox
+date_start: 2026-12-05
+date_end: 2026-12-06
+location:
+  city: "Sanya"
+  country: CN
+  timezone: Asia/Shanghai
+  lat: 18.253466
+  lon: 109.503439
+url: "https://hyrox.com/event/sanya/"
+status: confirmed
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

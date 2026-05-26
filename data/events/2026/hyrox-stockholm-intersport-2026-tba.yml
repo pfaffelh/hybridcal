@@ -1,0 +1,23 @@
+slug: hyrox-stockholm-intersport-2026-tba
+name: Intersport HYROX Stockholm
+format: hyrox
+# TBA — separate event from the PUMA HYROX World Championships Stockholm in June
+location:
+  city: Stockholm
+  country: SE
+  timezone: Europe/Stockholm
+  lat: 59.325117
+  lon: 18.071093
+url: "https://hyrox.com/event/stockholm/"
+status: tentative
+source: scraped
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed
+notes: Datum laut hyroxdach.com noch nicht angekündigt.
