@@ -1,10 +1,124 @@
 from pathlib import Path
+from datetime import date
 import json
 import shutil
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from .models import Event, Format, Category, Site, Region
+
+
+def _event_description(event: Event, format_name: str, format_type: str, lang: str) -> str:
+    """One-line text for <meta name=description>. Plain text, no HTML."""
+    if lang == "de":
+        date_part = (
+            f"am {event.date_start.strftime('%d.%m.%Y')}"
+            if event.date_start and event.date_start == event.date_end
+            else (
+                f"vom {event.date_start.strftime('%d.%m.%Y')} bis {event.date_end.strftime('%d.%m.%Y')}"
+                if event.date_start and event.date_end
+                else "Termin noch offen"
+            )
+        )
+        loc = f"{event.location.city}, {event.location.country}"
+        return f"{event.name} {date_part} in {loc}. {format_name} — {format_type}."
+    else:
+        date_part = (
+            f"on {event.date_start.strftime('%b %d, %Y')}"
+            if event.date_start and event.date_start == event.date_end
+            else (
+                f"from {event.date_start.strftime('%b %d')} to {event.date_end.strftime('%b %d, %Y')}"
+                if event.date_start and event.date_end
+                else "Date TBA"
+            )
+        )
+        loc = f"{event.location.city}, {event.location.country}"
+        return f"{event.name} {date_part} in {loc}. {format_name} — {format_type}."
+
+
+def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) -> dict | None:
+    """Schema.org Event markup. Returns None if event lacks required fields
+    (Google requires startDate)."""
+    if event.date_start is None:
+        return None
+    status_map = {
+        "confirmed": "https://schema.org/EventScheduled",
+        "tentative": "https://schema.org/EventScheduled",
+        "cancelled": "https://schema.org/EventCancelled",
+    }
+    data: dict = {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": event.name,
+        "startDate": event.date_start.isoformat(),
+        "eventStatus": status_map.get(event.status, "https://schema.org/EventScheduled"),
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "url": f"{site_url}/{lang}/events/{event.slug}.html",
+        "location": {
+            "@type": "Place",
+            "name": event.location.venue or event.location.city,
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": event.location.city,
+                "addressCountry": event.location.country,
+            },
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": event.url,
+            "availability": "https://schema.org/InStock",
+        },
+    }
+    if event.date_end:
+        data["endDate"] = event.date_end.isoformat()
+    if event.location.lat is not None and event.location.lon is not None:
+        data["location"]["geo"] = {
+            "@type": "GeoCoordinates",
+            "latitude": event.location.lat,
+            "longitude": event.location.lon,
+        }
+    if format_data.get("website"):
+        data["organizer"] = {
+            "@type": "Organization",
+            "name": format_data["name"],
+            "url": format_data["website"],
+        }
+    return data
+
+
+def _write_sitemap(out_dir: Path, site_url: str, languages: list[str],
+                   events: list[Event], formats: dict, today: date) -> None:
+    """Generate sitemap.xml with hreflang alternate links."""
+    paths_per_lang = ["/", "/about.html", "/submit.html", "/impressum.html", "/privacy.html"]
+    for fmt_id in formats:
+        paths_per_lang.append(f"/{fmt_id}.html")
+    for event in events:
+        paths_per_lang.append(f"/events/{event.slug}.html")
+
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ]
+    # One entry per language-page combination
+    for path in paths_per_lang:
+        for lang in languages:
+            lines.append("  <url>")
+            lines.append(f"    <loc>{site_url}/{lang}{path}</loc>")
+            lines.append(f"    <lastmod>{today.isoformat()}</lastmod>")
+            lines.append(f"    <changefreq>{'weekly' if path.startswith('/events/') else 'daily' if path == '/' else 'monthly'}</changefreq>")
+            lines.append(f"    <priority>{'0.9' if path.startswith('/events/') else '1.0' if path == '/' else '0.6'}</priority>")
+            for other in languages:
+                lines.append(f'    <xhtml:link rel="alternate" hreflang="{other}" href="{site_url}/{other}{path}"/>')
+            lines.append("  </url>")
+    lines.append("</urlset>")
+    (out_dir / "sitemap.xml").write_text("\n".join(lines))
+
+
+def _write_robots(out_dir: Path, site_url: str) -> None:
+    (out_dir / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {site_url}/sitemap.xml\n"
+    )
 
 
 def _fmt_date_for(lang: str):
@@ -104,13 +218,17 @@ def render_site(
         events_out.mkdir(exist_ok=True)
         for event in events:
             cats = categories_dict.get(event.format, [])
+            fmt_for_lang = formats_for_lang[event.format]
+            description = _event_description(event, fmt_for_lang["name"], fmt_for_lang["type"], lang)
             (events_out / f"{event.slug}.html").write_text(
                 env.get_template("event.html").render(
                     **common,
                     event=event,
-                    format=formats_for_lang[event.format],
+                    format=fmt_for_lang,
                     categories=cats,
                     current_path=f"/events/{event.slug}.html",
+                    event_description=description,
+                    event_json_ld=_event_json_ld(event, fmt_for_lang, site.url, lang),
                 )
             )
 
@@ -151,6 +269,10 @@ def render_site(
 </html>
 """
     )
+
+    today = date.today()
+    _write_sitemap(out_dir, site.url, languages, events, formats_dict, today)
+    _write_robots(out_dir, site.url)
 
     events_json = [
         {

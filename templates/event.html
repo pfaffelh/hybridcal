@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}{{ event.name }} — HybridCal{% endblock %}
+{% block description %}{{ event_description }}{% endblock %}
+{% block og_title %}{{ event.name }}{% endblock %}
+
+{% block head_extra %}
+{% if event_json_ld %}
+<script type="application/ld+json">{{ event_json_ld|tojson }}</script>
+{% endif %}
+{% endblock %}
 
 {% set label_key = 'label_' + lang %}
 
