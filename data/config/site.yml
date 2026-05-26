@@ -18,6 +18,12 @@ web3forms_key: f5de45a5-191e-48ab-821e-6638c51ff377
 
 # Defaults
 default_language: de
-# Pre-selected regions on first visit. Empty list = no region filter,
-# all events shown. Add region IDs (e.g. - dach) to filter by default.
-default_regions: []
+# Pre-selected regions on first visit. Default: all European regions
+# (DACH, British Isles, Western/Southern/Northern+Eastern Europe), so
+# the page lands with a Europe focus. The "world" catchall is opt-in.
+default_regions:
+  - dach
+  - british-isles
+  - western-europe
+  - southern-europe
+  - northern-eastern-europe
