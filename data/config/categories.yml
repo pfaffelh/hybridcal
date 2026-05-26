@@ -19,6 +19,9 @@ hyrox:
     label_de: Relay Mixed
   - id: adaptive
     label_de: Adaptive
+  - id: youngstars
+    label_de: HYROX Youngstars (Jugend 12-15)
+    label_en: HYROX Youngstars (youth 12-15)
 
 athx:
   - id: paired-rx-men
