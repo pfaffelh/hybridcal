@@ -1,0 +1,18 @@
+slug: deadly-dozen-vancouver-2026-07
+name: "Deadly Dozen CAN: Vancouver"
+format: deadly-dozen
+date_start: 2026-07-19
+date_end: 2026-07-19
+location:
+  city: "Vancouver"
+  country: "CA"
+  timezone: America/Vancouver
+  lat: 49.260872
+  lon: -123.113952
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

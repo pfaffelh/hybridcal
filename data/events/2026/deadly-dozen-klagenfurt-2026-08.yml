@@ -1,0 +1,18 @@
+slug: deadly-dozen-klagenfurt-2026-08
+name: "Deadly Dozen AUT: Klagenfurt"
+format: deadly-dozen
+date_start: 2026-08-22
+date_end: 2026-08-22
+location:
+  city: "Klagenfurt"
+  country: "AT"
+  timezone: Europe/Vienna
+  lat: 46.623943
+  lon: 14.307598
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

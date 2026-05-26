@@ -1,0 +1,18 @@
+slug: deadly-dozen-malaga-2026-10
+name: "Deadly Dozen ESP: Malaga"
+format: deadly-dozen
+date_start: 2026-10-31
+date_end: 2026-10-31
+location:
+  city: "Málaga"
+  country: "ES"
+  timezone: Europe/Madrid
+  lat: 36.764791
+  lon: -4.442201
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

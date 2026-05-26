@@ -1,0 +1,18 @@
+slug: deadly-dozen-rezzato-2026-06
+name: "Deadly Dozen ITA: Rezzato"
+format: deadly-dozen
+date_start: 2026-06-07
+date_end: 2026-06-07
+location:
+  city: "Rezzato"
+  country: "IT"
+  timezone: Europe/Rome
+  lat: 45.514240
+  lon: 10.316863
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

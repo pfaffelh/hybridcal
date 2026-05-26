@@ -1,0 +1,18 @@
+slug: deadly-dozen-mexico-city-2026-05
+name: "Deadly Dozen MEX: Mexico City"
+format: deadly-dozen
+date_start: 2026-05-31
+date_end: 2026-05-31
+location:
+  city: "Mexico City"
+  country: "MX"
+  timezone: America/Mexico_City
+  lat: 19.320772
+  lon: -99.151468
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

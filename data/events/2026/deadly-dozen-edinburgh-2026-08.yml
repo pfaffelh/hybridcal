@@ -1,0 +1,18 @@
+slug: deadly-dozen-edinburgh-2026-08
+name: "Deadly Dozen UK: Edinburgh (August)"
+format: deadly-dozen
+date_start: 2026-08-29
+date_end: 2026-08-29
+location:
+  city: "Edinburgh"
+  country: "GB"
+  timezone: Europe/London
+  lat: 55.953346
+  lon: -3.188375
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

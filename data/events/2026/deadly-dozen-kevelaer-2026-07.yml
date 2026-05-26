@@ -1,0 +1,18 @@
+slug: deadly-dozen-kevelaer-2026-07
+name: "Deadly Dozen GER: Kevelaer"
+format: deadly-dozen
+date_start: 2026-07-04
+date_end: 2026-07-04
+location:
+  city: "Kevelaer"
+  country: "DE"
+  timezone: Europe/Berlin
+  lat: 51.580300
+  lon: 6.245627
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

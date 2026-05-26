@@ -1,0 +1,18 @@
+slug: deadly-dozen-cambridge-2026-08
+name: "Deadly Dozen UK: Cambridge"
+format: deadly-dozen
+date_start: 2026-08-22
+date_end: 2026-08-22
+location:
+  city: "Cambridge"
+  country: "GB"
+  timezone: Europe/London
+  lat: 52.197585
+  lon: 0.139154
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

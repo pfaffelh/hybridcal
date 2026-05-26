@@ -1,0 +1,16 @@
+slug: deadly-sprint-sheffield-2026-10-24
+name: "Deadly Sprint UK: Sheffield (24 Oct)"
+format: deadly-dozen
+date_start: 2026-10-24
+date_end: 2026-10-24
+location:
+  city: "Sheffield"
+  country: "GB"
+  timezone: Europe/London
+  lat: 53.380663
+  lon: -1.470228
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-sprint

@@ -1,0 +1,18 @@
+slug: deadly-dozen-gold-coast-2026-07
+name: "Deadly Dozen AUS: Gold Coast"
+format: deadly-dozen
+date_start: 2026-07-25
+date_end: 2026-07-25
+location:
+  city: "Gold Coast"
+  country: "AU"
+  timezone: Australia/Brisbane
+  lat: -28.002373
+  lon: 153.414599
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

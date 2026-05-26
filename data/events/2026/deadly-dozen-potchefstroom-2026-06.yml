@@ -1,0 +1,18 @@
+slug: deadly-dozen-potchefstroom-2026-06
+name: "Deadly Dozen ZAF: Potchefstroom"
+format: deadly-dozen
+date_start: 2026-06-13
+date_end: 2026-06-13
+location:
+  city: "Potchefstroom"
+  country: "ZA"
+  timezone: Africa/Johannesburg
+  lat: -26.707778
+  lon: 27.095833
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

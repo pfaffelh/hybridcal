@@ -1,0 +1,18 @@
+slug: deadly-dozen-middlesbrough-2026-07
+name: "Deadly Dozen UK: Middlesbrough"
+format: deadly-dozen
+date_start: 2026-07-11
+date_end: 2026-07-11
+location:
+  city: "Middlesbrough"
+  country: "GB"
+  timezone: Europe/London
+  lat: 54.576042
+  lon: -1.234405
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

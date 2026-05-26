@@ -46,6 +46,21 @@ deadly-dozen:
     label_de: Deadly Run Singles
   - id: deadly-erg-singles
     label_de: Deadly ERG Singles
+  - id: deadly-sprint
+    label_de: Deadly Sprint (Indoor)
+    label_en: Deadly Sprint (indoor)
+  - id: deadly-youth
+    label_de: Deadly Youth (Jugend 12-15)
+    label_en: Deadly Youth (12-15)
+  - id: deadly-gross
+    label_de: Deadly Gross (12-Stunden-Ultra)
+    label_en: Deadly Gross (12-hour ultra)
+  - id: deadly-mile
+    label_de: Deadly Mile
+    label_en: Deadly Mile
+  - id: deadly-ruck
+    label_de: Deadly Ruck (mit Gewichtsweste)
+    label_en: Deadly Ruck (weighted vest)
 
 deka:
   - id: deka-fit-singles

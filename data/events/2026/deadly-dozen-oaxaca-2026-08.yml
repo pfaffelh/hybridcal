@@ -1,0 +1,18 @@
+slug: deadly-dozen-oaxaca-2026-08
+name: "Deadly Dozen MEX: Oaxaca"
+format: deadly-dozen
+date_start: 2026-08-09
+date_end: 2026-08-09
+location:
+  city: "Oaxaca"
+  country: "MX"
+  timezone: America/Mexico_City
+  lat: 17.000000
+  lon: -96.500000
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

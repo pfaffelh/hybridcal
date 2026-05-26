@@ -1,0 +1,18 @@
+slug: deadly-dozen-melbourne-2026-09
+name: "Deadly Dozen AUS: Melbourne"
+format: deadly-dozen
+date_start: 2026-09-19
+date_end: 2026-09-19
+location:
+  city: "Melbourne"
+  country: "AU"
+  timezone: Australia/Melbourne
+  lat: -37.814245
+  lon: 144.963173
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

@@ -1,0 +1,18 @@
+slug: deadly-dozen-davos-2026-08
+name: "Deadly Dozen CHE: Davos"
+format: deadly-dozen
+date_start: 2026-08-15
+date_end: 2026-08-15
+location:
+  city: "Davos"
+  country: "CH"
+  timezone: Europe/Zurich
+  lat: 46.796198
+  lon: 9.823689
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

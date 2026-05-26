@@ -1,0 +1,18 @@
+slug: deadly-dozen-garda-lake-2026-08
+name: "Deadly Dozen ITA: Garda Lake"
+format: deadly-dozen
+date_start: 2026-08-02
+date_end: 2026-08-02
+location:
+  city: "Garda Lake"
+  country: "IT"
+  timezone: Europe/Rome
+  lat: 45.662431
+  lon: 10.686157
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

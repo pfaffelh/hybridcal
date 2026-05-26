@@ -1,0 +1,18 @@
+slug: deadly-dozen-nuremberg-2026-08
+name: "Deadly Dozen GER: Nuremberg"
+format: deadly-dozen
+date_start: 2026-08-01
+date_end: 2026-08-01
+location:
+  city: "Nuremberg"
+  country: "DE"
+  timezone: Europe/Berlin
+  lat: 49.453872
+  lon: 11.077298
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

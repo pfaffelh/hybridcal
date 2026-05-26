@@ -1,0 +1,18 @@
+slug: deadly-dozen-macclesfield-2026-09
+name: "Deadly Dozen UK: Macclesfield (September)"
+format: deadly-dozen
+date_start: 2026-09-12
+date_end: 2026-09-12
+location:
+  city: "Macclesfield"
+  country: "GB"
+  timezone: Europe/London
+  lat: 53.260663
+  lon: -2.125516
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

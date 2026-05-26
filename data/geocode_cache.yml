@@ -15,11 +15,20 @@ Anaheim, US:
   display_name: Anaheim, Orange County, California, United States
   lat: 33.834752
   lon: -117.911732
+Antony, FR:
+  display_name: Antony, Hauts-de-Seine, Ile-de-France, Metropolitan France, 92160,
+    France
+  lat: 48.753613
+  lon: 2.295803
 Arena Halle Berlin, Berlin, DE:
   display_name: Arena Halle, 4, Eichenstraße, Kungerkiez, Alt-Treptow, Treptow-Köpenick,
     Berlin, 12435, Germany
   lat: 52.49694
   lon: 13.454053
+Aschaffenburg, DE:
+  display_name: Aschaffenburg, Bavaria, Germany
+  lat: 49.97067
+  lon: 9.138486
 Bangkok, TH:
   display_name: Bangkok, Thailand
   lat: 13.752494
@@ -49,6 +58,10 @@ Birmingham, GB:
   display_name: Birmingham, West Midlands, England, United Kingdom
   lat: 52.494899
   lon: -1.851844
+Bolton, GB:
+  display_name: Bolton, Greater Manchester, England, BL1 1RU, United Kingdom
+  lat: 53.578286
+  lon: -2.430037
 Bordeaux, FR:
   display_name: Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, France
   lat: 44.841225
@@ -57,6 +70,10 @@ Boston, US:
   display_name: Boston, Suffolk County, Massachusetts, United States
   lat: 42.358834
   lon: -71.05783
+Bottrop, DE:
+  display_name: Bottrop, North Rhine-Westphalia, Germany
+  lat: 51.521581
+  lon: 6.929204
 Brussels Expo, Brussels, BE:
   display_name: Brussels Expo, Place de Belgique - Belgiëplein, Heysel - Heizel, Laeken
     - Laken, Brussels, Brussels-Capital, 1020, Belgium
@@ -66,6 +83,11 @@ Buenos Aires, AR:
   display_name: Buenos Aires, Comuna 1, Autonomous City of Buenos Aires, Argentina
   lat: -34.609558
   lon: -58.38879
+Cambridge, GB:
+  display_name: Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, England,
+    United Kingdom
+  lat: 52.197585
+  lon: 0.139154
 Cape Town, ZA:
   display_name: Cape Town, City of Cape Town, Western Cape, 8001, South Africa
   lat: -33.92883
@@ -92,6 +114,10 @@ Dallas, US:
   display_name: Dallas, Dallas County, Texas, United States
   lat: 32.776272
   lon: -96.796856
+Davos, CH:
+  display_name: Davos, Prättigau/Davos, Grisons, Switzerland
+  lat: 46.796198
+  lon: 9.823689
 Delhi, IN:
   display_name: New Delhi, Delhi, India
   lat: 28.613895
@@ -108,6 +134,10 @@ Düsseldorf, DE:
   display_name: Dusseldorf, North Rhine-Westphalia, Germany
   lat: 51.225402
   lon: 6.776314
+Edinburgh, GB:
+  display_name: City of Edinburgh, Scotland, United Kingdom
+  lat: 55.953346
+  lon: -3.188375
 ExCeL London, London, GB:
   display_name: ExCeL, 1, Western Gateway, Custom House, Silvertown, London Borough
     of Newham, Greater London, England, E16 1XL, United Kingdom
@@ -139,6 +169,10 @@ Frankfurt, DE:
   display_name: Frankfurt, Hesse, Germany
   lat: 50.110644
   lon: 8.682092
+Garda Lake, IT:
+  display_name: Lake Garda, Brescia, Lombardy, Italy
+  lat: 45.662431
+  lon: 10.686157
 Gdańsk, PL:
   display_name: Gdańsk, Pomeranian Voivodeship, Poland
   lat: 54.428803
@@ -155,6 +189,11 @@ Gold Coast, AU:
   display_name: Gold Coast, Queensland, 4217, Australia
   lat: -28.002373
   lon: 153.414599
+Gqeberha, ZA:
+  display_name: Gqeberha, Nelson Mandela Bay Metropolitan Municipality, Eastern Cape,
+    6006, South Africa
+  lat: -33.96186
+  lon: 25.618673
 Guangzhou, CN:
   display_name: Guangzhou City, Guangdong, China
   lat: 23.128845
@@ -208,6 +247,14 @@ Karlsruhe, DE:
   display_name: Karlsruhe, Baden-Württemberg, Germany
   lat: 49.00687
   lon: 8.40342
+Kevelaer, DE:
+  display_name: Kevelaer, Kreis Kleve, North Rhine-Westphalia, Germany
+  lat: 51.5803
+  lon: 6.245627
+Klagenfurt, AT:
+  display_name: Klagenfurt, Carinthia, Austria
+  lat: 46.623943
+  lon: 14.307598
 LAC Degerloch, Stuttgart, DE:
   display_name: Calisthenics Park des LAC Degerloch, Bopseräcker, Hoffeld, Degerloch,
     Stuttgart, Baden-Württemberg, 70597, Germany
@@ -226,6 +273,10 @@ Lisbon Exhibition and Congress Centre, Lisbon, PT:
   display_name: Lisbon, Portugal
   lat: 38.707751
   lon: -9.136592
+Liverpool, GB:
+  display_name: Liverpool, Liverpool City Region, England, United Kingdom
+  lat: 53.393341
+  lon: -2.916639
 London, GB:
   display_name: Greater London, England, United Kingdom
   lat: 51.507446
@@ -239,10 +290,18 @@ Macclesfield Leisure Centre, Macclesfield, GB:
     Cheshire East, England, SK10 4AF, United Kingdom
   lat: 53.26789
   lon: -2.161933
+Macclesfield, GB:
+  display_name: Macclesfield, Cheshire East, England, United Kingdom
+  lat: 53.260663
+  lon: -2.125516
 Manchester, GB:
   display_name: Manchester, Greater Manchester, England, United Kingdom
   lat: 53.442462
   lon: -2.232455
+Marsa, MT:
+  display_name: Marsa, Southern Region, Malta
+  lat: 35.882892
+  lon: 14.49449
 Marseille Chanot, Marseille, FR:
   display_name: Marseille Chanot - Palais des Congrès et des Expositions, Saint-Giniez,
     8th Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan
@@ -282,14 +341,30 @@ Mexico City, MX:
   display_name: Mexico City, Mexico
   lat: 19.320772
   lon: -99.151468
+Middlesbrough, GB:
+  display_name: Middlesbrough, Tees Valley, England, United Kingdom
+  lat: 54.576042
+  lon: -1.234405
 Milan, IT:
   display_name: Milan, Rodano, Milan, Lombardy, Italy
   lat: 45.464194
   lon: 9.189635
+Monza, IT:
+  display_name: Monza and Brianza, Lombardy, Italy
+  lat: 45.639542
+  lon: 9.27883
 Mumbai, IN:
   display_name: Mumbai, Mumbai Suburban District, Maharashtra, 400051, India
   lat: 19.054999
   lon: 72.869203
+Munich, DE:
+  display_name: Munich, Bavaria, Germany
+  lat: 48.137108
+  lon: 11.575382
+Málaga, ES:
+  display_name: Málaga, Málaga-Costa del Sol, Malaga, Andalusia, Spain
+  lat: 36.764791
+  lon: -4.442201
 NEC Birmingham, Birmingham, GB:
   display_name: National Exhibition Centre, Station Way, Bickenhill and Marston Green,
     Bickenhill, Birmingham, West Midlands, England, B40 1PA, United Kingdom
@@ -303,16 +378,28 @@ New York, US:
   display_name: New York, United States
   lat: 40.712728
   lon: -74.006015
+Newcastle, AU:
+  display_name: Newcastle, Newcastle-Maitland, New South Wales, 2300, Australia
+  lat: -32.919295
+  lon: 151.779535
 Nice, FR:
   display_name: Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France,
     France
   lat: 43.700936
   lon: 7.268391
+Nuremberg, DE:
+  display_name: Nuremberg, Bavaria, Germany
+  lat: 49.453872
+  lon: 11.077298
 OLMA Messen, St. Gallen, CH:
   display_name: Olma Messen, St. Jakob-Strasse, St. Jakob, St. Gallen, Wahlkreis St.
     Gallen, St. Gallen, 9007, Switzerland
   lat: 47.43166
   lon: 9.381563
+Oaxaca, MX:
+  display_name: Oaxaca, Mexico
+  lat: 17.0
+  lon: -96.5
 Oslo, NO:
   display_name: Oslo, Norway
   lat: 59.91333
@@ -329,6 +416,11 @@ Perth, AU:
   display_name: Perth, Western Australia, 6000, Australia
   lat: -31.955897
   lon: 115.860578
+Potchefstroom, ZA:
+  display_name: Potchefstroom, Tlokwe Local Municipality, Dr Kenneth Kaunda District
+    Municipality, North West, 2520, South Africa
+  lat: -26.707778
+  lon: 27.095833
 Poznań, PL:
   display_name: Poznań, Poznań County, Greater Poland Voivodeship, Poland
   lat: 52.400663
@@ -343,6 +435,10 @@ RDS Dublin, Dublin, IE:
     E ED, Dublin, County Dublin, Leinster, D04 AK83, Ireland
   lat: 53.326654
   lon: -6.228863
+Rezzato, IT:
+  display_name: Rezzato, Brescia, Lombardy, 25086, Italy
+  lat: 45.51424
+  lon: 10.316863
 Riga, LV:
   display_name: Riga, Latvia
   lat: 56.949398
@@ -384,6 +480,10 @@ Shanghai, CN:
   display_name: Shanghai, China
   lat: 31.231271
   lon: 121.470015
+Sheffield, GB:
+  display_name: Sheffield, South Yorkshire, England, United Kingdom
+  lat: 53.380663
+  lon: -1.470228
 Shenzhen, CN:
   display_name: Shenzhen, Guangdong, China
   lat: 22.544574
@@ -400,6 +500,15 @@ Stockholm, SE:
   display_name: Stockholm, Stockholm Municipality, Stockholm County, 111 29, Sweden
   lat: 59.325117
   lon: 18.071093
+Stoke-on-Trent, GB:
+  display_name: Stoke-on-Trent, England, United Kingdom
+  lat: 53.016201
+  lon: -2.181261
+Strasbourg, FR:
+  display_name: Strasbourg, Bas-Rhin, European Collectivity of Alsace, Grand Est,
+    Metropolitan France, France
+  lat: 48.584614
+  lon: 7.750713
 Sydney, AU:
   display_name: Sydney, New South Wales, Australia
   lat: -33.869844

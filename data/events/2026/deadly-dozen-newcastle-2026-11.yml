@@ -1,0 +1,18 @@
+slug: deadly-dozen-newcastle-2026-11
+name: "Deadly Dozen AUS: Newcastle"
+format: deadly-dozen
+date_start: 2026-11-01
+date_end: 2026-11-01
+location:
+  city: "Newcastle"
+  country: "AU"
+  timezone: Australia/Sydney
+  lat: -32.919295
+  lon: 151.779535
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles

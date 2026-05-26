@@ -1,0 +1,18 @@
+slug: deadly-dozen-birmingham-2026-09
+name: "Deadly Dozen UK: Birmingham"
+format: deadly-dozen
+date_start: 2026-09-19
+date_end: 2026-09-19
+location:
+  city: "Birmingham"
+  country: "GB"
+  timezone: Europe/London
+  lat: 52.494899
+  lon: -1.851844
+url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+status: confirmed
+source: scraped
+categories:
+  - deadly-strong-singles
+  - deadly-strong-pairs
+  - deadly-run-singles
