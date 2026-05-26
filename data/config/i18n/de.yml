@@ -64,13 +64,34 @@ submit:
   intro: >
     Du kennst ein Hybrid-Sport-Event, das hier noch fehlt? Schick uns die Infos —
     wir tragen es ein. Vielen Dank!
-  form_heading: "Einfacher Weg: Formular"
-  form_intro: >
-    Über das Formular brauchst du keinen GitHub-Account. Wir sichten die
-    Submission und tragen das Event ein (~24-48h).
-  form_button: Event-Formular öffnen →
-  form_note: "(Tally-Link hier einsetzen, sobald Formular angelegt.)"
-  correction_heading: Fehler melden
+  form_section_required: Pflichtfelder
+  form_section_optional: Optional
+  field_event_name: Event-Name
+  field_format: Format
+  field_format_choose: Bitte wählen
+  field_date_start: Startdatum
+  field_date_end: Enddatum
+  field_city: Stadt
+  field_country: Land (ISO-Code, 2 Buchstaben)
+  field_url: Offizielle Event-URL
+  field_source: Quelle der Information
+  field_source_placeholder: "z. B. „Newsletter vom 12.08.“, „Eigene Teilnahme“, „Instagram-Post @hyrox“"
+  field_email: Deine Email
+  field_email_help: Wir kontaktieren dich nur bei Rückfragen zu deiner Submission. Keine Newsletter, keine Weitergabe.
+  field_venue: Venue
+  field_categories: Kategorien
+  field_categories_placeholder: "z. B. Singles Pro, Doubles Mixed, Relay Mixed"
+  field_is_organizer: Ich vertrete den Veranstalter
+  field_notes: Anmerkungen
+  field_consent_text: "Ich willige ein, dass meine Daten zur Bearbeitung der Submission verarbeitet werden."
+  button_submit: Event einreichen
+  button_submitting: Wird gesendet…
+  success_heading: Danke!
+  success_message: Deine Submission ist angekommen. Wir melden uns ggf. innerhalb von 48 h.
+  error_heading: Etwas ist schiefgelaufen
+  error_message: Die Submission konnte nicht gesendet werden. Bitte versuche es nochmal oder schreib eine Mail.
+  error_retry: Nochmal versuchen
+  correction_heading: Fehler in einem bestehenden Event melden
   correction_intro: "Falsches Datum, falscher Ort, fehlende Kategorie? Per GitHub Issue:"
   correction_button: Korrektur melden →
   pr_heading: "Für Tech-Affine: Pull Request"
@@ -184,18 +205,19 @@ privacy:
         CARTO Privacy: https://carto.com/privacy
     - heading: Submission-Formular
       body: >
-        Auf der Seite /submit kann optional ein Formular von Tally.so
-        eingebettet sein. Die Datenerhebung durch Tally erfolgt nur,
-        wenn du das Formular ausfüllst und absendest. Es werden die
-        von dir eingegebenen Felder sowie technische Daten (IP, Zeit)
-        verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO
-        (Einwilligung). Du kannst die Einwilligung jederzeit
-        widerrufen.
-        Tally Privacy: https://tally.so/help/privacy-policy
+        Auf der Seite /submit bieten wir ein Kontaktformular an. Beim
+        Absenden werden die von dir eingegebenen Felder sowie technische
+        Daten (IP-Adresse, Zeitpunkt) an den Service Web3Forms
+        (api.web3forms.com) übermittelt, der die Daten per Email an uns
+        weiterleitet. Laut Web3Forms-Datenschutzerklärung werden die
+        Inhalte nicht dauerhaft gespeichert. Rechtsgrundlage:
+        Art. 6 Abs. 1 lit. a DSGVO (Einwilligung beim Absenden). Du
+        kannst die Einwilligung jederzeit widerrufen.
+        Web3Forms Privacy: https://web3forms.com/privacy
     - heading: Cookies
       body: >
         Wir setzen keine eigenen Cookies. Eventuelle Cookies von
-        Drittanbietern (z.B. Tally beim Absenden eines Formulars)
+        Drittanbietern (z.B. Web3Forms beim Absenden eines Formulars)
         werden nur nach deiner aktiven Interaktion gesetzt.
     - heading: Deine Rechte
       body: >

@@ -10,7 +10,11 @@ base_path: /hybridcal
 
 # External resources
 github_repo: https://github.com/pfaffelh/hybridcal
-tally_form: https://tally.so/r/PLATZHALTER
+
+# Web3Forms relays the submission form's content via email.
+# This key is public by design (like a Stripe publishable key) — protection
+# is via domain whitelist set in the Web3Forms key settings.
+web3forms_key: f5de45a5-191e-48ab-821e-6638c51ff377
 
 # Defaults
 default_language: de

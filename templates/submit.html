@@ -7,16 +7,122 @@
 
 <p>{{ t.submit.intro }}</p>
 
-<article>
-  <h3>{{ t.submit.form_heading }}</h3>
-  <p>{{ t.submit.form_intro }}</p>
-  <p>
-    <a href="{{ site.tally_form }}" role="button">
-      {{ t.submit.form_button }}
-    </a>
-  </p>
-  <p><small>{{ t.submit.form_note }}</small></p>
-</article>
+<div x-data="submitForm()" x-cloak>
+  <form @submit.prevent="submit($event)" x-show="status !== 'success'">
+    <input type="hidden" name="access_key" value="{{ site.web3forms_key }}">
+    <input type="hidden" name="subject" value="New HybridCal submission">
+    <input type="hidden" name="from_name" value="HybridCal Submissions">
+
+    {# Honeypot — must stay empty; visible only to bots. #}
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
+           style="position:absolute;left:-9999px;opacity:0">
+
+    <fieldset>
+      <legend><strong>{{ t.submit.form_section_required }}</strong></legend>
+
+      <label>
+        {{ t.submit.field_event_name }} *
+        <input type="text" name="event_name" required>
+      </label>
+
+      <label>
+        {{ t.submit.field_format }} *
+        <select name="format" required>
+          <option value="">— {{ t.submit.field_format_choose }} —</option>
+          {% for fmt_id, fmt in formats.items() %}
+          <option value="{{ fmt_id }}">{{ fmt.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+
+      <div class="grid">
+        <label>
+          {{ t.submit.field_date_start }} *
+          <input type="date" name="date_start" required>
+        </label>
+        <label>
+          {{ t.submit.field_date_end }} *
+          <input type="date" name="date_end" required>
+        </label>
+      </div>
+
+      <div class="grid">
+        <label>
+          {{ t.submit.field_city }} *
+          <input type="text" name="city" required>
+        </label>
+        <label>
+          {{ t.submit.field_country }} *
+          <input type="text" name="country" pattern="[A-Za-z]{2}" maxlength="2" required style="text-transform:uppercase">
+        </label>
+      </div>
+
+      <label>
+        {{ t.submit.field_url }} *
+        <input type="url" name="url" required placeholder="https://...">
+      </label>
+
+      <label>
+        {{ t.submit.field_source }} *
+        <textarea name="source" required rows="2"
+                  placeholder="{{ t.submit.field_source_placeholder }}"></textarea>
+      </label>
+
+      <label>
+        {{ t.submit.field_email }} *
+        <input type="email" name="email" required>
+        <small>{{ t.submit.field_email_help }}</small>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>{{ t.submit.form_section_optional }}</strong></legend>
+
+      <label>
+        {{ t.submit.field_venue }}
+        <input type="text" name="venue">
+      </label>
+
+      <label>
+        {{ t.submit.field_categories }}
+        <textarea name="categories" rows="2"
+                  placeholder="{{ t.submit.field_categories_placeholder }}"></textarea>
+      </label>
+
+      <label>
+        <input type="checkbox" name="is_organizer" value="yes">
+        {{ t.submit.field_is_organizer }}
+      </label>
+
+      <label>
+        {{ t.submit.field_notes }}
+        <textarea name="notes" rows="2"></textarea>
+      </label>
+    </fieldset>
+
+    <label>
+      <input type="checkbox" name="consent" required>
+      {{ t.submit.field_consent_text }}
+      <a href="{{ site.base_path }}/{{ lang }}/privacy.html">{{ t.nav.privacy }}</a>
+    </label>
+
+    <button type="submit" :disabled="status === 'submitting'" :aria-busy="status === 'submitting'">
+      <span x-show="status !== 'submitting'">{{ t.submit.button_submit }}</span>
+      <span x-show="status === 'submitting'">{{ t.submit.button_submitting }}</span>
+    </button>
+  </form>
+
+  <article x-show="status === 'success'" x-cloak>
+    <h3>{{ t.submit.success_heading }}</h3>
+    <p>{{ t.submit.success_message }}</p>
+  </article>
+
+  <article x-show="status === 'error'" x-cloak>
+    <h3>{{ t.submit.error_heading }}</h3>
+    <p>{{ t.submit.error_message }}</p>
+    <button @click="status = 'idle'" class="secondary outline">{{ t.submit.error_retry }}</button>
+  </article>
+</div>
 
 <article>
   <h3>{{ t.submit.correction_heading }}</h3>
@@ -37,4 +143,37 @@
     </a>
   </p>
 </article>
+
+<script>
+  function submitForm() {
+    return {
+      status: 'idle', // 'idle' | 'submitting' | 'success' | 'error'
+      async submit(event) {
+        this.status = 'submitting';
+        const form = event.target;
+        const formData = new FormData(form);
+        try {
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+            },
+            body: formData,
+          });
+          const result = await response.json();
+          if (result.success) {
+            this.status = 'success';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            console.error('Web3Forms error:', result);
+            this.status = 'error';
+          }
+        } catch (err) {
+          console.error('Submit error:', err);
+          this.status = 'error';
+        }
+      },
+    };
+  }
+</script>
 {% endblock %}

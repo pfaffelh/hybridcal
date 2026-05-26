@@ -64,12 +64,34 @@ submit:
   intro: >
     You know a hybrid sport event that's missing here? Send us the info —
     we'll add it. Thanks!
-  form_heading: "Easy way: Form"
-  form_intro: >
-    No GitHub account needed. We review submissions and add the event (~24-48h).
-  form_button: Open event form →
-  form_note: "(Insert Tally link once form is created.)"
-  correction_heading: Report an error
+  form_section_required: Required
+  form_section_optional: Optional
+  field_event_name: Event name
+  field_format: Format
+  field_format_choose: Please choose
+  field_date_start: Start date
+  field_date_end: End date
+  field_city: City
+  field_country: Country (ISO code, 2 letters)
+  field_url: Official event URL
+  field_source: Source of the info
+  field_source_placeholder: "e.g. “Newsletter from 12 Aug”, “Own participation”, “Instagram post @hyrox”"
+  field_email: Your email
+  field_email_help: We only contact you with follow-up questions about your submission. No newsletter, no sharing.
+  field_venue: Venue
+  field_categories: Categories
+  field_categories_placeholder: "e.g. Singles Pro, Doubles Mixed, Relay Mixed"
+  field_is_organizer: I represent the organizer
+  field_notes: Additional notes
+  field_consent_text: "I consent to my data being processed to handle this submission."
+  button_submit: Submit event
+  button_submitting: Sending…
+  success_heading: Thanks!
+  success_message: Your submission has been received. We'll get back to you within 48 h if needed.
+  error_heading: Something went wrong
+  error_message: The submission could not be sent. Please try again or contact us via email.
+  error_retry: Try again
+  correction_heading: Report an error in an existing event
   correction_intro: "Wrong date, wrong location, missing category? Via GitHub Issue:"
   correction_button: Report correction →
   pr_heading: "For tech-savvy: Pull Request"
@@ -176,16 +198,18 @@ privacy:
         CARTO Privacy: https://carto.com/privacy
     - heading: Submission form
       body: >
-        On the /submit page, a form by Tally.so may be embedded.
-        Data collection by Tally only occurs if you fill out and
-        submit the form. The fields you enter as well as technical
-        data (IP, time) are processed. Legal basis: Art. 6 (1) (a)
-        GDPR (consent). You may withdraw consent at any time.
-        Tally Privacy: https://tally.so/help/privacy-policy
+        The /submit page offers a contact form. When you submit, the
+        fields you have entered as well as technical data (IP address,
+        timestamp) are transmitted to the service Web3Forms
+        (api.web3forms.com), which forwards the data to us by email.
+        According to Web3Forms' privacy policy, the contents are not
+        stored permanently. Legal basis: Art. 6 (1) (a) GDPR (consent
+        on submission). You may withdraw consent at any time.
+        Web3Forms Privacy: https://web3forms.com/privacy
     - heading: Cookies
       body: >
         We set no cookies of our own. Any third-party cookies (e.g.
-        by Tally when submitting a form) are set only after your
+        by Web3Forms when submitting a form) are set only after your
         active interaction.
     - heading: Your rights
       body: >

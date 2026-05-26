@@ -83,7 +83,7 @@ class Region(BaseModel):
 class Site(BaseModel):
     url: str
     github_repo: str
-    tally_form: str
+    web3forms_key: str
     default_language: str
     default_regions: list[str] = Field(default_factory=lambda: ["dach"])
     base_path: str = ""  # e.g. "/hybridcal" for GitHub project pages, "" for custom domain
