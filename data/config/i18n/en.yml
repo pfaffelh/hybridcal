@@ -113,7 +113,7 @@ submit:
   correction_success_message: Your correction has been received. We'll review and update the entry.
 
 nav:
-  calendar: Calendar
+  calendar: Events
   submit: Submit
   about: About
   imprint: Imprint
