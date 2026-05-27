@@ -182,7 +182,12 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    /* Force viewport width — !important guards against any ancestor
+       that creates a wider containing block (Pico/.container or any
+       transformed parent). */
+    width: 100vw !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
     /* Above Leaflet panes (tiles 200, markers 600, controls ~800) */
     z-index: 9999;
     margin: 0;
@@ -195,6 +200,7 @@ footer {
 
   .bottom-nav button {
     flex: 1 1 0;
+    min-width: 0;
     margin: 0;
     padding: 0.5rem;
   }
