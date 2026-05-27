@@ -171,7 +171,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    /* Above Leaflet panes (tiles 200, markers 600, popup 700, controls ~800) */
+    z-index: 1500;
     margin: 0;
     padding: 0.5rem 0.75rem;
     padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
