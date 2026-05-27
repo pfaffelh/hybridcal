@@ -26,21 +26,52 @@
 </head>
 <body>
   <header class="container">
-    <nav>
+    <nav class="top-nav">
       <ul>
         <li><strong><a href="{{ site.base_path }}/{{ lang }}/" class="contrast">HybridCal</a></strong></li>
       </ul>
       <ul>
         <li><a href="{{ site.base_path }}/{{ lang }}/">{{ t.nav.calendar }}</a></li>
-        <li><a href="{{ site.base_path }}/{{ lang }}/submit.html">{{ t.nav.submit }}</a></li>
-        <li><a href="{{ site.base_path }}/{{ lang }}/about.html">{{ t.nav.about }}</a></li>
+        <li>
+          <details class="dropdown formats-dropdown" x-data x-on:click.outside="$el.removeAttribute('open')">
+            <summary role="link" aria-label="{{ t.nav.formats }}">{{ t.nav.formats }}</summary>
+            <ul>
+              <li><a href="{{ site.base_path }}/{{ lang }}/formats.html"><strong>{{ t.formats_page.title }}</strong></a></li>
+              {% for fmt_id, fmt in formats.items() %}
+              <li>
+                <a href="{{ site.base_path }}/{{ lang }}/{{ fmt_id }}.html">
+                  <span class="format-dot" style="background-color: {{ fmt.color }}"></span>
+                  {{ fmt.name }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
         <li>
           {% set other_lang = 'en' if lang == 'de' else 'de' %}
-          <a href="{{ site.base_path }}/{{ other_lang }}{{ current_path }}" aria-label="Switch language" class="lang-switch">
-            <span aria-current="true">{{ t.lang_switcher[lang] }}</span>
-            <span class="lang-sep">|</span>
-            <span class="lang-other">{{ t.lang_switcher[other_lang] }}</span>
+          <a href="{{ site.base_path }}/{{ other_lang }}{{ current_path }}"
+             aria-label="{{ t.nav.switch_language }}: {{ t.lang_switcher[other_lang] }}"
+             title="{{ t.nav.switch_language }}: {{ t.lang_switcher[other_lang] }}"
+             class="lang-switch">
+            {% if lang == 'de' %}<strong>DE</strong>/EN{% else %}DE/<strong>EN</strong>{% endif %}
           </a>
+        </li>
+        <li>
+          <details class="dropdown menu-dropdown" x-data x-on:click.outside="$el.removeAttribute('open')">
+            <summary aria-label="{{ t.nav.menu }}" title="{{ t.nav.menu }}" role="button" class="secondary outline">
+              <svg class="icon-hamburger" viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="4" y1="7" x2="20" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="4" y1="17" x2="20" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </summary>
+            <ul>
+              <li><a href="{{ site.base_path }}/{{ lang }}/submit.html">{{ t.nav.submit_event }}</a></li>
+              <li><a href="{{ site.base_path }}/{{ lang }}/submit.html#correction">{{ t.nav.report_correction }}</a></li>
+              <li><a href="{{ site.base_path }}/{{ lang }}/about.html">{{ t.nav.about }}</a></li>
+            </ul>
+          </details>
         </li>
       </ul>
     </nav>

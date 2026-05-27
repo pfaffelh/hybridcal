@@ -114,10 +114,24 @@ submit:
 
 nav:
   calendar: Events
+  formats: Formats
   submit: Submit
+  submit_event: Submit a new event
+  report_correction: Report a correction
   about: About
   imprint: Imprint
   privacy: Privacy
+  menu: Menu
+  switch_language: Switch language
+
+formats_page:
+  title: Hybrid Sport Formats
+  intro: >
+    Overview of the race formats listed here — from HYROX to ATHX to
+    Deadly Dozen. Each format has its own character, its own stations,
+    and its own community.
+  more: All events of this format →
+  website: Official website
 
 meta:
   description: "Community calendar for hybrid sport events: HYROX, ATHX, Deadly Dozen, DEKA and more."

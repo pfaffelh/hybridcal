@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.formats_page.title }} — HybridCal{% endblock %}
+
+{% block content %}
+<hgroup>
+  <h1>{{ t.formats_page.title }}</h1>
+  <p>{{ t.formats_page.intro }}</p>
+</hgroup>
+
+<div class="formats-list">
+{% for fmt_id, fmt in formats.items() %}
+  {% set description = fmt['description_' + lang] or fmt.description_de %}
+  <article class="format-card">
+    <header>
+      <h2>
+        <span class="format-dot" style="background-color: {{ fmt.color }}"></span>
+        <a href="{{ site.base_path }}/{{ lang }}/{{ fmt_id }}.html">{{ fmt.name }}</a>
+      </h2>
+      <p><small>{{ fmt.type }}</small></p>
+    </header>
+
+    {% if description %}<p>{{ description }}</p>{% endif %}
+
+    <footer>
+      <a href="{{ site.base_path }}/{{ lang }}/{{ fmt_id }}.html">
+        {{ t.formats_page.more }} ({{ format_counts[fmt_id] }} {{ t.index.events_count }})
+      </a>
+      {% if fmt.website %}
+        · <a href="{{ fmt.website }}" target="_blank" rel="noopener">{{ t.formats_page.website }}</a>
+      {% endif %}
+    </footer>
+  </article>
+{% endfor %}
+</div>
+{% endblock %}

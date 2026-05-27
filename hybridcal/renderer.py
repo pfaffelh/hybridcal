@@ -4,6 +4,8 @@ import json
 import shutil
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
+import markdown as md
 
 from .models import Event, Format, Category, Site, Region
 
@@ -89,7 +91,7 @@ def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) ->
 def _write_sitemap(out_dir: Path, site_url: str, languages: list[str],
                    events: list[Event], formats: dict, today: date) -> None:
     """Generate sitemap.xml with hreflang alternate links."""
-    paths_per_lang = ["/", "/about.html", "/submit.html", "/impressum.html", "/privacy.html"]
+    paths_per_lang = ["/", "/formats.html", "/about.html", "/submit.html", "/impressum.html", "/privacy.html"]
     for fmt_id in formats:
         paths_per_lang.append(f"/{fmt_id}.html")
     for event in events:
@@ -163,6 +165,12 @@ def render_site(
     # order (used for format dropdown order in the filter UI).
     env.policies["json.dumps_kwargs"] = {"sort_keys": False}
 
+    def _markdown(text):
+        if not text:
+            return ""
+        return Markup(md.markdown(text, extensions=["extra", "sane_lists"]))
+    env.filters["markdown"] = _markdown
+
     static_out = out_dir / "static"
     if static_out.exists():
         shutil.rmtree(static_out)
@@ -235,8 +243,13 @@ def render_site(
                 )
             )
 
+        today = date.today()
         for fmt_id, fmt in formats_for_lang.items():
-            fmt_events = [e for e in events if e.format == fmt_id]
+            fmt_events = [
+                e for e in events
+                if e.format == fmt_id
+                and (e.is_tba or (e.date_end and e.date_end >= today))
+            ]
             (lang_dir / f"{fmt_id}.html").write_text(
                 env.get_template("format.html").render(
                     **common,
@@ -247,6 +260,18 @@ def render_site(
                     current_path=f"/{fmt_id}.html",
                 )
             )
+
+        format_counts = {
+            fmt_id: sum(1 for e in events if e.format == fmt_id)
+            for fmt_id in formats_for_lang
+        }
+        (lang_dir / "formats.html").write_text(
+            env.get_template("formats.html").render(
+                **common,
+                format_counts=format_counts,
+                current_path="/formats.html",
+            )
+        )
 
         for page in ["about", "submit", "impressum", "privacy"]:
             (lang_dir / f"{page}.html").write_text(

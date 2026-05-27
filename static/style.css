@@ -150,6 +150,23 @@ footer {
   margin: 0;
 }
 
+/* No focus ring on view-toggle buttons — the active state is already shown
+   via the primary/outline class swap, so the outline is redundant noise. */
+.view-toggle button,
+.view-toggle button:hover,
+.view-toggle button:focus,
+.view-toggle button:focus-visible,
+.view-toggle button:active,
+.bottom-nav button,
+.bottom-nav button:hover,
+.bottom-nav button:focus,
+.bottom-nav button:focus-visible,
+.bottom-nav button:active {
+  box-shadow: none !important;
+  outline: none !important;
+  --pico-box-shadow: none;
+}
+
 /* Desktop view-toggle: inline above results; hidden on mobile */
 @media (max-width: 767px) {
   .view-toggle-desktop {
@@ -381,29 +398,162 @@ footer {
   #map {
     height: 420px;
   }
-  nav ul:first-child li:not(:first-child) {
-    display: none;
+}
+
+/* Top navigation — keep all items vertically centered on one baseline */
+
+.top-nav ul {
+  align-items: center;
+}
+
+.top-nav ul > li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.top-nav ul > li > a,
+.top-nav ul > li > details {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.top-nav ul > li > details > summary {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Language switcher — compact DE/EN, active part bold */
+.lang-switch {
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.lang-switch strong {
+  font-weight: 700;
+}
+
+/* Hamburger dropdown */
+.menu-dropdown {
+  margin: 0;
+}
+
+.menu-dropdown > summary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.6rem;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Remove Pico's caret arrow from the hamburger summary */
+.menu-dropdown > summary::after,
+.menu-dropdown > summary::-webkit-details-marker {
+  display: none !important;
+  content: "" !important;
+  background: none !important;
+}
+
+.menu-dropdown > summary::marker {
+  content: "";
+}
+
+.icon-hamburger {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  color: currentColor;
+}
+
+/* Anchor the hamburger menu to the right edge of the summary so it doesn't
+   overflow off-screen. Pico positions the panel absolute by default — we
+   only flip its anchor from left:0 to right:0. */
+.menu-dropdown {
+  position: relative;
+}
+
+.top-nav .menu-dropdown > summary + ul,
+.menu-dropdown > summary + ul {
+  position: absolute;
+  right: 0;
+  left: auto;
+  min-width: 14rem;
+  max-width: calc(100vw - 1rem);
+}
+
+/* Formats dropdown: text link styling for the summary (not a button) */
+.formats-dropdown > summary {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.formats-dropdown > summary::after {
+  /* Keep Pico's caret indicator; just tighten spacing */
+  margin-left: 0.3em;
+}
+
+.formats-dropdown ul {
+  min-width: 16rem;
+}
+
+.formats-dropdown ul a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Hide on mobile what the hamburger replaces? — we WANT Events + Formats
+   visible at all sizes; only collapse them inside the hamburger if they
+   don't fit. Keep them visible by default. */
+
+/* Formats overview page */
+.formats-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .formats-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.lang-switch {
-  font-variant: small-caps;
+.format-card {
+  margin: 0;
+}
+
+.format-card header {
+  margin-bottom: 0.25rem;
+}
+
+.format-card header h2 {
+  margin-bottom: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.format-card header h2 a {
   text-decoration: none;
 }
 
-.lang-switch [aria-current="true"] {
-  font-weight: 600;
+.format-card header h2 a:hover {
+  text-decoration: underline;
 }
 
-.lang-switch .lang-sep {
-  opacity: 0.4;
-  margin: 0 0.2em;
-}
-
-.lang-switch .lang-other {
-  opacity: 0.6;
-}
-
-.lang-switch:hover .lang-other {
-  opacity: 1;
+.format-card footer {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--pico-muted-border-color);
+  font-size: 0.9rem;
 }

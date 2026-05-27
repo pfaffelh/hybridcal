@@ -114,10 +114,24 @@ submit:
 
 nav:
   calendar: Events
+  formats: Formate
   submit: Einreichen
+  submit_event: Neues Event einreichen
+  report_correction: Korrektur melden
   about: Über
   imprint: Impressum
   privacy: Datenschutz
+  menu: Menü
+  switch_language: Sprache wechseln
+
+formats_page:
+  title: Hybrid-Sport-Formate
+  intro: >
+    Übersicht der Rennformate, die hier gelistet werden — von HYROX über ATHX
+    bis Deadly Dozen. Jedes Format hat seinen eigenen Charakter, eigene Stationen
+    und eine eigene Community.
+  more: Alle Events dieses Formats →
+  website: Offizielle Website
 
 meta:
   description: "Community-Kalender für Hybrid-Sport-Events: HYROX, ATHX, Deadly Dozen, DEKA und mehr."

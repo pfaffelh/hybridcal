@@ -74,6 +74,8 @@ class Format(BaseModel):
     website: str | None = None
     description_de: str | None = None
     description_en: str | None = None
+    long_description_de: str | None = None  # markdown body for detail page
+    long_description_en: str | None = None
     color: str | None = None  # hex, used for map markers and badges
 
 

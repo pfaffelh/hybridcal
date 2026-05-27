@@ -4,24 +4,33 @@
 
 {% set label_key = 'label_' + lang %}
 {% set description = format['description_' + lang] or format.description_de %}
+{% set long_description = format['long_description_' + lang] or format.long_description_de %}
 
 {% block content %}
 <hgroup>
-  <h1>{{ format.name }}</h1>
+  <h1>
+    <span class="format-dot" style="background-color: {{ format.color }}"></span>
+    {{ format.name }}
+  </h1>
   <p>{{ format.type }}</p>
 </hgroup>
 
 {% if description %}
-<article>
-  <p>{{ description }}</p>
-  {% if format.website %}
-  <p>
-    <a href="{{ format.website }}" target="_blank" rel="noopener">
-      {{ format.website }}
-    </a>
-  </p>
-  {% endif %}
-</article>
+<p class="lead">{{ description }}</p>
+{% endif %}
+
+{% if format.website %}
+<p>
+  <a href="{{ format.website }}" target="_blank" rel="noopener">
+    {{ format.website }}
+  </a>
+</p>
+{% endif %}
+
+{% if long_description %}
+<section class="format-long-description">
+  {{ long_description|markdown }}
+</section>
 {% endif %}
 
 <h2>{{ t.format_page.events }}</h2>

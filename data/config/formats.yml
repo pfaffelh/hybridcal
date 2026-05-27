@@ -10,6 +10,57 @@ hyrox:
   description_en: >
     Indoor race format with 8 x 1km runs alternating with 8 functional
     workout stations.
+  long_description_de: |
+    ## Format
+
+    HYROX ist ein standardisiertes Indoor-Race. Der Ablauf ist weltweit
+    identisch: **8 × 1 km Laufen**, jeweils gefolgt von einer **funktionellen
+    Workout-Station**. Erst nach Beendigung einer Station darf der nächste
+    Lauf-Loop begonnen werden.
+
+    Die Gesamtdistanz beträgt 8 km Laufen plus die Stationen — typische
+    Finisher-Zeiten liegen zwischen 60 (Elite) und 110 Minuten (Open).
+
+    ## Stationen & Gewichte (Saison 2024/25)
+
+    | # | Station             | Distanz / Reps | Open (M / W)        | Pro (M / W)         |
+    |---|---------------------|----------------|---------------------|---------------------|
+    | 1 | SkiErg              | 1000 m         | —                   | —                   |
+    | 2 | Sled Push           | 50 m (4×12,5)  | 152 kg / 102 kg     | 202 kg / 152 kg     |
+    | 3 | Sled Pull           | 50 m (4×12,5)  | 103 kg / 78 kg      | 153 kg / 103 kg     |
+    | 4 | Burpee Broad Jumps  | 80 m           | —                   | —                   |
+    | 5 | Rowing              | 1000 m         | —                   | —                   |
+    | 6 | Farmers Carry       | 200 m          | 2 × 24 kg / 2 × 16 kg | 2 × 32 kg / 2 × 24 kg |
+    | 7 | Sandbag Lunges      | 100 m          | 20 kg / 10 kg       | 30 kg / 20 kg       |
+    | 8 | Wall Balls          | 100 (W: 75) reps | 6 kg / 4 kg       | 9 kg / 6 kg         |
+
+    *Sled-Gewichte sind die Schlitten-Auflast (inkl. Schlittengewicht
+    abhängig von der Veranstaltung). Die Wall-Ball-Zielhöhe beträgt
+    3,05 m (M) / 2,75 m (W).*
+
+    ## Kategorien
+
+    - **Singles Open** — M / W, Standardgewichte
+    - **Singles Pro** — M / W, deutlich schwerere Gewichte, eigene Wertung
+    - **Singles Age Groups** — Altersklassen ab 30 in 5-Jahres-Schritten
+    - **Singles Adaptive** — Para-Athletinnen/-Athleten (eigene Anpassungen)
+    - **Doubles** — M / W / Mixed, jeweils gleiche Stationen
+    - **Relay** — 4er-Staffel (M / W / Mixed), jeder läuft 2 km + 2 Stationen
+    - **Corporate** — Firmen-Staffel über die Relay-Distanz
+
+    ## Geschichte
+
+    HYROX wurde 2017 in Hamburg von Christian Toetzke und Moritz Fürste
+    gegründet. Das erste Event fand 2018 in Hamburg statt. Seitdem ist die
+    Serie zu einem der weltweit am schnellsten wachsenden Fitness-Wettkämpfe
+    aufgestiegen mit Events auf allen Kontinenten und einer jährlichen
+    Weltmeisterschaft.
+
+    ## Hinweis
+
+    Gewichte und Distanzen können je nach Saison oder lokaler Veranstaltung
+    abweichen. Verbindlich ist immer die offizielle Race-Information auf
+    [hyrox.com](https://hyrox.com).
 
 deadly-dozen:
   name: Deadly Dozen
