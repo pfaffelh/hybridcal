@@ -143,6 +143,11 @@ footer {
   margin: 1rem 0 0.5rem;
   display: flex;
   gap: 0.5rem;
+  /* Defensive: even if a future role="group" sneaks back in, suppress
+     Pico's button-group container border around the toggle row. */
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .view-toggle button {
@@ -161,7 +166,12 @@ footer {
 .bottom-nav button:hover,
 .bottom-nav button:focus,
 .bottom-nav button:focus-visible,
-.bottom-nav button:active {
+.bottom-nav button:active,
+.bottom-nav a[role="button"],
+.bottom-nav a[role="button"]:hover,
+.bottom-nav a[role="button"]:focus,
+.bottom-nav a[role="button"]:focus-visible,
+.bottom-nav a[role="button"]:active {
   box-shadow: none !important;
   outline: none !important;
   --pico-box-shadow: none;
@@ -201,11 +211,14 @@ footer {
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
   }
 
-  .bottom-nav button {
+  .bottom-nav button,
+  .bottom-nav a[role="button"] {
     flex: 1 1 0;
     min-width: 0;
     margin: 0;
     padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
   }
 
   body {

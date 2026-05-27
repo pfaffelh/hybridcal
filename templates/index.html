@@ -77,7 +77,7 @@
     </aside>
 
     <main class="results">
-      <div class="view-toggle view-toggle-desktop" role="group">
+      <div class="view-toggle view-toggle-desktop">
         <button @click="setView('list')"
                 :aria-pressed="view === 'list'"
                 :class="view === 'list' ? '' : 'secondary outline'">
@@ -188,11 +188,10 @@
               :class="view === 'map' ? '' : 'secondary outline'">
         {{ t.index.view_map }}
       </button>
-      <button @click="setView('calendar')"
-              :aria-pressed="view === 'calendar'"
-              :class="view === 'calendar' ? '' : 'secondary outline'">
-        {{ t.index.view_calendar }}
-      </button>
+      <a href="{{ site.base_path }}/{{ lang }}/submit.html"
+         role="button" class="secondary outline submit-cta">
+        {{ t.index.submit_new }}
+      </a>
     </div>
   </template>
 </div>

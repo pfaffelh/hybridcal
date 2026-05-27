@@ -23,6 +23,7 @@ index:
   view_list: List
   view_map: Map
   view_calendar: Calendar
+  submit_new: New event
   calendar_prev: Previous month
   calendar_next: Next month
   calendar_today: Today
