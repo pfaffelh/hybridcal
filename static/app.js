@@ -226,6 +226,7 @@ function eventFilter() {
     },
 
     initMap() {
+      if (this.map) return;  // guard against double init
       this.map = L.map('map', { preferCanvas: true }).setView([50, 9], 4);
 
       const tileConfigs = {
