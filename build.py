@@ -90,6 +90,10 @@ def main() -> int:
     write_ics(events, DIST / "feed.ics", site.url)
     write_rss(events, DIST / "feed.rss", site.url)
 
+    if site.custom_domain:
+        (DIST / "CNAME").write_text(site.custom_domain + "\n")
+        print(f"  CNAME → {site.custom_domain}")
+
     print(f"Built to {DIST}/")
     return 0
 

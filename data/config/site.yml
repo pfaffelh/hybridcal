@@ -1,12 +1,16 @@
 # Site-level configuration — URLs and defaults
 # Language-agnostic, not per-event.
 
-url: https://pfaffelh.github.io/hybridcal
+url: https://hybridcal.de
 
 # Base path for absolute links. Set to "/hybridcal" when deployed under
 # https://pfaffelh.github.io/hybridcal/ (project page); set to "" when
-# served from the root of a custom domain (e.g. https://hybridcal.com).
-base_path: /hybridcal
+# served from the root of a custom domain.
+base_path: ""
+
+# When set, build.py writes dist/CNAME which GitHub Pages reads to wire up
+# the custom domain. Remove to fall back to pfaffelh.github.io/hybridcal.
+custom_domain: hybridcal.de
 
 # External resources
 github_repo: https://github.com/pfaffelh/hybridcal

@@ -97,3 +97,4 @@ class Site(BaseModel):
     default_language: str
     default_regions: list[str] = Field(default_factory=lambda: ["dach"])
     base_path: str = ""  # e.g. "/hybridcal" for GitHub project pages, "" for custom domain
+    custom_domain: str | None = None  # if set, build writes dist/CNAME (GitHub Pages picks it up)
