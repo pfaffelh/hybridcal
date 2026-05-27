@@ -337,20 +337,34 @@ footer {
 }
 
 @media (max-width: 767px) {
+  /* Mobile: dots instead of text chips — 7-col grid is too narrow for names.
+     Day cells switch from flex-column to block so dots flow inline and wrap. */
   .calendar-day {
-    min-height: 60px;
-    padding: 0.15rem;
+    min-height: 56px;
+    padding: 0.2rem;
+    display: block;
   }
   .calendar-weekday {
     font-size: 0.7rem;
     padding: 0.3rem 0.1rem;
   }
   .calendar-day .day-num {
-    font-size: 0.7rem;
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 0.2rem;
   }
   .calendar-day .event-chip {
-    font-size: 0.6rem;
-    padding: 0.08rem 0.25rem;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 1px;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
   }
 }
 
