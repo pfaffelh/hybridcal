@@ -1,0 +1,18 @@
+slug: deka-pathum-wan-2026-10
+name: 2026 Bangkok DEKA FIT
+format: deka
+date_start: 2026-10-31
+date_end: 2026-11-01
+location:
+  city: Pathum Wan
+  country: "TH"
+  venue: Siam Paragon
+  timezone: Asia/Bangkok
+  lat: 13.747
+  lon: 100.535
+url: "https://tickets-thdk.spartan.com/event/2"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

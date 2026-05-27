@@ -1,0 +1,20 @@
+slug: deka-tenerife-2026-11
+name: DEKA TENERIFE 2026
+format: deka
+date_start: 2026-11-21
+date_end: 2026-11-22
+location:
+  city: Tenerife
+  country: "ES"
+  venue: DEKA Tenerife
+  timezone: Europe/Madrid
+  lat: 28.293602
+  lon: -16.85299881
+url: "https://tickets-esdk.spartan.com/event/168"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

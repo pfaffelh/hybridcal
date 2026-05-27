@@ -1,0 +1,18 @@
+slug: deka-derby-2026-09-12
+name: 2026 East Midlands DEKA FIT
+format: deka
+date_start: 2026-09-12
+date_end: 2026-09-13
+location:
+  city: Derby
+  country: "GB"
+  venue: Derby Arena
+  timezone: Europe/London
+  lat: 52.9127
+  lon: -1.4464
+url: "https://tickets-gbdk.spartan.com/event/231"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

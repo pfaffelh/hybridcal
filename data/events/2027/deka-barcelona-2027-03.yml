@@ -1,0 +1,20 @@
+slug: deka-barcelona-2027-03
+name: DEKA BARCELONA 2027 PRIMAVERA
+format: deka
+date_start: 2027-03-20
+date_end: 2027-03-21
+location:
+  city: Barcelona
+  country: "ES"
+  venue: Complejo Deportivo Municipal Mar Bella
+  timezone: Europe/Madrid
+  lat: 41.4000657
+  lon: 2.20920731
+url: "https://tickets-esdk.spartan.com/event/198"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

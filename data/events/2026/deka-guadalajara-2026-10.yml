@@ -1,0 +1,19 @@
+slug: deka-guadalajara-2026-10
+name: DEKA GUADALAJARA 2026
+format: deka
+date_start: 2026-10-24
+date_end: 2026-10-25
+location:
+  city: Guadalajara
+  country: "ES"
+  venue: Palacio Multiusos de Guadalajara
+  timezone: Europe/Madrid
+  lat: 40.6385122
+  lon: -3.16819451
+url: "https://tickets-esdk.spartan.com/event/155"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile

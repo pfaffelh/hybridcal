@@ -1,0 +1,18 @@
+slug: deka-turin-2026-10
+name: 2026 DEKA FIT ROADSHOW - Hosted at Tana Dei Lupi in collaboration with DEKA Europe
+format: deka
+date_start: 2026-10-03
+date_end: 2026-10-04
+location:
+  city: Turin
+  country: "IT"
+  venue: TANA DEI LUPI
+  timezone: Europe/Rome
+  lat: 45.0484
+  lon: 7.48949
+url: "https://tickets-euda.spartan.com/event/111"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

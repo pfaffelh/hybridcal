@@ -1,0 +1,18 @@
+slug: deka-fort-lauderdale-2026-09
+name: 2026 Florida DEKA FIT & Ultra
+format: deka
+date_start: 2026-09-12
+date_end: 2026-09-13
+location:
+  city: Fort Lauderdale
+  country: "US"
+  venue: Broward County Convention Center
+  timezone: America/New_York
+  lat: 26.10423155
+  lon: -80.14810082
+url: "https://tickets-usdk.spartan.com/event/2011"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

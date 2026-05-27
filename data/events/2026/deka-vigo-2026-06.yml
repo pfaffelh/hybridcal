@@ -1,0 +1,18 @@
+slug: deka-vigo-2026-06
+name: DEKA VIGO 2026
+format: deka
+date_start: 2026-06-27
+date_end: 2026-06-27
+location:
+  city: Vigo
+  country: "ES"
+  venue: Instituto Ferial de Vigo (IFEVI)
+  timezone: Europe/Madrid
+  lat: 42.2233373
+  lon: -8.64198912
+url: "https://tickets-esdk.spartan.com/event/179"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

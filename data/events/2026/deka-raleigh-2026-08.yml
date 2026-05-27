@@ -1,0 +1,18 @@
+slug: deka-raleigh-2026-08
+name: 2026 Raleigh DEKA FIT & Ultra
+format: deka
+date_start: 2026-08-22
+date_end: 2026-08-23
+location:
+  city: Raleigh
+  country: "US"
+  venue: Raleigh Convention Center
+  timezone: America/New_York
+  lat: 35.7738033
+  lon: -78.6436776
+url: "https://tickets-usdk.spartan.com/event/2005"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

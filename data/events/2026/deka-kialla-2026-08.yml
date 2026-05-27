@@ -1,0 +1,20 @@
+slug: deka-kialla-2026-08
+name: 2026 Shepparton DEKA Trifecta Weekend
+format: deka
+date_start: 2026-08-01
+date_end: 2026-08-02
+location:
+  city: Kialla
+  country: "AU"
+  venue: MOVE Shepparton
+  timezone: Australia/Melbourne
+  lat: -36.4367705
+  lon: 145.3858935
+url: "https://tickets-audk.spartan.com/event/2026-shepparton-deka-trifecta-weekend-pass"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

@@ -1,0 +1,18 @@
+slug: deka-torremolinos-2027-02
+name: DEKA TORREMOLINOS (MÁLAGA) 2027
+format: deka
+date_start: 2027-02-27
+date_end: 2027-02-28
+location:
+  city: Torremolinos
+  country: "ES"
+  venue: Campo de Fútbol Ciudad de Torremolinos
+  timezone: Europe/Madrid
+  lat: 36.622787
+  lon: -4.51254699
+url: "https://tickets-esdk.spartan.com/event/191"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

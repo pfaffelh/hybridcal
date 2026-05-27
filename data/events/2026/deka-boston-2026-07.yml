@@ -1,0 +1,18 @@
+slug: deka-boston-2026-07
+name: 2026 Boston DEKA FIT & Ultra
+format: deka
+date_start: 2026-07-24
+date_end: 2026-07-26
+location:
+  city: Boston
+  country: "US"
+  venue: Thomas Michael Menino Convention & Exhibition Center
+  timezone: America/New_York
+  lat: 42.3450538
+  lon: -71.0497732
+url: "https://tickets-usdk.spartan.com/event/1996"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

@@ -1,0 +1,17 @@
+slug: deka-weddington-2026-07
+name: "DEKA STRONG & ATLAS: CrossFit Weddington"
+format: deka
+date_start: 2026-07-26
+date_end: 2026-07-26
+location:
+  city: Weddington
+  country: "US"
+  venue: CrossFit Weddington
+  timezone: US/Eastern
+  lat: 35.001724
+  lon: -80.712192
+url: "https://tickets-usda.spartan.com/event/1765"
+status: confirmed
+source: scraped
+categories:
+  - deka-strong-singles

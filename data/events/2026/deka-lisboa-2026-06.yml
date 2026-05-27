@@ -1,0 +1,19 @@
+slug: deka-lisboa-2026-06
+name: DEKA LISBOA 2026
+format: deka
+date_start: 2026-06-13
+date_end: 2026-06-13
+location:
+  city: Lisboa
+  country: "PT"
+  venue: Pala do Pavilhão de Portugal (Parque das Nações)
+  timezone: Europe/Lisbon
+  lat: 38.7659027
+  lon: -9.09600838
+url: "https://tickets-esdk.spartan.com/event/183"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile

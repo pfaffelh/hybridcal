@@ -1,0 +1,18 @@
+slug: deka-alicante-2026-10
+name: DEKA ALICANTE 2026
+format: deka
+date_start: 2026-10-31
+date_end: 2026-10-31
+location:
+  city: Alicante
+  country: "ES"
+  venue: Muelle Live
+  timezone: Europe/Madrid
+  lat: 38.3386325
+  lon: -0.48249352
+url: "https://tickets-esdk.spartan.com/event/176"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

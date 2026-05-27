@@ -1,0 +1,20 @@
+slug: deka-madrid-2026-07
+name: DEKA MADRID 2026
+format: deka
+date_start: 2026-07-18
+date_end: 2026-07-19
+location:
+  city: Madrid
+  country: "ES"
+  venue: Madrid Arena
+  timezone: Europe/Madrid
+  lat: 40.4130096
+  lon: -3.74078466
+url: "https://tickets-esdk.spartan.com/event/145"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

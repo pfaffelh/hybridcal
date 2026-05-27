@@ -1,0 +1,20 @@
+slug: deka-farnborough-2026-11
+name: 2026 London West DEKA Trifecta Weekend
+format: deka
+date_start: 2026-11-28
+date_end: 2026-11-29
+location:
+  city: Farnborough
+  country: "GB"
+  venue: The Farnborough International Exhibition & Conference Centre
+  timezone: GMT
+  lat: 51.2731
+  lon: -0.7725
+url: "https://tickets-gbdk.spartan.com/event/234"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

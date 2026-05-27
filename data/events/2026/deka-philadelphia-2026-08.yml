@@ -1,0 +1,18 @@
+slug: deka-philadelphia-2026-08
+name: 2026 Philadelphia DEKA FIT & Ultra
+format: deka
+date_start: 2026-08-07
+date_end: 2026-08-09
+location:
+  city: Philadelphia
+  country: "US"
+  venue: Pennsylvania Convention Center
+  timezone: America/New_York
+  lat: 39.9553197
+  lon: -75.1600104
+url: "https://tickets-usdk.spartan.com/event/2003"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

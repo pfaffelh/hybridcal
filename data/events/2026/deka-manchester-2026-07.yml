@@ -1,0 +1,18 @@
+slug: deka-manchester-2026-07
+name: 2026 Manchester DEKA FIT, ULTRA & IGNITION
+format: deka
+date_start: 2026-07-24
+date_end: 2026-07-26
+location:
+  city: ""
+  country: "GB"
+  venue: Manchester Convention Centre Complex
+  timezone: Europe/London
+  lat: 53.4766641
+  lon: -2.2489216
+url: "https://tickets-gbdk.spartan.com/event/229"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

@@ -1,0 +1,18 @@
+slug: deka-aurora-2026-05
+name: 2026 Denver DEKA FIT & Ultra
+format: deka
+date_start: 2026-05-30
+date_end: 2026-05-30
+location:
+  city: Aurora
+  country: "US"
+  venue: Gaylord Rockies Resort & Convention Center
+  timezone: America/Denver
+  lat: 39.8166106
+  lon: -104.7559471
+url: "https://tickets-usdk.spartan.com/event/1993"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

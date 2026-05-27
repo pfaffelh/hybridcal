@@ -1,0 +1,18 @@
+slug: deka-barcelona-2026-09
+name: DEKA BARCELONA 2026 OTOÑO
+format: deka
+date_start: 2026-09-26
+date_end: 2026-09-27
+location:
+  city: Barcelona
+  country: "ES"
+  venue: Complejo Deportivo Municipal Mar Bella
+  timezone: Europe/Madrid
+  lat: 41.4000657
+  lon: 2.20920731
+url: "https://tickets-esdk.spartan.com/event/150"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

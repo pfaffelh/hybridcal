@@ -1,0 +1,17 @@
+slug: deka-nyc-2026-09
+name: 2026 New York DEKA FIT & Ultra
+format: deka
+date_start: 2026-09-26
+date_end: 2026-09-27
+location:
+  city: NYC
+  country: "US"
+  timezone: America/New_York
+  lat: 40.6971934
+  lon: -74.3091584
+url: "https://tickets-usdk.spartan.com/event/2008"
+status: confirmed
+source: scraped
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

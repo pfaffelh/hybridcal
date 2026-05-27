@@ -531,8 +531,168 @@ deka:
   website: https://spartan.com/deka
   color: "#15803d"  # forest green
   description_de: >
-    10 funktionelle Stationen mit drei Varianten: DEKA FIT (mit Laufanteilen),
-    DEKA STRONG (nur Kraft), DEKA MILE (eine Meile + Stationen).
+    Stationen-basiertes Hybrid-Race: zehn standardisierte "DEKA Zones"
+    (Box Jump Overs, Ram Lunges, Med Ball Throws, Farmers Carry, Row,
+    Sled Push, Burpees, Tank Push & Pull, Dead Ball Wall Over, Bike Erg),
+    je nach Variante mit unterschiedlich viel Laufanteil davor.
+  description_en: >
+    Station-based hybrid race: ten standardised "DEKA Zones" (Box Jump
+    Overs, Ram Lunges, Med Ball Throws, Farmers Carry, Row, Sled Push,
+    Burpees, Tank Push & Pull, Dead Ball Wall Over, Bike Erg), with
+    varying amounts of running before each zone depending on the variant.
+  long_description_de: |
+    ## Format
+
+    **DEKA** (von griech. *déka* = "zehn") ist ein **stationen-basiertes
+    Hybrid-Race** unter dem Dach von Spartan. Der Kern ist immer derselbe:
+    **10 funktionelle "DEKA Zones"** in fester Reihenfolge. Was die einzelnen
+    Subformate unterscheidet, ist die Lauf-Distanz, die jeder Zone vorgelagert
+    ist — von "gar nichts" (STRONG) bis "5 km" (FIT) bzw. "10 km" (FIT Ultra).
+
+    DEKA wurde 2019 von Joe De Sena als zugänglichere Alternative zu den
+    Spartan-OCR-Rennen lanciert: keine Schlamm-Hindernisse, kein
+    Outdoor-Gelände, sondern Indoor-Bahn oder Halle mit standardisiertem
+    Equipment, das jeder kennt.
+
+    ## Die 10 DEKA Zones
+
+    Die Reihenfolge ist global einheitlich; die exakten Gewichte werden pro
+    Saison im Rulebook bestätigt — die Angaben unten sind typische Werte.
+
+    | # | Zone                          | Volumen / Reps | Charakter            | Typ. Gewicht (M / W) |
+    |---|-------------------------------|----------------|----------------------|----------------------|
+    | 1 | Alternating Box Jump Overs    | 20 Reps        | Kraft + Power        | Box 20" / 16"        |
+    | 2 | Ram Alt. Reverse Lunges       | 20 Reps        | Kraft (Beine)        | Ram ~22 / 13 kg      |
+    | 3 | Med Ball Sit-Up Throws        | 20 Reps        | Power (Core)         | ~9 / 6 kg            |
+    | 4 | Farmers Carry                 | 100 m          | Kraft-Conditioning   | 2 × ~22 / 13 kg KB   |
+    | 5 | **Row Erg**                   | 500 m          | **reine Ausdauer**   | —                    |
+    | 6 | Sled Push                     | 25 m           | Kraft + Cardio       | ~50 / 30 kg          |
+    | 7 | Burpee Over Box / Target      | 20 Reps        | Kraft-Conditioning   | —                    |
+    | 8 | Tank Push & Pull              | 50 m           | Kraft + Cardio       | Tank-Sled            |
+    | 9 | Dead Ball Wall Over           | 20 Reps        | Power (Schulter)     | ~22 / 13 kg          |
+    | 10| **Bike Erg / Air Bike**       | 20 cal         | **reine Ausdauer**   | —                    |
+
+    Etwa 30–40 % der Workout-Zeit sind klassischer Cardio-Stimulus
+    (Row, Bike, Carries, Sled-Bewegungen) — auch in den Varianten ohne Lauf.
+
+    ## Subformate im Vergleich
+
+    | Subformat | Lauf-Anteil | Stationen | Charakter | Dauer (Elite → Open) |
+    |-----------|-------------|-----------|-----------|----------------------|
+    | **DEKA FIT** | **5 km** (10 × 500 m vor jeder Zone) | alle 10 | klassisch hybrid | ~30 → ~50 min |
+    | **DEKA FIT Ultra** | **~10 km** (10 × 1 km bzw. 2× FIT-Volumen) | alle 10 | längste Hybrid-Variante | 60–90 min |
+    | **DEKA MILE** | **1 Meile** (10 × ~160 m) | alle 10 | hybrid, kürzer; Einsteiger / Familie | ~25–40 min |
+    | **DEKA STRONG** | **0 m** | alle 10 back-to-back | Strength-Endurance ohne Laufen | ~15–25 min |
+    | **DEKA STRONG Affiliate** | 0 m | wie STRONG | identisch, in Affiliate-Gyms | wie STRONG |
+    | **DEKA ATLAS Affiliate** | 0 m | Atlas-Steine | reines Strength-Format, kein Standard-Zonen-Set | — |
+    | **DEKA IGNITE** | unklar | reduziert | offizielle Einsteiger-/Demo-Variante (wenig dokumentiert) | — |
+
+    *FIT, FIT Ultra und MILE sind klassisch hybrid (Ausdauer-Lauf + Kraft).
+    STRONG ist Strength-Endurance: kein Lauf, aber Row + Bike + Carries
+    erzeugen weiterhin nennenswerten Cardio-Stimulus. ATLAS ist ein
+    eigenständiges Strength-only-Format.*
+
+    ## Kategorien
+
+    Pro Subformat gibt es typischerweise:
+
+    - **Singles** — Männer / Frauen (verschiedene Altersklassen)
+    - **Pairs / Doubles** — Männer / Frauen / Mixed; die Athlet:innen teilen
+      Stationen und/oder Läufe untereinander auf
+    - **Elite** — schmale Spitzen-Wertung für Qualifikation zur DEKA World
+      Championship
+    - **Youth** — bei einzelnen Events (z. B. DEKA MILE Youth)
+
+    ## Veranstalter & Geschichte
+
+    DEKA wird global von **Spartan Race** organisiert (Gründer Joe De Sena).
+    Während Spartan-OCR-Rennen Outdoor und Hindernisse sind, ist DEKA das
+    Indoor-/Standard-Equipment-Format der Marke. Jährlich gibt es eine
+    **DEKA World Championship** mit Qualifikation über die Saison-Events.
+    Daneben das **DEKA Roadshow**-Konzept: Einzel-Events in Affiliate-Gyms
+    weltweit, um die Reichweite über die großen Convention-Center-Venues
+    hinaus auszubauen.
+
+    ## Hinweis
+
+    Verbindlich sind immer die offiziellen Race-Standards und Gewichte auf
+    [spartan.com/deka](https://spartan.com/deka) bzw. dem aktuellen DEKA-Rulebook.
+  long_description_en: |
+    ## Format
+
+    **DEKA** (Greek *déka* = "ten") is a **station-based hybrid race**
+    under the Spartan umbrella. The core is always the same: **10
+    functional "DEKA Zones"** in a fixed order. What differs between the
+    subformats is the running distance in front of each zone — from "none"
+    (STRONG) to 5 km (FIT) or 10 km (FIT Ultra).
+
+    DEKA was launched in 2019 by Joe De Sena as a more accessible
+    alternative to Spartan's OCR races: no mud, no outdoor obstacles —
+    instead an indoor track or hall with standardised, familiar equipment.
+
+    ## The 10 DEKA Zones
+
+    The order is the same globally; exact weights are confirmed each season
+    in the rulebook. Values below are typical.
+
+    | # | Zone                          | Volume / Reps | Character             | Typ. Weight (M / W) |
+    |---|-------------------------------|---------------|-----------------------|---------------------|
+    | 1 | Alternating Box Jump Overs    | 20 reps       | Strength + Power      | Box 20" / 16"       |
+    | 2 | Ram Alt. Reverse Lunges       | 20 reps       | Strength (legs)       | Ram ~22 / 13 kg     |
+    | 3 | Med Ball Sit-Up Throws        | 20 reps       | Power (core)          | ~9 / 6 kg           |
+    | 4 | Farmers Carry                 | 100 m         | Strength-conditioning | 2 × ~22 / 13 kg KB  |
+    | 5 | **Row Erg**                   | 500 m         | **pure endurance**    | —                   |
+    | 6 | Sled Push                     | 25 m          | Strength + cardio     | ~50 / 30 kg         |
+    | 7 | Burpee Over Box / Target      | 20 reps       | Strength-conditioning | —                   |
+    | 8 | Tank Push & Pull              | 50 m          | Strength + cardio     | Tank sled           |
+    | 9 | Dead Ball Wall Over           | 20 reps       | Power (shoulder)      | ~22 / 13 kg         |
+    | 10| **Bike Erg / Air Bike**       | 20 cal        | **pure endurance**    | —                   |
+
+    Roughly 30–40 % of the workout time is classic cardio stimulus
+    (Row, Bike, Carries, sled work) — even in the variants without running.
+
+    ## Subformats compared
+
+    | Subformat | Running | Stations | Character | Duration (Elite → Open) |
+    |-----------|---------|----------|-----------|-------------------------|
+    | **DEKA FIT** | **5 km** (10 × 500 m before each zone) | all 10 | classic hybrid | ~30 → ~50 min |
+    | **DEKA FIT Ultra** | **~10 km** (10 × 1 km, double the FIT volume) | all 10 | longest hybrid variant | 60–90 min |
+    | **DEKA MILE** | **1 mile** (10 × ~160 m) | all 10 | hybrid, shorter; entry-level / family | ~25–40 min |
+    | **DEKA STRONG** | **0 m** | all 10 back-to-back | strength-endurance without running | ~15–25 min |
+    | **DEKA STRONG Affiliate** | 0 m | as STRONG | same, hosted at affiliate gyms | as STRONG |
+    | **DEKA ATLAS Affiliate** | 0 m | atlas stones | standalone strength-only format | — |
+    | **DEKA IGNITE** | unclear | reduced | official entry/demo variant (lightly documented) | — |
+
+    *FIT, FIT Ultra and MILE are classic hybrid (endurance run + strength).
+    STRONG is strength-endurance: no running, but Row + Bike + Carries
+    still deliver substantial cardio stimulus. ATLAS is a standalone
+    strength-only format.*
+
+    ## Categories
+
+    Each subformat typically offers:
+
+    - **Singles** — Men / Women (multiple age groups)
+    - **Pairs / Doubles** — Men / Women / Mixed; athletes split stations
+      and/or runs between them
+    - **Elite** — narrow top-tier ranking for DEKA World Championship
+      qualification
+    - **Youth** — at selected events (e.g. DEKA MILE Youth)
+
+    ## Organisation & history
+
+    DEKA is run globally by **Spartan Race** (founder Joe De Sena).
+    Whereas Spartan OCR races are outdoor and obstacle-driven, DEKA is the
+    brand's indoor / standard-equipment format. There is an annual
+    **DEKA World Championship** with qualification over the season events.
+    The **DEKA Roadshow** programme brings single events to affiliate gyms
+    worldwide, extending reach beyond the large convention-centre venues.
+
+    ## Note
+
+    The official race standards and weights at
+    [spartan.com/deka](https://spartan.com/deka) and the current DEKA
+    rulebook are always authoritative.
 
 turf-games:
   name: Turf Games

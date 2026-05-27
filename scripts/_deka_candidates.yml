@@ -1,0 +1,462 @@
+# DEKA event candidates — review and flip `include: true` for events to keep.
+# Then run: python scripts/add_deka_2026.py --apply
+# Re-running the scraper preserves existing include flags.
+
+- slug: deka-turin-2026-04
+  include: false
+  name: 2026 DEKA ITALIA Series - DEKA STRONG, DEKA MILE & DEKA FIT
+  date_start: 2026-04-11
+  date_end: 2026-10-04
+  city: Turin
+  country: IT
+  venue: TANA DEI LUPI
+  timezone: Europe/Rome
+  lat: 45.0484
+  lon: 7.48949
+  url: "https://www.spartan.com/en/race/detail/10775/overview"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit, deka_mile_affiliate, deka_strong_affiliate
+  # spartan_id: 10781
+
+- slug: deka-aurora-2026-05
+  include: true
+  name: 2026 Denver DEKA FIT & Ultra
+  date_start: 2026-05-30
+  date_end: 2026-05-30
+  city: Aurora
+  country: US
+  venue: Gaylord Rockies Resort & Convention Center
+  timezone: America/Denver
+  lat: 39.8166106
+  lon: -104.7559471
+  url: "https://tickets-usdk.spartan.com/event/1993"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10045
+
+- slug: deka-lisboa-2026-06
+  include: true
+  name: DEKA LISBOA 2026
+  date_start: 2026-06-13
+  date_end: 2026-06-13
+  city: Lisboa
+  country: PT
+  venue: Pala do Pavilhão de Portugal (Parque das Nações)
+  timezone: Europe/Lisbon
+  lat: 38.7659027
+  lon: -9.09600838
+  url: "https://tickets-esdk.spartan.com/event/183"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+  # sub-events: dekafit, dekamile
+  # spartan_id: 10703
+
+- slug: deka-vigo-2026-06
+  include: true
+  name: DEKA VIGO 2026
+  date_start: 2026-06-27
+  date_end: 2026-06-27
+  city: Vigo
+  country: ES
+  venue: Instituto Ferial de Vigo (IFEVI)
+  timezone: Europe/Madrid
+  lat: 42.2233373
+  lon: -8.64198912
+  url: "https://tickets-esdk.spartan.com/event/179"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10384
+
+- slug: deka-chicago-2026-07
+  include: true
+  name: 2026 Chicago DEKA FIT & Ultra
+  date_start: 2026-07-10
+  date_end: 2026-07-12
+  city: Chicago
+  country: US
+  venue: Navy Pier
+  timezone: America/Chicago
+  lat: 41.8916446
+  lon: -87.610015
+  url: "https://tickets-usdk.spartan.com/event/1999"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10193
+
+- slug: deka-madrid-2026-07
+  include: true
+  name: DEKA MADRID 2026
+  date_start: 2026-07-18
+  date_end: 2026-07-19
+  city: Madrid
+  country: ES
+  venue: Madrid Arena
+  timezone: Europe/Madrid
+  lat: 40.4130096
+  lon: -3.74078466
+  url: "https://tickets-esdk.spartan.com/event/145"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+    - deka-strong-singles
+  # sub-events: dekafit, dekamile, dekastrong
+  # spartan_id: 9872
+
+- slug: deka-manchester-2026-07
+  include: true
+  name: 2026 Manchester DEKA FIT, ULTRA & IGNITION
+  date_start: 2026-07-24
+  date_end: 2026-07-26
+  city: ""
+  country: GB
+  venue: Manchester Convention Centre Complex
+  timezone: Europe/London
+  lat: 53.4766641
+  lon: -2.2489216
+  url: "https://tickets-gbdk.spartan.com/event/229"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit, dekaignite
+  # spartan_id: 10064
+
+- slug: deka-boston-2026-07
+  include: true
+  name: 2026 Boston DEKA FIT & Ultra
+  date_start: 2026-07-24
+  date_end: 2026-07-26
+  city: Boston
+  country: US
+  venue: Thomas Michael Menino Convention & Exhibition Center
+  timezone: America/New_York
+  lat: 42.3450538
+  lon: -71.0497732
+  url: "https://tickets-usdk.spartan.com/event/1996"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10189
+
+- slug: deka-weddington-2026-07
+  include: true
+  name: "DEKA STRONG & ATLAS: CrossFit Weddington"
+  date_start: 2026-07-26
+  date_end: 2026-07-26
+  city: Weddington
+  country: US
+  venue: CrossFit Weddington
+  timezone: US/Eastern
+  lat: 35.001724
+  lon: -80.712192
+  url: "https://tickets-usda.spartan.com/event/1765"
+  categories:
+    - deka-strong-singles
+  # sub-events: dekastrong, deka_atlas_affiliate
+  # spartan_id: 10998
+
+- slug: deka-kialla-2026-08
+  include: true
+  name: 2026 Shepparton DEKA Trifecta Weekend
+  date_start: 2026-08-01
+  date_end: 2026-08-02
+  city: Kialla
+  country: AU
+  venue: MOVE Shepparton
+  timezone: Australia/Melbourne
+  lat: -36.4367705
+  lon: 145.3858935
+  url: "https://tickets-audk.spartan.com/event/2026-shepparton-deka-trifecta-weekend-pass"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+    - deka-strong-singles
+  # sub-events: ultratrifectapass, dekafit, dekamile, dekastrong, volunteer_signup, spartanspectators, dekafitultra
+  # spartan_id: 10648
+
+- slug: deka-philadelphia-2026-08
+  include: true
+  name: 2026 Philadelphia DEKA FIT & Ultra
+  date_start: 2026-08-07
+  date_end: 2026-08-09
+  city: Philadelphia
+  country: US
+  venue: Pennsylvania Convention Center
+  timezone: America/New_York
+  lat: 39.9553197
+  lon: -75.1600104
+  url: "https://tickets-usdk.spartan.com/event/2003"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10194
+
+- slug: deka-raleigh-2026-08
+  include: true
+  name: 2026 Raleigh DEKA FIT & Ultra
+  date_start: 2026-08-22
+  date_end: 2026-08-23
+  city: Raleigh
+  country: US
+  venue: Raleigh Convention Center
+  timezone: America/New_York
+  lat: 35.7738033
+  lon: -78.6436776
+  url: "https://tickets-usdk.spartan.com/event/2005"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10203
+
+- slug: deka-derby-2026-09-11
+  include: true
+  name: 2026 DEKA MILE YOUTH EAST MIDLANDS
+  date_start: 2026-09-11
+  date_end: 2026-09-11
+  city: Derby
+  country: GB
+  venue: Derby Arena - DEKA YOUTH
+  timezone: Europe/London
+  lat: 52.8216
+  lon: -1.3546
+  url: "https://tickets-gbdk.spartan.com/event/east-midlands-deka-mile-youth-friday-11-september-2026"
+  categories:
+    - deka-mile
+  # sub-events: dekamile
+  # spartan_id: 10901
+
+- slug: deka-derby-2026-09-12
+  include: true
+  name: 2026 East Midlands DEKA FIT
+  date_start: 2026-09-12
+  date_end: 2026-09-13
+  city: Derby
+  country: GB
+  venue: Derby Arena
+  timezone: Europe/London
+  lat: 52.9127
+  lon: -1.4464
+  url: "https://tickets-gbdk.spartan.com/event/231"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10270
+
+- slug: deka-fort-lauderdale-2026-09
+  include: true
+  name: 2026 Florida DEKA FIT & Ultra
+  date_start: 2026-09-12
+  date_end: 2026-09-13
+  city: Fort Lauderdale
+  country: US
+  venue: Broward County Convention Center
+  timezone: America/New_York
+  lat: 26.10423155
+  lon: -80.14810082
+  url: "https://tickets-usdk.spartan.com/event/2011"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10205
+
+- slug: deka-barcelona-2026-09
+  include: true
+  name: DEKA BARCELONA 2026 OTOÑO
+  date_start: 2026-09-26
+  date_end: 2026-09-27
+  city: Barcelona
+  country: ES
+  venue: Complejo Deportivo Municipal Mar Bella
+  timezone: Europe/Madrid
+  lat: 41.4000657
+  lon: 2.20920731
+  url: "https://tickets-esdk.spartan.com/event/150"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10003
+
+- slug: deka-nyc-2026-09
+  include: true
+  name: 2026 New York DEKA FIT & Ultra
+  date_start: 2026-09-26
+  date_end: 2026-09-27
+  city: NYC
+  country: US
+  timezone: America/New_York
+  lat: 40.6971934
+  lon: -74.3091584
+  url: "https://tickets-usdk.spartan.com/event/2008"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10204
+
+- slug: deka-turin-2026-10
+  include: true
+  name: 2026 DEKA FIT ROADSHOW - Hosted at Tana Dei Lupi in collaboration with DEKA Europe
+  date_start: 2026-10-03
+  date_end: 2026-10-04
+  city: Turin
+  country: IT
+  venue: TANA DEI LUPI
+  timezone: Europe/Rome
+  lat: 45.0484
+  lon: 7.48949
+  url: "https://tickets-euda.spartan.com/event/111"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10775
+
+- slug: deka-guadalajara-2026-10
+  include: true
+  name: DEKA GUADALAJARA 2026
+  date_start: 2026-10-24
+  date_end: 2026-10-25
+  city: Guadalajara
+  country: ES
+  venue: Palacio Multiusos de Guadalajara
+  timezone: Europe/Madrid
+  lat: 40.6385122
+  lon: -3.16819451
+  url: "https://tickets-esdk.spartan.com/event/155"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+  # sub-events: dekafit, dekamile
+  # spartan_id: 10095
+
+- slug: deka-pathum-wan-2026-10
+  include: true
+  name: 2026 Bangkok DEKA FIT
+  date_start: 2026-10-31
+  date_end: 2026-11-01
+  city: Pathum Wan
+  country: TH
+  venue: Siam Paragon
+  timezone: Asia/Bangkok
+  lat: 13.747
+  lon: 100.535
+  url: "https://tickets-thdk.spartan.com/event/2"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 11068
+
+- slug: deka-alicante-2026-10
+  include: true
+  name: DEKA ALICANTE 2026
+  date_start: 2026-10-31
+  date_end: 2026-10-31
+  city: Alicante
+  country: ES
+  venue: Muelle Live
+  timezone: Europe/Madrid
+  lat: 38.3386325
+  lon: -0.48249352
+  url: "https://tickets-esdk.spartan.com/event/176"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10383
+
+- slug: deka-tenerife-2026-11
+  include: true
+  name: DEKA TENERIFE 2026
+  date_start: 2026-11-21
+  date_end: 2026-11-22
+  city: Tenerife
+  country: ES
+  venue: DEKA Tenerife
+  timezone: Europe/Madrid
+  lat: 28.293602
+  lon: -16.85299881
+  url: "https://tickets-esdk.spartan.com/event/168"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+    - deka-strong-singles
+  # sub-events: dekafit, dekamile, dekastrong
+  # spartan_id: 10279
+
+- slug: deka-farnborough-2026-11
+  include: true
+  name: 2026 London West DEKA Trifecta Weekend
+  date_start: 2026-11-28
+  date_end: 2026-11-29
+  city: Farnborough
+  country: GB
+  venue: The Farnborough International Exhibition & Conference Centre
+  timezone: GMT
+  lat: 51.2731
+  lon: -0.7725
+  url: "https://tickets-gbdk.spartan.com/event/234"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+    - deka-strong-singles
+  # sub-events: dekafit, dekamile, dekastrong
+  # spartan_id: 10454
+
+- slug: deka-torremolinos-2027-02
+  include: true
+  name: DEKA TORREMOLINOS (MÁLAGA) 2027
+  date_start: 2027-02-27
+  date_end: 2027-02-28
+  city: Torremolinos
+  country: ES
+  venue: Campo de Fútbol Ciudad de Torremolinos
+  timezone: Europe/Madrid
+  lat: 36.622787
+  lon: -4.51254699
+  url: "https://tickets-esdk.spartan.com/event/191"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+  # sub-events: dekafit
+  # spartan_id: 10836
+
+- slug: deka-barcelona-2027-03
+  include: true
+  name: DEKA BARCELONA 2027 PRIMAVERA
+  date_start: 2027-03-20
+  date_end: 2027-03-21
+  city: Barcelona
+  country: ES
+  venue: Complejo Deportivo Municipal Mar Bella
+  timezone: Europe/Madrid
+  lat: 41.4000657
+  lon: 2.20920731
+  url: "https://tickets-esdk.spartan.com/event/198"
+  categories:
+    - deka-fit-singles
+    - deka-fit-pairs
+    - deka-mile
+    - deka-strong-singles
+  # sub-events: dekafit, dekamile, dekastrong
+  # spartan_id: 10950
