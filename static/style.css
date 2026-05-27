@@ -413,6 +413,39 @@ footer {
   }
 }
 
+/* Brand mark: logo + wordmark in the header */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+/* Constrain logo size aggressively — Pico's `img { max-width: 100% }`
+   would otherwise let it expand to whatever the flex container offers.
+   Mobile default: 2rem. Desktop: 4rem (doubled). */
+.brand-logo,
+.top-nav .brand-logo {
+  width: 2rem !important;
+  height: 2rem !important;
+  max-width: 2rem !important;
+  max-height: 2rem !important;
+  min-width: 0;
+  display: block;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .brand-logo,
+  .top-nav .brand-logo {
+    width: 4rem !important;
+    height: 4rem !important;
+    max-width: 4rem !important;
+    max-height: 4rem !important;
+  }
+}
+
 /* Top navigation — keep all items vertically centered on one baseline */
 
 .top-nav ul {

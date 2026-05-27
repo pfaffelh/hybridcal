@@ -11,13 +11,19 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}/{{ lang }}{{ current_path }}">
   <meta property="og:locale" content="{{ t.meta.locale|replace('-', '_') }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.base_path }}/static/logo/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.base_path }}/static/logo/og-image.png">
   {% endblock %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <link rel="stylesheet" href="{{ site.base_path }}/static/style.css">
   <link rel="alternate" type="application/rss+xml" title="HybridCal RSS" href="{{ site.base_path }}/feed.rss">
   <link rel="alternate" type="text/calendar" title="HybridCal ICS" href="{{ site.base_path }}/feed.ics">
-  {# Suppress favicon 404 until we have a real one #}
-  <link rel="icon" href="data:,">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.base_path }}/static/logo/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="{{ site.base_path }}/static/logo/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.base_path }}/static/logo/apple-touch-icon.png">
   <link rel="alternate" hreflang="de" href="{{ site.base_path }}/de{{ current_path }}">
   <link rel="alternate" hreflang="en" href="{{ site.base_path }}/en{{ current_path }}">
   <link rel="alternate" hreflang="x-default" href="{{ site.base_path }}/de{{ current_path }}">
@@ -28,7 +34,12 @@
   <header class="container">
     <nav class="top-nav">
       <ul>
-        <li><strong><a href="{{ site.base_path }}/{{ lang }}/" class="contrast">HybridCal</a></strong></li>
+        <li>
+          <a href="{{ site.base_path }}/{{ lang }}/" class="contrast brand" aria-label="HybridCal">
+            <img src="{{ site.base_path }}/static/logo/logo.png"
+                 alt="HybridCal" class="brand-logo">
+          </a>
+        </li>
       </ul>
       <ul>
         <li><a href="{{ site.base_path }}/{{ lang }}/">{{ t.nav.calendar }}</a></li>
