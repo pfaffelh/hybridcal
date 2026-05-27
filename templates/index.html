@@ -23,8 +23,7 @@
 
   <div class="page-layout">
     <aside class="filter-sidebar">
-      <details class="filter-panel"
-               x-init="$el.open = window.innerWidth >= 768">
+      <details class="filter-panel" open>
         <summary>
           {{ t.index.filter }}
           <span x-show="activeFilterCount > 0" x-text="`(${activeFilterCount})`"></span>
