@@ -177,26 +177,28 @@
     </main>
   </div>
 
-  {# Mobile-only fixed bottom nav. Note: NO role="group" — Pico's
-     [role=group] rule sets position:relative which would defeat our
-     position:fixed. Plain <div> avoids that. #}
-  <div class="bottom-nav" aria-label="View toggle">
-    <button @click="setView('list')"
-            :aria-pressed="view === 'list'"
-            :class="view === 'list' ? '' : 'secondary outline'">
-      {{ t.index.view_list }}
-    </button>
-    <button @click="setView('map')"
-            :aria-pressed="view === 'map'"
-            :class="view === 'map' ? '' : 'secondary outline'">
-      {{ t.index.view_map }}
-    </button>
-    <button @click="setView('calendar')"
-            :aria-pressed="view === 'calendar'"
-            :class="view === 'calendar' ? '' : 'secondary outline'">
-      {{ t.index.view_calendar }}
-    </button>
-  </div>
+  {# Teleport to <body> so the nav escapes any ancestor that creates a
+     containing block (like the open filter panel). Alpine preserves
+     the reactive scope across the teleport. #}
+  <template x-teleport="body">
+    <div class="bottom-nav" aria-label="View toggle">
+      <button @click="setView('list')"
+              :aria-pressed="view === 'list'"
+              :class="view === 'list' ? '' : 'secondary outline'">
+        {{ t.index.view_list }}
+      </button>
+      <button @click="setView('map')"
+              :aria-pressed="view === 'map'"
+              :class="view === 'map' ? '' : 'secondary outline'">
+        {{ t.index.view_map }}
+      </button>
+      <button @click="setView('calendar')"
+              :aria-pressed="view === 'calendar'"
+              :class="view === 'calendar' ? '' : 'secondary outline'">
+        {{ t.index.view_calendar }}
+      </button>
+    </div>
+  </template>
 </div>
 
 <script>
