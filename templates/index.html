@@ -92,6 +92,11 @@
                 :class="view === 'map' ? '' : 'secondary outline'">
           {{ t.index.view_map }}
         </button>
+        <button @click="setView('calendar')"
+                :aria-pressed="view === 'calendar'"
+                :class="view === 'calendar' ? '' : 'secondary outline'">
+          {{ t.index.view_calendar }}
+        </button>
       </div>
 
       <p x-show="filtered.length === 0">
@@ -137,6 +142,37 @@
 
       <div x-show="view === 'map'" x-cloak>
         <div id="map" aria-label="Event map"></div>
+      </div>
+
+      <div x-show="view === 'calendar'" x-cloak>
+        <div class="calendar-header">
+          <button @click="prevMonth()" class="secondary outline"
+                  :aria-label="`{{ t.index.calendar_prev }}`">‹</button>
+          <strong x-text="currentMonthLabel"></strong>
+          <button @click="nextMonth()" class="secondary outline"
+                  :aria-label="`{{ t.index.calendar_next }}`">›</button>
+        </div>
+        <button @click="goToToday()" class="secondary outline calendar-today">
+          {{ t.index.calendar_today }}
+        </button>
+        <div class="calendar-grid">
+          <template x-for="wd in weekdays" :key="wd">
+            <div class="calendar-weekday" x-text="wd"></div>
+          </template>
+          <template x-for="d in calendarDays" :key="d.iso">
+            <div class="calendar-day"
+                 :class="{'other-month': !d.isCurrentMonth, 'is-today': d.isToday}">
+              <div class="day-num" x-text="d.day"></div>
+              <template x-for="e in d.events" :key="e.slug">
+                <a :href="`${basePath}/${lang}/events/${e.slug}.html`"
+                   class="event-chip"
+                   :style="`background:${formats[e.format]?.color || '#888'}; color:${chipTextColor(formats[e.format]?.color)}`"
+                   :title="e.name"
+                   x-text="e.name"></a>
+              </template>
+            </div>
+          </template>
+        </div>
       </div>
     </main>
   </div>

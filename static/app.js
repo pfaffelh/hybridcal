@@ -32,6 +32,8 @@ function eventFilter() {
     view: 'map',
     map: null,
     cluster: null,
+    calendarYear: new Date().getFullYear(),
+    calendarMonth: new Date().getMonth(),
     _initialized: false,
 
     async init() {
@@ -141,6 +143,88 @@ function eventFilter() {
       }
     },
 
+    // ── Calendar view ─────────────────────────────────────────────
+    get weekdays() {
+      // Jan 1, 2024 was a Monday → use it as anchor for Mo-So order
+      return [...Array(7).keys()].map(i => {
+        const d = new Date(Date.UTC(2024, 0, i + 1));
+        return d.toLocaleDateString(this.locale, {
+          weekday: 'short', timeZone: 'UTC',
+        });
+      });
+    },
+
+    get currentMonthLabel() {
+      return new Date(this.calendarYear, this.calendarMonth, 1)
+        .toLocaleDateString(this.locale, { month: 'long', year: 'numeric' });
+    },
+
+    get calendarDays() {
+      const first = new Date(this.calendarYear, this.calendarMonth, 1);
+      // getDay(): 0=Sun..6=Sat ; we want 0=Mon..6=Sun
+      const firstWeekday = (first.getDay() + 6) % 7;
+      const startDate = new Date(this.calendarYear, this.calendarMonth, 1 - firstWeekday);
+      const todayIso = todayISO();
+      const days = [];
+      for (let i = 0; i < 42; i++) {
+        const d = new Date(startDate);
+        d.setDate(startDate.getDate() + i);
+        // Local ISO date (avoid timezone shift from toISOString in UTC)
+        const iso = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        days.push({
+          iso,
+          day: d.getDate(),
+          isCurrentMonth: d.getMonth() === this.calendarMonth,
+          isToday: iso === todayIso,
+          events: this.eventsOnDay(iso),
+        });
+      }
+      return days;
+    },
+
+    eventsOnDay(iso) {
+      return this.events.filter(e => {
+        if (!e.date_start || !e.date_end) return false;
+        if (iso < e.date_start || iso > e.date_end) return false;
+        // Apply other filters but bypass date_range (calendar IS the date filter)
+        return this.matches(e, { dateFrom: '', dateTo: '' });
+      });
+    },
+
+    prevMonth() {
+      if (this.calendarMonth === 0) {
+        this.calendarMonth = 11;
+        this.calendarYear -= 1;
+      } else {
+        this.calendarMonth -= 1;
+      }
+    },
+
+    nextMonth() {
+      if (this.calendarMonth === 11) {
+        this.calendarMonth = 0;
+        this.calendarYear += 1;
+      } else {
+        this.calendarMonth += 1;
+      }
+    },
+
+    goToToday() {
+      const now = new Date();
+      this.calendarYear = now.getFullYear();
+      this.calendarMonth = now.getMonth();
+    },
+
+    chipTextColor(hex) {
+      if (!hex) return '#fff';
+      const c = hex.replace('#', '');
+      const r = parseInt(c.substr(0, 2), 16);
+      const g = parseInt(c.substr(2, 2), 16);
+      const b = parseInt(c.substr(4, 2), 16);
+      const yiq = (r * 299 + g * 587 + b * 114) / 1000;
+      return yiq >= 140 ? '#000' : '#fff';
+    },
+
     initMap() {
       this.map = L.map('map', { preferCanvas: true }).setView([50, 9], 4);
 
@@ -241,7 +325,7 @@ function eventFilter() {
       if (p.has('to')) this.filters.dateTo = p.get('to');
       if (p.has('q')) this.search = p.get('q');
       const viewParam = p.get('view');
-      if (viewParam === 'list' || viewParam === 'map') this.view = viewParam;
+      if (['list', 'map', 'calendar'].includes(viewParam)) this.view = viewParam;
     },
 
     saveToURL() {

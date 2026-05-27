@@ -22,6 +22,10 @@ index:
   status_cancelled: abgesagt
   view_list: Liste
   view_map: Karte
+  view_calendar: Kalender
+  calendar_prev: Vormonat
+  calendar_next: Nächster Monat
+  calendar_today: Heute
 
 event:
   format: Format
