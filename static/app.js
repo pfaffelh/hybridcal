@@ -1,4 +1,16 @@
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function plusMonthsISO(months) {
+  const d = new Date();
+  d.setMonth(d.getMonth() + months);
+  return d.toISOString().slice(0, 10);
+}
+
 function eventFilter() {
+  const defaultFrom = todayISO();
+  const defaultTo = plusMonthsISO(9);
   return {
     events: [],
     formats: window.FORMATS || {},
@@ -6,12 +18,15 @@ function eventFilter() {
     lang: window.LANG || 'de',
     locale: window.LOCALE || 'de-DE',
     defaultRegions: window.DEFAULT_REGIONS || ['dach'],
+    defaultDateFrom: defaultFrom,
+    defaultDateTo: defaultTo,
     basePath: window.BASE_PATH || '',
     tbaLabel: window.DATE_TBA_LABEL || 'TBA',
     filters: {
       formats: [],
       regions: [],
-      showPast: false,
+      dateFrom: defaultFrom,
+      dateTo: defaultTo,
     },
     search: '',
     view: 'map',
@@ -36,9 +51,6 @@ function eventFilter() {
       if (this.view === 'map') {
         this.$nextTick(() => {
           this.initMap();
-          // Defer renderMarkers + invalidateSize until CSS layout is settled.
-          // On initial page load Leaflet can otherwise measure 0×0 px and
-          // render nothing.
           setTimeout(() => {
             this.map.invalidateSize();
             this.renderMarkers();
@@ -58,19 +70,23 @@ function eventFilter() {
       if (this.filters.formats.length > 0) n++;
       if (!this.regionsAreDefault()) n++;
       if (this.search) n++;
-      if (this.filters.showPast) n++;
+      // date range is always visible in the UI — don't count it
       return n;
     },
 
     matches(e, overrides = {}) {
-      const today = new Date().toISOString().slice(0, 10);
       const formats = overrides.formats ?? this.filters.formats;
       const regions = overrides.regions ?? this.filters.regions;
-      const showPast = overrides.showPast ?? this.filters.showPast;
+      const dateFrom = overrides.dateFrom ?? this.filters.dateFrom;
+      const dateTo = overrides.dateTo ?? this.filters.dateTo;
       const search = (overrides.search ?? this.search).toLowerCase().trim();
 
-      // TBA events (date_end null) are never "past" — always visible.
-      if (!showPast && e.date_end && e.date_end < today) return false;
+      // TBA events (no date) are filtered out by the date range.
+      if (!e.date_start || !e.date_end) return false;
+      // Date-range overlap: event spans [date_start..date_end], filter is [from..to]
+      if (dateFrom && e.date_end < dateFrom) return false;
+      if (dateTo && e.date_start > dateTo) return false;
+
       if (formats.length > 0 && !formats.includes(e.format)) return false;
       if (regions.length > 0 && !regions.includes(e.region)) return false;
       if (search) {
@@ -128,8 +144,6 @@ function eventFilter() {
     initMap() {
       this.map = L.map('map', { preferCanvas: true }).setView([50, 9], 4);
 
-      // Tile provider varies by language: OSM Germany has German place
-      // labels (München, Köln); CARTO Voyager has English (Munich, Cologne).
       const tileConfigs = {
         de: {
           url: 'https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png',
@@ -214,7 +228,8 @@ function eventFilter() {
     reset() {
       this.filters.formats = [];
       this.filters.regions = [...this.defaultRegions];
-      this.filters.showPast = false;
+      this.filters.dateFrom = this.defaultDateFrom;
+      this.filters.dateTo = this.defaultDateTo;
       this.search = '';
     },
 
@@ -222,8 +237,9 @@ function eventFilter() {
       const p = new URLSearchParams(location.search);
       if (p.has('format')) this.filters.formats = p.get('format').split(',').filter(Boolean);
       if (p.has('region')) this.filters.regions = p.get('region').split(',').filter(Boolean);
+      if (p.has('from')) this.filters.dateFrom = p.get('from');
+      if (p.has('to')) this.filters.dateTo = p.get('to');
       if (p.has('q')) this.search = p.get('q');
-      if (p.get('past') === '1') this.filters.showPast = true;
       const viewParam = p.get('view');
       if (viewParam === 'list' || viewParam === 'map') this.view = viewParam;
     },
@@ -235,8 +251,9 @@ function eventFilter() {
       if (!this.regionsAreDefault() && this.filters.regions.length) {
         p.set('region', this.filters.regions.join(','));
       }
+      if (this.filters.dateFrom !== this.defaultDateFrom) p.set('from', this.filters.dateFrom);
+      if (this.filters.dateTo !== this.defaultDateTo) p.set('to', this.filters.dateTo);
       if (this.search) p.set('q', this.search);
-      if (this.filters.showPast) p.set('past', '1');
       if (this.view !== 'map') p.set('view', this.view);
       const qs = p.toString();
       history.replaceState(null, '', qs ? `?${qs}` : location.pathname);

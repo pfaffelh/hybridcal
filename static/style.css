@@ -24,16 +24,88 @@ fieldset {
   margin-bottom: 0.5rem;
 }
 
-/* Filter UI: checkbox labels flow horizontally with gap. */
-.filter-ui fieldset label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  margin-right: 1rem;
+/* Page layout: filter sidebar on left (desktop), stacked (mobile) */
+.page-layout {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
 }
 
-.filter-ui fieldset label.facet-zero {
+@media (min-width: 768px) {
+  .page-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+/* Filter sidebar */
+.filter-sidebar .filter-panel > summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+/* Desktop: hide the summary, content is always visible */
+@media (min-width: 768px) {
+  .filter-sidebar .filter-panel > summary {
+    display: none;
+  }
+}
+
+.filter-sidebar fieldset {
+  margin: 0 0 1rem 0;
+  border: 0;
+  padding: 0;
+}
+
+.filter-sidebar fieldset legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.filter-sidebar fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+}
+
+.filter-sidebar fieldset label.facet-zero {
   opacity: 0.4;
+}
+
+.filter-sidebar fieldset label input[type="checkbox"] {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.filter-sidebar fieldset label small {
+  margin-left: 0.15rem;
+}
+
+.filter-sidebar fieldset label .info-icon {
+  margin-left: auto;
+}
+
+.filter-sidebar > .filter-panel > button {
+  width: 100%;
+  margin: 0;
+}
+
+/* Date-range fieldset uses block labels (different from checkbox labels) */
+.filter-sidebar fieldset.date-range label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.filter-sidebar fieldset.date-range input[type="date"] {
+  width: 100%;
+  margin-top: 0.2rem;
 }
 
 .info-icon {

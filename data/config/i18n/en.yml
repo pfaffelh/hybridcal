@@ -11,6 +11,9 @@ index:
   filter_format: Format
   filter_region: Region
   filter_show_past: Show past events
+  filter_date_range: Date range
+  filter_date_from: from
+  filter_date_to: to
   filter_reset: Reset filters
   no_results: No events found. Try fewer filters.
   events_count: event(s)

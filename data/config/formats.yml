@@ -11,15 +11,6 @@ hyrox:
     Indoor race format with 8 x 1km runs alternating with 8 functional
     workout stations.
 
-athx:
-  name: Hybrid Games ATHX
-  type: Paired Functional
-  website: https://athxgames.com
-  color: "#F25C00"  # Hybrid Games ATHX brand orange
-  description_de: >
-    Paar-Wettkampf mit drei Workouts mit Fokus auf Kraft, Ausdauer und
-    Metabolic Conditioning. Mit Erholungs- und Refuel-Stationen dazwischen.
-
 deadly-dozen:
   name: Deadly Dozen
   type: Hybrid Race
@@ -29,6 +20,15 @@ deadly-dozen:
     12 funktionelle Stationen ("Labours") wie Farmers Carry, Lunges,
     Burpee Broad Jumps, Goblet Squats, Bear Crawls. Drei Varianten:
     Deadly Strong, Deadly Run, Deadly ERG.
+
+athx:
+  name: Hybrid Games ATHX
+  type: Paired Functional
+  website: https://athxgames.com
+  color: "#F25C00"  # Hybrid Games ATHX brand orange
+  description_de: >
+    Paar-Wettkampf mit drei Workouts mit Fokus auf Kraft, Ausdauer und
+    Metabolic Conditioning. Mit Erholungs- und Refuel-Stationen dazwischen.
 
 deka:
   name: DEKA

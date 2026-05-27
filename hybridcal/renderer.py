@@ -159,6 +159,9 @@ def render_site(
         loader=FileSystemLoader(templates_dir),
         autoescape=select_autoescape(["html"]),
     )
+    # Don't sort dict keys when serializing to JSON — preserve insertion
+    # order (used for format dropdown order in the filter UI).
+    env.policies["json.dumps_kwargs"] = {"sort_keys": False}
 
     static_out = out_dir / "static"
     if static_out.exists():
