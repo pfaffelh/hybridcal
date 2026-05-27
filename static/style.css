@@ -24,17 +24,26 @@ fieldset {
   margin-bottom: 0.5rem;
 }
 
-/* Page layout: filter sidebar on left (desktop), stacked (mobile) */
+/* Page layout
+   Mobile: results on top, filter below (so user sees the map first).
+   Desktop (>=768px): filter sidebar left, results main area right. */
 .page-layout {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr;
+  grid-template-areas:
+    "results"
+    "filter";
   margin-top: 1rem;
 }
+
+.filter-sidebar { grid-area: filter; }
+.results { grid-area: results; }
 
 @media (min-width: 768px) {
   .page-layout {
     grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-areas: "filter results";
     align-items: start;
   }
 }
