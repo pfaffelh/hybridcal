@@ -178,9 +178,158 @@ deadly-dozen:
   website: https://deadlydozen.com
   color: "#FF3131"  # Deadly Dozen brand red
   description_de: >
-    12 funktionelle Stationen ("Labours") wie Farmers Carry, Lunges,
-    Burpee Broad Jumps, Goblet Squats, Bear Crawls. Drei Varianten:
-    Deadly Strong, Deadly Run, Deadly ERG.
+    Outdoor-Bahn-Race: 12 × 400 m Runden, jeweils gefolgt von einer der
+    12 Stationen ("Labours") in fester Reihenfolge: Farmers Carry, Deadlift,
+    Lunge, Snatch, Burpee Broad Jump, Goblet Squat, Front Carry, Push Press,
+    Bear Crawl, Clean & Press, Overhead Carry, Devil Press.
+  description_en: >
+    Outdoor track race: 12 × 400 m laps, each followed by one of the
+    12 stations ("Labours") in fixed order: Farmers Carry, Deadlift,
+    Lunge, Snatch, Burpee Broad Jump, Goblet Squat, Front Carry, Push Press,
+    Bear Crawl, Clean & Press, Overhead Carry, Devil Press.
+  long_description_de: |
+    ## Format
+
+    **Deadly Dozen** ist ein Bahn-Race auf einer Standard-Leichtathletik-Bahn:
+    **12 × 400 m Laufabschnitte ("Journeys")**, jeweils gefolgt von einer
+    der 12 Stationen ("Labours"). Es gibt nur Bodyweight, Kettlebells,
+    Dumbbells und Hantelscheiben — kein spezialisiertes Equipment.
+
+    Die Reihenfolge ist fix; ein Lauf darf erst nach Abschluss der vorherigen
+    Station begonnen werden. Mindestalter im Track Race ist 18 Jahre (Ausnahme:
+    Youth-Format).
+
+    ## Die 12 Labours (Track Race, Reihenfolge offiziell)
+
+    Reihenfolge, Equipment, Volumen und Gewichte aus der offiziellen
+    Race-Tabelle für das Deadly Dozen Track Race.
+
+    | RND | Labour              | Equipment    | Reps / Distanz | Male        | Female      |
+    |-----|---------------------|--------------|----------------|-------------|-------------|
+    | 1   | Farmers Carry       | Kettlebell   | 240 m          | 2 × 24 kg   | 2 × 16 kg   |
+    | 2   | Deadlift            | Kettlebell   | 60 Reps        | 1 × 32 kg   | 1 × 24 kg   |
+    | 3   | Lunge               | Dumbbell     | 60 m           | 2 × 12,5 kg | 2 × 7,5 kg  |
+    | 4   | Snatch              | Dumbbell     | 60 Reps        | 1 × 15 kg   | 1 × 9 kg    |
+    | 5   | Burpee Broad Jump   | Bodyweight   | 60 m           | —           | —           |
+    | 6   | Goblet Squat        | Kettlebell   | 60 Reps        | 1 × 16 kg   | 1 × 12 kg   |
+    | 7   | Front Carry         | Weight Plate | 240 m          | 1 × 25 kg   | 1 × 20 kg   |
+    | 8   | Push Press          | Dumbbell     | 60 Reps        | 2 × 12,5 kg | 2 × 6 kg    |
+    | 9   | Bear Crawl          | Bodyweight   | 120 m          | —           | —           |
+    | 10  | Clean & Press       | Weight Plate | 60 Reps        | 1 × 15 kg   | 1 × 10 kg   |
+    | 11  | Overhead Carry      | Weight Plate | 180 m          | 1 × 15 kg   | 1 × 10 kg   |
+    | 12  | Devil Press         | Dumbbell     | 20 Reps        | 2 × 10 kg   | 2 × 5 kg    |
+
+    Jeder Labour-Block folgt direkt auf eine 400-m-Bahnrunde (Journey). Volumen
+    und Gewichte beziehen sich auf das Standard Track Race; Sprint, Youth,
+    Ruck etc. skalieren wie unten beschrieben.
+
+    ## Race-Varianten
+
+    Die Deadly-Dozen-Familie kennt mehrere Format-Varianten, die alle auf der
+    "12 + 12"-Grundidee aufbauen:
+
+    - **Deadly Dozen Track Race** — das Original. 12 × 400 m + 12 Labours
+      auf einer Outdoor-Bahn. Solo, Pairs oder Relay (4er-Team).
+    - **Deadly Sprint** — Indoor-Variante. 12 × 200 m + 12 Labours mit
+      50 % Reps/Distanzen, identische Gewichte. Solo oder Pairs.
+    - **Deadly Ruck** — komplettes Track Race mit Gewichtsweste (M 10 kg,
+      W 6 kg).
+    - **Deadly Mile** — Kurzformat: 400 m Lunges + 400 m Burpee Broad Jumps +
+      400 m Bear Crawl + 400 m Run.
+    - **Deadly Youth** — Track-Race für 12–15-Jährige; alle 12 Runs + 12
+      Labours bei ca. 50 % Volumen und Gewichten. Solo oder Youth & Adult
+      Pairs (Begleitperson läuft mit).
+    - **Deadly Gross** — 12 Dozens in 12 Stunden, Solo / Pair / Relay (4er,
+      mixed: 2 M + 2 W). "Das härteste Hybrid-Event der Welt."
+    - **Deadly Swim** — Special Edition: 12 × 100 m Schwimmen + 12 Labours
+      (Pool, See oder Meer, Solo).
+    - **Deadly Strong** — Gym-Variante: nur die 12 Labours back-to-back,
+      ohne Maschinen und ohne Laufen. Solo oder Pairs.
+    - **Deadly ERG** — Gym-Variante: 12 × Ergometer-Intervalle (Row / Ski /
+      Bike / Air Bike) statt Laufen. Mehrere Sub-Varianten (Row ERG, Ski ERG,
+      Bike ERG, Air Bike).
+    - **Deadly Barbell** — eigenständige Strength-Wertung: 6 Hantel-Lifts
+      (Snatch, Clean & Jerk, Deadlift, Strict Press, Squat, Bench) als
+      2-Rep-Max in 60 Minuten. Total Score und Relative Score
+      (Total / Körpergewicht).
+
+    ## Hinweis
+
+    Verbindlich sind natürlich immer die offiziellen Race-Formate auf
+    [deadlydozen.com/fitness-race-formats](https://deadlydozen.com/fitness-race-formats)
+    sowie die offiziellen Regelwerke der einzelnen Varianten.
+  long_description_en: |
+    ## Format
+
+    **Deadly Dozen** is an outdoor race held on a standard athletics track:
+    **12 × 400 m running laps ("Journeys")**, each followed by one of the
+    12 stations ("Labours"). Equipment is deliberately accessible — only
+    bodyweight, kettlebells, dumbbells and weight plates. No specialised
+    machines.
+
+    The sequence is fixed; the next run can only begin once the current
+    Labour is complete. The minimum age for the Track Race is 18 (Youth
+    format excepted).
+
+    ## The 12 Labours (Track Race, official order)
+
+    Order, equipment, volume and weights from the official race table for
+    the Deadly Dozen Track Race.
+
+    | RND | Labour              | Equipment    | Reps / Distance | Male        | Female      |
+    |-----|---------------------|--------------|-----------------|-------------|-------------|
+    | 1   | Farmers Carry       | Kettlebell   | 240 m           | 2 × 24 kg   | 2 × 16 kg   |
+    | 2   | Deadlift            | Kettlebell   | 60 reps         | 1 × 32 kg   | 1 × 24 kg   |
+    | 3   | Lunge               | Dumbbell     | 60 m            | 2 × 12.5 kg | 2 × 7.5 kg  |
+    | 4   | Snatch              | Dumbbell     | 60 reps         | 1 × 15 kg   | 1 × 9 kg    |
+    | 5   | Burpee Broad Jump   | Bodyweight   | 60 m            | —           | —           |
+    | 6   | Goblet Squat        | Kettlebell   | 60 reps         | 1 × 16 kg   | 1 × 12 kg   |
+    | 7   | Front Carry         | Weight Plate | 240 m           | 1 × 25 kg   | 1 × 20 kg   |
+    | 8   | Push Press          | Dumbbell     | 60 reps         | 2 × 12.5 kg | 2 × 6 kg    |
+    | 9   | Bear Crawl          | Bodyweight   | 120 m           | —           | —           |
+    | 10  | Clean & Press       | Weight Plate | 60 reps         | 1 × 15 kg   | 1 × 10 kg   |
+    | 11  | Overhead Carry      | Weight Plate | 180 m           | 1 × 15 kg   | 1 × 10 kg   |
+    | 12  | Devil Press         | Dumbbell     | 20 reps         | 2 × 10 kg   | 2 × 5 kg    |
+
+    Each Labour block directly follows a 400 m track lap (Journey). Volumes
+    and weights are for the standard Track Race; Sprint, Youth, Ruck etc.
+    scale as described below.
+
+    ## Race variants
+
+    The Deadly Dozen family includes several format variants, all built on
+    the "12 + 12" core:
+
+    - **Deadly Dozen Track Race** — the original. 12 × 400 m + 12 Labours on
+      an outdoor track. Solo, Pairs or Relay (team of four).
+    - **Deadly Sprint** — indoor format. 12 × 200 m + 12 Labours at 50 %
+      reps/distance with the same weights. Solo or Pairs.
+    - **Deadly Ruck** — the full Track Race wearing a weight vest (M 10 kg,
+      W 6 kg).
+    - **Deadly Mile** — short format: 400 m Lunges + 400 m Burpee Broad Jumps
+      + 400 m Bear Crawl + 400 m Run.
+    - **Deadly Youth** — Track Race for ages 12–15; all 12 runs + 12 Labours
+      at roughly 50 % volume and weight. Solo or Youth & Adult Pairs (parent/
+      guardian racing alongside).
+    - **Deadly Gross** — 12 Dozens in 12 hours, Solo / Pair / Relay (team of
+      four, mixed: 2 M + 2 W). "The hardest hybrid event in the world."
+    - **Deadly Swim** — special edition: 12 × 100 m swim + 12 Labours
+      (pool, open water or sea swim, Solo only).
+    - **Deadly Strong** — gym format: 12 Labours back-to-back, no runs and
+      no machines. Solo or Pairs.
+    - **Deadly ERG** — gym format: 12 × ergometer intervals (Row / Ski /
+      Bike / Air Bike) replacing the runs. Multiple sub-variants
+      (Row ERG, Ski ERG, Bike ERG, Air Bike).
+    - **Deadly Barbell** — separate strength format: six barbell lifts
+      (Snatch, Clean & Jerk, Deadlift, Strict Press, Squat, Bench) as a
+      2-rep max within 60 minutes. Total Score and Relative Score
+      (Total / bodyweight).
+
+    ## Note
+
+    The official race formats at
+    [deadlydozen.com/fitness-race-formats](https://deadlydozen.com/fitness-race-formats)
+    and the rulebooks of each individual variant are always authoritative.
 
 athx:
   name: Hybrid Games ATHX
