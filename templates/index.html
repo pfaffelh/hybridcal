@@ -81,7 +81,7 @@
     </aside>
 
     <main class="results">
-      <div class="view-toggle" role="group">
+      <div class="view-toggle view-toggle-desktop" role="group">
         <button @click="setView('list')"
                 :aria-pressed="view === 'list'"
                 :class="view === 'list' ? '' : 'secondary outline'">
@@ -176,6 +176,26 @@
       </div>
     </main>
   </div>
+
+  {# Mobile-only fixed bottom nav; lives outside the grid so no ancestor
+     transform/overflow can disturb position:fixed. #}
+  <nav class="bottom-nav" role="group" aria-label="View toggle">
+    <button @click="setView('list')"
+            :aria-pressed="view === 'list'"
+            :class="view === 'list' ? '' : 'secondary outline'">
+      {{ t.index.view_list }}
+    </button>
+    <button @click="setView('map')"
+            :aria-pressed="view === 'map'"
+            :class="view === 'map' ? '' : 'secondary outline'">
+      {{ t.index.view_map }}
+    </button>
+    <button @click="setView('calendar')"
+            :aria-pressed="view === 'calendar'"
+            :class="view === 'calendar' ? '' : 'secondary outline'">
+      {{ t.index.view_calendar }}
+    </button>
+  </nav>
 </div>
 
 <script>

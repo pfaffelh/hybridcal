@@ -163,26 +163,40 @@ footer {
   margin: 0;
 }
 
-/* Mobile: pin view-toggle to the bottom of the viewport (app-style nav).
-   Body gets bottom padding so content isn't hidden behind the bar. */
+/* Desktop view-toggle: inline above results; hidden on mobile */
 @media (max-width: 767px) {
-  .view-toggle {
+  .view-toggle-desktop {
+    display: none;
+  }
+}
+
+/* Mobile fixed bottom nav (separate element, lives outside the grid) */
+.bottom-nav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bottom-nav {
+    display: flex;
+    gap: 0.5rem;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    /* Above Leaflet panes (tiles 200, markers 600, popup 700, controls ~800) */
-    z-index: 1500;
+    /* Above Leaflet panes (tiles 200, markers 600, controls ~800) */
+    z-index: 9999;
     margin: 0;
     padding: 0.5rem 0.75rem;
     padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
     background: var(--pico-card-background-color);
     border-top: 1px solid var(--pico-muted-border-color);
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.12);
   }
 
-  .view-toggle button {
+  .bottom-nav button {
     flex: 1 1 0;
+    margin: 0;
+    padding: 0.5rem;
   }
 
   body {
