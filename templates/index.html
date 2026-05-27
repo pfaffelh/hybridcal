@@ -177,9 +177,10 @@
     </main>
   </div>
 
-  {# Mobile-only fixed bottom nav; lives outside the grid so no ancestor
-     transform/overflow can disturb position:fixed. #}
-  <nav class="bottom-nav" role="group" aria-label="View toggle">
+  {# Mobile-only fixed bottom nav. Note: NO role="group" — Pico's
+     [role=group] rule sets position:relative which would defeat our
+     position:fixed. Plain <div> avoids that. #}
+  <div class="bottom-nav" aria-label="View toggle">
     <button @click="setView('list')"
             :aria-pressed="view === 'list'"
             :class="view === 'list' ? '' : 'secondary outline'">
@@ -195,7 +196,7 @@
             :class="view === 'calendar' ? '' : 'secondary outline'">
       {{ t.index.view_calendar }}
     </button>
-  </nav>
+  </div>
 </div>
 
 <script>
