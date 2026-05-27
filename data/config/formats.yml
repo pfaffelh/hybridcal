@@ -332,13 +332,198 @@ deadly-dozen:
     and the rulebooks of each individual variant are always authoritative.
 
 athx:
-  name: Hybrid Games ATHX
-  type: Paired Functional
+  name: ATHX
+  type: Functional Hybrid Competition
   website: https://athxgames.com
-  color: "#F25C00"  # Hybrid Games ATHX brand orange
+  color: "#F25C00"  # ATHX brand orange
   description_de: >
-    Paar-Wettkampf mit drei Workouts mit Fokus auf Kraft, Ausdauer und
-    Metabolic Conditioning. Mit Erholungs- und Refuel-Stationen dazwischen.
+    Kontinuierlicher 2,5-Stunden-Hybrid-Wettkampf über sechs Zonen: Warm-Up,
+    Strength, Refuel, Endurance, Recovery, MetCon X. Drei gewertete Workouts
+    (Kraft, Ausdauer, MetCon) mit eingebauten Refuel- und Recovery-Stationen.
+  description_en: >
+    Continuous 2.5-hour hybrid competition across six zones: Warm-Up,
+    Strength, Refuel, Endurance, Recovery, MetCon X. Three scored workouts
+    (strength, endurance, MetCon) with built-in refuel and recovery stops.
+  long_description_de: |
+    ## Format
+
+    **ATHX** ist ein 2,5-stündiger kontinuierlicher Fitness-Wettkampf, bei dem
+    die Athlet:innen sechs aufeinander folgende **Zonen** durchlaufen.
+    Drei davon sind gewertete Workouts (Strength, Endurance, MetCon X), die
+    anderen drei sind Service-Zonen (Warm-Up, Refuel, Recovery). Antritt ist
+    entweder **Individual** (Solo) oder als **Team** (2er-Pair, gleich-
+    geschlechtlich oder Mixed).
+
+    Die Workouts wechseln **jede Saison** und werden global einheitlich
+    gefahren, sodass Ergebnisse zwischen Events vergleichbar sind.
+
+    ## Die sechs Zonen
+
+    | # | Zone           | Dauer   | Funktion                                                    |
+    |---|----------------|---------|-------------------------------------------------------------|
+    | 1 | Warm-Up Zone   | 30 min  | Mobilität, Aktivierung, Vorbereitung                        |
+    | 2 | Strength Zone  | 20 min  | Gewerteter Kraft-Workout (z. B. 1RM/3RM/5RM)                |
+    | 3 | Refuel Zone    | 10 min  | Erholung, Hydration, Recharge                               |
+    | 4 | Endurance Zone | 30 min  | Gewerteter Ausdauer-Workout (Run + Row)                     |
+    | 5 | Recovery Zone  | 30 min  | Aktive Recovery mit Recovery-Tech                           |
+    | 6 | MetCon X Zone  | 25 min  | Gewerteter Functional/MetCon-Workout (Comp-Floor-Finale)    |
+
+    ## Workouts 2026
+
+    Beispielhaft die offiziellen 2026-Workouts (Strength und Endurance sind
+    bei Individual und Teams identisch im Schema; MetCon X ist als Team
+    doppelt so groß im Volumen).
+
+    ### Strength (20 min)
+
+    - 0–6 min: **1RM Strict Press**
+    - 6–12 min: **3RM Back Squat**
+    - 12–20 min: **5RM Deadlift**
+    - Score: aufaddiertes Gesamtgewicht
+
+    ### Endurance (22 min Time Cap)
+
+    - Workout: **Run + Row**, jeweils im Wechsel
+    - Lauf-Loop: 250 m. Distanzen nach Kategorie:
+      **LITE 500 m (2 Runden) / ATHX 750 m (3 Runden) / PRO 1 000 m (4 Runden)**
+    - Teams: Athlet A startet auf Run mit Staffelstab, B auf Row; Wechsel
+      nach jedem abgeschlossenen Intervall
+    - Score: zurückgelegte Gesamtdistanz
+
+    ### MetCon X (25 min Time Cap, Individual ATHX)
+
+    | Block                                  | Gewicht (M / F)         |
+    |----------------------------------------|-------------------------|
+    | Ski-Erg                                | 45 cal / 30 cal         |
+    | 30 Single Arm Alt. Ground-to-Overhead  | 20 kg / 12,5 kg         |
+    | 30 m Sandbag Carry                     | 50 kg / 30 kg           |
+    | 30 Box Jump Overs                      | 24" / 20"               |
+    | 30 m Dual DB Walking Lunges            | 2 × 20 kg / 2 × 12,5 kg |
+    | 30 m Burpee Broad Jumps                | —                       |
+    | Ski-Erg                                | 45 cal / 30 cal         |
+
+    **LITE-Variante:** Single-Arm GTOH (Arme nicht alternierend, halbe Reps),
+    Sandbag 40/20 kg, Box Step-Over erlaubt, Walking Lunges nur Bodyweight,
+    leichtere Gewichte.
+
+    **PRO-Variante:** Dual GTOH 22,5/15 kg, Sandbag 70/40 kg, Box 30"/24",
+    Lunges Front-Rack 22,5/15 kg.
+
+    **Teams MetCon X:** alle Reps/Distanzen verdoppelt (60 statt 30); Sandbag
+    Carry wird auf zwei 30-m-Abschnitte aufgeteilt.
+
+    *Diese Workouts gelten für die Saison 2026 und ändern sich jährlich.
+    Verbindliche Bewegungsstandards:
+    [athxgames.com/movement-standards/2026](https://athxgames.com/movement-standards/2026).*
+
+    ## Kategorien
+
+    Drei Schwierigkeits-Stufen, jeweils für Individual und Teams:
+
+    - **LITE** — Einstieg, reduzierte Volumen/Gewichte
+    - **ATHX** — Standard
+    - **PRO** — Wettkampf-Stufe, deutlich erhöhte Lasten
+
+    Teams treten als Pair an: **Männer / Frauen / Mixed**. Mixed-Teams
+    verwenden Female-Box-Höhe und Female-DBs für die entsprechenden
+    Stationen; Sandbag Carry und Dumbbell GTOH bleiben bei den
+    vorgeschriebenen M/F-Gewichten je nach Athlet:in.
+
+    ## Hinweis
+
+    Verbindlich sind immer die offiziellen Bewegungsstandards auf
+    [athxgames.com/movement-standards/2026](https://athxgames.com/movement-standards/2026)
+    und die aktuellen Workouts auf [athxgames.com](https://athxgames.com) —
+    Volumen und Gewichte werden pro Saison neu definiert.
+  long_description_en: |
+    ## Format
+
+    **ATHX** is a 2.5-hour continuous fitness competition in which athletes
+    move through six consecutive **zones**. Three of them are scored
+    workouts (Strength, Endurance, MetCon X), the other three are service
+    zones (Warm-Up, Refuel, Recovery). You can enter as an **Individual**
+    (solo) or as a **Team** (pair, same-sex or Mixed).
+
+    The workouts change **every season** and are run identically worldwide,
+    so results stay comparable across events.
+
+    ## The six zones
+
+    | # | Zone           | Duration | Function                                              |
+    |---|----------------|----------|-------------------------------------------------------|
+    | 1 | Warm-Up Zone   | 30 min   | Mobilise, activate, prepare                           |
+    | 2 | Strength Zone  | 20 min   | Scored strength workout (e.g. 1RM/3RM/5RM)            |
+    | 3 | Refuel Zone    | 10 min   | Recover, hydrate, recharge                            |
+    | 4 | Endurance Zone | 30 min   | Scored endurance workout (Run + Row)                  |
+    | 5 | Recovery Zone  | 30 min   | Active recovery with recovery tech                    |
+    | 6 | MetCon X Zone  | 25 min   | Scored functional / MetCon workout (comp-floor final) |
+
+    ## 2026 Workouts
+
+    The official 2026 workouts (Strength and Endurance share their scheme
+    between Individual and Teams; MetCon X is doubled in volume for Teams).
+
+    ### Strength (20 min)
+
+    - 0–6 min: **1RM Strict Press**
+    - 6–12 min: **3RM Back Squat**
+    - 12–20 min: **5RM Deadlift**
+    - Score: total weight lifted
+
+    ### Endurance (22 min time cap)
+
+    - Workout: **Run + Row**, alternating
+    - Run loop: 250 m. Distances by category:
+      **LITE 500 m (2 laps) / ATHX 750 m (3 laps) / PRO 1,000 m (4 laps)**
+    - Teams: athlete A starts on Run carrying a baton, B on Row; swap after
+      each completed interval
+    - Score: total distance covered
+
+    ### MetCon X (25 min time cap, Individual ATHX)
+
+    | Block                                  | Weight (M / F)          |
+    |----------------------------------------|-------------------------|
+    | Ski-Erg                                | 45 cal / 30 cal         |
+    | 30 Single Arm Alt. Ground-to-Overhead  | 20 kg / 12.5 kg         |
+    | 30 m Sandbag Carry                     | 50 kg / 30 kg           |
+    | 30 Box Jump Overs                      | 24" / 20"               |
+    | 30 m Dual DB Walking Lunges            | 2 × 20 kg / 2 × 12.5 kg |
+    | 30 m Burpee Broad Jumps                | —                       |
+    | Ski-Erg                                | 45 cal / 30 cal         |
+
+    **LITE variant:** Single-arm GTOH (no alternating, half the reps),
+    Sandbag 40/20 kg, Box step-overs allowed, bodyweight walking lunges,
+    lighter weights overall.
+
+    **PRO variant:** Dual GTOH 22.5/15 kg, Sandbag 70/40 kg, Box 30"/24",
+    Lunges Front-Rack 22.5/15 kg.
+
+    **Teams MetCon X:** all reps/distances doubled (60 instead of 30);
+    the Sandbag Carry is split across two 30 m segments.
+
+    *These workouts apply to the 2026 season and change every year.
+    Binding movement standards:
+    [athxgames.com/movement-standards/2026](https://athxgames.com/movement-standards/2026).*
+
+    ## Categories
+
+    Three difficulty tiers, each available for Individuals and Teams:
+
+    - **LITE** — entry level, reduced volume/weights
+    - **ATHX** — standard
+    - **PRO** — competitive tier, significantly heavier loads
+
+    Teams compete as a pair: **Men / Women / Mixed**. Mixed teams use
+    female box height and female DBs on the relevant stations; Sandbag
+    Carry and Dumbbell GTOH stick to the prescribed M / F weights per
+    athlete.
+
+    ## Note
+
+    The official movement standards at
+    [athxgames.com/movement-standards/2026](https://athxgames.com/movement-standards/2026)
+    and the current workouts on [athxgames.com](https://athxgames.com) are
+    always authoritative — volumes and weights are redefined every season.
 
 deka:
   name: DEKA
