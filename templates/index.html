@@ -23,11 +23,7 @@
 
   <div class="page-layout">
     <aside class="filter-sidebar">
-      <details class="filter-panel" open>
-        <summary>
-          {{ t.index.filter }}
-          <span x-show="activeFilterCount > 0" x-text="`(${activeFilterCount})`"></span>
-        </summary>
+      <div class="filter-panel">
 
         <fieldset>
           <legend>{{ t.index.filter_region }}</legend>
@@ -77,7 +73,7 @@
         </fieldset>
 
         <button @click="reset()" class="secondary outline">{{ t.index.filter_reset }}</button>
-      </details>
+      </div>
     </aside>
 
     <main class="results">

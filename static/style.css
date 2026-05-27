@@ -48,20 +48,7 @@ fieldset {
   }
 }
 
-/* Filter sidebar */
-.filter-sidebar .filter-panel > summary {
-  cursor: pointer;
-  font-weight: 600;
-  padding: 0.5rem 0;
-  font-size: 1.05rem;
-}
-
-/* Desktop: hide the summary, content is always visible */
-@media (min-width: 768px) {
-  .filter-sidebar .filter-panel > summary {
-    display: none;
-  }
-}
+/* Filter sidebar — plain div, no collapse */
 
 .filter-sidebar fieldset {
   margin: 0 0 1rem 0;
