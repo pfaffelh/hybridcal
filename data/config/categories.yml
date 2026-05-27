@@ -1,27 +1,49 @@
 hyrox:
+  - id: singles-open-men
+    label_de: Singles Open Männer
+    label_en: Singles Open Men
+  - id: singles-open-women
+    label_de: Singles Open Frauen
+    label_en: Singles Open Women
   - id: singles-pro-men
     label_de: Singles Pro Männer
     label_en: Singles Pro Men
   - id: singles-pro-women
     label_de: Singles Pro Frauen
     label_en: Singles Pro Women
-  - id: singles-open-men
-    label_de: Singles Open Männer
-  - id: singles-open-women
-    label_de: Singles Open Frauen
   - id: doubles-men
-    label_de: Doubles Männer
+    label_de: Doubles Open Männer
+    label_en: Doubles Open Men
   - id: doubles-women
-    label_de: Doubles Frauen
+    label_de: Doubles Open Frauen
+    label_en: Doubles Open Women
   - id: doubles-mixed
-    label_de: Doubles Mixed
+    label_de: Doubles Open Mixed
+    label_en: Doubles Open Mixed
+  - id: doubles-pro-men
+    label_de: Doubles Pro Männer
+    label_en: Doubles Pro Men
+  - id: doubles-pro-women
+    label_de: Doubles Pro Frauen
+    label_en: Doubles Pro Women
+  - id: relay-men
+    label_de: Relay Männer
+    label_en: Relay Men
+  - id: relay-women
+    label_de: Relay Frauen
+    label_en: Relay Women
   - id: relay-mixed
     label_de: Relay Mixed
+    label_en: Relay Mixed
+  - id: corporate
+    label_de: Corporate (Firmen-Staffel)
+    label_en: Corporate (company relay)
   - id: adaptive
     label_de: Adaptive
+    label_en: Adaptive
   - id: youngstars
-    label_de: HYROX Youngstars (Jugend 12-15)
-    label_en: HYROX Youngstars (youth 12-15)
+    label_de: HYROX Youngstars (8–15 Jahre)
+    label_en: HYROX Youngstars (ages 8–15)
 
 athx:
   - id: paired-rx-men

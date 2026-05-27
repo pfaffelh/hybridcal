@@ -5,23 +5,24 @@ hyrox:
   color: "#FFE600"  # HYROX brand yellow
   description_de: >
     Indoor-Wettkampf mit 8 Laufabschnitten à 1 km, abwechselnd mit
-    8 funktionellen Stationen (Ski-Erg, Sled Push/Pull, Burpee Broad Jumps,
+    8 funktionellen Stationen (Ski-Erg, Sled Push, Sled Pull, Burpee Broad Jumps,
     Rowing, Farmers Carry, Sandbag Lunges, Wall Balls).
   description_en: >
     Indoor race format with 8 x 1km runs alternating with 8 functional
-    workout stations.
+    workout stations (Ski-Erg, Sled Push, Sled Pull, Burpee Broad Jumps,
+    Rowing, Farmers Carry, Sandbag Lunges, Wall Balls).
   long_description_de: |
     ## Format
 
-    HYROX ist ein standardisiertes Indoor-Race. Der Ablauf ist weltweit
+    [HYROX](https://en.wikipedia.org/wiki/Hyrox) ist ein standardisiertes Indoor-Race. 
+    Der Ablauf ist weltweit
     identisch: **8 × 1 km Laufen**, jeweils gefolgt von einer **funktionellen
     Workout-Station**. Erst nach Beendigung einer Station darf der nächste
     Lauf-Loop begonnen werden.
 
-    Die Gesamtdistanz beträgt 8 km Laufen plus die Stationen — typische
-    Finisher-Zeiten liegen zwischen 60 (Elite) und 110 Minuten (Open).
+    Die Gesamtdistanz beträgt 8 km Laufen plus die Stationen.
 
-    ## Stationen & Gewichte (Saison 2024/25)
+    ## Stationen & Gewichte (Saison 2025/26)
 
     | # | Station             | Distanz / Reps | Open (M / W)        | Pro (M / W)         |
     |---|---------------------|----------------|---------------------|---------------------|
@@ -32,7 +33,7 @@ hyrox:
     | 5 | Rowing              | 1000 m         | —                   | —                   |
     | 6 | Farmers Carry       | 200 m          | 2 × 24 kg / 2 × 16 kg | 2 × 32 kg / 2 × 24 kg |
     | 7 | Sandbag Lunges      | 100 m          | 20 kg / 10 kg       | 30 kg / 20 kg       |
-    | 8 | Wall Balls          | 100 (W: 75) reps | 6 kg / 4 kg       | 9 kg / 6 kg         |
+    | 8 | Wall Balls          | 100 reps       | 6 kg / 4 kg         | 9 kg / 6 kg         |
 
     *Sled-Gewichte sind die Schlitten-Auflast (inkl. Schlittengewicht
     abhängig von der Veranstaltung). Die Wall-Ball-Zielhöhe beträgt
@@ -40,27 +41,136 @@ hyrox:
 
     ## Kategorien
 
-    - **Singles Open** — M / W, Standardgewichte
-    - **Singles Pro** — M / W, deutlich schwerere Gewichte, eigene Wertung
-    - **Singles Age Groups** — Altersklassen ab 30 in 5-Jahres-Schritten
-    - **Singles Adaptive** — Para-Athletinnen/-Athleten (eigene Anpassungen)
-    - **Doubles** — M / W / Mixed, jeweils gleiche Stationen
+    - **Singles Open** — M / W (Altersgruppen 16–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50–54, 55–59, 60–64, 65–69, 70+)
+    - **Singles Pro** — M / W (Altersgruppen 16–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50–54, 55–59, 60–64, 65–69)
+    - **Doubles Open** — M / W / Mixed, jeweils gleiche Stationen (bei Mixed Gewichte der Singles Pro W). Beide Athlet:innen laufen, bei den Stationen darf man sich beliebig abwechseln.
+    - **Doubles Pro** — M / W, jeweils gleiche Stationen
     - **Relay** — 4er-Staffel (M / W / Mixed), jeder läuft 2 km + 2 Stationen
     - **Corporate** — Firmen-Staffel über die Relay-Distanz
+    - **Adaptive** — Para-Athletinnen/-Athleten (eigene Anpassungen)
 
-    ## Geschichte
+    ## Neu in 2026 — Youngstars
 
-    HYROX wurde 2017 in Hamburg von Christian Toetzke und Moritz Fürste
-    gegründet. Das erste Event fand 2018 in Hamburg statt. Seitdem ist die
-    Serie zu einem der weltweit am schnellsten wachsenden Fitness-Wettkämpfe
-    aufgestiegen mit Events auf allen Kontinenten und einer jährlichen
-    Weltmeisterschaft.
+    [HYROX Youngstars](https://hyrox.com/hyrox-youngstars/) ist das Race-Format
+    für Kinder und Jugendliche von **8–15 Jahren**. Der Ablauf entspricht dem
+    Adult-Race (8 Laufabschnitte + 8 Stationen), Distanzen und Gewichte sind
+    aber an Alter und Entwicklungsstufe angepasst. Die Lauflänge pro Runde
+    beträgt je nach Venue **200–275 m**.
+
+    Es gibt vier Altersgruppen, jeweils getrennt nach Mädchen und Jungen
+    (Divisionen A–H). Maßgeblich ist das Alter am Renntag.
+
+    ### Stationen pro Altersgruppe (Saison 2025/26)
+
+    | Station       | 8–9 J.            | 10–11 J.          | 12–13 J. M    | 12–13 J. J    | 14–15 J. M    | 14–15 J. J    |
+    |---------------|-------------------|-------------------|---------------|---------------|---------------|---------------|
+    | Lauf-Loop     | 1 Runde           | 1 Runde           | 2 Runden      | 2 Runden      | 1 Runde¹      | 1 Runde¹      |
+    | SkiErg        | 300 m             | 400 m             | 500 m         | 500 m         | 600 m         | 600 m         |
+    | Sled Push     | 15 m / 35 kg      | 15 m / 50 kg      | 30 m / 60 kg  | 30 m / 70 kg  | 30 m / 70 kg  | 30 m / 102 kg |
+    | Sled Pull     | 15 m / 25 kg²     | 15 m / 40 kg²     | 30 m / 25 kg  | 30 m / 50 kg  | 30 m / 50 kg  | 30 m / 78 kg  |
+    | Burpee Broad Jumps | 20 m (Frogger)  | 20 m              | 40 m          | 40 m          | 40 m          | 40 m          |
+    | Rudern        | 200 m             | 300 m             | 400 m         | 400 m         | 500 m         | 500 m         |
+    | Farmers Carry | 50 m / 2 × 4 kg   | 50 m / 2 × 6 kg   | 100 m / 8 kg  | 100 m / 12 kg | 100 m / 12 kg | 100 m / 16 kg |
+    | Lunges        | 20 m              | 20 m              | 40 m / 5 kg   | 40 m / 7,5 kg | 40 m / 7,5 kg | 40 m / 10 kg  |
+    | Wall Balls    | 50 Squats / 1 kg³ | 50 Squats / 2 kg³ | 50 / 2 kg 8 ft| 50 / 3 kg 8 ft| 50 / 3 kg 8 ft| 50 / 4 kg 9 ft|
+
+    *M = Mädchen, J = Jungen. ¹ 14–15: 1 Runde zwischen jeder Station (wie
+    Adult-Race). ² Stepback statt Pull mit Seil. ³ Bis 11 Jahre Squats ohne
+    Wurf statt Wall Balls.*
+
+    ### Ablauf
+
+    - Eltern dürfen nicht mit auf den Race-Floor, übergeben das Kind in der
+      Start-Zone und können vom Zuschauerbereich aus zusehen.
+    - 25 Minuten betreutes Warm-up unter Anleitung von HYROX-Coaches direkt
+      vor dem Start.
+    - Pro Race nur eine Altersklasse + Geschlecht in einer Welle.
+    - Penalties (z. B. +30 s falsche Arch, +90 s vergessener Lauf) statt
+      Disqualifikation — die Kinder rennen immer zu Ende.
+
 
     ## Hinweis
 
-    Gewichte und Distanzen können je nach Saison oder lokaler Veranstaltung
-    abweichen. Verbindlich ist immer die offizielle Race-Information auf
-    [hyrox.com](https://hyrox.com).
+    Verbindlich ist natürlich immer die offizielle Race-Information auf [hyrox.com](https://hyrox.com).
+  long_description_en: |
+    ## Format
+
+    [HYROX](https://en.wikipedia.org/wiki/Hyrox) is a standardised indoor race.
+    The structure is identical worldwide: **8 × 1 km runs**, each followed by
+    a **functional workout station**. The next running loop can only begin
+    after the current station is complete.
+
+    Total distance is 8 km of running plus the stations.
+
+    ## Stations & weights (2025/26 season)
+
+    | # | Station             | Distance / Reps | Open (M / W)        | Pro (M / W)         |
+    |---|---------------------|-----------------|---------------------|---------------------|
+    | 1 | SkiErg              | 1000 m          | —                   | —                   |
+    | 2 | Sled Push           | 50 m (4×12.5)   | 152 kg / 102 kg     | 202 kg / 152 kg     |
+    | 3 | Sled Pull           | 50 m (4×12.5)   | 103 kg / 78 kg      | 153 kg / 103 kg     |
+    | 4 | Burpee Broad Jumps  | 80 m            | —                   | —                   |
+    | 5 | Rowing              | 1000 m          | —                   | —                   |
+    | 6 | Farmers Carry       | 200 m           | 2 × 24 kg / 2 × 16 kg | 2 × 32 kg / 2 × 24 kg |
+    | 7 | Sandbag Lunges      | 100 m           | 20 kg / 10 kg       | 30 kg / 20 kg       |
+    | 8 | Wall Balls          | 100 reps        | 6 kg / 4 kg         | 9 kg / 6 kg         |
+
+    *Sled weights are the total load on the sled (the sled's own weight may
+    vary by venue). Wall-ball target height is 3.05 m (M) / 2.75 m (W).*
+
+    ## Categories
+
+    - **Singles Open** — M / W (age groups 16–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50–54, 55–59, 60–64, 65–69, 70+)
+    - **Singles Pro** — M / W (age groups 16–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50–54, 55–59, 60–64, 65–69)
+    - **Doubles Open** — M / W / Mixed, same stations (Mixed uses Singles Pro W weights). Both athletes run together and may swap freely on the stations.
+    - **Doubles Pro** — M / W, same stations
+    - **Relay** — team of four (M / W / Mixed), each athlete runs 2 km + 2 stations
+    - **Corporate** — company relay over the relay distance
+    - **Adaptive** — para athletes (specific adaptations)
+
+    ## New in 2026 — Youngstars
+
+    [HYROX Youngstars](https://hyrox.com/hyrox-youngstars/) is the race format
+    for children and teens aged **8–15**. The structure mirrors the adult
+    race (8 runs + 8 stations), but distances and weights are adapted to age
+    and stage of development. The run-loop length is **200–275 m** depending
+    on the venue.
+
+    There are four age groups, each split into girls and boys (divisions
+    A–H). The decisive factor is the athlete's age on race day.
+
+    ### Stations per age group (2025/26 season)
+
+    | Station       | 8–9 yrs           | 10–11 yrs         | 12–13 G       | 12–13 B       | 14–15 G       | 14–15 B       |
+    |---------------|-------------------|-------------------|---------------|---------------|---------------|---------------|
+    | Run loop      | 1 lap             | 1 lap             | 2 laps        | 2 laps        | 1 lap¹        | 1 lap¹        |
+    | SkiErg        | 300 m             | 400 m             | 500 m         | 500 m         | 600 m         | 600 m         |
+    | Sled Push     | 15 m / 35 kg      | 15 m / 50 kg      | 30 m / 60 kg  | 30 m / 70 kg  | 30 m / 70 kg  | 30 m / 102 kg |
+    | Sled Pull     | 15 m / 25 kg²     | 15 m / 40 kg²     | 30 m / 25 kg  | 30 m / 50 kg  | 30 m / 50 kg  | 30 m / 78 kg  |
+    | Burpee Broad Jumps | 20 m (Frogger) | 20 m             | 40 m          | 40 m          | 40 m          | 40 m          |
+    | Rowing        | 200 m             | 300 m             | 400 m         | 400 m         | 500 m         | 500 m         |
+    | Farmers Carry | 50 m / 2 × 4 kg   | 50 m / 2 × 6 kg   | 100 m / 8 kg  | 100 m / 12 kg | 100 m / 12 kg | 100 m / 16 kg |
+    | Lunges        | 20 m              | 20 m              | 40 m / 5 kg   | 40 m / 7.5 kg | 40 m / 7.5 kg | 40 m / 10 kg  |
+    | Wall Balls    | 50 squats / 1 kg³ | 50 squats / 2 kg³ | 50 / 2 kg 8 ft| 50 / 3 kg 8 ft| 50 / 3 kg 8 ft| 50 / 4 kg 9 ft|
+
+    *G = Girls, B = Boys. ¹ 14–15: one run lap between every station (as in
+    the adult race). ² Sled drag with rope instead of pull. ³ Up to age 11,
+    bodyweight squats replace wall balls (no throw).*
+
+    ### How it works
+
+    - Parents may not enter the race floor; they hand the child over in the
+      start zone and watch from the spectator area.
+    - 25-minute supervised warm-up led by HYROX coaches right before the
+      start.
+    - Each wave contains only one age group + gender.
+    - Mistakes result in time penalties (e.g. +30 s wrong arch, +90 s missed
+      lap) rather than disqualification — the kids always get to finish.
+
+    ## Note
+
+    The official race information at [hyrox.com](https://hyrox.com) is always
+    authoritative.
 
 deadly-dozen:
   name: Deadly Dozen
