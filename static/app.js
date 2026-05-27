@@ -38,6 +38,13 @@ function eventFilter() {
 
     async init() {
       this.filters.regions = [...this.defaultRegions];
+      // Move .bottom-nav out of any potentially-transformed ancestor —
+      // re-parent to <body> so position:fixed is guaranteed relative
+      // to the viewport, no matter what Pico/Alpine does upstream.
+      const nav = document.querySelector('.bottom-nav');
+      if (nav && nav.parentNode !== document.body) {
+        document.body.appendChild(nav);
+      }
       const response = await fetch(this.basePath + '/events.json');
       this.events = await response.json();
       this.loadFromURL();
