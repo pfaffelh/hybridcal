@@ -42,6 +42,18 @@ function eventFilter() {
       this.events = await response.json();
       this.loadFromURL();
       this._initialized = true;
+      // Diagnostic: after Alpine has processed templates, verify the
+      // bottom-nav landed where we expect (direct child of <body>).
+      this.$nextTick(() => {
+        const nav = document.querySelector('.bottom-nav');
+        if (nav) {
+          console.log('[hybridcal] bottom-nav parent:', nav.parentNode?.tagName,
+            'computed position:', getComputedStyle(nav).position,
+            'computed bottom:', getComputedStyle(nav).bottom);
+        } else {
+          console.log('[hybridcal] bottom-nav NOT FOUND in DOM');
+        }
+      });
       this.$watch('filters', () => {
         this.saveToURL();
         if (this.view === 'map' && this.map) this.renderMarkers();
