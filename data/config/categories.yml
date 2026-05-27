@@ -94,8 +94,37 @@ deka:
   - id: deka-mile
     label_de: DEKA MILE
 
-turf-games: []
+turf-games:
+  # Festival (Team of 6, 3 M + 3 W mixed) — Winter / Summer / Gold Coast
+  - id: festival-elite
+    label_de: Festival Elite (Team 6er)
+    label_en: Festival Elite (team of 6)
+  - id: festival-intermediate
+    label_de: Festival Intermediate (Team 6er)
+    label_en: Festival Intermediate (team of 6)
+  - id: festival-everyday
+    label_de: Festival Everyday (Team 6er)
+    label_en: Festival Everyday (team of 6)
+  # Fittest in the City (Team of 4)
+  - id: fittest-in-the-city-elite
+    label_de: Fittest in the City Elite (Team 4er)
+    label_en: Fittest in the City Elite (team of 4)
+  - id: fittest-in-the-city-intermediate
+    label_de: Fittest in the City Intermediate (Team 4er)
+    label_en: Fittest in the City Intermediate (team of 4)
+  - id: fittest-in-the-city-everyday
+    label_de: Fittest in the City Everyday (Team 4er)
+    label_en: Fittest in the City Everyday (team of 4)
+  # ENGINE — endurance-focused, multiple entry types
+  - id: engine-individual
+    label_de: ENGINE Individual
+    label_en: ENGINE Individual
+  - id: engine-pairs
+    label_de: ENGINE Pairs
+    label_en: ENGINE Pairs
+  - id: engine-team
+    label_de: ENGINE Team
+    label_en: ENGINE Team
 
-xenom: []
 
 other: []

@@ -696,17 +696,114 @@ deka:
 
 turf-games:
   name: Turf Games
-  type: Team Functional
+  type: Team Hybrid Festival
+  website: https://turfgames.com
   color: "#0ea5e9"  # sky blue
   description_de: >
-    Team-Wettkampf mit funktionellen und CrossFit-ähnlichen Workouts.
+    Hybrid-Festival, primär als Team-Wettkampf (Festival 6er, City 4er); im
+    ENGINE-Format gibt es zusätzlich Solo- und Pairs-Wertungen. Drei
+    Divisionen (Everyday / Intermediate / Elite). 
+  description_en: >
+    Hybrid festival, primarily a team competition (Festival 6s, City 4s);
+    the ENGINE format additionally offers Solo and Pairs entries. Three
+    divisions (Everyday / Intermediate / Elite). 
+  long_description_de: |
+    ## Format
 
-xenom:
-  name: XENOM
-  type: Hybrid Race
-  color: "#84cc16"  # lime green
-  description_de: >
-    Aufstrebendes europäisches Hybrid-Format.
+    **Turf Games** ist im Kern ein **Team-Wettkampf** — und das unterscheidet
+    es klar von allen anderen Hybrid-Formaten in diesem Kalender. Eine
+    Veranstaltung besteht typischerweise aus **4–5 aufeinander folgenden
+    Workouts** mit funktionellen Bewegungen: Lifting (aber kein heavy
+    Olympic), Running, Rowing, kurze Hindernis-Stationen.
+
+    Pro Event treten Teams in drei Divisionen an:
+
+    - **Everyday** — Einstiegs-Division
+    - **Intermediate** — erfahrene Hobby-Athlet:innen
+    - **Elite** — Spitze der Serie
+
+    ## Wettkampf-Varianten
+
+    | Format | Antritt | Charakter | Dauer / Pensum |
+    |--------|---------|-----------|----------------|
+    | **Festival** (Winter / Summer / Gold Coast) | Team of 6 (3 M + 3 W) | Flagship: 4–5 Workouts back-to-back | Full Festival Day |
+    | **Fittest in the City** | Team of 4 | Kürzeres Stadt-Format | ~95 min Wettkampf-Fenster |
+    | **ENGINE** | **Solo · Pairs · Teams** | Ausdauer-fokussiert | Workouts 35–55 min |
+    | Gelegen. Sonderformate | Teams of 3 (z. B. *Full Throttle*), FITC-Pairs-Qualifier | regional / saisonal | variabel |
+
+    Das **ENGINE**-Format ist dabei der Hybrid-Klassiker mit dem höchsten
+    Cardio-Anteil und das einzige Standard-Format mit Solo- und Pairs-
+    Wertung. Die **Festival**- und **City**-Varianten sind reine Team-
+    Wettkämpfe.
+
+    ## Bewegungs-Beispiele
+
+    Konkrete Workouts variieren pro Event — typisch sind aber:
+
+    - Running (Sprint-Intervalle und längere Loops)
+    - Rowing / Echo Bike / Ski Erg
+    - Dumbbell- und Kettlebell-Lifts (Snatches, Cleans, Carries)
+    - Wall Balls, Box Step-Overs, Sled Push
+    - Burpees, Lunges, Sit-Ups
+    - Synchronisationsaufgaben für das Team (z. B. simultane Wall Balls)
+
+    Schwere Barbell-Lifts (max. Snatch, Clean & Jerk) und olympische
+    Bewegungen kommen praktisch nicht vor.
+
+    ## Hinweis
+
+    Verbindlich sind immer die offiziellen Workouts, Division-Standards und
+    Team-Regeln auf [turfgames.com](https://turfgames.com) bzw. den jeweiligen
+    Event-Seiten dort. Die genaue Workout-Liste wird typischerweise erst
+    in den Tagen vor dem Event veröffentlicht.
+  long_description_en: |
+    ## Format
+
+    **Turf Games** is at heart a **team competition** — and that sets it
+    apart from every other hybrid format in this calendar. A single event
+    typically consists of **4–5 back-to-back workouts** with functional
+    movements: lifting (but no heavy Olympic), running, rowing, short
+    obstacle stations.
+
+    Each event runs three divisions:
+
+    - **Everyday** — entry-level
+    - **Intermediate** — experienced amateur athletes
+    - **Elite** — top tier
+
+    ## Competition variants
+
+    | Format | Entry | Character | Duration / Volume |
+    |--------|-------|-----------|-------------------|
+    | **Festival** (Winter / Summer / Gold Coast) | Team of 6 (3 M + 3 W) | Flagship: 4–5 workouts back-to-back | Full festival day |
+    | **Fittest in the City** | Team of 4 | Shorter city format | ~95 min competition window |
+    | **ENGINE** | **Solo · Pairs · Teams** | Endurance-focused | Workouts of 35–55 min |
+    | Occasional formats | Teams of 3 (e.g. *Full Throttle*), FITC pairs qualifiers | regional / seasonal | variable |
+
+    The **ENGINE** format is the most cardio-heavy hybrid variant and the
+    only standard format with Solo and Pairs entries. The **Festival**
+    and **City** variants are team-only.
+
+    ## Movement examples
+
+    Concrete workouts vary by event — typical building blocks include:
+
+    - Running (sprint intervals and longer loops)
+    - Rowing / Echo Bike / Ski Erg
+    - Dumbbell and kettlebell lifts (snatches, cleans, carries)
+    - Wall Balls, Box Step-Overs, Sled Push
+    - Burpees, Lunges, Sit-Ups
+    - Team-synchronisation tasks (e.g. simultaneous Wall Balls)
+
+    Heavy barbell lifts (max snatch, clean & jerk) and Olympic-style work
+    are essentially absent.
+
+    ## Note
+
+    The official workouts, division standards and team rules at
+    [turfgames.com](https://turfgames.com) and the respective event pages
+    there are always authoritative. The exact workout list is typically
+    published only in the days leading up to the event.
 
 other:
   name: Other

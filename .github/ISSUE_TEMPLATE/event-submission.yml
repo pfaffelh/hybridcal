@@ -21,7 +21,6 @@ body:
         - Deadly Dozen
         - DEKA
         - Turf Games
-        - XENOM
         - Anderes
     validations:
       required: true

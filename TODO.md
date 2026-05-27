@@ -23,7 +23,9 @@ Für die restlichen 6 Formate `long_description_de` (und ggf. `_en`) in
 4. Geschichte (1–2 Absätze)
 5. Hinweis auf offizielle Quelle
 
-Offen: ATHX, Deadly Dozen, DEKA, Turf Games, XENOM, Other.
+Offen: Turf Games, Other. (HYROX, Deadly Dozen, ATHX, DEKA erledigt.
+XENOM bewusst rausgenommen — CrossFit-nahes Format mit Muscle-Ups/HSPU,
+nicht das Hybrid-für-jedermann-Profil dieses Kalenders.)
 
 ## Mobile-Nav
 
