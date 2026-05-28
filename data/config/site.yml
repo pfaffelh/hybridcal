@@ -12,6 +12,10 @@ base_path: ""
 # the custom domain. Remove to fall back to pfaffelh.github.io/hybridcal.
 custom_domain: hybridcal.de
 
+# Google Search Console verification (HTML-tag method). Rendered as a
+# <meta name="google-site-verification"> in every page's <head>.
+google_site_verification: VfJA-ppA1M77uqdsg8vUJRk-_acOIrY85vD7qNgqfq8
+
 # External resources
 github_repo: https://github.com/pfaffelh/hybridcal
 

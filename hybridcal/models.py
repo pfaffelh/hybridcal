@@ -100,3 +100,4 @@ class Site(BaseModel):
     default_regions: list[str] = Field(default_factory=lambda: ["dach"])
     base_path: str = ""  # e.g. "/hybridcal" for GitHub project pages, "" for custom domain
     custom_domain: str | None = None  # if set, build writes dist/CNAME (GitHub Pages picks it up)
+    google_site_verification: str | None = None  # GSC HTML-tag verification token
