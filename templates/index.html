@@ -197,14 +197,14 @@
   </template>
 </div>
 
-<script>
-  window.FORMATS = {{ formats_json|tojson }};
-  window.REGIONS = {{ regions_json|tojson }};
-  window.LANG = {{ lang|tojson }};
-  window.LOCALE = {{ t.meta.locale|tojson }};
-  window.DEFAULT_REGIONS = {{ site.default_regions|tojson }};
-  window.BASE_PATH = {{ site.base_path|tojson }};
-  window.DATE_TBA_LABEL = {{ t.event.date_tba|tojson }};
-</script>
+<script type="application/json" id="hybridcal-data">{
+  "formats": {{ formats_json|tojson }},
+  "regions": {{ regions_json|tojson }},
+  "lang": {{ lang|tojson }},
+  "locale": {{ t.meta.locale|tojson }},
+  "defaultRegions": {{ site.default_regions|tojson }},
+  "basePath": {{ site.base_path|tojson }},
+  "tbaLabel": {{ t.event.date_tba|tojson }}
+}</script>
 <script src="{{ site.base_path }}/static/app.js"></script>
 {% endblock %}

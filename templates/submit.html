@@ -190,44 +190,7 @@
   </article>
 </div>
 
-<script>
-  async function postToWeb3Forms(form) {
-    const formData = new FormData(form);
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData,
-    });
-    return response.json();
-  }
-
-  function makeFormState(scrollTarget) {
-    return {
-      status: 'idle', // 'idle' | 'submitting' | 'success' | 'error'
-      async submit(event) {
-        this.status = 'submitting';
-        try {
-          const result = await postToWeb3Forms(event.target);
-          if (result.success) {
-            this.status = 'success';
-            if (scrollTarget === 'top') {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else if (scrollTarget === 'self') {
-              event.target.closest('[x-data]')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          } else {
-            console.error('Web3Forms error:', result);
-            this.status = 'error';
-          }
-        } catch (err) {
-          console.error('Submit error:', err);
-          this.status = 'error';
-        }
-      },
-    };
-  }
-
-  function submitForm() { return makeFormState('top'); }
-  function correctionForm() { return makeFormState('self'); }
-</script>
+{# No defer: must define submitForm()/correctionForm() during parse, before
+   the deferred Alpine in <head> evaluates x-data (same pattern as app.js). #}
+<script src="{{ site.base_path }}/static/submit.js"></script>
 {% endblock %}

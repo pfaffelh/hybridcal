@@ -1,3 +1,11 @@
+// Bootstrap data is injected as a non-executable JSON block (CSP-friendly:
+// no inline <script> to whitelist). Falls back to {} if absent.
+const HC = (() => {
+  const el = document.getElementById('hybridcal-data');
+  try { return el ? JSON.parse(el.textContent) : {}; }
+  catch (e) { return {}; }
+})();
+
 function todayISO() {
   return new Date().toISOString().slice(0, 10);
 }
@@ -13,15 +21,15 @@ function eventFilter() {
   const defaultTo = plusMonthsISO(9);
   return {
     events: [],
-    formats: window.FORMATS || {},
-    regions: window.REGIONS || [],
-    lang: window.LANG || 'de',
-    locale: window.LOCALE || 'de-DE',
-    defaultRegions: window.DEFAULT_REGIONS || ['dach'],
+    formats: HC.formats || {},
+    regions: HC.regions || [],
+    lang: HC.lang || 'de',
+    locale: HC.locale || 'de-DE',
+    defaultRegions: HC.defaultRegions || ['dach'],
     defaultDateFrom: defaultFrom,
     defaultDateTo: defaultTo,
-    basePath: window.BASE_PATH || '',
-    tbaLabel: window.DATE_TBA_LABEL || 'TBA',
+    basePath: HC.basePath || '',
+    tbaLabel: HC.tbaLabel || 'TBA',
     filters: {
       formats: [],
       regions: [],
