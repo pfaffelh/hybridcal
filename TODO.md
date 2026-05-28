@@ -28,29 +28,35 @@
   HSPU, nicht das Hybrid-für-jedermann-Profil dieses Kalenders
 - ✅ Kleinere Serien als `format: other` integriert (mit beschreibenden
   Notes): STYREKX (NL/BE), METRIX (UK), Nuclear Fit (UK)
+- ✅ Logo (laufende Hantel) als Favicon, Apple-Touch-Icon, OG-Image
+  (1200×630) + Top-Nav-Marke (responsive: 2rem mobil / 4rem desktop)
+- ✅ **Event-URLs-Audit:** alle zukünftigen Events auf event-spezifische
+  Links geprüft (Details unten)
 
-## Nächster Schritt: Event-URLs prüfen
+## Event-URLs — Audit erledigt (2026-05-28)
 
-**Alle Events durchgehen und sicherstellen, dass `url:` auf die jeweilige
-Event-Detail-Seite zeigt — nicht nur auf die generische
-Veranstalter-Homepage.**
+Datenquellen & Vorgehen pro Serie sind jetzt in **`CLAUDE.md`**
+dokumentiert (Playbook). Ergebnis des Durchlaufs:
 
-Status heute:
+- **HYROX (68):** alte `event/<city>/`-URLs waren **flächendeckend 404** →
+  auf echte Slugs gefixt (`event/hyrox-berlin/` etc.)
+- **Deadly Dozen (43):** event-spezifische Booking-URLs aus dem Supabase-
+  Backend; Liverpool-Datumsfehler korrigiert (06-19 → 06-13)
+- **ATHX (32):** 27 auf `events/<ulid>`; Miami + Houston ergänzt
+- **Turf Games (7):** je eigene Detailseite
+- **DEKA (24):** war schon korrekt (Spartan-Ticket-URLs)
+- **STYREKX/METRIX (4):** Detailseiten
 
-- **HYROX**-Events haben oft `https://hyrox.com/event/<city>/` — meist die
-  richtige Detail-Seite (aus dem Seed-Script), aber stichprobenartig prüfen
-  (Tickets-Subdomain wäre noch besser)
-- **DEKA**-Events (Scraper): URL zeigt auf
-  `https://tickets-*.spartan.com/event/<id>` bzw.
-  `https://www.spartan.com/en/race/detail/<id>/overview` — das ist die
-  Event-Detailseite, gut
-- **Deadly Dozen** / **ATHX** / **Turf Games**: vermutlich gemischt —
-  manche zeigen evtl. nur auf die Veranstalter-Hauptseite. Stichprobe nötig
-- **`format: other`** (STYREKX / METRIX / Nuclear Fit): URLs zeigen aktuell
-  auf die Race-Übersicht (`/races`, `/`), nicht auf die Event-spezifische
-  Detail-Seite — diese gibt es teilweise auch nicht separat
-- Wenn keine echte Event-Seite existiert, ist der Veranstalter-Link OK,
-  sollte aber idealerweise im `notes:`-Feld erwähnt werden
+Offene Rest-Punkte aus dem Audit:
+
+- **5 ATHX-2027-Events** (Amsterdam/Copenhagen/Glasgow/Liverpool/Marseille)
+  sind angekündigt, aber noch nicht ticketed → generische `/events`-URL,
+  als `status: tentative` markiert. Sobald Buchung live ist: ULID-URL setzen
+  und auf `confirmed` zurück.
+- **Nuclear Fit (2):** Veranstalter hat keine date-spezifischen Seiten →
+  Hub-Link bleibt.
+- **Re-Run-Idee:** Audit periodisch wiederholen (neue Events erscheinen,
+  ATHX-2027 wird sukzessive ticketed). Quellen in `CLAUDE.md`.
 
 ## Mobile-Nav
 
@@ -125,8 +131,8 @@ Vor öffentlicher Promo durchgehen:
 - **robots.txt + sitemap ping** an Google Search Console
 - **Performance**: Lighthouse-Score checken (Pico+Alpine sind klein,
   Leaflet könnte sich noch lohnen lazy-zu-laden)
-- **Bild-Assets**: aktuell minimal, OG-Preview-Bild fehlt komplett
-  (nur favicon-Suppress) — eigenes 1200×630 OG-Bild ergänzen
+- ✅ **OG-Image** (1200×630) + Favicon + Apple-Touch-Icon vorhanden
+  (`static/logo/`), in `base.html` verdrahtet
 
 ## Sonstiges (offen)
 
