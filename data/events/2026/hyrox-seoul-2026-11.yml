@@ -9,7 +9,7 @@ location:
   timezone: Asia/Seoul
   lat: 37.566679
   lon: 126.978291
-url: "https://hyrox.com/event/seoul/"
+url: https://hyrox.com/event/hyrox-seoul/
 status: confirmed
 source: scraped
 categories:

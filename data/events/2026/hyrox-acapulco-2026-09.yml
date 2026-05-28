@@ -9,7 +9,7 @@ location:
   timezone: America/Mexico_City
   lat: 16.868050
   lon: -99.894018
-url: "https://hyrox.com/event/acapulco/"
+url: https://hyrox.com/event/hyrox-acapulco/
 status: confirmed
 source: scraped
 categories:

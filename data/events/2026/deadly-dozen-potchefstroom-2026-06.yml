@@ -9,7 +9,7 @@ location:
   timezone: Africa/Johannesburg
   lat: -26.707778
   lon: 27.095833
-url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+url: https://www.webtickets.co.za/v2/event.aspx?itemid=1588358502
 status: confirmed
 source: scraped
 categories:

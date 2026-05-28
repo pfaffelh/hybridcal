@@ -7,7 +7,7 @@ location:
   timezone: Australia/Melbourne
   lat: -37.814245
   lon: 144.963173
-url: "https://hyrox.com/event/melbourne/"
+url: https://hyrox.com/event/hyrox-melbourne/
 status: tentative
 source: scraped
 categories:

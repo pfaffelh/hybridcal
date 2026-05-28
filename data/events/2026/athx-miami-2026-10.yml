@@ -1,0 +1,22 @@
+slug: athx-miami-2026-10
+name: "ATHX Miami"
+format: athx
+date_start: 2026-10-10
+date_end: 2026-10-10
+location:
+  city: "Miami"
+  country: US
+  venue: "Miami Beach Convention Center"
+  timezone: America/New_York
+  lat: 25.795065
+  lon: -80.134120
+url: https://athxgames.com/events/01km0begbazs7px4af2ws0s208
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

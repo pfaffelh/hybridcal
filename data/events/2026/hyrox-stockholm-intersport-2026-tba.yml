@@ -8,7 +8,7 @@ location:
   timezone: Europe/Stockholm
   lat: 59.325117
   lon: 18.071093
-url: "https://hyrox.com/event/stockholm/"
+url: https://hyrox.com/event/intersport-hyrox-stockholm-arena/
 status: tentative
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: America/New_York
   lat: 27.944985
   lon: -82.458311
-url: "https://hyrox.com/event/tampa/"
+url: https://hyrox.com/event/hyrox-tampa/
 status: confirmed
 source: scraped
 categories:

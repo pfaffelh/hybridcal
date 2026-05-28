@@ -9,7 +9,7 @@ location:
   timezone: Europe/Berlin
   lat: 50.110644
   lon: 8.682092
-url: "https://hyrox.com/event/frankfurt/"
+url: https://hyrox.com/event/fitness-first-hyrox-frankfurt/
 status: confirmed
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: Europe/Riga
   lat: 56.949398
   lon: 24.105185
-url: "https://hyrox.com/event/riga/"
+url: https://hyrox.com/event/hyrox-riga/
 status: confirmed
 source: scraped
 categories:

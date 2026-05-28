@@ -9,7 +9,7 @@ location:
   timezone: America/Toronto
   lat: 43.653482
   lon: -79.383935
-url: "https://hyrox.com/event/toronto/"
+url: https://hyrox.com/event/goodlife-hyrox-toronto-26-27/
 status: confirmed
 source: scraped
 categories:

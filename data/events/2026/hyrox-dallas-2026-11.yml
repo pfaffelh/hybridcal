@@ -9,7 +9,7 @@ location:
   timezone: America/Chicago
   lat: 32.776272
   lon: -96.796856
-url: "https://hyrox.com/event/dallas/"
+url: https://hyrox.com/event/hyrox-dallas/
 status: confirmed
 source: scraped
 categories:

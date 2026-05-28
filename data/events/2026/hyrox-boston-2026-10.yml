@@ -9,7 +9,7 @@ location:
   timezone: America/New_York
   lat: 42.358834
   lon: -71.057830
-url: "https://hyrox.com/event/boston/"
+url: https://hyrox.com/event/hwpo-hyrox-boston-26-27/
 status: confirmed
 source: scraped
 categories:

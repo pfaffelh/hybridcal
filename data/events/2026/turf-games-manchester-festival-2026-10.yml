@@ -9,7 +9,7 @@ location:
   timezone: Europe/London
   lat: 53.442462
   lon: -2.232455
-url: "https://turfgames.com/pages/events"
+url: https://turfgames.com/pages/manchester-2026
 status: confirmed
 source: scraped
 categories: []

@@ -9,7 +9,7 @@ location:
   timezone: Europe/Dublin
   lat: 53.349379
   lon: -6.260559
-url: "https://hyrox.com/event/dublin/"
+url: https://hyrox.com/event/hyrox-dublin/
 status: confirmed
 source: scraped
 categories:

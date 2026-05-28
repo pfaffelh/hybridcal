@@ -9,7 +9,7 @@ location:
   timezone: Europe/Zurich
   lat: 46.201756
   lon: 6.146601
-url: "https://hyrox.com/event/geneva/"
+url: https://hyrox.com/event/hyrox-geneva/
 status: confirmed
 source: scraped
 categories:

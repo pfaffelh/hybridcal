@@ -8,7 +8,7 @@ location:
   timezone: Asia/Dubai
   lat: 24.453835
   lon: 54.377401
-url: "https://hyrox.com/event/abu-dhabi/"
+url: https://hyrox.com/event/hyrox-abu-dhabi/
 status: tentative
 source: scraped
 categories:

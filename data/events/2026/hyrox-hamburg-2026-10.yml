@@ -9,7 +9,7 @@ location:
   timezone: Europe/Berlin
   lat: 53.550172
   lon: 10.001316
-url: "https://hyrox.com/event/hamburg/"
+url: https://hyrox.com/event/intersport-hyrox-hamburg/
 status: confirmed
 source: scraped
 categories:

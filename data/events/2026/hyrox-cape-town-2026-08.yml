@@ -9,7 +9,7 @@ location:
   timezone: Africa/Johannesburg
   lat: -33.928830
   lon: 18.417220
-url: "https://hyrox.com/event/cape-town/"
+url: https://hyrox.com/event/virgin-active-hyrox-cape-town-26-27/
 status: confirmed
 source: scraped
 categories:

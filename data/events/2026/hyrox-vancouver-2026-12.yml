@@ -9,7 +9,7 @@ location:
   timezone: America/Vancouver
   lat: 49.260872
   lon: -123.113952
-url: "https://hyrox.com/event/vancouver/"
+url: https://hyrox.com/event/hyrox-vancouver/
 status: confirmed
 source: scraped
 categories:

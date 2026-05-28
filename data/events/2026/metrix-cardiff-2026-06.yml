@@ -10,7 +10,7 @@ location:
   timezone: Europe/London
   lat: 51.4720
   lon: -3.1810
-url: https://metrix.fitness/
+url: https://metrix.fitness/events/cardiff/depot-jun-2026
 status: confirmed
 source: scraped
 categories: []

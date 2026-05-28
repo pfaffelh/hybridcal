@@ -9,7 +9,7 @@ location:
   timezone: Europe/Berlin
   lat: 52.517389
   lon: 13.395131
-url: "https://hyrox.com/event/berlin/"
+url: https://hyrox.com/event/hyrox-berlin/
 status: confirmed
 source: scraped
 categories:

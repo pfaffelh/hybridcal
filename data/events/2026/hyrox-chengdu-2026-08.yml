@@ -9,7 +9,7 @@ location:
   timezone: Asia/Shanghai
   lat: 30.659867
   lon: 104.063315
-url: "https://hyrox.com/event/chengdu/"
+url: https://hyrox.com/event/hyrox-chengdu/
 status: confirmed
 source: scraped
 categories:

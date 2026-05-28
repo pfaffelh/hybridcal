@@ -9,7 +9,7 @@ location:
   timezone: Europe/Berlin
   lat: 49.006870
   lon: 8.403420
-url: "https://hyrox.com/event/karlsruhe/"
+url: https://hyrox.com/event/hyrox-karlsruhe/
 status: confirmed
 source: scraped
 categories:

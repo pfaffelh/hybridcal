@@ -9,7 +9,7 @@ location:
   timezone: America/Argentina/Buenos_Aires
   lat: -34.609558
   lon: -58.388790
-url: "https://hyrox.com/event/buenos-aires/"
+url: https://hyrox.com/event/hyrox-buenos-aires/
 status: confirmed
 source: scraped
 categories:

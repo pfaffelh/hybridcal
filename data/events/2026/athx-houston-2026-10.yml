@@ -1,0 +1,22 @@
+slug: athx-houston-2026-10
+name: "ATHX Houston"
+format: athx
+date_start: 2026-10-17
+date_end: 2026-10-17
+location:
+  city: "Houston"
+  country: US
+  venue: "NRG Park"
+  timezone: America/Chicago
+  lat: 29.684757
+  lon: -95.407334
+url: https://athxgames.com/events/01km0bfarc0dcs952s4rmtgd47
+status: confirmed
+source: scraped
+categories:
+  - paired-rx-men
+  - paired-rx-women
+  - paired-rx-mixed
+  - paired-scaled-men
+  - paired-scaled-women
+  - paired-scaled-mixed

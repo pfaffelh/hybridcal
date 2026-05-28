@@ -9,7 +9,7 @@ location:
   timezone: Europe/Vienna
   lat: 48.208354
   lon: 16.372504
-url: "https://hyrox.com/event/vienna/"
+url: https://hyrox.com/find-my-race/
 status: confirmed
 source: scraped
 categories:

@@ -10,7 +10,7 @@ location:
   timezone: Europe/London
   lat: 51.508113
   lon: 0.029707
-url: "https://hyrox.com/event/london/"
+url: https://hyrox.com/event/hyrox-london-excel/
 status: confirmed
 source: scraped
 categories:

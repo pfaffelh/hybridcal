@@ -9,7 +9,7 @@ location:
   timezone: Europe/Amsterdam
   lat: 52.090701
   lon: 5.121563
-url: "https://hyrox.com/event/utrecht/"
+url: https://hyrox.com/event/hyrox-utrecht/
 status: confirmed
 source: scraped
 categories:

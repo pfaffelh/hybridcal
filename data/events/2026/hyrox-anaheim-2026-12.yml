@@ -9,7 +9,7 @@ location:
   timezone: America/Los_Angeles
   lat: 33.834752
   lon: -117.911732
-url: "https://hyrox.com/event/anaheim/"
+url: https://hyrox.com/event/hyrox-anaheim-26-27/
 status: confirmed
 source: scraped
 categories:

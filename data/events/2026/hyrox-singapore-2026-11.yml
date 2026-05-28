@@ -9,7 +9,7 @@ location:
   timezone: Asia/Singapore
   lat: 1.289918
   lon: 103.851907
-url: "https://hyrox.com/event/singapore/"
+url: https://hyrox.com/event/aia-hyrox-singapore/
 status: confirmed
 source: scraped
 categories:

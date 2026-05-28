@@ -9,7 +9,7 @@ location:
   timezone: Asia/Kolkata
   lat: 19.054999
   lon: 72.869203
-url: "https://hyrox.com/event/mumbai/"
+url: https://hyrox.com/event/hyrox-mumbai/
 status: confirmed
 source: scraped
 categories:

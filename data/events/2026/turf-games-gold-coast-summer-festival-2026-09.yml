@@ -9,7 +9,7 @@ location:
   timezone: Australia/Brisbane
   lat: -28.002373
   lon: 153.414599
-url: "https://turfgames.com/pages/events"
+url: https://turfgames.com/pages/gold-coast-2026
 status: confirmed
 source: scraped
 categories: []

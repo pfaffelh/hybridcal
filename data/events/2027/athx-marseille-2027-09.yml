@@ -11,7 +11,7 @@ location:
   lat: 43.272845
   lon: 5.395677
 url: "https://athxgames.com/events"
-status: confirmed
+status: tentative
 source: scraped
 categories:
   - paired-rx-men

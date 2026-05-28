@@ -9,7 +9,7 @@ location:
   timezone: Asia/Jakarta
   lat: -6.175405
   lon: 106.827168
-url: "https://hyrox.com/event/jakarta/"
+url: https://hyrox.com/event/hyrox-jakarta/
 status: confirmed
 source: scraped
 categories:

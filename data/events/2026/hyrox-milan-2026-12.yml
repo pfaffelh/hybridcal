@@ -9,7 +9,7 @@ location:
   timezone: Europe/Rome
   lat: 45.464194
   lon: 9.189635
-url: "https://hyrox.com/event/milan/"
+url: https://hyrox.com/event/hyrox-milan/
 status: confirmed
 source: scraped
 categories:

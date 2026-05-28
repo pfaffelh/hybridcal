@@ -9,7 +9,7 @@ location:
   timezone: Australia/Perth
   lat: -31.955897
   lon: 115.860578
-url: "https://hyrox.com/event/perth/"
+url: https://hyrox.com/event/hyrox-perth/
 status: confirmed
 source: scraped
 categories:

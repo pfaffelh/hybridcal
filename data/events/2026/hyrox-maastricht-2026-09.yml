@@ -9,7 +9,7 @@ location:
   timezone: Europe/Amsterdam
   lat: 50.851244
   lon: 5.690977
-url: "https://hyrox.com/event/maastricht/"
+url: https://hyrox.com/event/hyrox-maastricht/
 status: confirmed
 source: scraped
 categories:

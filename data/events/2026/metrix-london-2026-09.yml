@@ -10,7 +10,7 @@ location:
   timezone: Europe/London
   lat: 51.5039
   lon: 0.0085
-url: https://metrix.fitness/
+url: https://metrix.fitness/events/london/london-5th-september
 status: confirmed
 source: scraped
 categories: []

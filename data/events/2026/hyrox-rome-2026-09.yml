@@ -9,7 +9,7 @@ location:
   timezone: Europe/Rome
   lat: 41.893320
   lon: 12.482932
-url: "https://hyrox.com/event/rome/"
+url: https://hyrox.com/event/hyrox-rome/
 status: confirmed
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: America/New_York
   lat: 40.712728
   lon: -74.006015
-url: "https://hyrox.com/event/new-york/"
+url: https://hyrox.com/event/hyrox-new-york/
 status: confirmed
 source: scraped
 categories:

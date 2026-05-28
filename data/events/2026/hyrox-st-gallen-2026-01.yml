@@ -10,7 +10,7 @@ location:
   timezone: Europe/Zurich
   lat: 47.431660
   lon: 9.381563
-url: "https://hyrox.com/event/st-gallen/"
+url: https://hyrox.com/find-my-race/
 status: confirmed
 source: scraped
 categories:

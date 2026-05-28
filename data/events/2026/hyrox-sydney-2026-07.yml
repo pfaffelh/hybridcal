@@ -9,7 +9,7 @@ location:
   timezone: Australia/Sydney
   lat: -33.869844
   lon: 151.208285
-url: "https://hyrox.com/event/sydney/"
+url: https://hyrox.com/event/hyrox-sydney/
 status: confirmed
 source: scraped
 categories:

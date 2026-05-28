@@ -9,7 +9,7 @@ location:
   timezone: America/Mexico_City
   lat: 19.320772
   lon: -99.151468
-url: "https://hyrox.com/event/mexico-city/"
+url: https://hyrox.com/event/hyrox-mexico-city/
 status: confirmed
 source: scraped
 categories:

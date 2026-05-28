@@ -10,7 +10,7 @@ location:
   timezone: Europe/Dublin
   lat: 53.326654
   lon: -6.228863
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01krwy9mpydvy1btj6mg0n24d3
 status: confirmed
 source: scraped
 categories:

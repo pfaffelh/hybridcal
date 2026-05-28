@@ -9,7 +9,7 @@ location:
   timezone: Europe/Oslo
   lat: 59.913330
   lon: 10.738970
-url: "https://hyrox.com/event/oslo/"
+url: https://hyrox.com/event/hyrox-oslo/
 status: confirmed
 source: scraped
 categories:

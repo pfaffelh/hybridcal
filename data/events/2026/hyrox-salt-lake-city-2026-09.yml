@@ -9,7 +9,7 @@ location:
   timezone: America/Denver
   lat: 40.759620
   lon: -111.886797
-url: "https://hyrox.com/event/salt-lake-city/"
+url: https://hyrox.com/event/hyrox-salt-lake-city-26-27/
 status: confirmed
 source: scraped
 categories:

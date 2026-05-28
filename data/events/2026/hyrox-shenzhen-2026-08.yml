@@ -9,7 +9,7 @@ location:
   timezone: Asia/Shanghai
   lat: 22.544574
   lon: 114.054543
-url: "https://hyrox.com/event/shenzhen/"
+url: https://hyrox.com/event/hyrox-shenzhen/
 status: confirmed
 source: scraped
 categories:

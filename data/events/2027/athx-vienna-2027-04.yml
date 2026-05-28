@@ -10,7 +10,7 @@ location:
   timezone: Europe/Vienna
   lat: 48.187369
   lon: 16.405356
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01krwy752qn8epq15qbfn1kjnm
 status: confirmed
 source: scraped
 categories:

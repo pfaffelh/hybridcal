@@ -9,7 +9,7 @@ location:
   timezone: Asia/Shanghai
   lat: 31.231271
   lon: 121.470015
-url: "https://hyrox.com/event/shanghai/"
+url: https://hyrox.com/event/hyrox-shanghai-1031/
 status: confirmed
 source: scraped
 categories:

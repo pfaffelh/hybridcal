@@ -9,7 +9,7 @@ location:
   timezone: Africa/Johannesburg
   lat: -26.205000
   lon: 28.049722
-url: "https://hyrox.com/event/johannesburg/"
+url: https://hyrox.com/event/virgin-active-hyrox-johannesburg-26-27/
 status: confirmed
 source: scraped
 categories:

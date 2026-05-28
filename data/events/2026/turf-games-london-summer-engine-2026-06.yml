@@ -9,7 +9,7 @@ location:
   timezone: Europe/London
   lat: 51.507446
   lon: -0.127765
-url: "https://turfgames.com/pages/events"
+url: https://turfgames.com/blogs/other/engine-london-summer-2026
 status: confirmed
 source: scraped
 categories: []

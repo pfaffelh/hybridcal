@@ -9,7 +9,7 @@ location:
   timezone: Asia/Bangkok
   lat: 13.752494
   lon: 100.493509
-url: "https://hyrox.com/event/bangkok/"
+url: https://hyrox.com/event/hyrox-bangkok-2/
 status: confirmed
 source: scraped
 categories:

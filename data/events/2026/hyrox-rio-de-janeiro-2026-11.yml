@@ -9,7 +9,7 @@ location:
   timezone: America/Sao_Paulo
   lat: -22.911014
   lon: -43.209373
-url: "https://hyrox.com/event/rio-de-janeiro/"
+url: https://hyrox.com/event/hyrox-rio-de-janeiro/
 status: confirmed
 source: scraped
 categories:

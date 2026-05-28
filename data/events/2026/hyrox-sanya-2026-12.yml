@@ -9,7 +9,7 @@ location:
   timezone: Asia/Shanghai
   lat: 18.253466
   lon: 109.503439
-url: "https://hyrox.com/event/sanya/"
+url: https://hyrox.com/event/30454/
 status: confirmed
 source: scraped
 categories:

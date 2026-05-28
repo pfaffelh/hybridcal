@@ -9,7 +9,7 @@ location:
   timezone: Europe/London
   lat: 52.494899
   lon: -1.851844
-url: "https://hyrox.com/event/birmingham/"
+url: https://hyrox.com/event/hyrox-birmingham/
 status: confirmed
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: Europe/Madrid
   lat: 41.382580
   lon: 2.177073
-url: "https://hyrox.com/event/barcelona/"
+url: https://hyrox.com/event/hyrox-barcelona-2/
 status: confirmed
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: America/New_York
   lat: 38.895098
   lon: -77.036385
-url: "https://hyrox.com/event/washington-dc/"
+url: https://hyrox.com/event/hyrox-washington-d-c-26-27/
 status: confirmed
 source: scraped
 categories:

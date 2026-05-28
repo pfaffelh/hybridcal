@@ -9,7 +9,7 @@ location:
   timezone: Asia/Tokyo
   lat: 35.549399
   lon: 140.264730
-url: "https://hyrox.com/event/chiba/"
+url: https://hyrox.com/event/hyrox-chiba/
 status: confirmed
 source: scraped
 categories:

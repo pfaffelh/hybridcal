@@ -9,7 +9,7 @@ location:
   timezone: America/Denver
   lat: 39.739236
   lon: -104.984862
-url: "https://hyrox.com/event/denver/"
+url: https://hyrox.com/event/hyrox-denver/
 status: confirmed
 source: scraped
 categories:

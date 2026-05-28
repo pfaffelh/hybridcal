@@ -10,7 +10,7 @@ location:
   timezone: Europe/London
   lat: 52.453843
   lon: -1.717550
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01k8b7ktbk6j2am0j31tdf0v72
 status: confirmed
 source: scraped
 categories:

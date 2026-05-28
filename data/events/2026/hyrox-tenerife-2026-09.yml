@@ -9,7 +9,7 @@ location:
   timezone: Atlantic/Canary
   lat: 28.467178
   lon: -16.250784
-url: "https://hyrox.com/event/santa-cruz-de-tenerife/"
+url: https://hyrox.com/event/hyrox-tenerife/
 status: confirmed
 source: scraped
 categories:

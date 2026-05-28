@@ -9,7 +9,7 @@ location:
   timezone: Europe/Paris
   lat: 44.841225
   lon: -0.580036
-url: "https://hyrox.com/event/bordeaux/"
+url: https://hyrox.com/event/hyrox-bordeaux-s26-27/
 status: confirmed
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: America/Sao_Paulo
   lat: -23.550651
   lon: -46.633382
-url: "https://hyrox.com/event/são-paulo/"
+url: https://hyrox.com/event/hyrox-sao-paulo-2/
 status: confirmed
 source: scraped
 categories:

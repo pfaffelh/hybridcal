@@ -10,7 +10,7 @@ location:
   timezone: Europe/Amsterdam
   lat: 52.341226
   lon: 4.889907
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01k8b7nxgwcr70a86vqf2y6ck4
 status: confirmed
 source: scraped
 categories:

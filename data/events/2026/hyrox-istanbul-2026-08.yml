@@ -9,7 +9,7 @@ location:
   timezone: Europe/Istanbul
   lat: 41.006381
   lon: 28.975872
-url: "https://hyrox.com/event/istanbul/"
+url: https://hyrox.com/event/hyrox-istanbul/
 status: confirmed
 source: scraped
 categories:

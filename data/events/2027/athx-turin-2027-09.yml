@@ -10,7 +10,7 @@ location:
   timezone: Europe/Rome
   lat: 45.028977
   lon: 7.663842
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01krwyezkbkvf4rdk2em6nj7z4
 status: confirmed
 source: scraped
 categories:

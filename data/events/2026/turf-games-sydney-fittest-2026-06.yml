@@ -9,7 +9,7 @@ location:
   timezone: Australia/Sydney
   lat: -33.869844
   lon: 151.208285
-url: "https://turfgames.com/pages/events"
+url: https://turfgames.com/pages/sydney-fitc-2026
 status: confirmed
 source: scraped
 categories: []

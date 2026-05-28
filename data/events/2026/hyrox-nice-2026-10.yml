@@ -9,7 +9,7 @@ location:
   timezone: Europe/Paris
   lat: 43.700936
   lon: 7.268391
-url: "https://hyrox.com/event/nice/"
+url: https://hyrox.com/event/hyrox-nice-s26-27/
 status: confirmed
 source: scraped
 categories:

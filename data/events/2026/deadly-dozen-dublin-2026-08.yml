@@ -9,7 +9,7 @@ location:
   timezone: Europe/Dublin
   lat: 53.349379
   lon: -6.260559
-url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+url: https://in.deadlydozen.events/deadly-dozen-dublin-15-august
 status: confirmed
 source: scraped
 categories:

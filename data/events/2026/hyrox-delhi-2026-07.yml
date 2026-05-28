@@ -9,7 +9,7 @@ location:
   timezone: Asia/Kolkata
   lat: 28.613895
   lon: 77.209006
-url: "https://hyrox.com/event/delhi/"
+url: https://hyrox.com/event/hyrox-delhi/
 status: confirmed
 source: scraped
 categories:

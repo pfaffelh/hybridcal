@@ -9,7 +9,7 @@ location:
   timezone: Europe/Madrid
   lat: 39.469707
   lon: -0.376335
-url: "https://hyrox.com/event/valencia/"
+url: https://hyrox.com/event/hyrox-valencia/
 status: confirmed
 source: scraped
 categories:

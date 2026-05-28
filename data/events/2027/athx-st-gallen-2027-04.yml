@@ -10,7 +10,7 @@ location:
   timezone: Europe/Zurich
   lat: 47.431660
   lon: 9.381563
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01krwy682mdagrw81v49eryjfh
 status: confirmed
 source: scraped
 categories:

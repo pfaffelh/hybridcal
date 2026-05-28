@@ -9,7 +9,7 @@ location:
   timezone: America/Mexico_City
   lat: 19.320772
   lon: -99.151468
-url: "https://www.deadlydozen.com/ultimate-fitness-race-track-races"
+url: https://in.deadlydozen.events/deadly-dozen-mexico-city-20260531
 status: confirmed
 source: scraped
 categories:

@@ -9,7 +9,7 @@ location:
   timezone: Asia/Singapore
   lat: 1.289918
   lon: 103.851907
-url: "https://turfgames.com/pages/events"
+url: https://turfgames.com/pages/singapore-2026
 status: confirmed
 source: scraped
 categories: []

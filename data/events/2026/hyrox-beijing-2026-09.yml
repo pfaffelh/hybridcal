@@ -9,7 +9,7 @@ location:
   timezone: Asia/Shanghai
   lat: 39.905714
   lon: 116.391297
-url: "https://hyrox.com/event/beijing/"
+url: https://hyrox.com/event/hyrox-beijing-0912/
 status: confirmed
 source: scraped
 categories:

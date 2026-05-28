@@ -10,7 +10,7 @@ location:
   timezone: Europe/Copenhagen
   lat: 55.686724
   lon: 12.570072
-url: "https://athxgames.com/events"
+url: https://athxgames.com/events/01k8b7kghhb3nk1h7gvshdxsjw
 status: confirmed
 source: scraped
 categories:

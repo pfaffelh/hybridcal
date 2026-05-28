@@ -9,7 +9,7 @@ location:
   timezone: Europe/Rome
   lat: 43.946543
   lon: 12.630749
-url: "https://hyrox.com/event/rimini/"
+url: https://hyrox.com/event/hyrox-rimini/
 status: confirmed
 source: scraped
 categories:

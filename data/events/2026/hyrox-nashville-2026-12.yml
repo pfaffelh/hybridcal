@@ -9,7 +9,7 @@ location:
   timezone: America/Chicago
   lat: 36.162277
   lon: -86.774298
-url: "https://hyrox.com/event/nashville/"
+url: https://hyrox.com/event/hyrox-nashville/
 status: confirmed
 source: scraped
 categories:
