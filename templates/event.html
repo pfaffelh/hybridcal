@@ -4,9 +4,14 @@
 {% block description %}{{ event_description }}{% endblock %}
 {% block og_title %}{{ event.name }}{% if event.date_start %} · {{ event.date_start|fmt_date }}{% endif %}{% endblock %}
 
+{% block og_image %}{{ site.url }}{{ site.base_path }}/static/logo/formats/{{ event.format }}.png{% endblock %}
+
 {% block head_extra %}
 {% if event_json_ld %}
 <script type="application/ld+json">{{ event_json_ld|tojson }}</script>
+{% endif %}
+{% if breadcrumb_json_ld %}
+<script type="application/ld+json">{{ breadcrumb_json_ld|tojson }}</script>
 {% endif %}
 {% endblock %}
 

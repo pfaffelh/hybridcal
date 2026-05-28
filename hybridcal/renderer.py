@@ -56,6 +56,7 @@ def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) ->
         "eventStatus": status_map.get(event.status, "https://schema.org/EventScheduled"),
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "url": f"{site_url}/{lang}/events/{event.slug}.html",
+        "image": f"{site_url}/static/logo/formats/{event.format}.png",
         "location": {
             "@type": "Place",
             "name": event.location.venue or event.location.city,
@@ -79,13 +80,29 @@ def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) ->
             "latitude": event.location.lat,
             "longitude": event.location.lon,
         }
+    # Organizer: always set the series name; add url only when known.
+    organizer = {"@type": "Organization", "name": format_data["name"]}
     if format_data.get("website"):
-        data["organizer"] = {
-            "@type": "Organization",
-            "name": format_data["name"],
-            "url": format_data["website"],
-        }
+        organizer["url"] = format_data["website"]
+    data["organizer"] = organizer
     return data
+
+
+def _breadcrumb_json_ld(event: Event, fmt_name: str, fmt_id: str,
+                        site_url: str, lang: str) -> dict:
+    """schema.org BreadcrumbList: HybridCal › <Format> › <Event>."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "HybridCal",
+             "item": f"{site_url}/{lang}/"},
+            {"@type": "ListItem", "position": 2, "name": fmt_name,
+             "item": f"{site_url}/{lang}/{fmt_id}.html"},
+            # Last crumb = current page → no "item" per Google guidance.
+            {"@type": "ListItem", "position": 3, "name": event.name},
+        ],
+    }
 
 
 def _format_item_list(fmt_events: list[Event], fmt_name: str,
@@ -263,6 +280,8 @@ def render_site(
                     current_path=f"/events/{event.slug}.html",
                     event_description=description,
                     event_json_ld=_event_json_ld(event, fmt_for_lang, site.url, lang),
+                    breadcrumb_json_ld=_breadcrumb_json_ld(
+                        event, fmt_for_lang["name"], event.format, site.url, lang),
                 )
             )
 

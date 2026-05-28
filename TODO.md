@@ -119,8 +119,13 @@ Vor öffentlicher Promo durchgehen:
   Format-Seiten "{Name} — Termine & Kalender {Jahr}" + eigene Description
   (mit Event-Count), Formate-Übersicht und Index mit Brand-Keywords.
   i18n unter `seo:` in beiden Sprachen.
-- ✅ **JSON-LD:** Events haben `schema.org/Event` (`_event_json_ld`),
-  Format-Seiten jetzt `ItemList` der kommenden Events (`_format_item_list`)
+- ✅ **JSON-LD:** Events haben `schema.org/Event` (`_event_json_ld`) inkl.
+  `image` (Format-Markenbild) + konsistentem `organizer` + separater
+  `BreadcrumbList` (HybridCal › Format › Event). Format-Seiten haben
+  `ItemList` der kommenden Events (`_format_item_list`).
+- ✅ **Format-Markenbilder** (`static/logo/formats/<id>.png`, in Format-Farbe
+  + Name + HybridCal-Läufer) dienen als JSON-LD-`image` und als og:image /
+  twitter:image pro Format- und Event-Seite (überschreibbarer `og_image`-Block).
 - **Sitemap.xml** wird generiert — prüfen ob alle Formate und neuen
   Events korrekt drin sind (auch `format: other`)
 - **Canonicals + hreflang**: aktuell richtig gesetzt, aber stichprobenartig
