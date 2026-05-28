@@ -126,19 +126,20 @@ Vor öffentlicher Promo durchgehen:
 - ✅ **Format-Markenbilder** (`static/logo/formats/<id>.png`, in Format-Farbe
   + Name + HybridCal-Läufer) dienen als JSON-LD-`image` und als og:image /
   twitter:image pro Format- und Event-Seite (überschreibbarer `og_image`-Block).
-- **Sitemap.xml** wird generiert — prüfen ob alle Formate und neuen
-  Events korrekt drin sind (auch `format: other`)
-- **Canonicals + hreflang**: aktuell richtig gesetzt, aber stichprobenartig
-  validieren
-- **Page-Titel pro Format** mit echter Keyword-Dichte
-  (z. B. "HYROX 2026 Race-Kalender — alle Events weltweit") statt
-  nur "HYROX — HybridCal"
-- **Strukturierte Daten für Formate** (Event-Series-Schema?)
-- **robots.txt + sitemap ping** an Google Search Console
-- **Performance**: Lighthouse-Score checken (Pico+Alpine sind klein,
-  Leaflet könnte sich noch lohnen lazy-zu-laden)
 - ✅ **OG-Image** (1200×630) + Favicon + Apple-Touch-Icon vorhanden
   (`static/logo/`), in `base.html` verdrahtet
+- ✅ **Sitemap.xml** geprüft (404 URLs): alle Format-Seiten inkl.
+  `format: other`-Events, `/formats.html` DE+EN, mit hreflang-Alternates
+
+Noch offen:
+
+- **robots.txt + Sitemap an Google Search Console** anmelden (braucht
+  GSC-Zugang → Owner-Task, kein Code)
+- **Performance / Lighthouse**: Score in Chrome DevTools messen; größter
+  Hebel wäre **Leaflet lazy-load** (Karten-Lib erst beim Öffnen der Karte
+  laden statt auf jeder Seite). Code-seitig machbar, sobald gewünscht.
+- **Canonicals + hreflang** sind gesetzt — nur noch stichprobenartig im
+  Live-Deploy validieren (Owner-Check).
 
 ## Sonstiges (offen)
 
