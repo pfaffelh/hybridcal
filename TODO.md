@@ -115,11 +115,12 @@ manuell angelegte HYROX/DEKA-Einträge.
 
 Vor öffentlicher Promo durchgehen:
 
-- **Meta-Tags** pro Seite prüfen: Title, Description, Open Graph
-  (vorhanden, aber Inhalt vs. Bedarf evaluieren — viele Detail-Seiten
-  vererben generische `t.meta.description`)
-- **JSON-LD** für Event-Detail-Seiten ist schon drin (`_event_json_ld`
-  in renderer.py); für Formate noch ergänzen
+- ✅ **Titles & Descriptions** keyword-/datumsreich: Event-Titel mit Datum,
+  Format-Seiten "{Name} — Termine & Kalender {Jahr}" + eigene Description
+  (mit Event-Count), Formate-Übersicht und Index mit Brand-Keywords.
+  i18n unter `seo:` in beiden Sprachen.
+- ✅ **JSON-LD:** Events haben `schema.org/Event` (`_event_json_ld`),
+  Format-Seiten jetzt `ItemList` der kommenden Events (`_format_item_list`)
 - **Sitemap.xml** wird generiert — prüfen ob alle Formate und neuen
   Events korrekt drin sind (auch `format: other`)
 - **Canonicals + hreflang**: aktuell richtig gesetzt, aber stichprobenartig

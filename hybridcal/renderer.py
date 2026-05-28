@@ -88,6 +88,28 @@ def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) ->
     return data
 
 
+def _format_item_list(fmt_events: list[Event], fmt_name: str,
+                      site_url: str, lang: str) -> dict | None:
+    """schema.org ItemList of a format's upcoming events (list-page markup)."""
+    items = []
+    for i, e in enumerate(fmt_events, start=1):
+        items.append({
+            "@type": "ListItem",
+            "position": i,
+            "url": f"{site_url}/{lang}/events/{e.slug}.html",
+            "name": e.name,
+        })
+    if not items:
+        return None
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": f"{fmt_name} — upcoming events",
+        "numberOfItems": len(items),
+        "itemListElement": items,
+    }
+
+
 def _write_sitemap(out_dir: Path, site_url: str, languages: list[str],
                    events: list[Event], formats: dict, today: date) -> None:
     """Generate sitemap.xml with hreflang alternate links."""
@@ -215,6 +237,7 @@ def render_site(
             "formats_json": formats_for_lang,
             "regions_json": regions_for_lang,
             "last_data_update": last_data_update,
+            "current_year": date.today().year,
         }
 
         (lang_dir / "index.html").write_text(
@@ -258,6 +281,8 @@ def render_site(
                     events=fmt_events,
                     categories=categories_dict.get(fmt_id, []),
                     current_path=f"/{fmt_id}.html",
+                    item_list_json_ld=_format_item_list(
+                        fmt_events, fmt["name"], site.url, lang),
                 )
             )
 

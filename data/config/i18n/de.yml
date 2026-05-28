@@ -138,6 +138,14 @@ meta:
   description: "Community-Kalender für Hybrid-Sport-Events: HYROX, ATHX, Deadly Dozen, DEKA und mehr."
   locale: de-DE
 
+seo:
+  index_desc: "Kostenloser, werbefreier Kalender für Hybrid-Sport-Events: HYROX, ATHX, Deadly Dozen, DEKA, Turf Games. Termine weltweit als Liste, Karte und Kalender — plus ICS-Abo."
+  formats_title: "Hybrid-Sport-Formate im Vergleich"
+  formats_desc: "Alle Hybrid-Sport-Formate im Vergleich — HYROX, ATHX, Deadly Dozen, DEKA, Turf Games: Stationen, Gewichte, Kategorien und kommende Termine."
+  format_title: "{name} — Termine & Kalender {year}"
+  format_desc: "{name} Race-Kalender: {count} kommende Termine mit Ort, Datum und Link zur Anmeldung. Plus Stationen, Gewichte & Kategorien im Überblick."
+  format_desc_empty: "{name} Race-Kalender bei HybridCal: Stationen, Gewichte, Kategorien und kommende Termine im Überblick."
+
 lang_switcher:
   de: DE
   en: EN

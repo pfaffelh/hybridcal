@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}{{ format.name }} — HybridCal{% endblock %}
+{% block title %}{{ t.seo.format_title.format(name=format.name, year=current_year) }} | HybridCal{% endblock %}
+{% block description %}{% if events %}{{ t.seo.format_desc.format(name=format.name, count=events|length) }}{% else %}{{ t.seo.format_desc_empty.format(name=format.name) }}{% endif %}{% endblock %}
+{% block og_title %}{{ t.seo.format_title.format(name=format.name, year=current_year) }}{% endblock %}
+
+{% block head_extra %}
+{% if item_list_json_ld %}
+<script type="application/ld+json">{{ item_list_json_ld|tojson }}</script>
+{% endif %}
+{% endblock %}
 
 {% set label_key = 'label_' + lang %}
 {% set description = format['description_' + lang] or format.description_de %}

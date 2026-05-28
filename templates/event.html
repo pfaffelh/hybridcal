@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}{{ event.name }} — HybridCal{% endblock %}
+{% block title %}{{ event.name }}{% if event.date_start %} · {{ event.date_start|fmt_date }}{% endif %} | HybridCal{% endblock %}
 {% block description %}{{ event_description }}{% endblock %}
-{% block og_title %}{{ event.name }}{% endblock %}
+{% block og_title %}{{ event.name }}{% if event.date_start %} · {{ event.date_start|fmt_date }}{% endif %}{% endblock %}
 
 {% block head_extra %}
 {% if event_json_ld %}
