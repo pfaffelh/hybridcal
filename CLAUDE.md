@@ -184,3 +184,16 @@ Ausdauer ≠ nur Laufen — auch Row/Ski/Bike-Erg und Carries unter Last zählen
 - **XENOM bewusst NICHT** aufgenommen: CrossFit-naher "Decathlon of Fitness"
   mit Muscle-Ups / HSPU / schweren Olympic-Lifts → andere Community, hohe
   Skill-Hürde, niedriger Ausdaueranteil.
+
+## Format-Bilder = bewusst Farbkarten, keine offiziellen Logos
+
+`static/logo/formats/<id>.png` sind **selbst generierte Farbkarten**
+(Format-Farbe + Name + HybridCal-Läufer), genutzt als JSON-LD-`image` und
+og:image. **Bewusste Entscheidung — nicht erneut aufrollen:** keine
+offiziellen Veranstalter-Logos verwenden. Gründe: kein Veranstalter bietet
+ein freies Press-Kit (HYROX beschränkt Logo-Nutzung ausdrücklich auf
+lizenzierte Clubs/Coaches und warnt vor Markenverwirrung; DEKA nur
+Affiliate-Toolkit; ATHX/Deadly Dozen/Turf Games haben nur Sponsoring-
+Kontakte). Haltung des Eigentümers: "alle Logos oder keine" → also **keine**.
+Echte Logos nur, falls je ein Veranstalter explizit schriftlich zustimmt;
+dann aber konsequent für alle, sonst weiter Farbkarten.
