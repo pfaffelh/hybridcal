@@ -124,6 +124,17 @@ fieldset {
   border-bottom: none !important;
 }
 
+/* Pico renders the tooltip text in an absolutely-positioned ::before with
+   white-space: nowrap. Long format descriptions made that bubble ~2000px
+   wide and pushed the whole page width out (horizontal overflow even
+   without hover). Let it wrap and cap its width. */
+[data-tooltip]::before {
+  white-space: normal !important;
+  width: max-content;
+  max-width: 18rem;
+  text-align: left;
+}
+
 footer {
   margin-top: 3rem;
   padding-bottom: 2rem;
