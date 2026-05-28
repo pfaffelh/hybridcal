@@ -64,52 +64,20 @@ Das fixierte Bottom-Nav in der mobilen Ansicht ist final:
 **Liste | Karte | Neues Event** (Kalender-Button bewusst entfernt zugunsten
 des Submit-CTAs).
 
-## Übersetzungs-Lücken (Stand 2026-05-28)
+## Übersetzungen — vollständig (Stand 2026-05-28)
 
-Stand systematischer Scan über alle Config-Dateien:
+Systematischer Scan über alle Config-Dateien, alle Lücken geschlossen:
 
 | Datei | Status |
 |-------|--------|
-| `data/config/formats.yml` | ✅ vollständig (alle Formate haben `description_de`+`description_en`, alle 5 ausgebauten Formate haben `long_description_de`+`long_description_en`) |
-| `data/config/regions.yml` | ✅ vollständig (`name_de`+`name_en` überall) |
-| `data/config/i18n/en.yml` | ✅ vollständig (deckt alle DE-Keys ab) |
-| `data/config/categories.yml` | ⚠ **14 Einträge ohne `label_en`** (siehe unten) |
-| Event-`notes:`-Feld | ⚠ Schema hat nur ein einziges Free-Text-`notes:`-Feld (DE) — kein `notes_en`. Aktuell betroffen: 10 von 188 Events |
+| `data/config/formats.yml` | ✅ `description_de`/`_en` + `long_description_de`/`_en` |
+| `data/config/regions.yml` | ✅ `name_de`/`_en` überall |
+| `data/config/i18n/en.yml` | ✅ deckt alle DE-Keys ab (inkl. `seo:`) |
+| `data/config/categories.yml` | ✅ alle Einträge haben jetzt `label_en` (14 ergänzt) |
+| Event-`notes` | ✅ Modell hat `notes` (DE) + `notes_en`; bilingual gerendert in `event.html`. 10 Events übersetzt |
 
-### Fehlende `label_en` in `data/config/categories.yml`
-
-ATHX (Paired-Kategorien aus der alten Saison, evtl. überflüssig — siehe
-Beschreibungstext: aktuelles ATHX-Format ist LITE/ATHX/PRO × Individual/Teams):
-
-- `athx/paired-rx-men`, `paired-rx-women`, `paired-rx-mixed`
-- `athx/paired-scaled-men`, `paired-scaled-women`, `paired-scaled-mixed`
-
-Deadly Dozen (Bestands-IDs vor dem Format-Ausbau):
-
-- `deadly-dozen/deadly-strong-singles`, `deadly-strong-pairs`
-- `deadly-dozen/deadly-run-singles`
-- `deadly-dozen/deadly-erg-singles`
-
-DEKA (Bestands-IDs):
-
-- `deka/deka-fit-singles`, `deka-fit-pairs`
-- `deka/deka-strong-singles`
-- `deka/deka-mile`
-
-Diese Namen sind alle bereits englisch lesbar ("Deadly Strong Singles",
-"DEKA FIT Pairs" usw.) — `label_en` einfach gleich `label_de` setzen
-oder leichte Variation ("Männer" → "Men"). Bei ATHX-Paired-Einträgen
-zuerst prüfen, ob die Kategorien noch relevant sind oder beim
-nächsten Aufräumen entfernt werden können.
-
-### Event-Notes (DE-only-Schema)
-
-Das Pydantic-Modell hat `notes: str | None` — kein paralleles `notes_en`.
-Wenn EN-Notes gewünscht sind, müsste `models.py` erweitert werden
-(`notes_de` / `notes_en`) und die Templates müssten den passenden auswählen.
-Aktuell betroffen sind 10 Events mit Notes (u. a. die `format: other`-
-Events: STYREKX, METRIX, Nuclear Fit, Hybrid Games Basel) sowie ein paar
-manuell angelegte HYROX/DEKA-Einträge.
+i18n-Konventionen sind in `CLAUDE.md` dokumentiert (Abschnitt
+"Mehrsprachige Inhalte"). Beim Anlegen neuer Inhalte daran halten.
 
 ## SEO
 

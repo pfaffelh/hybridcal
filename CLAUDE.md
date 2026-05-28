@@ -197,3 +197,28 @@ Affiliate-Toolkit; ATHX/Deadly Dozen/Turf Games haben nur Sponsoring-
 Kontakte). Haltung des Eigentümers: "alle Logos oder keine" → also **keine**.
 Echte Logos nur, falls je ein Veranstalter explizit schriftlich zustimmt;
 dann aber konsequent für alle, sonst weiter Farbkarten.
+
+## Mehrsprachige Inhalte (i18n-Konventionen)
+
+Default-Sprache ist DE, EN ist die Übersetzung. Muster im Datenmodell:
+**Basis-/DE-Feld + `_en`-Override**, EN fällt bei fehlendem Override auf DE
+zurück. Wo überall Übersetzungen hingehören:
+
+| Datei / Modell | Felder |
+|----------------|--------|
+| `formats.yml` (Format) | `description_de`/`_en`, `long_description_de`/`_en`, optional `name_de`/`_en` (sonst `name`) |
+| `categories.yml` (Category) | `label_de` + `label_en` pro Eintrag |
+| `regions.yml` (Region) | `name_de` + `name_en` (beide Pflicht) |
+| Event-YAMLs (Event) | `notes` (= DE-Basis) + optional `notes_en` |
+| UI-Strings | `data/config/i18n/{de,en}.yml` — jeder DE-Key muss in `en.yml` existieren |
+
+- **Template-Auswahl-Pattern:** `format['description_' + lang] or format.description_de`
+  bzw. für Events `event.notes_en if lang == 'en' and event.notes_en else event.notes`.
+- **Neues Event mit Notes:** `notes:` immer (DE); `notes_en:` ergänzen, wenn
+  Übersetzung vorliegt. `notes` wird auf der Event-Seite als Markdown gerendert.
+- **Konsistenz-Check vor Commit:** kurzer Scan, ob ein `_en`-Gegenstück fehlt
+  (formats/regions/i18n waren zuletzt vollständig; categories + notes wurden
+  am 2026-05-28 nachgezogen).
+- **`other`-Format-Detailseite** zeigt bewusst **keine** Beschreibung oben
+  (grab-bag ohne gemeinsames Format) — nur die Event-Liste. Logik in
+  `format.html` via `{% if format_id != 'other' %}`.

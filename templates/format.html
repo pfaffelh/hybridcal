@@ -24,6 +24,9 @@
   <p>{{ format.type }}</p>
 </hgroup>
 
+{# 'other' is a grab-bag without a common format → no blurb at the top,
+   just the event list below. #}
+{% if format_id != 'other' %}
 {% if description %}
 <p class="lead">{{ description }}</p>
 {% endif %}
@@ -40,6 +43,7 @@
 <section class="format-long-description">
   {{ long_description|markdown }}
 </section>
+{% endif %}
 {% endif %}
 
 <h2>{{ t.format_page.events }}</h2>

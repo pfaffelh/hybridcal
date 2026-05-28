@@ -48,26 +48,36 @@ hyrox:
 athx:
   - id: paired-rx-men
     label_de: Paired RX Männer
+    label_en: Paired RX Men
   - id: paired-rx-women
     label_de: Paired RX Frauen
+    label_en: Paired RX Women
   - id: paired-rx-mixed
     label_de: Paired RX Mixed
+    label_en: Paired RX Mixed
   - id: paired-scaled-men
     label_de: Paired Scaled Männer
+    label_en: Paired Scaled Men
   - id: paired-scaled-women
     label_de: Paired Scaled Frauen
+    label_en: Paired Scaled Women
   - id: paired-scaled-mixed
     label_de: Paired Scaled Mixed
+    label_en: Paired Scaled Mixed
 
 deadly-dozen:
   - id: deadly-strong-singles
     label_de: Deadly Strong Singles
+    label_en: Deadly Strong Singles
   - id: deadly-strong-pairs
     label_de: Deadly Strong Pairs
+    label_en: Deadly Strong Pairs
   - id: deadly-run-singles
     label_de: Deadly Run Singles
+    label_en: Deadly Run Singles
   - id: deadly-erg-singles
     label_de: Deadly ERG Singles
+    label_en: Deadly ERG Singles
   - id: deadly-sprint
     label_de: Deadly Sprint (Indoor)
     label_en: Deadly Sprint (indoor)
@@ -87,12 +97,16 @@ deadly-dozen:
 deka:
   - id: deka-fit-singles
     label_de: DEKA FIT Singles
+    label_en: DEKA FIT Singles
   - id: deka-fit-pairs
     label_de: DEKA FIT Pairs
+    label_en: DEKA FIT Pairs
   - id: deka-strong-singles
     label_de: DEKA STRONG Singles
+    label_en: DEKA STRONG Singles
   - id: deka-mile
     label_de: DEKA MILE
+    label_en: DEKA MILE
 
 turf-games:
   # Festival (Team of 6, 3 M + 3 W mixed) — Winter / Summer / Gold Coast

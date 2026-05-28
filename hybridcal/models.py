@@ -47,7 +47,8 @@ class Event(BaseModel):
     schedule_url: str | None = None
     schedule_updated_at: date | None = None
     schedule: list[ScheduleEntry] = Field(default_factory=list)
-    notes: str | None = None
+    notes: str | None = None  # editorial note, German (base)
+    notes_en: str | None = None  # English translation; falls back to notes
 
     @model_validator(mode="after")
     def normalize_dates(self):
