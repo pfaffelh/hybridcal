@@ -38,9 +38,16 @@ def _event_description(event: Event, format_name: str, format_type: str, lang: s
         return f"{event.name} {date_part} in {loc}. {format_name} — {format_type}."
 
 
-def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) -> dict | None:
+def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str,
+                   description: str) -> dict | None:
     """Schema.org Event markup. Returns None if event lacks required fields
-    (Google requires startDate)."""
+    (Google requires startDate).
+
+    No `offers` block: ticket prices are external and unknown, and inventing
+    price/priceCurrency would be misleading structured data. The event URL
+    lives in the top-level `url`. `performer` is set to the series as a
+    PerformingGroup (a participatory race has no named performer).
+    """
     if event.date_start is None:
         return None
     status_map = {
@@ -52,6 +59,7 @@ def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) ->
         "@context": "https://schema.org",
         "@type": "Event",
         "name": event.name,
+        "description": description,
         "startDate": event.date_start.isoformat(),
         "eventStatus": status_map.get(event.status, "https://schema.org/EventScheduled"),
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -66,10 +74,9 @@ def _event_json_ld(event: Event, format_data: dict, site_url: str, lang: str) ->
                 "addressCountry": event.location.country,
             },
         },
-        "offers": {
-            "@type": "Offer",
-            "url": event.url,
-            "availability": "https://schema.org/InStock",
+        "performer": {
+            "@type": "PerformingGroup",
+            "name": format_data["name"],
         },
     }
     if event.date_end:
@@ -279,7 +286,7 @@ def render_site(
                     categories=cats,
                     current_path=f"/events/{event.slug}.html",
                     event_description=description,
-                    event_json_ld=_event_json_ld(event, fmt_for_lang, site.url, lang),
+                    event_json_ld=_event_json_ld(event, fmt_for_lang, site.url, lang, description),
                     breadcrumb_json_ld=_breadcrumb_json_ld(
                         event, fmt_for_lang["name"], event.format, site.url, lang),
                 )
