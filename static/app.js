@@ -269,24 +269,58 @@ function eventFilter() {
       if (!this.cluster) return;
       this.cluster.clearLayers();
       const items = this.filtered.filter(e => e.location.lat && e.location.lon);
-      const bounds = [];
+      // Group events that share a location into ONE marker. circleMarkers
+      // can't be spiderfied by MarkerCluster, so co-located events would
+      // overlap and only the top one would be clickable. One marker per
+      // venue + a popup listing all its events sidesteps that entirely.
+      const groups = new Map();
       for (const e of items) {
-        const color = this.formats[e.format]?.color || '#888';
-        const marker = L.circleMarker([e.location.lat, e.location.lon], {
-          radius: 8,
+        const key = `${e.location.lat.toFixed(5)},${e.location.lon.toFixed(5)}`;
+        if (!groups.has(key)) groups.set(key, []);
+        groups.get(key).push(e);
+      }
+      const bounds = [];
+      for (const list of groups.values()) {
+        const e0 = list[0];
+        const color = this.formats[e0.format]?.color || '#888';
+        const marker = L.circleMarker([e0.location.lat, e0.location.lon], {
+          radius: list.length > 1 ? 10 : 8,
           fillColor: color,
           color: '#fff',
           weight: 2,
           opacity: 1,
           fillOpacity: 0.9,
         });
-        marker.bindPopup(this.popupHtml(e), { closeButton: true });
+        marker.bindPopup(this.popupForEvents(list), { closeButton: true });
         this.cluster.addLayer(marker);
-        bounds.push([e.location.lat, e.location.lon]);
+        bounds.push([e0.location.lat, e0.location.lon]);
       }
       if (bounds.length > 0) {
         this.map.fitBounds(bounds, { padding: [40, 40], maxZoom: 8 });
       }
+    },
+
+    popupForEvents(list) {
+      if (list.length === 1) return this.popupHtml(list[0]);
+      const loc = list[0].location;
+      const header = `${list.length} ${this.lang === 'de' ? 'Events an diesem Ort' : 'events at this location'}`;
+      const place = `${this.escape(loc.city)}, ${loc.country}` +
+        (loc.venue ? ` · ${this.escape(loc.venue)}` : '');
+      const rows = list.map(e => {
+        const fmt = this.formats[e.format]?.name || e.format;
+        const dot = this.formats[e.format]?.color || '#888';
+        let dr;
+        if (!e.date_start) dr = this.tbaLabel;
+        else if (e.date_start === e.date_end) dr = this.formatDate(e.date_start);
+        else dr = `${this.formatDate(e.date_start)} – ${this.formatDate(e.date_end)}`;
+        return `<li style="margin:.4em 0">` +
+          `<span style="display:inline-block;width:.6em;height:.6em;border-radius:50%;background:${dot};margin-right:.35em;vertical-align:middle"></span>` +
+          `<a href="${this.basePath}/${this.lang}/events/${e.slug}.html"><strong>${this.escape(e.name)}</strong></a>` +
+          `<br><small style="color:#666">${dr} · ${this.escape(fmt)}</small></li>`;
+      }).join('');
+      return `<strong>${this.escape(header)}</strong><br>` +
+        `<small>${place}</small>` +
+        `<ul style="list-style:none;padding:0;margin:.5em 0 0">${rows}</ul>`;
     },
 
     popupHtml(e) {
