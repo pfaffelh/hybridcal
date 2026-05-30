@@ -109,6 +109,125 @@ Noch offen:
 - **Canonicals + hreflang** sind gesetzt — nur noch stichprobenartig im
   Live-Deploy validieren (Owner-Check).
 
+## Promo — Drafts
+
+Vorlagen für den ersten Promo-Push. Nicht versendet — Tonalität ggf.
+anpassen. Strategie-Notiz: Community-Outreach (Reddit r/Hyrox) +
+Direkt-Ansprache von 5–10 Veranstaltern/Training-Clubs als Flywheel-
+Hebel. Bezahlte Werbung passt nicht zum werbefreien Charakter.
+
+### Reddit r/Hyrox (EN)
+
+**Title**
+
+```
+Built a free, ad-free cross-series hybrid race calendar — HYROX, DEKA, ATHX, Deadly Dozen, Turf Games, Wild Hybrid all in one place
+```
+
+**Body**
+
+```
+I kept juggling six different organiser sites to see what's happening
+across the hybrid world, so I built HybridCal — a single calendar
+that pulls together every hybrid race series I could find:
+
+- HYROX (Adult + Youngstars), DEKA, ATHX, Deadly Dozen, Turf Games,
+  Wild Hybrid, plus smaller series (METRIX, STYREKX, Nuclear Fit, …)
+  under "Other".
+- Free, ad-free, no account, no tracking. Open source (MIT) and event
+  data is CC0.
+- Filter by series, country, region. Subscribe via iCal (/feed.ics)
+  so events drop into Google/Apple Calendar automatically — or RSS /
+  JSON if you'd rather.
+- Bilingual (DE/EN).
+
+Link: https://hybridcal.com
+
+Curious what's missing — if your local race isn't listed, drop a
+comment or use the submit form on the site. Bug reports and PRs
+welcome on GitHub.
+
+Mods: happy to remove if this isn't the right place.
+```
+
+**Vor dem Posten**
+
+- r/Hyrox Sub-Regeln zu Self-Promo prüfen (manche Subs verlangen 9:1-
+  Verhältnis oder Mod-Flair).
+- Account braucht ein bisschen Karma — sonst posten ältere Accounts
+  oft besser durch (z.B. von Freunden cross-posten lassen).
+- Quer-Posts danach (mit minimal angepasstem Title): r/CrossFit,
+  r/AdvancedRunning, r/CompetitiveCrossfit, ggf. r/DeadlyDozen.
+
+### E-Mail an Veranstalter / Training-Clubs (DE)
+
+**Betreff:** `HybridCal — euer Event ist gelistet`
+
+```
+Hallo [Vorname / Team],
+
+ich bin der Maintainer von HybridCal (https://hybridcal.com), einem
+freien, werbefreien Community-Kalender, der alle Hybrid-Renn-Serien
+bündelt (HYROX, DEKA, ATHX, Deadly Dozen, Turf Games u.a.). Euer
+Event "[Event-Name, Datum]" ist gelistet:
+
+→ [Link zur Event-Seite]
+
+Wenn ihr mögt, würde ich mich freuen, wenn ihr den Link an eure
+Community weitergebt (Insta-Story, Newsletter, Website). Der Kalender
+ist kostenlos, ohne Account, ohne Tracking; Daten stehen unter CC0 —
+kein kommerzielles Interesse meinerseits.
+
+Falls Details falsch sind oder ihr weitere Termine ankündigen wollt:
+einfach per Formular auf der Seite (Button "Neues Event") oder direkt
+Antwort auf diese Mail.
+
+Viele Grüße
+[Name]
+```
+
+### Email to organisers / training clubs (EN)
+
+**Subject:** `HybridCal — your event is listed`
+
+```
+Hi [first name / team],
+
+I maintain HybridCal (https://hybridcal.com), a free, ad-free
+community calendar that aggregates every hybrid race series (HYROX,
+DEKA, ATHX, Deadly Dozen, Turf Games and others). Your event
+"[Event name, date]" is already on it:
+
+→ [Link to event page]
+
+If you'd like, I'd be grateful if you could share the link with
+your community (Instagram story, newsletter, website). The calendar
+is free, no account, no tracking, data is CC0 — no commercial
+interest on my side.
+
+If anything is incorrect or you'd like to announce more dates, you
+can either use the submit form on the site (button "Submit event")
+or just reply to this email.
+
+Best,
+[Name]
+```
+
+### Empfohlener erster Empfänger-Cluster
+
+Bewährte erste Ansprechpartner (jeweils direkt aus dem Kalender ableitbar):
+
+| Serie / Club | Kontakt | Hook |
+|---|---|---|
+| **peb2** (Eningen) | info@peb2.de | Event 2026-06-14 gelistet |
+| **METRIX** (UK) | über Website | London-Event Sept. 26 |
+| **STYREKX** (BE/NL) | über Website | Mechelen + Amsterdam 2026 |
+| **Wild Hybrid** (UK) | über `wildhybrid.co.uk` | 9 Events bereits drin |
+| **Nuclear Fit** (UK) | über `nuclear-races.co.uk` | Brentwood-Events |
+| **Hybrid Games Basel** | über `hybridgames.ch` | Schweiz-Event |
+| **hybridfitnessmedia.com** | über Website | Medien-Hebel, sucht Stories |
+| **Rox-Coach / Pace Club** | Podcast/Newsletter | Coaching-Reichweite |
+
 ## Sonstiges (offen)
 
 - Turf-Games-Namen normalisieren (ALL-CAPS aus der Quelle, z.B.
