@@ -58,6 +58,11 @@ class SourceRecord:
     url: str = ""
     categories: list[str] = field(default_factory=list)
     suggested_slug: str = ""  # used when creating a new YAML
+    # True if this record looks like a flagship-brand event worth
+    # auto-creating as a new YAML. False for affiliate / micro events
+    # that should only appear in the PR body's candidate list. Set by
+    # the plugin; default True keeps existing plugins unaffected.
+    is_main_brand: bool = True
 
     def end_date(self) -> date | None:
         return self.date_end or self.date_start
@@ -232,3 +237,4 @@ class ReconcileResult:
     new_events: list[Path] = field(default_factory=list)     # written new YAMLs
     disappeared: list[LocalEvent] = field(default_factory=list)  # future events no longer in source
     ambiguous: list[str] = field(default_factory=list)       # human-readable notes
+    filtered_non_main_brand: int = 0  # rows skipped because !is_main_brand

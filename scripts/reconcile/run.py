@@ -51,12 +51,23 @@ def _coord_close(a, b) -> bool:
 
 
 def _diff_fields(local: LocalEvent, rec: SourceRecord) -> list[FieldChange]:
-    """Compute the set of field changes we'd write. Skips updates where
-    the source value is empty/None — we never blank out existing data."""
+    """Compute the set of field changes we'd write.
+
+    Policy:
+      - date_start / date_end / url → always sync from source (these are
+        canonical truth; the source is the only place these can change).
+      - location.* → fill only if our value is missing. Coordinates,
+        timezones, city spellings (Málaga, Stoke-on-Trent) and venue
+        strings are hand-curated and must not be auto-overwritten."""
     changes: list[FieldChange] = []
     if rec.date_start and rec.date_start != local.date_start:
         changes.append(FieldChange("date_start", local.date_start, rec.date_start))
-    if rec.date_end and rec.date_end != local.date_end:
+    # date_end: only sync if the local YAML doesn't already span multiple days.
+    # DD models a 2-day World Championship as two single-day Supabase rows; we
+    # keep it as one multi-day event — never collapse that back.
+    local_is_multiday = (local.date_start and local.date_end
+                        and local.date_end > local.date_start)
+    if rec.date_end and rec.date_end != local.date_end and not local_is_multiday:
         changes.append(FieldChange("date_end", local.date_end, rec.date_end))
     if rec.url and rec.url != (local.data.get("url") or ""):
         changes.append(FieldChange("url", local.data.get("url"), rec.url))
@@ -67,9 +78,9 @@ def _diff_fields(local: LocalEvent, rec: SourceRecord) -> list[FieldChange]:
         if new in (None, ""):
             continue
         old = loc.get(f)
-        same = _coord_close(old, new) if f in ("lat", "lon") else old == new
-        if not same:
-            changes.append(FieldChange(f"location.{f}", old, new))
+        if old not in (None, "", 0, 0.0):  # only fill if currently missing
+            continue
+        changes.append(FieldChange(f"location.{f}", old, new))
     return changes
 
 
@@ -121,9 +132,20 @@ def reconcile_format(fmt: str, dry_run: bool = False) -> ReconcileResult:
                 result.updated.append(EventDiff(local=local, record=rec, changes=changes))
             continue
 
-        # No matching local event → new event. Skip past records as
-        # safety belt (we never invent past data).
+        # No matching local event. Past records: never invented.
         if rec.date_start and rec.date_start < date.today():
+            continue
+        # Affiliate / micro sub-format events at partner gyms (Deadly
+        # Barbell, Deadly Strong at gym X, DFT, ...) don't fit the
+        # hybrid-calendar profile — drop silently.
+        if not rec.is_main_brand:
+            result.filtered_non_main_brand += 1
+            continue
+        # Source date falls inside an existing multi-day local event? It's
+        # a per-day Supabase row of the same event (e.g. WM day 2). Skip.
+        if any(le.date_start and le.date_end
+               and le.date_start <= rec.date_start <= le.date_end
+               for le in future):
             continue
         year_dir = EVENTS_DIR / str(rec.date_start.year)
         day = rec.date_start.day if rec.date_start else None
@@ -172,7 +194,8 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
         return "\n".join(lines)
 
     for r in results:
-        if not (r.updated or r.new_events or r.disappeared or r.ambiguous):
+        if not (r.updated or r.new_events or r.disappeared or r.ambiguous
+                or r.filtered_non_main_brand):
             continue
         lines.append(f"## Format: {r.fmt}")
         lines.append("")
@@ -199,6 +222,12 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
             lines.append("### Hinweise")
             for note in r.ambiguous:
                 lines.append(f"- {note}")
+            lines.append("")
+        if r.filtered_non_main_brand:
+            lines.append(f"_{r.filtered_non_main_brand} Affiliate-Gym-Records "
+                         "wurden ausgefiltert (Deadly Barbell / Deadly ERG / "
+                         "DFT etc. an Partner-Gyms — passen nicht ins "
+                         "Hybrid-Profil)._")
             lines.append("")
 
     lines.append(f"## URL-Health-Check ({len(url_results)} Events geprüft)")

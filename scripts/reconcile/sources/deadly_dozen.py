@@ -92,18 +92,56 @@ def _parse_date(s) -> date | None:
         return None
 
 
+# Source-city → our canonical city. Used both for output and for matching.
+# Lee Valley and Crystal Palace are London venues; the rest are spelling
+# variants Supabase uses (NURNBURG, GQERBERHA with an extra r, etc.).
+CITY_ALIAS = {
+    "lee valley":     "London",
+    "crystal palace": "London",
+    "nurnburg":       "Nuremberg",
+    "gqerberha":      "Gqeberha",
+}
+
+
 def _row_city(row: dict) -> str:
-    """Title-case the city. Supabase stores 'STRASBOURG' / 'NURNBURG'."""
+    """Title-case the city, applying our alias table. Supabase stores
+    'STRASBOURG' / 'NURNBURG' / 'LEE VALLEY'."""
     raw = (row.get("venue_city") or "").strip()
     if not raw:
         return ""
+    alias = CITY_ALIAS.get(raw.lower())
+    if alias:
+        return alias
     # Title-case each whitespace-separated chunk, preserving hyphens.
     return " ".join(part.title() for part in raw.split())
 
 
+# Supabase uses some non-ISO country codes. Translate to ISO-3166-1 alpha-2.
+# 'AU' collides with Australia, so disambiguate by latitude: Austria > 0,
+# Australia < 0. The map is intentionally narrow — only entries observed
+# in the live data are listed.
+_DD_COUNTRY_TO_ISO = {
+    "GE": "DE",  # Germany
+    "UK": "GB",  # United Kingdom
+    "IR": "IE",  # Ireland
+    "SA": "ZA",  # South Africa
+    "SP": "ES",  # Spain
+}
+
+
 def _row_country(row: dict) -> str:
     cc = (row.get("country_code") or "").strip().upper()
-    return cc[:2] if cc else ""
+    if not cc:
+        return ""
+    if cc in _DD_COUNTRY_TO_ISO:
+        return _DD_COUNTRY_TO_ISO[cc]
+    if cc == "AU":
+        try:
+            lat = float(row.get("latitude") or 0)
+        except (TypeError, ValueError):
+            lat = 0.0
+        return "AT" if lat > 0 else "AU"
+    return cc[:2]
 
 
 def _row_url(row: dict) -> str:
@@ -112,6 +150,23 @@ def _row_url(row: dict) -> str:
 
 def _row_id(row: dict) -> str:
     return str(row.get("id") or row.get("uuid") or "")
+
+
+def _is_main_brand(url: str) -> bool:
+    """Heuristic: canonical Deadly Dozen events have URLs containing
+    'deadly-dozen-' (e.g. .../deadly-dozen-strasbourg, .../deadly-dozen-
+    lee-valley) or the World Championship landing page. Affiliate-gym
+    micro-events use slugs like 'deadly-strong-<gym>', 'deadly-erg-<gym>',
+    'deadly-barbell-<gym>', 'dft-<gym>' etc. — those are surfaced as
+    candidates for manual review, not auto-PR'd."""
+    if not url:
+        return False
+    u = url.lower()
+    if "deadly-dozen-" in u:
+        return True
+    if "deadly-dozen-world-championship" in u:
+        return True
+    return False
 
 
 def fetch() -> list[SourceRecord]:
@@ -159,5 +214,6 @@ def fetch() -> list[SourceRecord]:
             url=url,
             categories=[],  # filled in PR review; we don't auto-edit categories
             suggested_slug=f"deadly-dozen-{slugify(city)}-{d.strftime('%Y-%m')}",
+            is_main_brand=_is_main_brand(url),
         ))
     return records
