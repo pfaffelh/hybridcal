@@ -41,9 +41,6 @@ hyrox:
   - id: adaptive
     label_de: Adaptive
     label_en: Adaptive
-  - id: youngstars
-    label_de: HYROX Youngstars (8–15 Jahre)
-    label_en: HYROX Youngstars (ages 8–15)
 
 hyrox-youngstars:
   - id: youngstars-8-9

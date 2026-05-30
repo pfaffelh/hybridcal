@@ -145,21 +145,32 @@ _DATE3_RE = re.compile(
 )
 
 
-def fetch() -> list[SourceRecord]:
-    html = _http_get(URL)
-    records: list[SourceRecord] = []
+_HTML_CACHE: str | None = None
 
-    # Split by <article so each chunk contains exactly one card body.
+
+def _get_html() -> str:
+    """Module-level HTTP cache so the Adult and Youngstars plugins share
+    a single fetch per reconciler run."""
+    global _HTML_CACHE
+    if _HTML_CACHE is None:
+        _HTML_CACHE = _http_get(URL)
+    return _HTML_CACHE
+
+
+def parse_cards() -> list[dict]:
+    """Parse find-my-race into raw card dicts (format-agnostic).
+
+    Each dict has: post_id, type_class (type-adults / type-youngstars),
+    event_url, title, date_start, date_end, city. Both Adult and
+    Youngstars plugins consume this and filter by type_class.
+    """
+    html = _get_html()
+    cards: list[dict] = []
     chunks = html.split("<article")
-    for chunk in chunks[1:]:  # first chunk is the page header
+    for chunk in chunks[1:]:
         head_m = _ARTICLE_RE.match("<article" + chunk[:600])
         if not head_m:
             continue
-        post_id = head_m.group(1)
-        continent_class = head_m.group(2)  # e.g. continent-europe
-        type_class = head_m.group(3)       # e.g. type-adults or type-youngstars
-
-        # Slice out the article body — up to next </article>.
         end = chunk.find("</article>")
         if end < 0:
             continue
@@ -169,9 +180,7 @@ def fetch() -> list[SourceRecord]:
         if not h2_m:
             continue
         event_url = h2_m.group(1).strip()
-        title_html = h2_m.group(2)
-        # Strip nested tags from the title.
-        title = re.sub(r"<[^>]+>", "", title_html).strip()
+        title = re.sub(r"<[^>]+>", "", h2_m.group(2)).strip()
         title = re.sub(r"\s+", " ", title)
 
         d1_m = _DATE1_RE.search(body)
@@ -179,26 +188,36 @@ def fetch() -> list[SourceRecord]:
         date_start = _parse_date(d1_m.group(1)) if d1_m else None
         date_end = _parse_date(d3_m.group(1)) if d3_m else date_start
 
-        city = _extract_city(event_url, title)
+        cards.append({
+            "post_id": head_m.group(1),
+            "type_class": head_m.group(3),  # type-adults / type-youngstars
+            "event_url": event_url,
+            "title": title,
+            "date_start": date_start,
+            "date_end": date_end or date_start,
+            "city": _extract_city(event_url, title),
+        })
+    return cards
 
-        records.append(SourceRecord(
-            source_id=post_id,
+
+def fetch() -> list[SourceRecord]:
+    """Adult HYROX events only. Country isn't in the HTML, so we don't
+    auto-create new YAMLs (is_main_brand=False) — the reconciler keeps
+    existing 66 adult YAMLs in sync but won't invent new ones."""
+    out: list[SourceRecord] = []
+    for c in parse_cards():
+        if c["type_class"] != "type-adults":
+            continue
+        out.append(SourceRecord(
+            source_id=c["post_id"],
             format=FORMAT_ID,
-            name=title,
-            date_start=date_start,
-            date_end=date_end or date_start,
-            city=city,
-            country="",  # not exposed in find-my-race; matching uses city+date
-            venue=None,
-            timezone="",
-            lat=None,
-            lon=None,
-            url=event_url,
-            categories=[],
-            suggested_slug=f"hyrox-{slugify(city)}-{date_start.strftime('%Y-%m') if date_start else 'tba'}",
-            # Without country we can't materialise a valid Pydantic YAML.
-            # Mark new events as non-main-brand so the reconciler surfaces
-            # them as ambiguous instead of trying to write a broken file.
+            name=c["title"],
+            date_start=c["date_start"],
+            date_end=c["date_end"],
+            city=c["city"],
+            country="",
+            url=c["event_url"],
+            suggested_slug=f"hyrox-{slugify(c['city'])}-{c['date_start'].strftime('%Y-%m') if c['date_start'] else 'tba'}",
             is_main_brand=False,
         ))
-    return records
+    return out

@@ -1,0 +1,18 @@
+slug: hyrox-youngstars-salt-lake-city-2026-09
+name: HYROX Youngstars Salt Lake City
+format: hyrox-youngstars
+date_start: 2026-09-19
+date_end: 2026-09-20
+location:
+  city: Salt Lake City
+  country: "US"
+  timezone: America/Denver
+url: "https://hyrox.com/event/hyrox-youngstars-salt-lake-city/"
+status: confirmed
+source: scraped
+source_id: "56332"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15

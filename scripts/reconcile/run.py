@@ -31,9 +31,10 @@ from . import (
 from .url_check import check_all, broken as broken_urls
 
 PLUGINS = {
-    "deadly-dozen": "scripts.reconcile.sources.deadly_dozen",
-    "deka":         "scripts.reconcile.sources.deka",
-    "hyrox":        "scripts.reconcile.sources.hyrox",
+    "deadly-dozen":     "scripts.reconcile.sources.deadly_dozen",
+    "deka":             "scripts.reconcile.sources.deka",
+    "hyrox":            "scripts.reconcile.sources.hyrox",
+    "hyrox-youngstars": "scripts.reconcile.sources.hyrox_youngstars",
 }
 
 # Fields the reconciler updates automatically. Order = display order.
