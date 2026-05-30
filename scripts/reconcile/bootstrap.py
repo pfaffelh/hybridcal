@@ -17,11 +17,13 @@ import importlib
 import sys
 from datetime import date, timedelta
 
-from . import LocalEvent, deaccent, load_local_events, update_yaml_field
+from . import (LocalEvent, deaccent, load_local_events, normalise_city,
+                update_yaml_field)
 
 FMT_PLUGIN = {
     "deadly-dozen": "scripts.reconcile.sources.deadly_dozen",
     "deka":         "scripts.reconcile.sources.deka",
+    "hyrox":        "scripts.reconcile.sources.hyrox",
 }
 
 
@@ -29,12 +31,17 @@ def _match(local: LocalEvent, records):
     """Return source records matching local by (city, date±2). If several
     rows match, only the closest-date ones are returned — exact-date hits
     beat ±1/±2 hits, so two events in the same city on consecutive days
-    don't end up ambiguous."""
-    if local.date_start is None:
-        return []
-    city_n = deaccent(local.city or "").lower()
+    don't end up ambiguous.
+
+    For TBA events (date_start is None on both sides) we match on city
+    alone — there's nothing else to compare."""
+    city_n = normalise_city(local.city or "")
     if not city_n:
         return []
+    if local.date_start is None:
+        return [r for r in records
+                if r.date_start is None
+                and normalise_city(r.city or "") == city_n]
     hits = []
     for r in records:
         if r.date_start is None:
@@ -42,7 +49,7 @@ def _match(local: LocalEvent, records):
         delta = abs((r.date_start - local.date_start).days)
         if delta > 2:
             continue
-        if deaccent(r.city or "").lower() != city_n:
+        if normalise_city(r.city or "") != city_n:
             continue
         hits.append((delta, r))
     if not hits:

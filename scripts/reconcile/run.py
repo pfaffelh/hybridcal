@@ -33,6 +33,7 @@ from .url_check import check_all, broken as broken_urls
 PLUGINS = {
     "deadly-dozen": "scripts.reconcile.sources.deadly_dozen",
     "deka":         "scripts.reconcile.sources.deka",
+    "hyrox":        "scripts.reconcile.sources.hyrox",
 }
 
 # Fields the reconciler updates automatically. Order = display order.
@@ -224,10 +225,17 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
                 lines.append(f"- {note}")
             lines.append("")
         if r.filtered_non_main_brand:
-            lines.append(f"_{r.filtered_non_main_brand} Affiliate-Gym-Records "
-                         "wurden ausgefiltert (Deadly Barbell / Deadly ERG / "
-                         "DFT etc. an Partner-Gyms — passen nicht ins "
-                         "Hybrid-Profil)._")
+            if r.fmt == "hyrox":
+                detail = ("Youngstars-Events (Jugend 12-15) — eigene "
+                          "Zielgruppe, nicht im Kalenderprofil")
+            elif r.fmt == "deadly-dozen":
+                detail = ("Affiliate-Gym-Records: Deadly Barbell / "
+                          "Deadly ERG / DFT etc. an Partner-Gyms — "
+                          "passen nicht ins Hybrid-Profil")
+            else:
+                detail = "passen nicht ins Kalenderprofil"
+            lines.append(f"_{r.filtered_non_main_brand} Records gefiltert "
+                         f"({detail})._")
             lines.append("")
 
     lines.append(f"## URL-Health-Check ({len(url_results)} Events geprüft)")
