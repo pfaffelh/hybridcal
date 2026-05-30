@@ -45,6 +45,20 @@ hyrox:
     label_de: HYROX Youngstars (8–15 Jahre)
     label_en: HYROX Youngstars (ages 8–15)
 
+hyrox-youngstars:
+  - id: youngstars-8-9
+    label_de: 8–9 Jahre
+    label_en: 8–9 years
+  - id: youngstars-10-11
+    label_de: 10–11 Jahre
+    label_en: 10–11 years
+  - id: youngstars-12-13
+    label_de: 12–13 Jahre
+    label_en: 12–13 years
+  - id: youngstars-14-15
+    label_de: 14–15 Jahre
+    label_en: 14–15 years
+
 athx:
   - id: paired-rx-men
     label_de: Paired RX Männer
