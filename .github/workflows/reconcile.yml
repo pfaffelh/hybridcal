@@ -1,0 +1,56 @@
+name: Weekly Reconciler
+
+on:
+  schedule:
+    # Saturday 03:00 UTC — gives the maintainer the weekend to review.
+    - cron: '0 3 * * 6'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Restrict to one format (deadly-dozen | deka). Empty = all.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run reconciler
+        env:
+          HYBRIDCAL_DD_SUPABASE_ANON_KEY: ${{ secrets.HYBRIDCAL_DD_SUPABASE_ANON_KEY }}
+          RECONCILE_REPORT: ${{ github.workspace }}/_reconcile_pr_body.md
+          RECONCILE_ONLY: ${{ inputs.only }}
+        run: python -m scripts.reconcile.run
+
+      - name: Validate build still passes
+        run: python build.py
+
+      - name: Create / update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: reconcile/weekly
+          delete-branch: true
+          base: main
+          commit-message: |
+            chore(reconcile): wöchentlicher Lauf
+
+            Automatisch erzeugt durch .github/workflows/reconcile.yml.
+            Vergangene Events wurden nicht angefasst.
+          title: "chore(reconcile): wöchentlicher Lauf"
+          body-path: _reconcile_pr_body.md
+          labels: |
+            reconciler
+            automated

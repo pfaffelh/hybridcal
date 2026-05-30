@@ -174,6 +174,95 @@ viel Zeit:
   ersetzen (`re.sub(r'^url:.*$', ..., flags=re.M, count=1)`), danach
   `build.py` als Validierung laufen lassen (Cross-Reference-Check).
 
+## Wöchentlicher Reconciler
+
+Automatische Pipeline, die jeden **Samstag 03:00 UTC** über GitHub Actions
+läuft (`.github/workflows/reconcile.yml`) und einen einzelnen PR
+`reconcile/weekly` öffnet bzw. updated. Auto-Merge ist **aus**; jeder Lauf
+geht durch menschliches Review.
+
+**Was der Reconciler tut:**
+
+1. Pro Format mit Quell-Plugin (Phase 1: `deadly-dozen`, `deka`) holt er
+   die aktuelle Event-Liste der Quelle und normalisiert sie in
+   `SourceRecord`-Einträge mit stabiler `source_id`.
+2. Matching mit bestehenden YAMLs **ausschließlich über `source_id`**.
+3. Für gematchte Events vergleicht er die Felder
+   `date_start`, `date_end`, `url`, `location.{city,country,venue,timezone,lat,lon}`
+   und schreibt Änderungen direkt ins YAML.
+   `categories` und `name` werden **nie** automatisch geändert
+   (kuratiert; manuelle Pflege).
+4. Für Quell-IDs ohne lokale Entsprechung wird **direkt eine neue
+   Event-YAML** im PR-Diff angelegt (kein zweistufiges `include: false`).
+5. Für lokale Future-Events, deren `source_id` nicht mehr in der Quelle
+   auftaucht, gibt es **nur einen Eintrag im PR-Body** ("verschwunden") —
+   kein Auto-Delete.
+6. **Vergangene Events** (`date_end < heute`) werden komplett ignoriert.
+7. Danach läuft `url_check.py` über die `url:`-Felder **aller**
+   Future-Events (alle Formate, inkl. `other`) per HEAD/GET. Defekte URLs
+   landen als Block im PR-Body, ohne Auto-Fix.
+
+**Bootstrap (einmalig pro Format):**
+
+Bevor der Reconciler im Steady-State läuft, muss jede bestehende
+Future-YAML eine `source_id` bekommen. Dafür existiert
+`scripts/reconcile/bootstrap.py`:
+
+```bash
+.venv/bin/python -m scripts.reconcile.bootstrap deka --dry-run
+.venv/bin/python -m scripts.reconcile.bootstrap deka
+HYBRIDCAL_DD_SUPABASE_ANON_KEY="<jwt>" \
+  .venv/bin/python -m scripts.reconcile.bootstrap deadly-dozen --dry-run
+HYBRIDCAL_DD_SUPABASE_ANON_KEY="<jwt>" \
+  .venv/bin/python -m scripts.reconcile.bootstrap deadly-dozen
+```
+
+Matching im Bootstrap: deaccent(city) + date_start ±2 Tage (engste
+Datumsdistanz gewinnt). Fallback: Land + (Jahr, Monat) für venue-only
+Events ohne city-Feld (Manchester Convention Centre Complex etc.).
+
+**Geheimnis:** Der DD-Anon-Key liegt als GitHub-Actions-Secret
+`HYBRIDCAL_DD_SUPABASE_ANON_KEY` im Repo. Lokal als Env-Var setzen.
+Wie man ihn auffrischt, falls er rotiert, steht oben im Deadly-Dozen-
+Abschnitt (XHR-Header des `events-web-dd.vercel.app`-Embeds sniffen).
+
+**Phase 2 (offen):** HYROX / ATHX / Turf Games / `other`-Formate haben
+keine vertrauenswürdige öffentliche API → die laufen erstmal nur durch
+den URL-Health-Check, nicht durch den Daten-Reconciler.
+
+**Manueller Trigger / Einzel-Format:**
+
+```bash
+# Lokal trockenlauf, ohne YAMLs zu ändern:
+RECONCILE_ONLY=deka .venv/bin/python -m scripts.reconcile.run --dry-run
+
+# In GitHub: Actions → "Weekly Reconciler" → Run workflow, optional
+# Eingabe `only: deka` setzen.
+```
+
+## Slug- und Datei-Konventionen für Events
+
+Slug-Schema: `<format>-<city>-<jahr>-<monat>` (deaccent, lowercase).
+Beispiel: `deadly-dozen-strasbourg-2026-07`. Datei: `data/events/<jahr>/<slug>.yml`.
+URL: `/events/<slug>/`.
+
+**Eindeutigkeit bei mehreren Future-Events derselben Stadt und desselben
+Monats** (etwa vier Macclesfield-DD-Events im selben Monat): an den Slug den
+Tag anhängen, also `<format>-<city>-<jahr>-<monat>-<tag>` für den zweiten
+und folgende. Beispiele:
+- `deadly-dozen-macclesfield-2026-09.yml` (erstes Event im Monat)
+- `deadly-dozen-macclesfield-2026-09-19.yml` (zweites Event)
+- `deadly-dozen-macclesfield-2026-09-26.yml` (drittes Event)
+
+Wenn auch der Tag schon belegt ist (extrem selten — zwei Events an exakt
+demselben Datum), wird ein `-2`, `-3` hinten angehängt. Das ist die
+Fallback-Regel des Reconciler-Slug-Generators und sollte nie greifen.
+
+`source_id` (Supabase-UUID, Spartan-ID …) gehört **nicht in URL/Slug** —
+URLs bleiben menschenlesbar. Die ID lebt ausschließlich im YAML als Feld
+`source_id:` und ist der Schlüssel, mit dem der Reconciler identische
+Events über Läufe hinweg wiedererkennt (auch wenn Stadt/Datum driften).
+
 ## Format-Abgrenzung (was gehört in den Kalender?)
 
 Profil: **Ausdauer + Kraft, niedrige Skill-Hürde, für jedermann.**

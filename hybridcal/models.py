@@ -49,6 +49,10 @@ class Event(BaseModel):
     schedule: list[ScheduleEntry] = Field(default_factory=list)
     notes: str | None = None  # editorial note, German (base)
     notes_en: str | None = None  # English translation; falls back to notes
+    # Stable identifier from the upstream source (e.g. Deadly Dozen Supabase
+    # UUID, Spartan/DEKA race id). Used by the reconciler to match events
+    # across runs even when date/city drift. Free-form per source.
+    source_id: str | None = None
 
     @model_validator(mode="after")
     def normalize_dates(self):
