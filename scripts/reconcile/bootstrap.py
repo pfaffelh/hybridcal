@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import importlib
+import re
 import sys
 from datetime import date, timedelta
 
@@ -25,7 +26,24 @@ FMT_PLUGIN = {
     "deka":         "scripts.reconcile.sources.deka",
     "hyrox":        "scripts.reconcile.sources.hyrox",
     "athx":         "scripts.reconcile.sources.athx",
+    "wild-hybrid":  "scripts.reconcile.sources.wild_hybrid",
 }
+
+
+_URL_ID_RE = re.compile(r"-(\d+)/?$")
+
+
+def _match_by_url_id(local: LocalEvent, records):
+    """If the local YAML's URL ends with '-<digits>' and that ID equals a
+    source.source_id, the match is unambiguous. Used as a primary key for
+    sources where the upstream ID is embedded in the event URL (e.g.
+    Wild Hybrid's eventrac ID at the tail of /e/<slug>-<id>)."""
+    url = (local.data.get("url") or "").rstrip("/")
+    m = _URL_ID_RE.search(url)
+    if not m:
+        return []
+    target = m.group(1)
+    return [r for r in records if r.source_id == target]
 
 
 def _match(local: LocalEvent, records):
@@ -96,7 +114,10 @@ def run(fmt: str, dry_run: bool) -> int:
         if le.source_id:
             skipped_has_id += 1
             continue
-        hits = _match(le, records)
+        # Primary: URL-embedded upstream ID (Wild Hybrid eventrac etc.).
+        hits = _match_by_url_id(le, records)
+        if not hits:
+            hits = _match(le, records)
         if not hits:
             hits = _match_relaxed(le, records)
             if hits:
@@ -122,13 +143,13 @@ def run(fmt: str, dry_run: bool) -> int:
         for le in locals_:
             if le.source_id:
                 assigned_ids.add(le.source_id)
-        for le, _ in []:  # placeholder if we ever want to skip ambiguous
-            pass
         # also count the bootstrap's own assignments (dry-run path)
         for le in locals_:
             if le.source_id:
                 continue
-            hits = _match(le, records)
+            hits = _match_by_url_id(le, records)
+            if not hits:
+                hits = _match(le, records)
             if not hits:
                 hits = _match_relaxed(le, records)
             if len(hits) == 1:
