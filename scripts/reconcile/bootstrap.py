@@ -24,6 +24,7 @@ FMT_PLUGIN = {
     "deadly-dozen": "scripts.reconcile.sources.deadly_dozen",
     "deka":         "scripts.reconcile.sources.deka",
     "hyrox":        "scripts.reconcile.sources.hyrox",
+    "athx":         "scripts.reconcile.sources.athx",
 }
 
 

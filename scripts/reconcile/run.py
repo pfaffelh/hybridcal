@@ -35,6 +35,7 @@ PLUGINS = {
     "deka":             "scripts.reconcile.sources.deka",
     "hyrox":            "scripts.reconcile.sources.hyrox",
     "hyrox-youngstars": "scripts.reconcile.sources.hyrox_youngstars",
+    "athx":             "scripts.reconcile.sources.athx",
 }
 
 # Fields the reconciler updates automatically. Order = display order.
