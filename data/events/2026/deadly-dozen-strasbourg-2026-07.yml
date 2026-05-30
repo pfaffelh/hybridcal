@@ -1,14 +1,15 @@
 slug: deadly-dozen-strasbourg-2026-07
 name: "Deadly Dozen FRA: Strasbourg"
 format: deadly-dozen
-date_start: 2026-07-11
-date_end: 2026-07-11
+date_start: 2026-07-18
+date_end: 2026-07-18
 location:
   city: "Strasbourg"
   country: "FR"
+  venue: "Stade de L'Ill"
   timezone: Europe/Paris
-  lat: 48.584614
-  lon: 7.750713
+  lat: 48.6001778
+  lon: 7.7731259
 url: https://in.njuko.com/deadly-dozen-strasbourg1776775665754
 status: confirmed
 source: scraped
