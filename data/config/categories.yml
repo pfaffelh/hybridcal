@@ -152,4 +152,18 @@ turf-games:
     label_en: ENGINE Team
 
 
+wild-hybrid:
+  - id: solo-rx
+    label_de: Solo RX
+    label_en: Solo RX
+  - id: solo-scaled
+    label_de: Solo Scaled
+    label_en: Solo Scaled
+  - id: pairs-rx
+    label_de: Pairs RX
+    label_en: Pairs RX
+  - id: pairs-scaled
+    label_de: Pairs Scaled
+    label_en: Pairs Scaled
+
 other: []

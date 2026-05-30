@@ -125,6 +125,25 @@ Heutiges UA-Snippet, das überall durchkommt:
 - `hybridgames.ch` ist eine Single-Event-Site → die Startseite **ist** die
   Event-Seite. Nicht mit ATHX (früher "Hybrid Games ATHX") verwechseln.
 
+### Wild Hybrid (UK, `format: wild-hybrid`)
+- **Event-Liste:** <https://www.wildhybrid.co.uk/calendars/sport-events/>
+  (Next.js-SSR, Events stehen im HTML). Veranstalter: Wild Deer Events,
+  Buchung über eventrac.
+- **Detail-URL-Muster:** `wildhybrid.co.uk/e/<slug>-<id>`. Jedes Rennen ist
+  je als `-pairs-<id>` **und** `-solos-<id>` gelistet (gleiche Venue/Datum)
+  → als **ein** Event zusammenfassen, `url:` auf die Solos-Seite bzw. die
+  kombinierte `-pairs-and-solos-`-Seite, wo vorhanden.
+- Datum + Venue-Adresse stehen auf der Detailseite ("Next Race: dd/mm/yyyy
+  <Adresse mit Postcode>"). Jahr ableiten (Mai–Dez → 2026, Jan–Apr → 2027).
+- **Koordinaten:** nur die kombinierte Seite hat sie inline; sonst Postcode
+  per <https://api.postcodes.io/postcodes/{PLZ}> geocoden (frei, kein Key).
+- Format (Season 2): Trail-Lauf-Runden + 5 Stationen (Sandbag Lunges, D-Ball
+  Cleans, Sled Push & Pull, Devil's Press, Wall Balls); Solo/Pairs, RX/Scaled;
+  optionale Wild Ruck Runs (5/10 km, Pack M 10 kg / W 7 kg). Die Cheshire-
+  Delamere-Veranstaltung ist das Invitational-Saisonfinale. Workout-Details
+  liegen als PNG-Grafiken auf den "Season 2 - Solo/Pairs"-Seiten
+  (`/contents/<id>-...`).
+
 ## Scraping-Erfahrungen (allgemein)
 
 Gesammelte Lektionen aus den bisherigen Durchläufen — spart beim nächsten Mal
@@ -268,11 +287,18 @@ Events über Läufe hinweg wiedererkennt (auch wenn Stadt/Datum driften).
 Profil: **Ausdauer + Kraft, niedrige Skill-Hürde, für jedermann.**
 Ausdauer ≠ nur Laufen — auch Row/Ski/Bike-Erg und Carries unter Last zählen.
 
-- Aufgenommen: HYROX, Deadly Dozen, ATHX, DEKA, Turf Games; kleinere als
-  `format: other` (STYREKX, METRIX, Nuclear Fit, Hybrid Games Basel).
+- Aufgenommen: HYROX, Deadly Dozen, ATHX, DEKA, Turf Games, Wild Hybrid;
+  kleinere als `format: other` (STYREKX, METRIX, Nuclear Fit, Hybrid Games
+  Basel).
 - **XENOM bewusst NICHT** aufgenommen: CrossFit-naher "Decathlon of Fitness"
   mit Muscle-Ups / HSPU / schweren Olympic-Lifts → andere Community, hohe
   Skill-Hürde, niedriger Ausdaueranteil.
+- **HalfRox / "Half HYROX" bewusst NICHT** aufgenommen: kein eigener
+  Veranstalter, sondern ein Sammelbegriff für Half-Distance-HYROX-
+  Simulationen, die einzelne Gyms/Clubs lokal fahren (z.B. TRYROX / C26 Hub
+  Kansas, TeamLDN Kanada, Greater Cincinnati). Hyperlokale HYROX-Sims ohne
+  gemeinsamen Kalender → würde die Tür für beliebig viele Gym-Sims öffnen.
+  (Recherche 2026-05-29.)
 
 ## Format-Bilder = bewusst Farbkarten, keine offiziellen Logos
 

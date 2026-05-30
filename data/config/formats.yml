@@ -838,6 +838,107 @@ turf-games:
     there are always authoritative. The exact workout list is typically
     published only in the days leading up to the event.
 
+wild-hybrid:
+  name: Wild Hybrid
+  type: Outdoor Trail Hybrid Race
+  website: https://www.wildhybrid.co.uk
+  color: "#0f766e"  # pine teal
+  description_de: >
+    Outdoor-Trail-Hybrid-Race (UK): Trail-Lauf-Runden durch Wald und
+    Country-Park, unterbrochen von 5 funktionellen Stationen (Sandbag Lunges,
+    D-Ball Cleans over Shoulder, Sled Push & Pull, Devil's Press, Wall Balls).
+    Antritt Solo oder Pairs, je RX oder Scaled.
+  description_en: >
+    Outdoor trail hybrid race (UK): trail running loops through forest and
+    country park, broken up by 5 functional stations (sandbag lunges, d-ball
+    cleans over shoulder, sled push & pull, devil's press, wall balls).
+    Enter Solo or Pairs, each RX or Scaled.
+  long_description_de: |
+    ## Format
+
+    **Wild Hybrid** ist eine britische **Outdoor-Trail-Hybrid-Serie**
+    (Veranstalter: Wild Deer Events). Gelaufen wird auf Trail-Runden durch
+    Wälder und Country-Parks, unterbrochen von **5 funktionellen Stationen**.
+    Die Bewegungen sind bewusst zugänglich gehalten — kein High-Skill, keine
+    olympischen Lifts —, sodass die Strecke für Einsteiger:innen bis Elite
+    funktioniert.
+
+    Antritt **Solo** oder als **Pairs**, jeweils in den Standards **RX** und
+    **Scaled**.
+
+    ## Die 5 Stationen (Season 2)
+
+    | # | Station                       | Volumen | RX (M / W)        | Scaled (M / W)        |
+    |---|-------------------------------|---------|-------------------|-----------------------|
+    | 1 | Sandbag Lunges                | 50      | 30 kg / 20 kg     | 20 kg / Air Lunges    |
+    | 2 | D-Ball Cleans over Shoulder   | 20      | 50 kg / 30 kg     | 30 kg / 20 kg         |
+    | 3 | Sled Push & Pull              | 80 m    | 80 kg / 60 kg     | 60 kg / 40 kg         |
+    | 4 | Devil's Press                 | 20      | 22,5 kg / 15 kg   | 15 kg / 10 kg         |
+    | 5 | Wall Balls                    | 50      | 6 kg auf 9-ft-Ziel | 6 kg auf 9-ft-Ziel   |
+
+    Zwischen den Stationen wird jeweils eine Trail-Runde gelaufen; die genaue
+    Streckenlänge variiert je nach Venue.
+
+    ## Wild Ruck Run
+
+    Parallel zu jedem Event gibt es optional einen **Wild Ruck Run** über
+    **5 km oder 10 km** mit Gewichtspack (**M 10 kg / W 7 kg**) — eigener
+    Einstieg, kein Stationen-Workout.
+
+    ## Saison & Invitational
+
+    Die Serie läuft als Saison über mehrere UK-Venues. Die **Top 10 jeder
+    Kategorie** über alle Saison-Events werden zum **Wild Hybrid Invitational**
+    (Saisonfinale, z. B. Delamere Forest) eingeladen.
+
+    ## Hinweis
+
+    Verbindlich sind immer die offiziellen Workouts und Standards auf
+    [wildhybrid.co.uk](https://www.wildhybrid.co.uk) — Volumen und Gewichte
+    können pro Saison angepasst werden.
+  long_description_en: |
+    ## Format
+
+    **Wild Hybrid** is a British **outdoor trail hybrid series** (organiser:
+    Wild Deer Events). You run trail loops through forests and country parks,
+    broken up by **5 functional stations**. The movements are deliberately
+    accessible — no high-skill work, no Olympic lifts — so the course works
+    for first-timers through to elite.
+
+    Enter **Solo** or as **Pairs**, each in the **RX** and **Scaled**
+    standards.
+
+    ## The 5 stations (Season 2)
+
+    | # | Station                       | Volume | RX (M / W)        | Scaled (M / W)       |
+    |---|-------------------------------|--------|-------------------|----------------------|
+    | 1 | Sandbag Lunges                | 50     | 30 kg / 20 kg     | 20 kg / air lunges   |
+    | 2 | D-Ball Cleans over Shoulder   | 20     | 50 kg / 30 kg     | 30 kg / 20 kg        |
+    | 3 | Sled Push & Pull              | 80 m   | 80 kg / 60 kg     | 60 kg / 40 kg        |
+    | 4 | Devil's Press                 | 20     | 22.5 kg / 15 kg   | 15 kg / 10 kg        |
+    | 5 | Wall Balls                    | 50     | 6 kg to 9 ft target | 6 kg to 9 ft target |
+
+    A trail loop is run between each station; the exact loop length varies by
+    venue.
+
+    ## Wild Ruck Run
+
+    Alongside each event there is an optional **Wild Ruck Run** over **5 km or
+    10 km** carrying a weighted pack (**M 10 kg / W 7 kg**) — a separate entry,
+    not the station workout.
+
+    ## Season & Invitational
+
+    The series runs as a season across several UK venues. The **top 10 in each
+    category** across all season events are invited to the **Wild Hybrid
+    Invitational** (season final, e.g. Delamere Forest).
+
+    ## Note
+
+    The official workouts and standards at
+    [wildhybrid.co.uk](https://www.wildhybrid.co.uk) are always authoritative —
+    volumes and weights may be adjusted each season.
+
 other:
   name: Other
   name_de: Andere
