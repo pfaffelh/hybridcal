@@ -5,14 +5,16 @@ date_start: 2026-10-31
 date_end: 2026-11-01
 location:
   city: Birmingham
-  country: "GB"
+  country: GB
   timezone: Europe/London
-url: "https://hyrox.com/event/hyrox-youngstars-birmingham/"
+  lat: 52.494899
+  lon: -1.851844
+url: https://hyrox.com/event/hyrox-youngstars-birmingham/
 status: confirmed
 source: scraped
-source_id: "55663"
+source_id: '55663'
 categories:
-  - youngstars-8-9
-  - youngstars-10-11
-  - youngstars-12-13
-  - youngstars-14-15
+- youngstars-8-9
+- youngstars-10-11
+- youngstars-12-13
+- youngstars-14-15

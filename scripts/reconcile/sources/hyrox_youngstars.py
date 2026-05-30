@@ -25,19 +25,27 @@ DEFAULT_CATEGORIES = [
 ]
 
 
-def _city_info_map() -> dict[str, tuple[str, str]]:
-    """Build {normalised-city: (country, timezone)} from existing Adult
-    HYROX YAMLs. Pydantic's Location model requires both, so we can only
-    auto-create a Youngstars YAML when its city has a sister Adult
-    event we can copy these from."""
-    out: dict[str, tuple[str, str]] = {}
+def _city_info_map() -> dict[str, dict]:
+    """Build {normalised-city: {country, timezone, venue, lat, lon}} from
+    existing Adult HYROX YAMLs. Pydantic's Location model requires country
+    and timezone, so we can only auto-create a Youngstars YAML when its
+    city has a sister Adult event we can copy these from. venue/lat/lon
+    are copied too so the new YAML lands on the map (Youngstars run at
+    the same venue as the Adult race)."""
+    out: dict[str, dict] = {}
     for le in load_local_events("hyrox"):
         loc = le.data.get("location") or {}
         city = loc.get("city", "")
         country = loc.get("country", "")
         tz = loc.get("timezone", "")
         if city and country and tz:
-            out[normalise_city(city)] = (country, tz)
+            out[normalise_city(city)] = {
+                "country": country,
+                "timezone": tz,
+                "venue": loc.get("venue"),
+                "lat": loc.get("lat"),
+                "lon": loc.get("lon"),
+            }
     return out
 
 
@@ -47,8 +55,9 @@ def fetch() -> list[SourceRecord]:
     for c in hyrox.parse_cards():
         if c["type_class"] != "type-youngstars":
             continue
-        info = cmap.get(normalise_city(c["city"]))
-        country, tz = info if info else ("", "")
+        info = cmap.get(normalise_city(c["city"])) or {}
+        country = info.get("country", "")
+        tz = info.get("timezone", "")
         d = c["date_start"]
         slug = (f"hyrox-youngstars-{slugify(c['city'])}-"
                 f"{d.strftime('%Y-%m') if d else 'tba'}")
@@ -60,7 +69,10 @@ def fetch() -> list[SourceRecord]:
             date_end=c["date_end"],
             city=c["city"],
             country=country,
+            venue=info.get("venue"),
             timezone=tz,
+            lat=info.get("lat"),
+            lon=info.get("lon"),
             url=c["event_url"],
             categories=DEFAULT_CATEGORIES.copy(),
             suggested_slug=slug,

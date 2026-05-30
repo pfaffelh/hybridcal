@@ -5,14 +5,16 @@ date_start: 2026-09-26
 date_end: 2026-09-27
 location:
   city: Oslo
-  country: "NO"
+  country: 'NO'
   timezone: Europe/Oslo
-url: "https://hyrox.com/event/hyrox-youngstars-oslo/"
+  lat: 59.91333
+  lon: 10.73897
+url: https://hyrox.com/event/hyrox-youngstars-oslo/
 status: confirmed
 source: scraped
-source_id: "55696"
+source_id: '55696'
 categories:
-  - youngstars-8-9
-  - youngstars-10-11
-  - youngstars-12-13
-  - youngstars-14-15
+- youngstars-8-9
+- youngstars-10-11
+- youngstars-12-13
+- youngstars-14-15
