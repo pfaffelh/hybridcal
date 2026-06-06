@@ -14,3 +14,7 @@ build/
 .idea/
 .vscode/
 misc/
+
+# Generated PR body for the weekly reconciler — written fresh each run,
+# read via body-path. Tracking it caused weekly merge conflicts.
+_reconcile_pr_body.md
