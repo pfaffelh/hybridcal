@@ -1,0 +1,19 @@
+slug: deka-beijing-2026-06
+name: 2026 Beijing DEKA City Series
+format: deka
+date_start: 2026-06-06
+date_end: 2026-06-07
+location:
+  city: Beijing
+  country: "CN"
+  venue: National Speed Skating Hall
+  timezone: Asia/Shanghai
+  lat: 40.0176843
+  lon: 116.37769306
+url: "https://spartanchina.secaworld.com/group/index?signupMatchId=1143"
+status: confirmed
+source: scraped
+source_id: "11141"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
