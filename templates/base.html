@@ -30,9 +30,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.base_path }}/static/logo/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="{{ site.base_path }}/static/logo/favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.base_path }}/static/logo/apple-touch-icon.png">
-  <link rel="alternate" hreflang="de" href="{{ site.base_path }}/de{{ current_path }}">
-  <link rel="alternate" hreflang="en" href="{{ site.base_path }}/en{{ current_path }}">
-  <link rel="alternate" hreflang="x-default" href="{{ site.base_path }}/de{{ current_path }}">
+  <link rel="canonical" href="{{ site.url }}/{{ lang }}{{ current_path }}">
+  <link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ current_path }}">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ current_path }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/de{{ current_path }}">
   {% block head_extra %}{% endblock %}
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
 </head>
