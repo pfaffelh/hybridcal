@@ -1,0 +1,19 @@
+slug: deka-geneve-2026-11
+name: 2026 Switzerland DEKA FIT
+format: deka
+date_start: 2026-11-07
+date_end: 2026-11-08
+location:
+  city: Genève
+  country: "CH"
+  venue: PALEXPO - Genève
+  timezone: Europe/Zurich
+  lat: 46.23463012
+  lon: 6.11817199
+url: "https://tickets-chdk.spartan.com/event/5"
+status: confirmed
+source: scraped
+source_id: "10980"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

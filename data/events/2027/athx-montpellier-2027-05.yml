@@ -1,0 +1,15 @@
+slug: athx-montpellier-2027-05
+name: ATHX MONTPELLIER 2027
+format: athx
+date_start: 2027-05-28
+date_end: 2027-05-28
+location:
+  city: Montpellier
+  country: "FR"
+  venue: Montpellier Exhibition Centre & Sud de France Arena
+  timezone: Europe/Paris
+url: "https://athxgames.com/events/01ktkxbvzg4bf5b0xp1vr4rgc9"
+status: confirmed
+source: scraped
+source_id: 01ktkxbvzg4bf5b0xp1vr4rgc9
+categories: []

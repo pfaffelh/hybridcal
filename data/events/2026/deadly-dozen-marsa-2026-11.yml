@@ -1,0 +1,16 @@
+slug: deadly-dozen-marsa-2026-11
+name: "Deadly Dozen MT: Marsa"
+format: deadly-dozen
+date_start: 2026-11-08
+date_end: 2026-11-08
+location:
+  city: Marsa
+  country: "MT"
+  timezone: Europe/Malta
+  lat: 35.875986
+  lon: 14.4920998
+url: "https://in.njuko.com/deadly-dozen-malta---08-november-26"
+status: confirmed
+source: scraped
+source_id: 44b5e12a-8ccf-4062-8db3-aa340881de71
+categories: []
