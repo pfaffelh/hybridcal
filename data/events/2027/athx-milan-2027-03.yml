@@ -1,0 +1,15 @@
+slug: athx-milan-2027-03
+name: ATHX MILAN 2027
+format: athx
+date_start: 2027-03-06
+date_end: 2027-03-06
+location:
+  city: Milan
+  country: "IT"
+  venue: Fiera Milano
+  timezone: Europe/Rome
+url: "https://athxgames.com/events/01ktkx9y8tf4a4g88n2jrprvxb"
+status: confirmed
+source: scraped
+source_id: 01ktkx9y8tf4a4g88n2jrprvxb
+categories: []

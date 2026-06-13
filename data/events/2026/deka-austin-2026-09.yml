@@ -1,0 +1,18 @@
+slug: deka-austin-2026-09
+name: 2026 Austin Fit Fest DEKA STRONG
+format: deka
+date_start: 2026-09-05
+date_end: 2026-09-05
+location:
+  city: Austin
+  country: "US"
+  venue: Travis County Expo Center
+  timezone: America/Chicago
+  lat: 30.2925357
+  lon: -97.6278029
+url: "https://tickets-usdk.spartan.com/event/2020"
+status: confirmed
+source: scraped
+source_id: "11206"
+categories:
+  - deka-strong-singles
