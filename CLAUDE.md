@@ -125,6 +125,40 @@ Heutiges UA-Snippet, das überall durchkommt:
 - `hybridgames.ch` ist eine Single-Event-Site → die Startseite **ist** die
   Event-Seite. Nicht mit ATHX (früher "Hybrid Games ATHX") verwechseln.
 
+### Conquer Fitness / "Level 7" (UK, `format: other`)
+- **Event-Seite:** <https://www.conquerfitness.org.uk/events/level-7>
+  (Framer-SPA; Übersicht <https://www.conquerfitness.org.uk/events/>).
+  Format "Leven Seven": 7 funktionelle Stationen + je 450 m Lauf,
+  ausgetragen über die Ebenen eines Parkhauses (Glasshouse Car Park,
+  Alderley Park, Macclesfield SK10 4TG).
+- **Saison:** Spring + Autumn (gleiche Kern-Struktur, neue Station pro Jahr).
+- **Buchung über Eventrac**, Detail-URLs `conquerfitness.eventrac.co.uk/e/
+  <spring|autumn>-<jahr>-level-seven-fitness-race-alderley-park-<id>`
+  (Spring 2026 = …-13586, Autumn 2026 = …-13680). Daten stehen nicht im
+  statischen HTML der Eventrac-Seite → aus Event-Seite/FB/Web ableiten.
+
+### The Hybrid Games (UK, `format: other`)
+- **Offizielle Site:** <https://thehybridgames.com/> — Events unter
+  `/events/<city>/` bzw. `/events/<city>-2026/` (Datum + Venue im HTML).
+  ⚠ Nicht verwandt mit **Hybrid Games Basel**.
+- Format: 10 Läufe + 10 Stationen + 200-m-Sprint-Finish (Newcastle nur 9+9
+  wegen Halle). Singles/Doubles/Mixed Doubles.
+- **Tickets über FIXR** (`fixr.co/organiser/thehybridgames`): das eingebettete
+  JSON enthält pro Stadt die Venue-Objekte mit `latitude`/`longitude`/
+  `postcode` (NEC Birmingham, SEC Arena Glasgow, Utilita Arena Newcastle).
+  Pro Stadt gibt es Einzel-Ticket-Events je Kategorie.
+
+### Fura World (ES, `format: other`)
+- **Veranstalter:** <https://furaworld.com/> (JS-SPA; statisches HTML zeigt
+  nur teilweise Events). Hybrid-Race: Lauf + 10 Stationen; Open 500-m-Läufe,
+  Elite 750-m-Läufe. Einzel + Paare (Open/Elite, M/W/Mixed).
+- **Offizielle Anmeldung & verlässliche Event-Daten über Sportmaniacs:**
+  `sportmaniacs.com/c/fura-<event>-<jahr>` (z.B. `fura-la-palma-2026` =
+  25.07.2026, Los Llanos de Aridane, La Palma). ⚠ OCR-Aggregatoren wie
+  `carrerasocr.com` listen Fura mit **falscher Insel** (Tenerife statt
+  La Palma) und teils unbestätigten Zusatz-Events → immer gegen Sportmaniacs
+  gegenchecken, nicht blind übernehmen.
+
 ### Wild Hybrid (UK, `format: wild-hybrid`)
 - **Event-Liste:** <https://www.wildhybrid.co.uk/calendars/sport-events/>
   (Next.js-SSR, Events stehen im HTML). Veranstalter: Wild Deer Events,
