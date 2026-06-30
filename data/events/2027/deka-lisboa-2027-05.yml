@@ -1,0 +1,20 @@
+slug: deka-lisboa-2027-05
+name: DEKA LISBOA 2027
+format: deka
+date_start: 2027-05-15
+date_end: 2027-05-15
+location:
+  city: Lisboa
+  country: "PT"
+  venue: Pala do Pavilhão de Portugal (Parque das Nações)
+  timezone: Europe/Lisbon
+  lat: 38.7659027
+  lon: -9.09600838
+url: "https://tickets-esdk.spartan.com/event/201"
+status: confirmed
+source: scraped
+source_id: "11223"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
