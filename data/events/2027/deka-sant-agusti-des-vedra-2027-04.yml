@@ -1,0 +1,20 @@
+slug: deka-sant-agusti-des-vedra-2027-04
+name: DEKA IBIZA 2027
+format: deka
+date_start: 2027-04-17
+date_end: 2027-04-18
+location:
+  city: Sant Agustí des Vedrà
+  country: "ES"
+  venue: "Camp Municipal d'Esports de Sant Agusti"
+  timezone: Europe/Madrid
+  lat: 38.9495592
+  lon: 1.2887325
+url: "https://tickets-esdk.spartan.com/event/210"
+status: confirmed
+source: scraped
+source_id: "11302"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile

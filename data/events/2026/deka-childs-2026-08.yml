@@ -1,0 +1,18 @@
+slug: deka-childs-2026-08
+name: 2026 DEKA STRONG Road Show - E-Motion Fitness
+format: deka
+date_start: 2026-08-14
+date_end: 2026-08-14
+location:
+  city: Childs
+  country: "US"
+  venue: E-Motion Fitness
+  timezone: US/Eastern
+  lat: 41.5579
+  lon: -75.5232
+url: "https://tickets-usdk.spartan.com/event/2021"
+status: confirmed
+source: scraped
+source_id: "11291"
+categories:
+  - deka-strong-singles
