@@ -1,0 +1,18 @@
+slug: deka-dalton-2026-10
+name: 2026 DEKA STRONG Road Show - Dalton State College
+format: deka
+date_start: 2026-10-10
+date_end: 2026-10-10
+location:
+  city: Dalton
+  country: "US"
+  venue: Dalton State College - BJ Bandy Gymnasium
+  timezone: US/Eastern
+  lat: 34.7733
+  lon: -85.0032
+url: "https://tickets-usdk.spartan.com/event/2022"
+status: confirmed
+source: scraped
+source_id: "11292"
+categories:
+  - deka-strong-singles

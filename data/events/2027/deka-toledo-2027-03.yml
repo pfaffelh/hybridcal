@@ -1,0 +1,20 @@
+slug: deka-toledo-2027-03
+name: DEKA TOLEDO - UNIVERSIDAD DE CASTILLA-LA MANCHA 2027
+format: deka
+date_start: 2027-03-06
+date_end: 2027-03-07
+location:
+  city: Toledo
+  country: "ES"
+  venue: Universidad de Castilla-La Mancha (Campus de la Fábrica de Armas)
+  timezone: Europe/Madrid
+  lat: 39.8637231
+  lon: -4.04374567
+url: "https://tickets-esdk.spartan.com/event/208"
+status: confirmed
+source: scraped
+source_id: "11303"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
