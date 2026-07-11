@@ -1,6 +1,8 @@
-slug: hyrox-melbourne-2026-tba
+slug: hyrox-melbourne-2026-12
 name: HYROX Melbourne
 format: hyrox
+date_start: 2026-12-09
+date_end: 2026-12-13
 location:
   city: Melbourne
   country: AU
@@ -8,7 +10,7 @@ location:
   lat: -37.814245
   lon: 144.963173
 url: https://hyrox.com/event/hyrox-melbourne/
-status: tentative
+status: confirmed
 source: scraped
 categories:
   - singles-pro-men
@@ -19,8 +21,4 @@ categories:
   - doubles-women
   - doubles-mixed
   - relay-mixed
-notes: Datum laut hyroxdach.com noch nicht angekündigt.
-notes_en: "Date not yet announced per hyroxdach.com."
 source_id: "55801"
-date_start: 2026-12-09
-date_end: 2026-12-13
