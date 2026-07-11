@@ -229,8 +229,8 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
             lines.append("")
         if r.filtered_non_main_brand:
             if r.fmt == "hyrox":
-                detail = ("Youngstars-Events (Jugend 12-15) — eigene "
-                          "Zielgruppe, nicht im Kalenderprofil")
+                detail = ("Youngstars-Events — werden vom eigenen Format "
+                          "`hyrox-youngstars` reconciled, nicht hier")
             elif r.fmt == "deadly-dozen":
                 detail = ("Affiliate-Gym-Records: Deadly Barbell / "
                           "Deadly ERG / DFT etc. an Partner-Gyms — "
