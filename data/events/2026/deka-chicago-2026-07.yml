@@ -10,7 +10,7 @@ location:
   timezone: America/Chicago
   lat: 41.8916446
   lon: -87.610015
-url: "https://tickets-usdk.spartan.com/event/1999"
+url: "https://tickets-usdk.spartan.com/event/2000"
 status: confirmed
 source: scraped
 categories:
