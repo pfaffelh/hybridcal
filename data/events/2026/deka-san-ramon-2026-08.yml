@@ -7,7 +7,7 @@ location:
   city: San Ramon
   country: "US"
   venue: Hawc Gym
-  timezone: US/Pacific
+  timezone: America/Los_Angeles
   lat: 37.7768
   lon: -121.962
 url: "https://tickets-usda.spartan.com/event/1911"

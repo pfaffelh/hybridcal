@@ -7,7 +7,7 @@ location:
   city: Dalton
   country: "US"
   venue: Dalton State College - BJ Bandy Gymnasium
-  timezone: US/Eastern
+  timezone: America/New_York
   lat: 34.7733
   lon: -85.0032
 url: "https://tickets-usdk.spartan.com/event/2022"

@@ -7,7 +7,7 @@ location:
   city: Weddington
   country: "US"
   venue: CrossFit Weddington
-  timezone: US/Eastern
+  timezone: America/New_York
   lat: 35.001724
   lon: -80.712192
 url: "https://tickets-usda.spartan.com/event/1765"

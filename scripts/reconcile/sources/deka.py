@@ -47,6 +47,49 @@ COUNTRY_TO_ISO = {
     "South Africa": "ZA",
 }
 
+# The Spartan API mixes canonical IANA zones with deprecated aliases.
+# They resolve to the same offsets, but our data should carry one
+# spelling — the canonical one everything else in the repo uses.
+_TZ_ALIAS = {
+    "US/Eastern": "America/New_York",
+    "US/Central": "America/Chicago",
+    "US/Mountain": "America/Denver",
+    "US/Pacific": "America/Los_Angeles",
+    "US/Alaska": "America/Anchorage",
+    "US/Hawaii": "Pacific/Honolulu",
+    "US/Arizona": "America/Phoenix",
+    "Canada/Eastern": "America/Toronto",
+    "Canada/Central": "America/Winnipeg",
+    "Canada/Mountain": "America/Edmonton",
+    "Canada/Pacific": "America/Vancouver",
+    "Canada/Atlantic": "America/Halifax",
+}
+
+# The API also emits fixed-offset zones for races on the meridian. Those
+# are not merely unidiomatic, they're wrong for anything but midwinter:
+# GMT has no BST, so a July race in Farnborough would render an hour off.
+# Only the country can tell us the real zone.
+_FIXED_OFFSET_TZ = {"GMT", "UTC", "Etc/GMT", "Etc/UTC", "Etc/Greenwich"}
+_MERIDIAN_COUNTRY_TZ = {
+    "GB": "Europe/London",
+    "IE": "Europe/Dublin",
+    "PT": "Europe/Lisbon",
+    "IS": "Atlantic/Reykjavik",
+}
+
+
+def _canonical_tz(tz: str, country: str) -> str:
+    """Canonical IANA zone for what the Spartan API reports, or '' if we
+    can't tell (the reconciler then leaves the field alone)."""
+    if not tz:
+        return ""
+    if tz in _TZ_ALIAS:
+        return _TZ_ALIAS[tz]
+    if tz in _FIXED_OFFSET_TZ:
+        return _MERIDIAN_COUNTRY_TZ.get(country, "")
+    return tz
+
+
 CATEGORY_MAP = {
     "dekafit": ["deka-fit-singles", "deka-fit-pairs"],
     "dekafitultra": [],
@@ -93,7 +136,8 @@ def _normalise(race: dict) -> SourceRecord | None:
 
     country = COUNTRY_TO_ISO.get((venue.get("country") or "").strip(), "")
     city = (venue.get("city") or "").strip()
-    timezone = (sub_events[0].get("timezone") or "").strip()
+    timezone = _canonical_tz((sub_events[0].get("timezone") or "").strip(),
+                             country)
 
     start = _parse_date(race.get("start_date"))
     end = _parse_date(race.get("end_date")) or start

@@ -7,7 +7,7 @@ location:
   city: Farnborough
   country: "GB"
   venue: The Farnborough International Exhibition & Conference Centre
-  timezone: GMT
+  timezone: Europe/London
   lat: 51.2731
   lon: -0.7725
 url: "https://tickets-gbdk.spartan.com/event/234"

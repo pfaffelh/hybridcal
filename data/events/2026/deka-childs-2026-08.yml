@@ -7,7 +7,7 @@ location:
   city: Childs
   country: "US"
   venue: E-Motion Fitness
-  timezone: US/Eastern
+  timezone: America/New_York
   lat: 41.5579
   lon: -75.5232
 url: "https://tickets-usdk.spartan.com/event/2021"
