@@ -178,6 +178,45 @@ Heutiges UA-Snippet, das überall durchkommt:
   liegen als PNG-Grafiken auf den "Season 2 - Solo/Pairs"-Seiten
   (`/contents/<id>-...`).
 
+## Einzelnes neues Event hinzufügen ("ergänze Event X")
+
+Ablauf, wenn der User auf eine einzelne Event-Seite verweist (kein
+Serien-Massen-Update). Beispiel-Durchlauf: Black Forest Major Games
+(`bfm-games-loerrach-2026-09.yml`, 2026-06-01).
+
+1. **Quelle laden** (WebFetch reicht meist; bei JS-SPA Playbook oben). Name,
+   Datum, Stadt, Venue, Land, Ticket-/Anmelde-URL, Format-Beschreibung ziehen.
+2. **Anmelde-/Ticket-Seite schlägt Startseite.** Die Veranstalter-Homepage
+   ist oft ungenau (Marketing-Zeitraum statt Renntag, Gym-Adresse statt
+   Wettkampfort). Die **Registrierungsseite** (Eventfrog, njuko, Atleta.cc …)
+   hat die echten Wettkampfdaten. Bei Widerspruch: Anmelde-Seite gewinnt,
+   Diskrepanz dem User melden (nicht stillschweigend wegmatchen).
+   *Bsp.:* Homepage sagte "5.–9. Sep, GymAzo Steinen"; Eventfrog sagte
+   "5. Sep, Stadion Grütt Lörrach" (400-m-Bahn passt zum Format) → Lörrach
+   genommen, GymAzo als Veranstalter in die Notes.
+3. **Format wählen.** Etabliertes Format nur bei echter Serien-Zugehörigkeit;
+   sonst `format: other`. Vorher an der "Format-Abgrenzung"-Sektion prüfen,
+   ob das Event überhaupt reingehört (Ausdauer+Kraft, niedrige Skill-Hürde).
+4. **Koordinaten** per Nominatim geocoden (frei, kein Key), mit Browser-UA:
+   `https://nominatim.openstreetmap.org/search?street=<Str+Nr>&city=<Stadt>&country=Germany&format=json&limit=1`.
+   UK: Postcode über `api.postcodes.io/postcodes/{PLZ}`. Auf 4 Nachkommastellen
+   runden (wie Bestand).
+5. **Slug:** Serien-/Veranstalter-Präfix + Stadt + Jahr + Monat (nicht
+   literal `other`!), deaccent. Z.B. `bfm-games-loerrach-2026-09`. Datei
+   `data/events/<jahr>/<slug>.yml`. Schema-Details in der Slug-Sektion unten.
+6. **YAML schreiben** nach dem `other`-Muster (s. STYREKX-Beispiel):
+   `slug, name, format, date_start, date_end, location{city,country,venue,
+   timezone,lat,lon}, url, status, source: scraped, categories: [], notes,
+   notes_en`. `url:` auf die Einzelveranstaltung. `notes` = DE-Basis,
+   `notes_en` = Übersetzung (beide, i18n-Konvention).
+7. **Validieren:** `BASE_PATH= .venv/bin/python build.py` (Cross-Reference-
+   Check muss `ok` sagen, Event-Count steigt um 1).
+8. **URL-Stichprobe** auf HTTP 200 mit Browser-UA (`curl -o /dev/null -w
+   "%{http_code}"`). Generierte Seiten liegen unter
+   `dist/{de,en}/events/<slug>.html`.
+9. **Erst committen/pushen, wenn der User es sagt.** Commit-Message-Stil:
+   `data: add <Name> <Jahr> (<Stadt>, <TT.MM.>, format: <fmt>)`.
+
 ## Scraping-Erfahrungen (allgemein)
 
 Gesammelte Lektionen aus den bisherigen Durchläufen — spart beim nächsten Mal
@@ -236,9 +275,10 @@ geht durch menschliches Review.
 
 **Was der Reconciler tut:**
 
-1. Pro Format mit Quell-Plugin (Phase 1: `deadly-dozen`, `deka`) holt er
-   die aktuelle Event-Liste der Quelle und normalisiert sie in
-   `SourceRecord`-Einträge mit stabiler `source_id`.
+1. Pro Format mit Quell-Plugin (`deadly-dozen`, `deka`, `hyrox`,
+   `hyrox-youngstars`, `athx`, `wild-hybrid`) holt er die aktuelle
+   Event-Liste der Quelle und normalisiert sie in `SourceRecord`-Einträge
+   mit stabiler `source_id`.
 2. Matching mit bestehenden YAMLs **ausschließlich über `source_id`**.
 3. Für gematchte Events vergleicht er die Felder
    `date_start`, `date_end`, `url`, `location.{city,country,venue,timezone,lat,lon}`
@@ -279,8 +319,36 @@ Events ohne city-Feld (Manchester Convention Centre Complex etc.).
 Wie man ihn auffrischt, falls er rotiert, steht oben im Deadly-Dozen-
 Abschnitt (XHR-Header des `events-web-dd.vercel.app`-Embeds sniffen).
 
-**Phase 2 (offen):** HYROX / ATHX / Turf Games / `other`-Formate haben
-keine vertrauenswürdige öffentliche API → die laufen erstmal nur durch
+**HYROX** wird voll reconciled, obwohl es keine JSON-API gibt: das Plugin
+parst die server-gerenderten Cards von `find-my-race` (post-ID = stabile
+`source_id`). Land/Koordinaten fehlen dort → für **unbekannte** Events
+öffnet es die Event-Seite, liest das Custom-Field `en_event_address` und
+geocodet die per Nominatim. Details:
+
+- **Detailseiten nur für neue `source_id`s.** Bestehende Events werden
+  aus der Card allein synchronisiert (nur `date_start`/`date_end`/`url`
+  ändert der Reconciler an ihnen) — das spart ~70 Fetches + Geocodes pro
+  Lauf und schützt die kuratierten Location-Felder.
+- **Die `continent-*`-Klasse der Card ist der Geocode-Wächter.** Viele
+  Adressen nennen kein Land ("Metropolitan Expo, Athens International
+  Airport") und lösen sonst nach Athens, *Georgia* auf. Die Kontinent-
+  Bbox geht als `viewbox`+`bounded=1` in die Nominatim-Query — reines
+  Nachfiltern reicht nicht: "Athens" hat in den Top-5 **keinen**
+  griechischen Treffer.
+- **`timezone` ist Pflichtfeld** (`hybridcal/models.py`, IANA-validiert).
+  Ohne Land *und* Zeitzone wird nichts angelegt (`is_main_brand=False`),
+  sondern mit Begründung im PR-Body gemeldet (`skip_note`). Neue Länder
+  → `_COUNTRY_TZ` ergänzen; Mehrzonen-Länder (US/CA/MX/BR/AU, Kanaren)
+  → `_CITY_TZ`.
+- `venue` setzt das Plugin bewusst **nicht**: die Adressen sind zu
+  uneinheitlich (mal "Messe Basel", mal "600 E Grand Ave"), und nur
+  2/68 Bestands-YAMLs pflegen das Feld überhaupt.
+- Nominatim: max 1 req/s, eigener UA, Retry mit Backoff — ein transienter
+  Fehler darf **nicht** als "Ort existiert nicht" gecacht werden, sonst
+  fällt ein echtes Event still unter den Tisch.
+
+**Phase 2 (offen):** ATHX / Turf Games / `other`-Formate haben keine
+vertrauenswürdige öffentliche Quelle → die laufen weiterhin nur durch
 den URL-Health-Check, nicht durch den Daten-Reconciler.
 
 **Manueller Trigger / Einzel-Format:**
