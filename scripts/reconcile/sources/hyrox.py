@@ -6,17 +6,28 @@ server-side. Every event card is an <article> with data-id (= WP post ID
 Parsing the HTML is robust and avoids the Playwright/Vercel-checkpoint
 dance.
 
-Country isn't exposed at the card level (only continent). New events
-without a known country are surfaced as `ambiguous` in the reconcile
-report and not auto-written.
+Country isn't exposed at the card level (only continent), so for events
+we don't know yet we open the event page and read its `en_event_address`
+custom field, then geocode that via Nominatim to get the ISO country and
+coordinates. The card's `continent-*` class validates the geocode: an
+address without a country ("Metropolitan Expo, Athens International
+Airport") otherwise resolves to Athens, Georgia.
+
+Detail pages are only fetched for source_ids we don't have a YAML for —
+existing events are kept in sync from the card alone (date/url), and
+their curated location fields are never overwritten by the reconciler.
 """
 from __future__ import annotations
 
+import html as htmlmod
+import json
 import re
+import time
+import urllib.parse
 import urllib.request
 from datetime import date
 
-from .. import SourceRecord, slugify
+from .. import SourceRecord, load_local_events, slugify
 
 URL = "https://hyrox.com/find-my-race/"
 FORMAT_ID = "hyrox"
@@ -30,18 +41,121 @@ _MONTHS = {
 }
 
 # URL-slug → our canonical city. Used when the source spelling differs
-# from ours (Gent/Ghent, Tenerife/Santa Cruz de Tenerife).
+# from ours (Gent/Ghent, Tenerife/Santa Cruz de Tenerife) or when the
+# slug carries a venue the city name shouldn't ('paris-grand-palais').
 _CITY_ALIAS = {
     "gent": "Ghent",
     "tenerife": "Santa Cruz de Tenerife",
+    "paris-grand-palais": "Paris",
 }
 
-# Matches any optional sponsor prefix (one or two words like 'puma-' or
-# 'virgin-active-') followed by 'hyrox-' and an optional 'youngstars-'
-# or 'world-championships-' segment. Stripped before city extraction.
+# Matches an optional sponsor prefix of up to three tokens ('puma-',
+# 'virgin-active-', 'all-inclusive-fitness-', 'factor_-') followed by
+# 'hyrox-' and an optional 'youngstars-' / 'world-championships-'
+# segment. Stripped before city extraction. Non-greedy so the shortest
+# prefix that still leaves a literal 'hyrox-' wins.
 _PREFIX_RE = re.compile(
-    r"^(?:[a-z]+(?:-[a-z]+)?-)?hyrox-(?:youngstars-|world-championships-|championships-)?"
+    r"^(?:[a-z0-9_]+-){0,3}?hyrox-(?:youngstars-|world-championships-|championships-)?"
 )
+
+# Nominatim returns country_code 'cn' for Hong Kong addresses; ISO-3166-1
+# alpha-2 (what our Location model wants) is HK.
+_CC_FIX = {"Hong Kong": "HK"}
+
+# Continent class on the card → plausible bbox (lat_min, lat_max,
+# lon_min, lon_max). Used to reject a geocode that landed on the wrong
+# continent, which is what happens for addresses that omit the country.
+# Boxes are deliberately generous; they only have to separate the five
+# HYROX continent buckets from each other.
+_CONTINENT_BBOX = {
+    "europe":        (27.0, 72.0, -32.0, 45.0),   # incl. Canary Islands
+    "north-america": (7.0, 84.0, -170.0, -50.0),
+    "south-america": (-56.0, 13.0, -82.0, -34.0),
+    "africa":        (-35.0, 38.0, -26.0, 52.0),
+    "asia-pacific":  (-50.0, 60.0, 25.0, 180.0),
+}
+
+# ISO country → IANA timezone, for countries with a single zone.
+# timezone is a required field on our Location model, so an event whose
+# zone we can't determine is not auto-created (is_main_brand=False).
+_COUNTRY_TZ = {
+    "AE": "Asia/Dubai",
+    "AR": "America/Argentina/Buenos_Aires",
+    "AT": "Europe/Vienna",
+    "BE": "Europe/Brussels",
+    "CH": "Europe/Zurich",
+    "CN": "Asia/Shanghai",
+    "CZ": "Europe/Prague",
+    "DE": "Europe/Berlin",
+    "DK": "Europe/Copenhagen",
+    "EG": "Africa/Cairo",
+    "ES": "Europe/Madrid",
+    "FI": "Europe/Helsinki",
+    "FR": "Europe/Paris",
+    "GB": "Europe/London",
+    "GR": "Europe/Athens",
+    "HK": "Asia/Hong_Kong",
+    "HU": "Europe/Budapest",
+    "IE": "Europe/Dublin",
+    "IN": "Asia/Kolkata",
+    "IT": "Europe/Rome",
+    "JP": "Asia/Tokyo",
+    "KR": "Asia/Seoul",
+    "LV": "Europe/Riga",
+    "MY": "Asia/Kuala_Lumpur",
+    "NL": "Europe/Amsterdam",
+    "NO": "Europe/Oslo",
+    "NZ": "Pacific/Auckland",
+    "PL": "Europe/Warsaw",
+    "PT": "Europe/Lisbon",
+    "SE": "Europe/Stockholm",
+    "SG": "Asia/Singapore",
+    "TH": "Asia/Bangkok",
+    "TR": "Europe/Istanbul",
+    "TW": "Asia/Taipei",
+    "ZA": "Africa/Johannesburg",
+}
+
+# Countries spanning several zones need the city to pin the zone down.
+# Keyed by our canonical city spelling (see _extract_city).
+_CITY_TZ = {
+    # United States
+    "Atlanta": "America/New_York",
+    "Chicago": "America/Chicago",
+    "Dallas": "America/Chicago",
+    "Houston": "America/Chicago",
+    "Las Vegas": "America/Los_Angeles",
+    "Los Angeles": "America/Los_Angeles",
+    "Miami": "America/New_York",
+    "Miami Beach": "America/New_York",
+    "New York": "America/New_York",
+    "Phoenix": "America/Phoenix",
+    "Portland": "America/Los_Angeles",
+    "San Diego": "America/Los_Angeles",
+    "San Francisco": "America/Los_Angeles",
+    "Salt Lake City": "America/Denver",
+    "Seattle": "America/Los_Angeles",
+    "Washington D C": "America/New_York",
+    # Canada
+    "Ottawa": "America/Toronto",
+    "Toronto": "America/Toronto",
+    "Vancouver": "America/Vancouver",
+    # Mexico
+    "Cancun": "America/Cancun",
+    "Guadalajara": "America/Mexico_City",
+    "Monterrey": "America/Monterrey",
+    "Mexico City": "America/Mexico_City",
+    # Brazil
+    "Sao Paulo": "America/Sao_Paulo",
+    "Rio De Janeiro": "America/Sao_Paulo",
+    # Australia
+    "Brisbane": "Australia/Brisbane",
+    "Melbourne": "Australia/Melbourne",
+    "Perth": "Australia/Perth",
+    "Sydney": "Australia/Sydney",
+    # Spain — mainland is Europe/Madrid, the Canaries are not.
+    "Santa Cruz de Tenerife": "Atlantic/Canary",
+}
 
 # Trailing season/instance markers: -25-26, -s26-27, -2, -2026
 _SEASON_RE = re.compile(r"-(?:s?\d{2}-\d{2}|20\d{2}|\d+)$")
@@ -161,7 +275,8 @@ def parse_cards() -> list[dict]:
     """Parse find-my-race into raw card dicts (format-agnostic).
 
     Each dict has: post_id, type_class (type-adults / type-youngstars),
-    event_url, title, date_start, date_end, city. Both Adult and
+    continent (europe / north-america / asia-pacific / south-america /
+    africa), event_url, title, date_start, date_end, city. Both Adult and
     Youngstars plugins consume this and filter by type_class.
     """
     html = _get_html()
@@ -181,7 +296,9 @@ def parse_cards() -> list[dict]:
             continue
         event_url = h2_m.group(1).strip()
         title = re.sub(r"<[^>]+>", "", h2_m.group(2)).strip()
-        title = re.sub(r"\s+", " ", title)
+        # WordPress curls the apostrophe in names like 'Masters&#8217; Union
+        # HYROX Delhi'; the entity must not reach the YAML.
+        title = re.sub(r"\s+", " ", htmlmod.unescape(title))
 
         d1_m = _DATE1_RE.search(body)
         d3_m = _DATE3_RE.search(body)
@@ -191,6 +308,7 @@ def parse_cards() -> list[dict]:
         cards.append({
             "post_id": head_m.group(1),
             "type_class": head_m.group(3),  # type-adults / type-youngstars
+            "continent": head_m.group(2).replace("continent-", ""),
             "event_url": event_url,
             "title": title,
             "date_start": date_start,
@@ -200,14 +318,170 @@ def parse_cards() -> list[dict]:
     return cards
 
 
+# Event page: 'Event Location:' custom field. Holds a full postal address
+# for confirmed venues and a placeholder while the venue is unannounced.
+_ADDRESS_RE = re.compile(
+    r'en_event_address[^"]*"[^>]*>.*?<span class="w-post-elm-value">([^<]+)<',
+    re.S,
+)
+_ADDRESS_TBA_RE = re.compile(r"to be announced|^tba\b|coming soon|^-*$", re.I)
+
+_GEO_URL = "https://nominatim.openstreetmap.org/search"
+# Nominatim's fair-use policy: max 1 req/s, identifying User-Agent.
+_GEO_UA = "hybridcal-reconciler (https://hybridcal.com)"
+_GEO_DELAY = 1.1
+_GEO_RETRIES = 3
+_GEO_BACKOFF = 2.0
+
+_geo_cache: dict[str, list] = {}
+
+
+def _detail_address(event_url: str) -> str:
+    """'Event Location:' from the event page, '' if absent/unreachable."""
+    try:
+        page = _http_get(event_url)
+    except Exception:
+        return ""
+    m = _ADDRESS_RE.search(page)
+    if not m:
+        return ""
+    return re.sub(r"\s+", " ", htmlmod.unescape(m.group(1))).strip()
+
+
+def _in_continent(lat: float, lon: float, continent: str) -> bool:
+    """Sanity-check a geocode against the card's continent bucket. An
+    unknown continent can't falsify anything, so it passes."""
+    box = _CONTINENT_BBOX.get(continent)
+    if not box:
+        return True
+    lat_min, lat_max, lon_min, lon_max = box
+    return lat_min <= lat <= lat_max and lon_min <= lon <= lon_max
+
+
+def _geocode(query: str, continent: str) -> tuple[str, float, float] | None:
+    """Nominatim lookup → (ISO country, lat, lon) for the best-ranked hit
+    inside `continent`, or None if nothing plausible comes back.
+
+    We ask for several candidates rather than one: bare city names are
+    ambiguous across continents — 'Athens' ranks Athens, Georgia above
+    the Greek one — and the continent filter resolves that ambiguity
+    instead of tripping over it.
+    """
+    if not query:
+        return None
+    key = f"{query}|{continent}"
+    if key not in _geo_cache:
+        q = {"q": query, "format": "json", "addressdetails": "1", "limit": "5"}
+        box = _CONTINENT_BBOX.get(continent)
+        if box:
+            # Restrict the search to the continent instead of merely
+            # filtering afterwards: 'Athens' has no Greek hit in its top 5
+            # at all, so a post-filter alone would just discard the lot.
+            lat_min, lat_max, lon_min, lon_max = box
+            q["viewbox"] = f"{lon_min},{lat_max},{lon_max},{lat_min}"
+            q["bounded"] = "1"
+        params = urllib.parse.urlencode(q)
+        req = urllib.request.Request(
+            f"{_GEO_URL}?{params}",
+            headers={"User-Agent": _GEO_UA, "Accept": "application/json"},
+        )
+        # Nominatim throttles bursts; a transient failure must not be
+        # cached as 'no such place' or we silently drop a real event.
+        for attempt in range(_GEO_RETRIES):
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    _geo_cache[key] = json.loads(
+                        r.read().decode("utf-8", errors="replace"))
+                break
+            except Exception:
+                if attempt == _GEO_RETRIES - 1:
+                    _geo_cache[key] = []
+                else:
+                    time.sleep(_GEO_BACKOFF * (attempt + 1))
+        time.sleep(_GEO_DELAY)
+
+    for hit in _geo_cache[key] or []:
+        try:
+            lat, lon = float(hit["lat"]), float(hit["lon"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if not _in_continent(lat, lon, continent):
+            continue
+        cc = ((hit.get("address") or {}).get("country_code") or "").upper()
+        if cc:
+            return cc, lat, lon
+    return None
+
+
+def _locate(card: dict) -> tuple[str, float | None, float | None]:
+    """Resolve a card to (ISO country, lat, lon).
+
+    The event page's address is the better geocode input, but it may be a
+    'venue TBA' placeholder, and even a real one can omit the country and
+    resolve to the wrong continent. Either way we retry with the bare
+    city, which is also the precision our existing YAMLs carry
+    (city-centre coordinates).
+    """
+    addr = _detail_address(card["event_url"])
+    continent = card["continent"]
+    if addr and not _ADDRESS_TBA_RE.search(addr):
+        hit = _geocode(addr, continent)
+        if hit:
+            cc, lat, lon = hit
+            return _CC_FIX.get(card["city"], cc), lat, lon
+    hit = _geocode(card["city"], continent)
+    if hit:
+        cc, lat, lon = hit
+        return _CC_FIX.get(card["city"], cc), lat, lon
+    return "", None, None
+
+
+# Every HYROX event runs the same category set (verified across all 68
+# existing YAMLs), so new events can be seeded with it.
+DEFAULT_CATEGORIES = [
+    "singles-pro-men", "singles-pro-women",
+    "singles-open-men", "singles-open-women",
+    "doubles-men", "doubles-women", "doubles-mixed",
+    "relay-mixed",
+]
+
+
 def fetch() -> list[SourceRecord]:
-    """Adult HYROX events only. Country isn't in the HTML, so we don't
-    auto-create new YAMLs (is_main_brand=False) — the reconciler keeps
-    existing 66 adult YAMLs in sync but won't invent new ones."""
+    """Adult HYROX events.
+
+    Events we already have a YAML for are returned from the card alone —
+    that carries date/url (the only fields the reconciler syncs onto
+    existing events) and spares us ~70 detail fetches plus geocodes per
+    run. Unknown events get their event page read and geocoded so they
+    can be auto-created with country/timezone/coordinates.
+    """
+    known = {le.source_id for le in load_local_events(FORMAT_ID) if le.source_id}
+    today = date.today()
     out: list[SourceRecord] = []
     for c in parse_cards():
         if c["type_class"] != "type-adults":
             continue
+
+        country, lat, lon, tz, note = "", None, None, "", ""
+        is_new = c["post_id"] not in known
+        # Only unknown, dated, future events are worth resolving: past and
+        # date-TBA rows are never auto-created anyway (run.py), and known
+        # ones have curated location fields we must not overwrite.
+        if is_new and c["date_start"] and c["date_start"] >= today:
+            country, lat, lon = _locate(c)
+            tz = _CITY_TZ.get(c["city"]) or _COUNTRY_TZ.get(country, "")
+            if not country:
+                note = (f"`{c['title']}` ({c['date_start']}) nicht angelegt: "
+                        f"Ort '{c['city']}' liess sich nicht geocoden — "
+                        f"manuell pruefen: {c['event_url']}")
+            elif not tz:
+                note = (f"`{c['title']}` ({c['date_start']}) nicht angelegt: "
+                        f"keine Zeitzone fuer Land {country} hinterlegt — "
+                        f"_COUNTRY_TZ/_CITY_TZ in sources/hyrox.py ergaenzen")
+        elif is_new and not c["date_start"]:
+            note = (f"`{c['title']}` nicht angelegt: Quelle nennt noch kein "
+                    f"Datum (TBA) — {c['event_url']}")
+
         out.append(SourceRecord(
             source_id=c["post_id"],
             format=FORMAT_ID,
@@ -215,9 +489,17 @@ def fetch() -> list[SourceRecord]:
             date_start=c["date_start"],
             date_end=c["date_end"],
             city=c["city"],
-            country="",
+            country=country,
+            timezone=tz,
+            lat=lat,
+            lon=lon,
             url=c["event_url"],
+            categories=DEFAULT_CATEGORIES.copy(),
             suggested_slug=f"hyrox-{slugify(c['city'])}-{c['date_start'].strftime('%Y-%m') if c['date_start'] else 'tba'}",
-            is_main_brand=False,
+            # timezone is required by our Location model and country must
+            # be ISO-2 — without both, creating a YAML would break the
+            # build, so leave it for a human.
+            is_main_brand=bool(country and tz and c["date_start"]),
+            skip_note=note,
         ))
     return out

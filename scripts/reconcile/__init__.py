@@ -63,6 +63,10 @@ class SourceRecord:
     # that should only appear in the PR body's candidate list. Set by
     # the plugin; default True keeps existing plugins unaffected.
     is_main_brand: bool = True
+    # Why this record wasn't auto-created, for the PR body. Only set it
+    # when a human should act (e.g. an event we couldn't resolve); the
+    # deliberate silent drops (affiliate gyms) leave it empty.
+    skip_note: str = ""
 
     def end_date(self) -> date | None:
         return self.date_end or self.date_start

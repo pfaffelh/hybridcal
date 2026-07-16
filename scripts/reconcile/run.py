@@ -26,7 +26,7 @@ from pathlib import Path
 
 from . import (
     EVENTS_DIR, FieldChange, LocalEvent, ReconcileResult, SourceRecord,
-    load_local_events, update_yaml_field, write_new_event_yaml,
+    load_local_events, slugify, update_yaml_field, write_new_event_yaml,
 )
 from .url_check import check_all, broken as broken_urls
 
@@ -144,12 +144,19 @@ def reconcile_format(fmt: str, dry_run: bool = False) -> ReconcileResult:
         # hybrid-calendar profile — drop silently.
         if not rec.is_main_brand:
             result.filtered_non_main_brand += 1
+            if rec.skip_note:
+                result.ambiguous.append(rec.skip_note)
             continue
-        # Source date falls inside an existing multi-day local event? It's
-        # a per-day Supabase row of the same event (e.g. WM day 2). Skip.
-        if any(le.date_start and le.date_end
-               and le.date_start <= rec.date_start <= le.date_end
-               for le in future):
+        # Source date falls inside an existing multi-day local event of
+        # the *same city*? It's a per-day Supabase row of that event (e.g.
+        # WM day 2). Skip. The city guard is essential: HYROX runs a dozen
+        # events on the same weekend across the world, and without it the
+        # first city to claim a date would swallow all the others.
+        if rec.date_start and any(
+                le.date_start and le.date_end
+                and slugify(le.city) == slugify(rec.city)
+                and le.date_start <= rec.date_start <= le.date_end
+                for le in future):
             continue
         year_dir = EVENTS_DIR / str(rec.date_start.year)
         day = rec.date_start.day if rec.date_start else None
@@ -229,8 +236,9 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
             lines.append("")
         if r.filtered_non_main_brand:
             if r.fmt == "hyrox":
-                detail = ("Youngstars-Events — werden vom eigenen Format "
-                          "`hyrox-youngstars` reconciled, nicht hier")
+                detail = ("Events ohne Datum oder ohne bestimmbares "
+                          "Land/Zeitzone — siehe Hinweise oben, manuell "
+                          "ergänzen")
             elif r.fmt == "deadly-dozen":
                 detail = ("Affiliate-Gym-Records: Deadly Barbell / "
                           "Deadly ERG / DFT etc. an Partner-Gyms — "
