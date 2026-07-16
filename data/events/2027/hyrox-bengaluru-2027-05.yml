@@ -1,0 +1,24 @@
+slug: hyrox-bengaluru-2027-05
+name: Hyrox Bengaluru
+format: hyrox
+date_start: 2027-05-12
+date_end: 2027-05-16
+location:
+  city: Bengaluru
+  country: "IN"
+  timezone: Asia/Kolkata
+  lat: 12.9767936
+  lon: 77.590082
+url: "https://hyrox.com/event/hyrox-bengaluru/"
+status: confirmed
+source: scraped
+source_id: "57741"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

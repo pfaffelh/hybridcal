@@ -1,0 +1,24 @@
+slug: hyrox-riga-2027-05
+name: HYROX RIGA
+format: hyrox
+date_start: 2027-05-28
+date_end: 2027-05-30
+location:
+  city: Riga
+  country: "LV"
+  timezone: Europe/Riga
+  lat: 56.9493977
+  lon: 24.1051846
+url: "https://hyrox.com/event/hyrox-riga/"
+status: confirmed
+source: scraped
+source_id: "57596"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

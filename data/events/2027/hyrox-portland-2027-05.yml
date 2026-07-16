@@ -1,0 +1,24 @@
+slug: hyrox-portland-2027-05
+name: HYROX Portland
+format: hyrox
+date_start: 2027-05-21
+date_end: 2027-05-23
+location:
+  city: Portland
+  country: "US"
+  timezone: America/Los_Angeles
+  lat: 45.528324
+  lon: -122.663105
+url: "https://hyrox.com/event/hyrox-portland-26-27/"
+status: confirmed
+source: scraped
+source_id: "57671"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

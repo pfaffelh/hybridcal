@@ -1,0 +1,24 @@
+slug: hyrox-guadalajara-2027-03
+name: HYROX Guadalajara
+format: hyrox
+date_start: 2027-03-19
+date_end: 2027-03-21
+location:
+  city: Guadalajara
+  country: "MX"
+  timezone: America/Mexico_City
+  lat: 20.6508615
+  lon: -103.3987235
+url: "https://hyrox.com/event/hyrox-guadalajara/"
+status: confirmed
+source: scraped
+source_id: "57737"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,19 @@
+slug: deka-dubai-2026-09
+name: DEKA FIT Dubai @ Coca-Cola Arena
+format: deka
+date_start: 2026-09-26
+date_end: 2026-09-26
+location:
+  city: Dubai
+  country: "AE"
+  venue: Coca-Cola Arena
+  timezone: Asia/Dubai
+  lat: 25.2043102
+  lon: 55.2653822
+url: "https://tickets-aedk.spartan.com/event/10"
+status: confirmed
+source: scraped
+source_id: "11253"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

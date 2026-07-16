@@ -1,0 +1,24 @@
+slug: hyrox-monterrey-2027-04
+name: HYROX Monterrey
+format: hyrox
+date_start: 2027-04-16
+date_end: 2027-04-18
+location:
+  city: Monterrey
+  country: "MX"
+  timezone: America/Monterrey
+  lat: 25.6802019
+  lon: -100.315258
+url: "https://hyrox.com/event/hyrox-monterrey/"
+status: confirmed
+source: scraped
+source_id: "57739"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

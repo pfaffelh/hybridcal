@@ -1,0 +1,20 @@
+slug: hyrox-youngstars-houston-2027-04
+name: HYROX Youngstars Houston
+format: hyrox-youngstars
+date_start: 2027-04-03
+date_end: 2027-04-04
+location:
+  city: Houston
+  country: "US"
+  timezone: America/Chicago
+  lat: 29.7589382
+  lon: -95.3676974
+url: "https://hyrox.com/event/hyrox-youngstars-houston/"
+status: confirmed
+source: scraped
+source_id: "57618"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15

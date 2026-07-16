@@ -1,0 +1,24 @@
+slug: hyrox-cologne-2027-04
+name: all inclusive Fitness HYROX Cologne
+format: hyrox
+date_start: 2027-04-08
+date_end: 2027-04-11
+location:
+  city: Cologne
+  country: "DE"
+  timezone: Europe/Berlin
+  lat: 50.938361
+  lon: 6.959974
+url: "https://hyrox.com/event/all-inclusive-fitness-hyrox-cologne/"
+status: confirmed
+source: scraped
+source_id: "57552"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,24 @@
+slug: hyrox-las-vegas-2027-03
+name: HYROX Las Vegas
+format: hyrox
+date_start: 2027-03-12
+date_end: 2027-03-14
+location:
+  city: Las Vegas
+  country: "US"
+  timezone: America/Los_Angeles
+  lat: 36.1310204
+  lon: -115.1501804
+url: "https://hyrox.com/event/hyrox-las-vegas-26-27/"
+status: confirmed
+source: scraped
+source_id: "57666"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

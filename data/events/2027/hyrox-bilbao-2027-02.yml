@@ -1,0 +1,24 @@
+slug: hyrox-bilbao-2027-02
+name: HYROX Bilbao
+format: hyrox
+date_start: 2027-02-06
+date_end: 2027-02-07
+location:
+  city: Bilbao
+  country: "ES"
+  timezone: Europe/Madrid
+  lat: 43.2905577
+  lon: -2.9920475
+url: "https://hyrox.com/event/hyrox-bilbao/"
+status: confirmed
+source: scraped
+source_id: "57545"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,24 @@
+slug: hyrox-bangkok-2027-02
+name: BYD HYROX Bangkok
+format: hyrox
+date_start: 2027-02-11
+date_end: 2027-02-14
+location:
+  city: Bangkok
+  country: "TH"
+  timezone: Asia/Bangkok
+  lat: 13.7524938
+  lon: 100.4935089
+url: "https://hyrox.com/event/hyrox-bangkok/"
+status: confirmed
+source: scraped
+source_id: "57654"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,24 @@
+slug: hyrox-budapest-2026-10
+name: HYROX Budapest
+format: hyrox
+date_start: 2026-10-17
+date_end: 2026-10-17
+location:
+  city: Budapest
+  country: "HU"
+  timezone: Europe/Budapest
+  lat: 47.4937038
+  lon: 19.1266448
+url: "https://hyrox.com/event/hyrox-budapest/"
+status: confirmed
+source: scraped
+source_id: "57418"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,19 @@
+slug: deka-mississauga-2026-10
+name: 2026 Toronto DEKA FIT & Ultra
+format: deka
+date_start: 2026-10-31
+date_end: 2026-10-31
+location:
+  city: Mississauga
+  country: "CA"
+  venue: The International Centre
+  timezone: America/New_York
+  lat: 43.7033579
+  lon: -79.6405043
+url: "https://tickets-cadk.spartan.com/event/112"
+status: confirmed
+source: scraped
+source_id: "10319"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

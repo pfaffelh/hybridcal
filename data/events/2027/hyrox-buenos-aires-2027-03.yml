@@ -1,0 +1,24 @@
+slug: hyrox-buenos-aires-2027-03
+name: HYROX Buenos Aires
+format: hyrox
+date_start: 2027-03-20
+date_end: 2027-03-21
+location:
+  city: Buenos Aires
+  country: "AR"
+  timezone: America/Argentina/Buenos_Aires
+  lat: -34.6095579
+  lon: -58.3887904
+url: "https://hyrox.com/event/hyrox-buenos-aires/"
+status: confirmed
+source: scraped
+source_id: "57598"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

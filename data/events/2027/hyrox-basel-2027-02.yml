@@ -1,0 +1,24 @@
+slug: hyrox-basel-2027-02
+name: HYROX Basel
+format: hyrox
+date_start: 2027-02-12
+date_end: 2027-02-14
+location:
+  city: Basel
+  country: "CH"
+  timezone: Europe/Zurich
+  lat: 47.5581077
+  lon: 7.5878261
+url: "https://hyrox.com/event/hyrox-basel/"
+status: confirmed
+source: scraped
+source_id: "57550"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

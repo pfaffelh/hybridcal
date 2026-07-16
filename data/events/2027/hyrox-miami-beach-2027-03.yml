@@ -1,0 +1,24 @@
+slug: hyrox-miami-beach-2027-03
+name: Sweat Pals HYROX Miami Beach
+format: hyrox
+date_start: 2027-03-26
+date_end: 2027-03-28
+location:
+  city: Miami Beach
+  country: "US"
+  timezone: America/New_York
+  lat: 25.7929198
+  lon: -80.1353006
+url: "https://hyrox.com/event/sweat-pals-hyrox-miami-beach-26-27/"
+status: confirmed
+source: scraped
+source_id: "57667"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

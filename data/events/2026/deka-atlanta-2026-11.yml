@@ -1,0 +1,19 @@
+slug: deka-atlanta-2026-11
+name: 2026 Atlanta DEKA FIT & Ultra
+format: deka
+date_start: 2026-11-07
+date_end: 2026-11-08
+location:
+  city: Atlanta
+  country: "US"
+  venue: Georgia World Congress Center
+  timezone: America/New_York
+  lat: 33.7608211
+  lon: -84.403754
+url: "https://tickets-usdk.spartan.com/event/2019"
+status: confirmed
+source: scraped
+source_id: "10979"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

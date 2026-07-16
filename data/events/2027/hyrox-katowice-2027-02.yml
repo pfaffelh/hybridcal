@@ -1,0 +1,24 @@
+slug: hyrox-katowice-2027-02
+name: HYROX KATOWICE
+format: hyrox
+date_start: 2027-02-19
+date_end: 2027-02-21
+location:
+  city: Katowice
+  country: "PL"
+  timezone: Europe/Warsaw
+  lat: 50.2137315
+  lon: 19.0058848
+url: "https://hyrox.com/event/hyrox-katowice/"
+status: confirmed
+source: scraped
+source_id: "57595"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

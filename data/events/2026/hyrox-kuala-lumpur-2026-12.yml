@@ -1,0 +1,24 @@
+slug: hyrox-kuala-lumpur-2026-12
+name: AirAsia HYROX Kuala Lumpur
+format: hyrox
+date_start: 2026-12-11
+date_end: 2026-12-13
+location:
+  city: Kuala Lumpur
+  country: "MY"
+  timezone: Asia/Kuala_Lumpur
+  lat: 3.1516964
+  lon: 101.6942371
+url: "https://hyrox.com/event/hyrox-kuala-lumpur/"
+status: confirmed
+source: scraped
+source_id: "57622"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

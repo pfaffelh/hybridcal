@@ -1,0 +1,20 @@
+slug: hyrox-youngstars-amsterdam-2027-01
+name: HYROX Youngstars Amsterdam
+format: hyrox-youngstars
+date_start: 2027-01-23
+date_end: 2027-01-24
+location:
+  city: Amsterdam
+  country: "NL"
+  timezone: Europe/Amsterdam
+  lat: 52.3412264
+  lon: 4.8899065
+url: "https://hyrox.com/event/hyrox-youngstars-amsterdam/"
+status: confirmed
+source: scraped
+source_id: "57645"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15

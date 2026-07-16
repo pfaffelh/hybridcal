@@ -1,0 +1,18 @@
+slug: deka-fort-worth-2026-12
+name: "2026 DEKA World Championship: DEKA STRONG - Open"
+format: deka
+date_start: 2026-12-12
+date_end: 2026-12-13
+location:
+  city: Fort Worth
+  country: "US"
+  venue: Ft. Worth Convention Center
+  timezone: America/Chicago
+  lat: 32.7497034
+  lon: -97.3302655
+url: "https://tickets-usdk.spartan.com/event/2023"
+status: confirmed
+source: scraped
+source_id: "11213"
+categories:
+  - deka-strong-singles

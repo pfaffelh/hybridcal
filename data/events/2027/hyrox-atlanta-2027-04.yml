@@ -1,0 +1,24 @@
+slug: hyrox-atlanta-2027-04
+name: Factor_ HYROX Atlanta
+format: hyrox
+date_start: 2027-04-23
+date_end: 2027-04-25
+location:
+  city: Atlanta
+  country: "US"
+  timezone: America/New_York
+  lat: 33.7544657
+  lon: -84.3898151
+url: "https://hyrox.com/event/factor_-hyrox-atlanta/"
+status: confirmed
+source: scraped
+source_id: "57670"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

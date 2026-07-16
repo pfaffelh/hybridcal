@@ -1,0 +1,24 @@
+slug: hyrox-amsterdam-2027-01
+name: HYROX Amsterdam
+format: hyrox
+date_start: 2027-01-22
+date_end: 2027-01-31
+location:
+  city: Amsterdam
+  country: "NL"
+  timezone: Europe/Amsterdam
+  lat: 52.3412264
+  lon: 4.8899065
+url: "https://hyrox.com/event/hyrox-amsterdam/"
+status: confirmed
+source: scraped
+source_id: "57729"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,18 @@
+slug: deka-san-ramon-2026-08
+name: "DEKA STRONG: Hawc Gym"
+format: deka
+date_start: 2026-08-09
+date_end: 2026-08-09
+location:
+  city: San Ramon
+  country: "US"
+  venue: Hawc Gym
+  timezone: US/Pacific
+  lat: 37.7768
+  lon: -121.962
+url: "https://tickets-usda.spartan.com/event/1911"
+status: confirmed
+source: scraped
+source_id: "11162"
+categories:
+  - deka-strong-singles

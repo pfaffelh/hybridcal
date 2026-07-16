@@ -1,0 +1,24 @@
+slug: hyrox-osaka-2027-01
+name: BYD HYROX Osaka
+format: hyrox
+date_start: 2027-01-21
+date_end: 2027-01-24
+location:
+  city: Osaka
+  country: "JP"
+  timezone: Asia/Tokyo
+  lat: 34.637259
+  lon: 135.4200149
+url: "https://hyrox.com/event/byd-hyrox-osaka/"
+status: confirmed
+source: scraped
+source_id: "57641"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

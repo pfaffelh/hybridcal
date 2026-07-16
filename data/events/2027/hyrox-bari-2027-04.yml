@@ -1,0 +1,24 @@
+slug: hyrox-bari-2027-04
+name: HYROX Bari
+format: hyrox
+date_start: 2027-04-02
+date_end: 2027-04-04
+location:
+  city: Bari
+  country: "IT"
+  timezone: Europe/Rome
+  lat: 41.1257843
+  lon: 16.8620293
+url: "https://hyrox.com/event/hyrox-bari/"
+status: confirmed
+source: scraped
+source_id: "57627"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

@@ -1,0 +1,24 @@
+slug: hyrox-krakow-2027-05
+name: HYROX KRAKOW
+format: hyrox
+date_start: 2027-05-07
+date_end: 2027-05-09
+location:
+  city: Krakow
+  country: "PL"
+  timezone: Europe/Warsaw
+  lat: 50.0469432
+  lon: 19.9971534
+url: "https://hyrox.com/event/hyrox-krakow-26-27/"
+status: confirmed
+source: scraped
+source_id: "57578"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

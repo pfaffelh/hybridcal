@@ -1,0 +1,24 @@
+slug: hyrox-mechelen-2027-03
+name: HYROX Mechelen
+format: hyrox
+date_start: 2027-03-03
+date_end: 2027-03-07
+location:
+  city: Mechelen
+  country: "BE"
+  timezone: Europe/Brussels
+  lat: 51.0277835
+  lon: 4.4998513
+url: "https://hyrox.com/event/hyrox-mechelen/"
+status: confirmed
+source: scraped
+source_id: "57732"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

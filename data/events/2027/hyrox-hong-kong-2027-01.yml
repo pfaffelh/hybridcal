@@ -1,0 +1,24 @@
+slug: hyrox-hong-kong-2027-01
+name: AIA HYROX Hong Kong
+format: hyrox
+date_start: 2027-01-07
+date_end: 2027-01-10
+location:
+  city: Hong Kong
+  country: "HK"
+  timezone: Asia/Hong_Kong
+  lat: 22.3492155
+  lon: 114.1857978
+url: "https://hyrox.com/event/hyrox-hong-kong/"
+status: confirmed
+source: scraped
+source_id: "57639"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

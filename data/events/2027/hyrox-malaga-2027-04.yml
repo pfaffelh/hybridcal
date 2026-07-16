@@ -1,0 +1,24 @@
+slug: hyrox-malaga-2027-04
+name: HYROX Málaga
+format: hyrox
+date_start: 2027-04-14
+date_end: 2027-04-18
+location:
+  city: Malaga
+  country: "ES"
+  timezone: Europe/Madrid
+  lat: 36.7060548
+  lon: -4.4598341
+url: "https://hyrox.com/event/hyrox-malaga/"
+status: confirmed
+source: scraped
+source_id: "57548"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

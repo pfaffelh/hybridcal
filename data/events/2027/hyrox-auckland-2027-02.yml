@@ -1,0 +1,24 @@
+slug: hyrox-auckland-2027-02
+name: BYD HYROX Auckland
+format: hyrox
+date_start: 2027-02-04
+date_end: 2027-02-07
+location:
+  city: Auckland
+  country: "NZ"
+  timezone: Pacific/Auckland
+  lat: -36.852095
+  lon: 174.7631803
+url: "https://hyrox.com/event/hyrox-auckland/"
+status: confirmed
+source: scraped
+source_id: "57646"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

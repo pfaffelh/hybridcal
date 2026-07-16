@@ -1,0 +1,24 @@
+slug: hyrox-helsinki-2027-04
+name: HYROX HELSINKI
+format: hyrox
+date_start: 2027-04-16
+date_end: 2027-04-18
+location:
+  city: Helsinki
+  country: "FI"
+  timezone: Europe/Helsinki
+  lat: 60.1666204
+  lon: 24.9435408
+url: "https://hyrox.com/event/hyrox-helsinki/"
+status: confirmed
+source: scraped
+source_id: "57597"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

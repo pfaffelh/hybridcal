@@ -1,0 +1,24 @@
+slug: hyrox-brisbane-2027-03
+name: BYD HYROX Brisbane
+format: hyrox
+date_start: 2027-03-31
+date_end: 2027-04-04
+location:
+  city: Brisbane
+  country: "AU"
+  timezone: Australia/Brisbane
+  lat: -27.4689623
+  lon: 153.0235009
+url: "https://hyrox.com/event/hyrox-brisbane/"
+status: confirmed
+source: scraped
+source_id: "57648"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

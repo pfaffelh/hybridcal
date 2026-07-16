@@ -1,0 +1,24 @@
+slug: hyrox-athens-2026-09
+name: HYROX Athens
+format: hyrox
+date_start: 2026-09-05
+date_end: 2026-09-06
+location:
+  city: Athens
+  country: "GR"
+  timezone: Europe/Athens
+  lat: 37.9755648
+  lon: 23.7348324
+url: "https://hyrox.com/event/hyrox-athens/"
+status: confirmed
+source: scraped
+source_id: "57156"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

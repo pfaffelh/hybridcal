@@ -1,0 +1,24 @@
+slug: hyrox-copenhagen-2027-03
+name: HYROX Copenhagen
+format: hyrox
+date_start: 2027-03-25
+date_end: 2027-03-28
+location:
+  city: Copenhagen
+  country: "DK"
+  timezone: Europe/Copenhagen
+  lat: 55.6867243
+  lon: 12.5700724
+url: "https://hyrox.com/event/hyrox-copenhagen/"
+status: confirmed
+source: scraped
+source_id: "57661"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

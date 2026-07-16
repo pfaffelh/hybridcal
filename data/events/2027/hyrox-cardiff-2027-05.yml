@@ -1,0 +1,24 @@
+slug: hyrox-cardiff-2027-05
+name: HYROX Cardiff
+format: hyrox
+date_start: 2027-05-20
+date_end: 2027-05-29
+location:
+  city: Cardiff
+  country: "GB"
+  timezone: Europe/London
+  lat: 51.4816546
+  lon: -3.1791934
+url: "https://hyrox.com/event/hyrox-cardiff-2/"
+status: confirmed
+source: scraped
+source_id: "57636"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

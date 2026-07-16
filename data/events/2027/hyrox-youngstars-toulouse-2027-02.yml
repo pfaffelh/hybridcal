@@ -1,0 +1,20 @@
+slug: hyrox-youngstars-toulouse-2027-02
+name: HYROX Youngstars Toulouse
+format: hyrox-youngstars
+date_start: 2027-02-06
+date_end: 2027-02-07
+location:
+  city: Toulouse
+  country: "FR"
+  timezone: Europe/Paris
+  lat: 43.6044638
+  lon: 1.4442433
+url: "https://hyrox.com/event/hyrox-youngstars-toulouse/"
+status: confirmed
+source: scraped
+source_id: "57616"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15

@@ -1,0 +1,24 @@
+slug: hyrox-taipei-2027-03
+name: HYROX Taipei
+format: hyrox
+date_start: 2027-03-12
+date_end: 2027-03-14
+location:
+  city: Taipei
+  country: "TW"
+  timezone: Asia/Taipei
+  lat: 25.0375198
+  lon: 121.5636796
+url: "https://hyrox.com/event/hyrox-taipei/"
+status: confirmed
+source: scraped
+source_id: "57637"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

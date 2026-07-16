@@ -1,0 +1,24 @@
+slug: hyrox-cairo-2026-11
+name: HYROX Cairo
+format: hyrox
+date_start: 2026-11-14
+date_end: 2026-11-15
+location:
+  city: Cairo
+  country: "EG"
+  timezone: Africa/Cairo
+  lat: 30.0443879
+  lon: 31.2357257
+url: "https://hyrox.com/event/hyrox-cairo/"
+status: confirmed
+source: scraped
+source_id: "57384"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

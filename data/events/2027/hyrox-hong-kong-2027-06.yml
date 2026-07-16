@@ -1,0 +1,24 @@
+slug: hyrox-hong-kong-2027-06
+name: PUMA HYROX World Championships Hong Kong
+format: hyrox
+date_start: 2027-06-10
+date_end: 2027-06-13
+location:
+  city: Hong Kong
+  country: "HK"
+  timezone: Asia/Hong_Kong
+  lat: 22.3492155
+  lon: 114.1857978
+url: "https://hyrox.com/event/puma-hyrox-world-championships-hong-kong/"
+status: confirmed
+source: scraped
+source_id: "57584"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

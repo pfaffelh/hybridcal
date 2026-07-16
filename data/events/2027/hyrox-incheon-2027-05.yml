@@ -1,0 +1,24 @@
+slug: hyrox-incheon-2027-05
+name: BYD HYROX Incheon
+format: hyrox
+date_start: 2027-05-13
+date_end: 2027-05-16
+location:
+  city: Incheon
+  country: "KR"
+  timezone: Asia/Seoul
+  lat: 37.456
+  lon: 126.7052
+url: "https://hyrox.com/event/hyrox-incheon/"
+status: confirmed
+source: scraped
+source_id: "57652"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed
