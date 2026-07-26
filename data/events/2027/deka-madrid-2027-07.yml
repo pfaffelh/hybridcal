@@ -1,0 +1,21 @@
+slug: deka-madrid-2027-07
+name: DEKA MADRID 2027
+format: deka
+date_start: 2027-07-10
+date_end: 2027-07-11
+location:
+  city: Madrid
+  country: "ES"
+  venue: Madrid Arena
+  timezone: Europe/Madrid
+  lat: 40.4130096
+  lon: -3.74078466
+url: "https://tickets-esdk.spartan.com/event/219"
+status: confirmed
+source: scraped
+source_id: "11401"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

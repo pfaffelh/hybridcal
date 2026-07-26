@@ -1,0 +1,15 @@
+slug: athx-los-angeles-2026-11
+name: ATHX LOS ANGELES 2026
+format: athx
+date_start: 2026-11-07
+date_end: 2026-11-07
+location:
+  city: Los Angeles
+  country: "US"
+  venue: Long Beach Convention & Entertainment Center
+  timezone: America/New_York
+url: "https://athxgames.com/events/01kxmxwwhpb0jatysf8kb8gz5a"
+status: confirmed
+source: scraped
+source_id: 01kxmxwwhpb0jatysf8kb8gz5a
+categories: []

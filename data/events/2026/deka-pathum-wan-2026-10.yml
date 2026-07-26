@@ -10,7 +10,7 @@ location:
   timezone: Asia/Bangkok
   lat: 13.747
   lon: 100.535
-url: "https://tickets-thdk.spartan.com/event/2"
+url: "https://tickets-thdk.spartan.com/event/bangkok-deka-fit-saturday"
 status: confirmed
 source: scraped
 categories:
