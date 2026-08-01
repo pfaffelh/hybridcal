@@ -1,0 +1,24 @@
+slug: hyrox-noida-2027-01
+name: Hyrox Noida
+format: hyrox
+date_start: 2027-01-15
+date_end: 2027-01-17
+location:
+  city: Noida
+  country: "IN"
+  timezone: Asia/Kolkata
+  lat: 28.5706333
+  lon: 77.3272147
+url: "https://hyrox.com/event/hyrox-noida/"
+status: confirmed
+source: scraped
+source_id: "57858"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed
