@@ -1,0 +1,19 @@
+slug: deka-makati-2026-10
+name: 2026 DEKA FIT Manila
+format: deka
+date_start: 2026-10-03
+date_end: 2026-10-04
+location:
+  city: Makati
+  country: "PH"
+  venue: Space at One Ayala
+  timezone: Asia/Manila
+  lat: 14.5502448
+  lon: 121.0277562
+url: "https://tickets-phdk.spartan.com/event/2"
+status: confirmed
+source: scraped
+source_id: "11143"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
