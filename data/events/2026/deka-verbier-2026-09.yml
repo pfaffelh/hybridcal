@@ -1,0 +1,18 @@
+slug: deka-verbier-2026-09
+name: Verbier Spartan Trifecta Weekend 2026
+format: deka
+date_start: 2026-09-05
+date_end: 2026-09-06
+location:
+  city: Verbier
+  country: "CH"
+  venue: Centre Sportif Chemin de Plan Pra (Switzerland)
+  timezone: Europe/Zurich
+  lat: 46.0960814
+  lon: 7.2285512
+url: "https://tickets-ch.spartan.com/event/69"
+status: confirmed
+source: scraped
+source_id: "9939"
+categories:
+  - deka-strong-singles
