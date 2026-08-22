@@ -1,0 +1,20 @@
+slug: deka-valencia-2027-04
+name: DEKA VALENCIA 2027
+format: deka
+date_start: 2027-04-03
+date_end: 2027-04-04
+location:
+  city: Valencia
+  country: "ES"
+  venue: Tinglado nº2 (La Marina de Valencia)
+  timezone: Europe/Madrid
+  lat: 39.4606444
+  lon: -0.33137441
+url: "https://tickets-esdk.spartan.com/event/227"
+status: confirmed
+source: scraped
+source_id: "11492"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
