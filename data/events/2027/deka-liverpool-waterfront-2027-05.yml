@@ -1,0 +1,21 @@
+slug: deka-liverpool-waterfront-2027-05
+name: 2027 DEKA EMEA Championship
+format: deka
+date_start: 2027-05-28
+date_end: 2027-05-30
+location:
+  city: Liverpool Waterfront
+  country: "GB"
+  venue: Exhibition Centre Liverpool
+  timezone: Europe/London
+  lat: 53.39532
+  lon: -2.99024
+url: "https://tickets-gbdk.spartan.com/event/241"
+status: confirmed
+source: scraped
+source_id: "11460"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles
