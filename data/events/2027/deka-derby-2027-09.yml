@@ -1,8 +1,8 @@
-slug: deka-derby-2026-09-12
-name: 2026 East Midlands DEKA FIT
+slug: deka-derby-2027-09
+name: 2027 DEKA FIT East Midlands
 format: deka
-date_start: 2026-09-11
-date_end: 2026-09-13
+date_start: 2027-09-11
+date_end: 2027-09-12
 location:
   city: Derby
   country: "GB"
@@ -10,10 +10,10 @@ location:
   timezone: Europe/London
   lat: 52.9127
   lon: -1.4464
-url: "https://tickets-gbdk.spartan.com/event/232"
+url: "https://tickets-gbdk.spartan.com/event/247"
 status: confirmed
 source: scraped
+source_id: "11585"
 categories:
   - deka-fit-singles
   - deka-fit-pairs
-source_id: "10270"

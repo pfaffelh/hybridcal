@@ -1,0 +1,21 @@
+slug: deka-scoresby-2027-02
+name: 2027 Melbourne DEKA Trifecta Weekend
+format: deka
+date_start: 2027-02-05
+date_end: 2027-02-07
+location:
+  city: Scoresby
+  country: "AU"
+  venue: Caribbean Park
+  timezone: Australia/Melbourne
+  lat: -37.9049484
+  lon: 145.2089488
+url: "https://tickets-audk.spartan.com/event/100"
+status: confirmed
+source: scraped
+source_id: "10590"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
+  - deka-mile
+  - deka-strong-singles

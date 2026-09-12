@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-07-10
+name: Season 3 Wild Hybrid Sheffield - Rother Valley Country Park
+format: wild-hybrid
+date_start: 2027-07-10
+date_end: 2027-07-10
+location:
+  city: ""
+  country: "GB"
+  venue: "Rother Valley Country Park, Mansfield Rd, Sheffield, S26 5PQ"
+  timezone: Europe/London
+  lat: 53.349517
+  lon: -1.300323
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-sheffield-rother-valley-country-park-14553"
+status: confirmed
+source: scraped
+source_id: "14553"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

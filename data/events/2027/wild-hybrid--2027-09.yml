@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-09
+name: Season 3 Wild Hybrid Birmingham - Sutton Park
+format: wild-hybrid
+date_start: 2027-09-04
+date_end: 2027-09-04
+location:
+  city: ""
+  country: "GB"
+  venue: "Sutton Park, Park Rd, The Royal Town of Sutton Coldfield, Birmingham, Sutton Coldfield B74 2YT"
+  timezone: Europe/London
+  lat: 52.565447
+  lon: -1.835118
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-birmingham-sutton-park-15987"
+status: confirmed
+source: scraped
+source_id: "15987"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

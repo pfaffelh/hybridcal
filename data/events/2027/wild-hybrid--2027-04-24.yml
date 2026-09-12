@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-04-24
+name: Season 3 Wild Hybrid Pollok Park Glasgow
+format: wild-hybrid
+date_start: 2027-04-24
+date_end: 2027-04-24
+location:
+  city: ""
+  country: "GB"
+  venue: "Pollok Country Park, 2060 Pollokshaws Rd, Bellahouston, Glasgow G43 1AT"
+  timezone: Europe/London
+  lat: 55.823776
+  lon: -4.303952
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-pollok-park-glasgow-15985"
+status: confirmed
+source: scraped
+source_id: "15985"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

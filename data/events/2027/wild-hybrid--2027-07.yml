@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-07
+name: Season 3 Wild Hybrid Lake District - Grasmere
+format: wild-hybrid
+date_start: 2027-07-17
+date_end: 2027-07-17
+location:
+  city: ""
+  country: "GB"
+  venue: "The Showfield, Stock Lane, Grasmere, Cumbria, LA22 9SL"
+  timezone: Europe/London
+  lat: 54.456758
+  lon: -3.021662
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-lake-district-grasmere-14555"
+status: confirmed
+source: scraped
+source_id: "14555"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

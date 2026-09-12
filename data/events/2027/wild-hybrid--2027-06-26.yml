@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-06-26
+name: Season 3 Wild Hybrid Surrey - Alice Holt Forest
+format: wild-hybrid
+date_start: 2027-06-26
+date_end: 2027-06-26
+location:
+  city: ""
+  country: "GB"
+  venue: "Alice Holt Forest, Bucks Horn oak GU10 4LS"
+  timezone: Europe/London
+  lat: 51.168112
+  lon: -0.842699
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-surrey-alice-holt-forest-14546"
+status: confirmed
+source: scraped
+source_id: "14546"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled
