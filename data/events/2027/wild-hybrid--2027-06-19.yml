@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-06-19
+name: Season 3 Wild Hybrid Nottingham - Sherwood Pines Forest
+format: wild-hybrid
+date_start: 2027-06-19
+date_end: 2027-06-19
+location:
+  city: ""
+  country: "GB"
+  venue: "Sherwood Pines, Kings Clipstone, Edwinstowe, Mansfield, NG21 9JL"
+  timezone: Europe/London
+  lat: 53.164861
+  lon: -1.095517
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-nottingham-sherwood-pines-forest-14548"
+status: confirmed
+source: scraped
+source_id: "14548"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

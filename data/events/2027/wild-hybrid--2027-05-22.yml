@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-05-22
+name: Season 3 Wild Hybrid Wales - Margam Country Park
+format: wild-hybrid
+date_start: 2027-05-22
+date_end: 2027-05-22
+location:
+  city: ""
+  country: "GB"
+  venue: "Margam Country Park, Wales SA13 2TJ"
+  timezone: Europe/London
+  lat: 51.562734
+  lon: -3.725575
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-wales-margam-country-park-14539"
+status: confirmed
+source: scraped
+source_id: "14539"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

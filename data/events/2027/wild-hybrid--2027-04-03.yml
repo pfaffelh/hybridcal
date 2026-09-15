@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-04-03
+name: Season 3 Wild Hybrid Leeds - Bramham Park
+format: wild-hybrid
+date_start: 2027-04-03
+date_end: 2027-04-03
+location:
+  city: ""
+  country: "GB"
+  venue: "Bramham Park, Bramham Lane, Wetherby, LS23 6LT"
+  timezone: Europe/London
+  lat: 53.87395
+  lon: -1.386849
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-leeds-bramham-park-14537"
+status: confirmed
+source: scraped
+source_id: "14537"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

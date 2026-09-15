@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-06
+name: Season 3 Wild Hybrid Manchester - Heaton Park
+format: wild-hybrid
+date_start: 2027-06-12
+date_end: 2027-06-12
+location:
+  city: ""
+  country: "GB"
+  venue: "Heaton Park, Bury Old Rd, Manchester M25 0EQ"
+  timezone: Europe/London
+  lat: 53.523804
+  lon: -2.264058
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-manchester-heaton-park-15986"
+status: confirmed
+source: scraped
+source_id: "15986"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

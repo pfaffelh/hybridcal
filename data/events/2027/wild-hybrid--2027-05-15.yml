@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-05-15
+name: Season 3 Wild Hybrid Northumberland - Druridge Bay Country Park
+format: wild-hybrid
+date_start: 2027-05-15
+date_end: 2027-05-15
+location:
+  city: ""
+  country: "GB"
+  venue: "Druridge Bay Country Park, A1068, Red Row, Morpeth, NE61 5BX"
+  timezone: Europe/London
+  lat: 55.292027
+  lon: -1.57405
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-northumberland-druridge-bay-country-park-15988"
+status: confirmed
+source: scraped
+source_id: "15988"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-05
+name: "Season 3 Wild Hybrid Lake District - Bowness, Windermere"
+format: wild-hybrid
+date_start: 2027-05-08
+date_end: 2027-05-08
+location:
+  city: ""
+  country: "GB"
+  venue: "Cockshott Point, Glebe Road, Bowness-on-Windermere, Cumbria LA23 3GZ"
+  timezone: Europe/London
+  lat: 54.358348
+  lon: -2.926733
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-lake-district-bowness-windermere-14534"
+status: confirmed
+source: scraped
+source_id: "14534"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

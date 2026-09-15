@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-08
+name: Season 3 Wild Hybrid Edinburgh - Dalkeith Country Park
+format: wild-hybrid
+date_start: 2027-08-21
+date_end: 2027-08-21
+location:
+  city: ""
+  country: "GB"
+  venue: "Dalkeith Country Park, Melville Gate Road, Dalkeith, EH22 1RU"
+  timezone: Europe/London
+  lat: 55.899668
+  lon: -3.089204
+url: "https://www.wildhybrid.co.uk/e/season-3-wild-hybrid-edinburgh-dalkeith-country-park-14563"
+status: confirmed
+source: scraped
+source_id: "14563"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled

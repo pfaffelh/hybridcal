@@ -1,0 +1,18 @@
+slug: deka-hanscom-afb-2026-10
+name: 2026 DEKA MILE Road Show - Hanscom Fitness & Sports Center
+format: deka
+date_start: 2026-10-22
+date_end: 2026-10-22
+location:
+  city: Hanscom AFB
+  country: "US"
+  venue: Hanscom Fitness & Sports Center
+  timezone: America/New_York
+  lat: 42.458
+  lon: -71.2743
+url: "https://tickets-usdk.spartan.com/event/2027"
+status: confirmed
+source: scraped
+source_id: "11599"
+categories:
+  - deka-mile
