@@ -1,0 +1,19 @@
+slug: deka-blanchardstown-2027-05
+name: "2027 DEKA FIT- Ireland "
+format: deka
+date_start: 2027-05-02
+date_end: 2027-05-02
+location:
+  city: "Blanchardstown,"
+  country: "IE"
+  venue: Sport Ireland National Indoor Arena
+  timezone: GB-Eire
+  lat: 53.39827683
+  lon: -6.35977298
+url: "https://tickets-iedk.spartan.com/event/3"
+status: confirmed
+source: scraped
+source_id: "11550"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
