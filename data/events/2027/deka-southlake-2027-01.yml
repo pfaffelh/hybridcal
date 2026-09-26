@@ -1,0 +1,18 @@
+slug: deka-southlake-2027-01
+name: "DEKA STRONG & DEKA MILE: CABRA Hybrid Fitness"
+format: deka
+date_start: 2027-01-30
+date_end: 2027-01-30
+location:
+  city: Southlake
+  country: "US"
+  venue: CABRA Hybrid Fitness
+  timezone: America/Chicago
+  lat: 32.9494
+  lon: -97.1825
+url: "https://tickets-usda.spartan.com/event/2264"
+status: confirmed
+source: scraped
+source_id: "11640"
+categories:
+  - deka-mile
