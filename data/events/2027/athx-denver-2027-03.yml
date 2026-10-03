@@ -1,0 +1,15 @@
+slug: athx-denver-2027-03
+name: ATHX DENVER 2027
+format: athx
+date_start: 2027-03-13
+date_end: 2027-03-13
+location:
+  city: Denver
+  country: "US"
+  venue: National Western Complex
+  timezone: America/New_York
+url: "https://athxgames.com/events/01m3qb3fstj70qb6kgdxspt43f"
+status: confirmed
+source: scraped
+source_id: 01m3qb3fstj70qb6kgdxspt43f
+categories: []

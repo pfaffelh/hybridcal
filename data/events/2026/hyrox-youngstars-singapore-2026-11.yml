@@ -1,0 +1,20 @@
+slug: hyrox-youngstars-singapore-2026-11
+name: HYROX Youngstars Singapore
+format: hyrox-youngstars
+date_start: 2026-11-28
+date_end: 2026-11-29
+location:
+  city: Singapore
+  country: "SG"
+  timezone: Asia/Singapore
+  lat: 1.289918
+  lon: 103.851907
+url: "https://hyrox.com/event/hyrox-youngstars-singapore/"
+status: confirmed
+source: scraped
+source_id: "58440"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15

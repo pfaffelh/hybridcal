@@ -1,0 +1,24 @@
+slug: hyrox-dubai-2026-11
+name: HYROX Dubai
+format: hyrox
+date_start: 2026-11-27
+date_end: 2026-11-28
+location:
+  city: Dubai
+  country: "AE"
+  timezone: Asia/Dubai
+  lat: 25.0742823
+  lon: 55.1885624
+url: "https://hyrox.com/event/hyrox-dubai/"
+status: confirmed
+source: scraped
+source_id: "58121"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed

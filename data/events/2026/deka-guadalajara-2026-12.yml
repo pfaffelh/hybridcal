@@ -1,0 +1,19 @@
+slug: deka-guadalajara-2026-12
+name: DEKA Fit Guadalajara 2026
+format: deka
+date_start: 2026-12-12
+date_end: 2026-12-12
+location:
+  city: Guadalajara
+  country: "MX"
+  venue: Expo Guadalajara
+  timezone: America/Mexico_City
+  lat: 20.6529143
+  lon: -103.39176419
+url: "https://tickets-mxdk.spartan.com/event/25"
+status: confirmed
+source: scraped
+source_id: "11668"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

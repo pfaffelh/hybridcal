@@ -1,0 +1,15 @@
+slug: athx-las-vegas-2027-02
+name: ATHX LAS VEGAS 2027
+format: athx
+date_start: 2027-02-06
+date_end: 2027-02-06
+location:
+  city: Las Vegas
+  country: "US"
+  venue: Expo at World Market Center Las Vegas
+  timezone: America/New_York
+url: "https://athxgames.com/events/01m3q8sdq1s3qr7fsjbf2rg18c"
+status: confirmed
+source: scraped
+source_id: 01m3q8sdq1s3qr7fsjbf2rg18c
+categories: []

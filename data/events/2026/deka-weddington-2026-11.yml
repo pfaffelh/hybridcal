@@ -1,0 +1,18 @@
+slug: deka-weddington-2026-11
+name: "DEKA STRONG : CrossFit Weddington"
+format: deka
+date_start: 2026-11-15
+date_end: 2026-11-15
+location:
+  city: Weddington
+  country: "US"
+  venue: CrossFit Weddington
+  timezone: America/New_York
+  lat: 35.001724
+  lon: -80.712192
+url: "https://tickets-usda.spartan.com/event/2296"
+status: confirmed
+source: scraped
+source_id: "11675"
+categories:
+  - deka-strong-singles

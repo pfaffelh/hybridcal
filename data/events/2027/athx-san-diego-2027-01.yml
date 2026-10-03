@@ -1,0 +1,15 @@
+slug: athx-san-diego-2027-01
+name: ATHX SAN DIEGO 2027
+format: athx
+date_start: 2027-01-23
+date_end: 2027-01-23
+location:
+  city: San Diego
+  country: "US"
+  venue: San Diego Convention Center
+  timezone: America/New_York
+url: "https://athxgames.com/events/01m3q7jv27nmxge7qrghrkb0m4"
+status: confirmed
+source: scraped
+source_id: 01m3q7jv27nmxge7qrghrkb0m4
+categories: []
