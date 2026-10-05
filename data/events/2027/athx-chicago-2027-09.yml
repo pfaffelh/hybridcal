@@ -1,0 +1,15 @@
+slug: athx-chicago-2027-09
+name: ATHX CHICAGO 2027
+format: athx
+date_start: 2027-09-11
+date_end: 2027-09-11
+location:
+  city: Chicago
+  country: "US"
+  venue: Donald E. Stephens Convention Center (Rosemont Convention Center)
+  timezone: America/New_York
+url: "https://athxgames.com/events/01m3qf0k52z2eq2s87gjn3ea61"
+status: confirmed
+source: scraped
+source_id: 01m3qf0k52z2eq2s87gjn3ea61
+categories: []

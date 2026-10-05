@@ -1,0 +1,15 @@
+slug: athx-nashville-2027-08
+name: ATHX NASHVILLE 2027
+format: athx
+date_start: 2027-08-14
+date_end: 2027-08-14
+location:
+  city: Nashville
+  country: "US"
+  venue: The Fairgrounds Nashville
+  timezone: America/New_York
+url: "https://athxgames.com/events/01m3qe0s9k2yzb4grc3qs0149m"
+status: confirmed
+source: scraped
+source_id: 01m3qe0s9k2yzb4grc3qs0149m
+categories: []
