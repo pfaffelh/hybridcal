@@ -1,0 +1,21 @@
+slug: wild-hybrid--2027-09-25
+name: Season 3 Championships Exhibition Park - Newcastle
+format: wild-hybrid
+date_start: 2027-09-25
+date_end: 2027-09-25
+location:
+  city: ""
+  country: "GB"
+  venue: "Exhibition Park, Claremont Road, Newcastle upon Tyne, NE2 4PZ"
+  timezone: Europe/London
+  lat: 54.986395
+  lon: -1.616482
+url: "https://www.wildhybrid.co.uk/e/season-3-championships-exhibition-park-newcastle-16138"
+status: confirmed
+source: scraped
+source_id: "16138"
+categories:
+  - solo-rx
+  - solo-scaled
+  - pairs-rx
+  - pairs-scaled
