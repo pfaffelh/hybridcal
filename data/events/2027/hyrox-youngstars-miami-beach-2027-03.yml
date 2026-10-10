@@ -1,0 +1,20 @@
+slug: hyrox-youngstars-miami-beach-2027-03
+name: HYROX Youngstars Miami Beach
+format: hyrox-youngstars
+date_start: 2027-03-27
+date_end: 2027-03-28
+location:
+  city: Miami Beach
+  country: "US"
+  timezone: America/New_York
+  lat: 25.7929198
+  lon: -80.1353006
+url: "https://hyrox.com/event/hyrox-youngstars-miami-beach/"
+status: confirmed
+source: scraped
+source_id: "58522"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15
