@@ -100,11 +100,22 @@ def _parse_iso(s) -> date | None:
 
 
 def _city_from_name(name: str) -> str:
-    """'WILD HYBRID <CITY> - <VENUE> [PAIRS|SOLOS|...]' → '<City>'."""
-    m = re.match(r"WILD\s+HYBRID\s+(.+?)\s+-\s+", name, re.I)
+    """'[Season N] WILD HYBRID <CITY> - <VENUE> [PAIRS|SOLOS|...]' → '<City>'.
+
+    Ab Saison 3 tragen die Namen ein 'Season N'-Präfix, und manche haben
+    keinen ' - '-Trenner ('Season 3 Wild Hybrid Pollok Park Glasgow') —
+    dann ist das letzte Wort die Stadt."""
+    name = re.sub(r"\s+(SOLOS|PAIRS|PAIRS\s+AND\s+SOLOS)\s*$", "", name.strip(), flags=re.I)
+    m = re.search(r"WILD\s+HYBRID\s+(.+?)(?:\s+-\s+|$)", name, re.I)
     if not m:
+        # 'Season 3 Championships Exhibition Park - Newcastle': Ort hinten.
+        if " - " in name:
+            return " ".join(w.capitalize() for w in name.rsplit(" - ", 1)[1].split())
         return ""
-    return " ".join(w.capitalize() for w in m.group(1).strip().split())
+    words = m.group(1).strip().split()
+    if " - " not in name:
+        words = words[-1:]
+    return " ".join(w.capitalize() for w in words)
 
 
 def _postcode_from_address(addr: str) -> str:
@@ -179,8 +190,10 @@ def fetch() -> list[SourceRecord]:
         clean_name = re.sub(
             r"\s+(SOLOS|PAIRS|PAIRS\s+AND\s+SOLOS)\s*$",
             "", name_raw, flags=re.I).strip()
+        clean_name = re.sub(r"^Season\s+\d+\s+", "", clean_name, flags=re.I)
+        if not re.match(r"wild\s+hybrid", clean_name, re.I):
+            clean_name = "Wild Hybrid " + clean_name
         clean_name = " ".join(w.capitalize() for w in clean_name.split())
-        clean_name = clean_name.replace(" Hybrid ", " Hybrid ")  # noop, kept for clarity
 
         out.append(SourceRecord(
             source_id=str(eid),
