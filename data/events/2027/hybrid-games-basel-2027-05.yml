@@ -1,0 +1,26 @@
+slug: hybrid-games-basel-2027-05
+name: Hybrid Games Basel
+format: other
+date_start: 2027-05-01
+date_end: 2027-05-01
+location:
+  city: Basel
+  country: CH
+  venue: Messe Basel (Halle 1.1)
+  timezone: Europe/Zurich
+  lat: 47.564314
+  lon: 7.599720
+url: https://friday-night-run-cmgs.vivenushop.com/event/hybrid-games-switzerland-2027-f0edpf
+status: confirmed
+source: scraped
+categories: []
+notes: |
+  Standalone Schweizer Hybrid-Event. Nicht mit ATHX verbunden.
+  Kategorien: Singles, Doubles, PRO (Beginner/Intermediate/Pro tiers).
+  Multi-Station Functional auf 15.000 m². Veranstaltungsinfos auf
+  [hybridgames.ch](https://hybridgames.ch/), Tickets über vivenu.
+notes_en: |
+  Standalone Swiss hybrid event. Not affiliated with ATHX.
+  Categories: Singles, Doubles, PRO (Beginner/Intermediate/Pro tiers).
+  Multi-station functional on 15,000 m². Event info at
+  [hybridgames.ch](https://hybridgames.ch/), tickets via vivenu.
