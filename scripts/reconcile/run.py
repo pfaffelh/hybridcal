@@ -37,6 +37,7 @@ PLUGINS = {
     "hyrox-youngstars": "scripts.reconcile.sources.hyrox_youngstars",
     "athx":             "scripts.reconcile.sources.athx",
     "wild-hybrid":      "scripts.reconcile.sources.wild_hybrid",
+    "apex-games":       "scripts.reconcile.sources.apex_games",
 }
 
 # Fields the reconciler updates automatically. Order = display order.
@@ -75,6 +76,9 @@ def _diff_fields(local: LocalEvent, rec: SourceRecord) -> list[FieldChange]:
         changes.append(FieldChange("date_end", local.date_end, rec.date_end))
     if rec.url and rec.url != (local.data.get("url") or ""):
         changes.append(FieldChange("url", local.data.get("url"), rec.url))
+    # status only for plugins that manage it (Apex: tentative → confirmed).
+    if rec.status and rec.status != local.data.get("status", "confirmed"):
+        changes.append(FieldChange("status", local.data.get("status"), rec.status))
 
     loc = local.data.get("location") or {}
     for f in LOC_FIELDS:
@@ -82,7 +86,9 @@ def _diff_fields(local: LocalEvent, rec: SourceRecord) -> list[FieldChange]:
         if new in (None, ""):
             continue
         old = loc.get(f)
-        if old not in (None, "", 0, 0.0):  # only fill if currently missing
+        # only fill if currently missing; 'TBA' city = venue not announced yet
+        if old not in (None, "", 0, 0.0) and not (
+                f == "city" and str(old).strip().upper() == "TBA"):
             continue
         changes.append(FieldChange(f"location.{f}", old, new))
     return changes
@@ -243,6 +249,9 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
                 detail = ("Affiliate-Gym-Records: Deadly Barbell / "
                           "Deadly ERG / DFT etc. an Partner-Gyms — "
                           "passen nicht ins Hybrid-Profil")
+            elif r.fmt == "apex-games":
+                detail = ("Saison-Karten ohne genaues Datum oder ohne "
+                          "Stadt — siehe Hinweise oben")
             else:
                 detail = "passen nicht ins Kalenderprofil"
             lines.append(f"_{r.filtered_non_main_brand} Records gefiltert "

@@ -159,6 +159,26 @@ Heutiges UA-Snippet, das überall durchkommt:
   La Palma) und teils unbestätigten Zusatz-Events → immer gegen Sportmaniacs
   gegenchecken, nicht blind übernehmen.
 
+### Apex Games (VAE, `format: apex-games`)
+- **Event-Liste:** <https://apexgames.fit/events/> (WordPress, alles im
+  statischen HTML; curl mit Browser-UA reicht). Format-Details unter
+  `/format/`, Divisions unter `/divisions/`.
+- **Tickets über Trumin:** `tickets.trumin.com/<YYYY-MM-DD>/apex-games-<stadt>`
+  — nur für die schon buchbaren Events verlinkt. Bei den übrigen steht
+  "Register Now" ohne Ziel → `url: https://apexgames.fit/events/` +
+  `status: tentative`, bis der Trumin-Link da ist.
+- Saison 2 (2026/27) = 4 Events, teils nur mit "End March" / "Venue TBC"
+  angekündigt → `date_start: null` (TBA) bzw. `city: TBA`.
+- **Reconciled** (`scripts/reconcile/sources/apex_games.py`): parst die
+  `apex-season-card`s der Startseite. Keine Upstream-IDs → `source_id` =
+  `s<saison>-e<nr>` (z.B. `s2-e1`). Das Plugin setzt auch `status`
+  (Trumin-Link + genaues Datum → `confirmed`, sonst `tentative`);
+  `city: TBA` gilt als fehlend und wird nachgetragen, sobald die Venue
+  steht. Karten ohne genaues Datum/Stadt werden nicht neu angelegt, sondern
+  im PR-Body gemeldet. Der Slug (`apex-games-tba-…`) wird dabei **nicht**
+  umbenannt → bei Bedarf von Hand.
+- Farbe `#6bc299` = Logo-Mint (`APEX-GREEN.png`, = `--gcid-primary-color`).
+
 ### Wild Hybrid (UK, `format: wild-hybrid`)
 - **Event-Liste:** <https://www.wildhybrid.co.uk/calendars/sport-events/>
   (Next.js-SSR, Events stehen im HTML). Veranstalter: Wild Deer Events,
@@ -167,6 +187,10 @@ Heutiges UA-Snippet, das überall durchkommt:
   je als `-pairs-<id>` **und** `-solos-<id>` gelistet (gleiche Venue/Datum)
   → als **ein** Event zusammenfassen, `url:` auf die Solos-Seite bzw. die
   kombinierte `-pairs-and-solos-`-Seite, wo vorhanden.
+- ⚠ Ab Saison 3 heißen die Events "Season 3 Wild Hybrid <Region> - <Venue>"
+  (teils ohne " - ", z.B. "… Pollok Park Glasgow"). Konvention: Slug =
+  Region aus dem Namen (`wild-hybrid-lake-district-2027-07`), `city` =
+  tatsächlicher Ort (Grasmere), Name ohne "Season N"-Präfix.
 - Datum + Venue-Adresse stehen auf der Detailseite ("Next Race: dd/mm/yyyy
   <Adresse mit Postcode>"). Jahr ableiten (Mai–Dez → 2026, Jan–Apr → 2027).
 - **Koordinaten:** nur die kombinierte Seite hat sie inline; sonst Postcode
@@ -276,7 +300,7 @@ geht durch menschliches Review.
 **Was der Reconciler tut:**
 
 1. Pro Format mit Quell-Plugin (`deadly-dozen`, `deka`, `hyrox`,
-   `hyrox-youngstars`, `athx`, `wild-hybrid`) holt er die aktuelle
+   `hyrox-youngstars`, `athx`, `wild-hybrid`, `apex-games`) holt er die aktuelle
    Event-Liste der Quelle und normalisiert sie in `SourceRecord`-Einträge
    mit stabiler `source_id`.
 2. Matching mit bestehenden YAMLs **ausschließlich über `source_id`**.
@@ -389,7 +413,8 @@ Events über Läufe hinweg wiedererkennt (auch wenn Stadt/Datum driften).
 Profil: **Ausdauer + Kraft, niedrige Skill-Hürde, für jedermann.**
 Ausdauer ≠ nur Laufen — auch Row/Ski/Bike-Erg und Carries unter Last zählen.
 
-- Aufgenommen: HYROX, Deadly Dozen, ATHX, DEKA, Turf Games, Wild Hybrid;
+- Aufgenommen: HYROX, Deadly Dozen, ATHX, DEKA, Turf Games, Wild Hybrid,
+  Apex Games;
   kleinere als `format: other` (STYREKX, METRIX, Nuclear Fit, Hybrid Games
   Basel).
 - **XENOM bewusst NICHT** aufgenommen: CrossFit-naher "Decathlon of Fitness"

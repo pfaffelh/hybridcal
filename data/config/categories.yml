@@ -166,4 +166,42 @@ wild-hybrid:
     label_de: Pairs Scaled
     label_en: Pairs Scaled
 
+apex-games:
+  - id: solo-pro-men
+    label_de: Solo Pro Männer
+    label_en: Solo Pro Men
+  - id: solo-pro-women
+    label_de: Solo Pro Frauen
+    label_en: Solo Pro Women
+  - id: solo-open-men
+    label_de: Solo Open Männer
+    label_en: Solo Open Men
+  - id: solo-open-women
+    label_de: Solo Open Frauen
+    label_en: Solo Open Women
+  - id: doubles-pro-men
+    label_de: Doubles Pro Männer
+    label_en: Doubles Pro Men
+  - id: doubles-pro-women
+    label_de: Doubles Pro Frauen
+    label_en: Doubles Pro Women
+  - id: doubles-open-men
+    label_de: Doubles Open Männer
+    label_en: Doubles Open Men
+  - id: doubles-open-women
+    label_de: Doubles Open Frauen
+    label_en: Doubles Open Women
+  - id: doubles-open-mixed
+    label_de: Doubles Open Mixed
+    label_en: Doubles Open Mixed
+  - id: team-of-3
+    label_de: Team of 3
+    label_en: Team of 3
+  - id: six-pack
+    label_de: 6IX Pack (6er-Team)
+    label_en: 6IX Pack (team of 6)
+  - id: junior-doubles
+    label_de: Junior Doubles (13–15 J.)
+    label_en: Junior Doubles (ages 13–15)
+
 other: []

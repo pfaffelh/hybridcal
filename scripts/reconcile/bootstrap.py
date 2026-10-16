@@ -27,6 +27,7 @@ FMT_PLUGIN = {
     "hyrox":        "scripts.reconcile.sources.hyrox",
     "athx":         "scripts.reconcile.sources.athx",
     "wild-hybrid":  "scripts.reconcile.sources.wild_hybrid",
+    "apex-games":   "scripts.reconcile.sources.apex_games",
 }
 
 

@@ -939,6 +939,178 @@ wild-hybrid:
     [wildhybrid.co.uk](https://www.wildhybrid.co.uk) are always authoritative —
     volumes and weights may be adjusted each season.
 
+apex-games:
+  name: Apex Games
+  type: Indoor Hybrid Fitness Race
+  website: https://apexgames.fit
+  color: "#6bc299"  # Apex-Logo-Mint
+  description_de: >
+    Indoor-Hybrid-Race (VAE): 4 Laufblöcke mit abnehmender Länge
+    (1600 / 1200 / 800 / 400 m), dazwischen 3 Exercise-Blöcke mit je
+    3 Übungen (Carry, Bodyweight/Ball, Erg). Solo, Doubles, Team of 3,
+    6IX Pack und Junior Doubles; Pro- und Open-Division.
+  description_en: >
+    Indoor hybrid race (UAE): 4 run blocks of decreasing length
+    (1600 / 1200 / 800 / 400 m) with 3 exercise blocks of 3 exercises each
+    in between (carry, bodyweight/ball, erg). Solo, Doubles, Team of 3,
+    6IX Pack and Junior Doubles; Pro and Open divisions.
+  long_description_de: |
+    ## Format
+
+    **Apex Games** ist eine Hybrid-Fitness-Serie aus den VAE (Saison 1:
+    Dubai World Trade Centre, Juni 2026; Technical Partner Technogym).
+    Gelaufen werden **4 Laufblöcke mit abnehmender Länge**, dazwischen liegen
+    **3 Exercise-Blöcke mit je 3 Übungen**. Erst wenn alle Übungen eines
+    Blocks erledigt sind, geht es auf den nächsten Lauf. Insgesamt sind das
+    **4 km Laufen**.
+
+    | Abschnitt | Inhalt |
+    |-----------|--------|
+    | Run 1 | 1600 m |
+    | Block 1 | Farmers Carry 200 m · Burpee Broad Jumps 100 m · Bike 1600 m |
+    | Run 2 | 1200 m |
+    | Block 2 | Chest Carry 200 m · Deadball Ground to Overhead 100 Wdh. · Row 1200 m |
+    | Run 3 | 800 m |
+    | Block 3 | Overhead Carry 200 m · Weighted Walking Lunges 100 m · Ski 800 m |
+    | Run 4 | 400 m bis ins Ziel |
+
+    ## Gewichte (Solo)
+
+    | Übung | Pro Männer | Pro Frauen / Open Männer | Open Frauen |
+    |-------|-----------|--------------------------|-------------|
+    | Farmers Carry | 2 × 32 kg KB | 2 × 24 kg KB | 2 × 16 kg KB |
+    | Chest Carry | 50 kg | 30 kg | 20 kg |
+    | Deadball G2OH | 15 kg | 10 kg | 5 kg |
+    | Overhead Carry | 25 kg | 20 kg | 15 kg |
+    | Walking Lunges | 30 kg | 20 kg | 10 kg |
+
+    ## Kategorien
+
+    | Kategorie | Personen | Division | Regel |
+    |-----------|----------|----------|-------|
+    | **Solo** | 1 | Pro / Open | Alle Läufe und alle 9 Stationen allein |
+    | **Doubles** | 2 | Pro / Open | Beide laufen jede Runde; die Stationen eines Blocks werden beliebig aufgeteilt, Wechsel jederzeit (immer nur eine Person arbeitet) |
+    | **Team of 3** | 3 | Open | Alle laufen gemeinsam; pro Block übernimmt jede Person genau eine Station |
+    | **6IX Pack** | 6 | Open | Alle laufen gemeinsam; pro Block drei Paare, je ein Paar pro Station |
+    | **Junior Doubles** | 2 | Junior (13–15) | Eigenes, altersgerechtes Format mit skalierten Distanzen und Gewichten |
+
+    - **Pro Doubles** nur gleichgeschlechtlich, **Open Doubles** Männer, Frauen
+      oder Mixed.
+    - **Gewichte im Team:** Open Doubles Männer und Mixed nutzen die Open-
+      Männer-Gewichte, Open Doubles Frauen die Open-Frauen-Gewichte, Pro
+      Doubles die Pro-Gewichte ihres Geschlechts. In Team of 3 und 6IX Pack
+      arbeitet jede Person mit den Open-Gewichten ihres Geschlechts.
+    - **Open-Altersklassen:** 16–29, 30–39, 40–49, 50+ (Podium je Altersklasse).
+      In der Pro-Division gibt es zusätzlich eine **Masters**-Wertung.
+    - **Ablauf am Wochenende:** Samstag Solo, Pro Solo, Team of 3, Junior und
+      6IX Pack; Sonntag die Doubles-Kategorien. Startzeiten kommen 24–48 h
+      vor dem Event.
+
+    Keine Hybrid-Erfahrung nötig: Die Open-Division ist ausdrücklich für alle
+    Fitness-Level gedacht.
+
+    ## Saison, APEX 12 & Stripes
+
+    Eine Saison besteht aus mehreren Events und endet mit dem **APEX
+    Championship Final**. Mit Saison 2 (2026/27) startet **APEX 12**, eine
+    Elite-Wertung für Pro Solo und Pro Doubles (ab 16, ohne Masters): Pro
+    Solo Männer, Pro Solo Frauen, Pro Doubles Männer und Pro Doubles Frauen
+    haben je ein eigenes Finale mit **12 Plätzen**:
+
+    - 4 automatische Startplätze (Sieg im jeweiligen Pro-Rennen eines Saison-Events),
+    - 5 Plätze über die schnellsten weiteren Saisonzeiten,
+    - 3 Wildcards.
+
+    Wer sich qualifiziert, darf beim Finale zusätzlich im normalen
+    Pro-Rennen starten.
+
+    Dazu kommt **Earn Your Stripes**, ein Progressionssystem: Alle, die das
+    Rennen beenden, bekommen einen „Stripe of Honour“. Seine Stufe hängt von
+    der Zahl der absolvierten Rennen und von Leistungs-Benchmarks ab.
+
+    ## Hinweis
+
+    Verbindlich sind die Standards im offiziellen Rulebook auf
+    [apexgames.fit](https://apexgames.fit/format/). Gewichte und Distanzen
+    können sich pro Saison ändern.
+  long_description_en: |
+    ## Format
+
+    **Apex Games** is a hybrid fitness series from the UAE (Season 1:
+    Dubai World Trade Centre, June 2026; technical partner Technogym).
+    You run **4 run blocks of decreasing length** with **3 exercise blocks
+    of 3 exercises each** in between. All exercises in a block must be
+    completed before the next run. In total that is **4 km of running**.
+
+    | Segment | Content |
+    |---------|---------|
+    | Run 1 | 1600 m |
+    | Block 1 | Farmers Carry 200 m · Burpee Broad Jumps 100 m · Bike 1600 m |
+    | Run 2 | 1200 m |
+    | Block 2 | Chest Carry 200 m · Deadball Ground to Overhead 100 reps · Row 1200 m |
+    | Run 3 | 800 m |
+    | Block 3 | Overhead Carry 200 m · Weighted Walking Lunges 100 m · Ski 800 m |
+    | Run 4 | 400 m to the finish |
+
+    ## Weights (Solo)
+
+    | Exercise | Pro Men | Pro Women / Open Men | Open Women |
+    |----------|---------|----------------------|------------|
+    | Farmers Carry | 2 × 32 kg KB | 2 × 24 kg KB | 2 × 16 kg KB |
+    | Chest Carry | 50 kg | 30 kg | 20 kg |
+    | Deadball G2OH | 15 kg | 10 kg | 5 kg |
+    | Overhead Carry | 25 kg | 20 kg | 15 kg |
+    | Walking Lunges | 30 kg | 20 kg | 10 kg |
+
+    ## Categories
+
+    | Category | Athletes | Division | Rule |
+    |----------|----------|----------|------|
+    | **Solo** | 1 | Pro / Open | All runs and all 9 stations alone |
+    | **Doubles** | 2 | Pro / Open | Both run every lap; a block's stations are split freely, swap any time (only one athlete works at a time) |
+    | **Team of 3** | 3 | Open | All run together; at each block every athlete takes exactly one station |
+    | **6IX Pack** | 6 | Open | All run together; at each block three pairs, one pair per station |
+    | **Junior Doubles** | 2 | Junior (13–15) | Dedicated age-appropriate format with scaled distances and weights |
+
+    - **Pro Doubles** are same-gender only; **Open Doubles** can be men,
+      women or mixed.
+    - **Team weights:** Open Doubles men and mixed use Open men's weights,
+      Open Doubles women use Open women's weights, Pro Doubles use the Pro
+      weights for their gender. In Team of 3 and 6IX Pack each athlete uses
+      the Open weights for their gender.
+    - **Open age groups:** 16–29, 30–39, 40–49, 50+ (podium per age group).
+      The Pro division also has a **Masters** ranking.
+    - **Weekend schedule:** Saturday Solo, Pro Solo, Team of 3, Junior and
+      6IX Pack; Sunday the Doubles categories. Start times are sent 24–48 h
+      before the event.
+
+    No hybrid experience required: the Open division is explicitly meant for
+    all fitness levels.
+
+    ## Season, APEX 12 & Stripes
+
+    A season consists of several events and ends with the **APEX
+    Championship Final**. Season 2 (2026/27) introduces **APEX 12**, an
+    elite ranking for Pro Solo and Pro Doubles (16+, no Masters): Pro Solo
+    Men, Pro Solo Women, Pro Doubles Men and Pro Doubles Women each have their
+    own final with **12 places**:
+
+    - 4 automatic places (winning the relevant Pro race at a season event),
+    - 5 places for the fastest other season results,
+    - 3 wildcards.
+
+    Qualifiers may also race the standard Pro race at the final.
+
+    There is also **Earn Your Stripes**, a progression system: every
+    finisher receives a "Stripe of Honour". Its level depends on the number
+    of races completed and on performance benchmarks.
+
+    ## Note
+
+    The standards in the official rulebook at
+    [apexgames.fit](https://apexgames.fit/format/) are authoritative.
+    Weights and distances may change from season to season.
+
 other:
   name: Other
   name_de: Andere

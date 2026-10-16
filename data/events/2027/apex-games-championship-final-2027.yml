@@ -1,0 +1,34 @@
+slug: apex-games-championship-final-2027
+name: Apex Games Championship Final
+format: apex-games
+date_start: null
+date_end: null
+location:
+  city: TBA
+  country: AE
+  timezone: Asia/Dubai
+url: https://apexgames.fit/events/
+status: tentative
+source: scraped
+categories:
+  - solo-pro-men
+  - solo-pro-women
+  - solo-open-men
+  - solo-open-women
+  - doubles-pro-men
+  - doubles-pro-women
+  - doubles-open-men
+  - doubles-open-women
+  - doubles-open-mixed
+  - team-of-3
+  - six-pack
+  - junior-doubles
+notes: |
+  Saisonfinale von Saison 2 (Event 4 von 4), inkl. APEX-12-Finals für
+  Pro Solo und Pro Doubles. Laut apexgames.fit "Ende Mai / Anfang Juni
+  2027"; Datum und Venue folgen.
+notes_en: |
+  Season 2 final (event 4 of 4), including the APEX 12 finals for
+  Pro Solo and Pro Doubles. Per apexgames.fit "late May / early June
+  2027"; date and venue to follow.
+source_id: s2-e4

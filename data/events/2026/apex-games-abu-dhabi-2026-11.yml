@@ -1,0 +1,31 @@
+slug: apex-games-abu-dhabi-2026-11
+name: Apex Games Abu Dhabi
+format: apex-games
+date_start: 2026-11-14
+date_end: 2026-11-15
+location:
+  city: Abu Dhabi
+  country: AE
+  venue: 321 Sports, Hudayriyat Island
+  timezone: Asia/Dubai
+  lat: 24.4180
+  lon: 54.3325
+url: https://tickets.trumin.com/2026-11-14/apex-games-abu-dhabi
+status: confirmed
+source: scraped
+categories:
+  - solo-pro-men
+  - solo-pro-women
+  - solo-open-men
+  - solo-open-women
+  - doubles-pro-men
+  - doubles-pro-women
+  - doubles-open-men
+  - doubles-open-women
+  - doubles-open-mixed
+  - team-of-3
+  - six-pack
+  - junior-doubles
+notes: Saison 2, Event 1 von 4.
+notes_en: Season 2, event 1 of 4.
+source_id: s2-e1

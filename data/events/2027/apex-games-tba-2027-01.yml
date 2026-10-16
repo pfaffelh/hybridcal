@@ -1,0 +1,32 @@
+slug: apex-games-tba-2027-01
+name: Apex Games – Saison 2, Event 2
+format: apex-games
+date_start: 2027-01-23
+date_end: 2027-01-24
+location:
+  city: TBA
+  country: AE
+  timezone: Asia/Dubai
+url: https://apexgames.fit/events/
+status: tentative
+source: scraped
+categories:
+  - solo-pro-men
+  - solo-pro-women
+  - solo-open-men
+  - solo-open-women
+  - doubles-pro-men
+  - doubles-pro-women
+  - doubles-open-men
+  - doubles-open-women
+  - doubles-open-mixed
+  - team-of-3
+  - six-pack
+  - junior-doubles
+notes: |
+  Saison 2, Event 2 von 4. Datum laut apexgames.fit bestätigt, Venue (und
+  damit die Stadt) noch nicht bekannt ("Venue details coming soon").
+notes_en: |
+  Season 2, event 2 of 4. Date confirmed on apexgames.fit, venue (and thus
+  the city) not yet announced ("Venue details coming soon").
+source_id: s2-e2

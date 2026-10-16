@@ -67,6 +67,9 @@ class SourceRecord:
     # when a human should act (e.g. an event we couldn't resolve); the
     # deliberate silent drops (affiliate gyms) leave it empty.
     skip_note: str = ""
+    # Optional: the plugin also manages `status` (e.g. tentative →
+    # confirmed once tickets go live). Empty = plugin leaves status alone.
+    status: str = ""
 
     def end_date(self) -> date | None:
         return self.date_end or self.date_start
@@ -205,7 +208,7 @@ def write_new_event_yaml(rec: SourceRecord, year_dir: Path) -> Path:
         lines.append(f"  lat: {rec.lat}")
         lines.append(f"  lon: {rec.lon}")
     lines.append(f"url: {_yaml_quote(rec.url)}")
-    lines.append("status: confirmed")
+    lines.append(f"status: {rec.status or 'confirmed'}")
     lines.append("source: scraped")
     lines.append(f"source_id: {_yaml_quote(rec.source_id)}")
     if rec.categories:
