@@ -66,7 +66,7 @@ _PLACEHOLDER_RE = re.compile(
     r"announc|coming soon|details|tba|tbc|to be confirmed|culmination", re.I)
 
 _GEO_URL = "https://nominatim.openstreetmap.org/search"
-_GEO_UA = "hybridcal-reconciler (https://hybridcal.com)"
+_GEO_UA = "hybridcal-reconciler (https://hybridcal.de)"
 _GEO_DELAY = 1.1
 _GEO_RETRIES = 3
 _geo_cache: dict[str, tuple[str, float, float] | None] = {}

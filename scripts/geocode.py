@@ -27,7 +27,7 @@ ROOT = Path(__file__).parent.parent
 EVENTS_DIR = ROOT / "data" / "events"
 CACHE_FILE = ROOT / "data" / "geocode_cache.yml"
 
-USER_AGENT = "hybridcal-geocoder (https://hybridcal.com)"
+USER_AGENT = "hybridcal-geocoder (https://hybridcal.de)"
 NOMINATIM_DELAY = 1.1  # seconds, slight buffer above 1 req/s policy
 
 

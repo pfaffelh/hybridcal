@@ -141,7 +141,7 @@ that pulls together every hybrid race series I could find:
   JSON if you'd rather.
 - Bilingual (DE/EN).
 
-Link: https://hybridcal.com
+Link: https://hybridcal.de
 
 Curious what's missing — if your local race isn't listed, drop a
 comment or use the submit form on the site. Bug reports and PRs
@@ -166,7 +166,7 @@ Mods: happy to remove if this isn't the right place.
 ```
 Hallo [Vorname / Team],
 
-ich bin der Maintainer von HybridCal (https://hybridcal.com), einem
+ich bin der Maintainer von HybridCal (https://hybridcal.de), einem
 freien, werbefreien Community-Kalender, der alle Hybrid-Renn-Serien
 bündelt (HYROX, DEKA, ATHX, Deadly Dozen, Turf Games u.a.). Euer
 Event "[Event-Name, Datum]" ist gelistet:
@@ -193,7 +193,7 @@ Viele Grüße
 ```
 Hi [first name / team],
 
-I maintain HybridCal (https://hybridcal.com), a free, ad-free
+I maintain HybridCal (https://hybridcal.de), a free, ad-free
 community calendar that aggregates every hybrid race series (HYROX,
 DEKA, ATHX, Deadly Dozen, Turf Games and others). Your event
 "[Event name, date]" is already on it:

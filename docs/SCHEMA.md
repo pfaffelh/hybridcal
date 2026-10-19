@@ -226,7 +226,7 @@ Convention: category IDs are lowercase + hyphens, gender baked into the ID (`-me
 Language-agnostic, non-translatable site config:
 
 ```yaml
-url: https://hybridcal.com
+url: https://hybridcal.de
 github_repo: https://github.com/<owner>/hybridcal
 tally_form: https://tally.so/r/<form-id>
 default_language: de

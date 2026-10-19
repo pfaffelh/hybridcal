@@ -328,7 +328,7 @@ _ADDRESS_TBA_RE = re.compile(r"to be announced|^tba\b|coming soon|^-*$", re.I)
 
 _GEO_URL = "https://nominatim.openstreetmap.org/search"
 # Nominatim's fair-use policy: max 1 req/s, identifying User-Agent.
-_GEO_UA = "hybridcal-reconciler (https://hybridcal.com)"
+_GEO_UA = "hybridcal-reconciler (https://hybridcal.de)"
 _GEO_DELAY = 1.1
 _GEO_RETRIES = 3
 _GEO_BACKOFF = 2.0
