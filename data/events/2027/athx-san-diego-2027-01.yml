@@ -7,7 +7,7 @@ location:
   city: San Diego
   country: "US"
   venue: San Diego Convention Center
-  timezone: America/New_York
+  timezone: America/Los_Angeles
 url: "https://athxgames.com/events/01m3q7jv27nmxge7qrghrkb0m4"
 status: confirmed
 source: scraped

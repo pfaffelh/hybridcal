@@ -83,6 +83,11 @@ Heutiges UA-Snippet, das überall durchkommt:
   aber noch nicht ticketed Events (z.B. mehrere 2027er) haben **noch keine
   Detailseite** → generische `/events`-URL behalten und `status: tentative`
   setzen, bis die Buchung live ist.
+- **Zeitzonen im Plugin:** `COUNTRY_TZ` + `CITY_TZ` (US pro Stadt!) in
+  `sources/athx.py`. Neues Land/neue US-Stadt → dort ergänzen; sonst wird
+  das Event nicht angelegt, sondern im PR-Body gemeldet. (Bis 2026-10 stand
+  pauschal `US → America/New_York` drin und Länder wie SE/PL fehlten →
+  YAMLs ohne `timezone` brachen drei Läufe lang den Build.)
 
 ### DEKA (Spartan)
 - **API** (gefunden via Sniffen von `deka.fit/en/race/find-race`):

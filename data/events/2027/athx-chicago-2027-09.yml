@@ -7,7 +7,7 @@ location:
   city: Chicago
   country: "US"
   venue: Donald E. Stephens Convention Center (Rosemont Convention Center)
-  timezone: America/New_York
+  timezone: America/Chicago
 url: "https://athxgames.com/events/01m3qf0k52z2eq2s87gjn3ea61"
 status: confirmed
 source: scraped

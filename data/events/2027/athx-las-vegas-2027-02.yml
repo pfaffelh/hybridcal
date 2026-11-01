@@ -7,7 +7,7 @@ location:
   city: Las Vegas
   country: "US"
   venue: Expo at World Market Center Las Vegas
-  timezone: America/New_York
+  timezone: America/Los_Angeles
 url: "https://athxgames.com/events/01m3q8sdq1s3qr7fsjbf2rg18c"
 status: confirmed
 source: scraped

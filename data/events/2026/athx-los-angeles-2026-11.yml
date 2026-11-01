@@ -7,7 +7,7 @@ location:
   city: Los Angeles
   country: "US"
   venue: Long Beach Convention & Entertainment Center
-  timezone: America/New_York
+  timezone: America/Los_Angeles
 url: "https://athxgames.com/events/01kxmxwwhpb0jatysf8kb8gz5a"
 status: confirmed
 source: scraped

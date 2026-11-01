@@ -75,6 +75,15 @@ def _diff_fields(local: LocalEvent, rec: SourceRecord) -> list[FieldChange]:
                         and local.date_end > local.date_start)
     if rec.date_end and rec.date_end != local.date_end and not local_is_multiday:
         changes.append(FieldChange("date_end", local.date_end, rec.date_end))
+    elif (local_is_multiday and rec.date_start
+          and rec.date_start != local.date_start):
+        # Multi-day event moved: shift the local span along with it, else
+        # date_end < date_start and the build fails (Apex S2-E2, 2026-10).
+        new_end = local.date_end + (rec.date_start - local.date_start)
+        if rec.date_end and rec.date_end > new_end:
+            new_end = rec.date_end
+        if new_end != local.date_end:
+            changes.append(FieldChange("date_end", local.date_end, new_end))
     if rec.url and rec.url != (local.data.get("url") or ""):
         changes.append(FieldChange("url", local.data.get("url"), rec.url))
     # status only for plugins that manage it (Apex: tentative → confirmed).
@@ -164,6 +173,14 @@ def reconcile_format(fmt: str, dry_run: bool = False) -> ReconcileResult:
                 and slugify(le.city) == slugify(rec.city)
                 and le.date_start <= rec.date_start <= le.date_end
                 for le in future):
+            continue
+        # timezone is a required Event field — never write a YAML that
+        # breaks the build (ATHX Malmö/Poznań, 2026-10).
+        if not rec.timezone:
+            result.ambiguous.append(
+                f"neues Event ohne Zeitzone übersprungen: {rec.name or rec.suggested_slug} "
+                f"({rec.city}, {rec.country}, {rec.date_start}) → Zeitzonen-Mapping "
+                f"im {rec.format}-Plugin ergänzen")
             continue
         year_dir = EVENTS_DIR / str(rec.date_start.year)
         day = rec.date_start.day if rec.date_start else None

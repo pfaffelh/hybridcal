@@ -41,9 +41,40 @@ COUNTRY_TZ = {
     "IE": "Europe/Dublin",
     "IT": "Europe/Rome",
     "NL": "Europe/Amsterdam",
+    "PL": "Europe/Warsaw",
     "PT": "Europe/Lisbon",
-    "US": "America/New_York",
+    "SE": "Europe/Stockholm",
+    "NO": "Europe/Oslo",
+    "FI": "Europe/Helsinki",
+    "CZ": "Europe/Prague",
+    "AE": "Asia/Dubai",
 }
+
+# Multi-zone countries: resolve per city (slugified). Unknown city → no tz →
+# the event is reported in the PR body instead of written with a wrong zone.
+CITY_TZ = {
+    "US": {
+        "new-york": "America/New_York", "miami": "America/New_York",
+        "boston": "America/New_York", "atlanta": "America/New_York",
+        "orlando": "America/New_York", "philadelphia": "America/New_York",
+        "washington": "America/New_York", "charlotte": "America/New_York",
+        "tampa": "America/New_York",
+        "houston": "America/Chicago", "dallas": "America/Chicago",
+        "austin": "America/Chicago", "chicago": "America/Chicago",
+        "nashville": "America/Chicago", "san-antonio": "America/Chicago",
+        "denver": "America/Denver", "salt-lake-city": "America/Denver",
+        "phoenix": "America/Phoenix",
+        "los-angeles": "America/Los_Angeles", "san-diego": "America/Los_Angeles",
+        "las-vegas": "America/Los_Angeles", "san-francisco": "America/Los_Angeles",
+        "seattle": "America/Los_Angeles", "portland": "America/Los_Angeles",
+    },
+}
+
+
+def _timezone(country: str, city: str) -> str:
+    if country in CITY_TZ:
+        return CITY_TZ[country].get(slugify(city), "")
+    return COUNTRY_TZ.get(country, "")
 
 
 def _http_get(url: str) -> str:
@@ -114,7 +145,7 @@ def fetch() -> list[SourceRecord]:
             city=city,
             country=country,
             venue=(venue.get("name") or "").strip() or None,
-            timezone=COUNTRY_TZ.get(country, ""),
+            timezone=_timezone(country, city),
             lat=lat,
             lon=lon,
             url=f"https://athxgames.com/events/{eid}",

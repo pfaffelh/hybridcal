@@ -7,7 +7,7 @@ location:
   city: Denver
   country: "US"
   venue: National Western Complex
-  timezone: America/New_York
+  timezone: America/Denver
 url: "https://athxgames.com/events/01m3qb3fstj70qb6kgdxspt43f"
 status: confirmed
 source: scraped
