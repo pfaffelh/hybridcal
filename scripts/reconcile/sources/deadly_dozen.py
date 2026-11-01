@@ -53,16 +53,25 @@ COUNTRY_TZ = {
 }
 
 
+SELECT_COLUMNS = [
+    "id", "event_type", "event_name", "race_type", "race_date",
+    "venue_name", "venue_city", "country_code", "ticket_url",
+    "is_live", "is_cancelled", "latitude", "longitude",
+]
+
+
 def _fetch_raw() -> list[dict]:
     key = os.environ.get(ANON_KEY_ENV)
     if not key:
         raise SystemExit(
             f"missing env var {ANON_KEY_ENV} — see CLAUDE.md "
-            "(harvest the anon JWT from the embed's XHR headers)"
+            "(harvest the anon/publishable key from the embed's XHR headers)"
         )
     today_iso = date.today().isoformat()
     q = urllib.parse.urlencode({
-        "select": "*",
+        # Explicit columns: since 2026-10 the anon role only has column-level
+        # SELECT grants (same list the embed uses); select=* → 401 / 42501.
+        "select": ",".join(SELECT_COLUMNS),
         "is_live": "eq.true",
         "is_cancelled": "eq.false",
         "race_date": f"gte.{today_iso}",

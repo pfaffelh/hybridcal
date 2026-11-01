@@ -60,8 +60,13 @@ Heutiges UA-Snippet, das überall durchkommt:
     &race_date=gte.<HEUTE>&order=race_date.asc
   ```
   Header `apikey` + `Authorization: Bearer <anon-key>` nötig. Den anon-Key
-  aus den XHR-Headers des Embeds sniffen (er rotiert selten; war zuletzt ein
-  langes JWT mit `"role":"anon"`).
+  aus den XHR-Headers des Embeds sniffen (er rotiert selten). Seit 2026-10
+  ist es ein **`sb_publishable_…`-Key** (46 Zeichen, kein JWT mehr).
+- ⚠ **`select=*` liefert seit 2026-10 `401` / `42501 permission denied`** —
+  die anon-Rolle hat nur noch spaltenweise SELECT-Rechte. Das Plugin fragt
+  deshalb eine explizite Spaltenliste ab (`SELECT_COLUMNS` in
+  `sources/deadly_dozen.py`, Teilmenge dessen, was das Embed abfragt). Bei
+  erneutem 401: erst die `select=`-Liste des Embeds sniffen, dann den Key.
 - Pro Zeile: `ticket_url` (= event-spezifischer Link), `venue_city`,
   `country_code`, `race_date`, `latitude`, `longitude`, `race_type`
   (TRACK / STRONG / ERG / MILE / SPRINT / GROSS / SWIM / BARBELL / DFT / …).
