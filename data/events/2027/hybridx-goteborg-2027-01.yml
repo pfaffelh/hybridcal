@@ -1,0 +1,30 @@
+slug: hybridx-goteborg-2027-01
+name: HybridX Göteborg
+format: hybridx
+date_start: 2027-01-24
+date_end: 2027-01-24
+location:
+  city: Göteborg
+  country: SE
+  venue: Scandinavium
+  timezone: Europe/Stockholm
+  lat: 57.6993
+  lon: 11.9877
+url: https://hybridx.fit/en/purchase/019eacfb-9475-7cb1-b79d-9a8a9f35bd3f
+status: confirmed
+source: scraped
+categories:
+  - singles-open-men
+  - singles-open-women
+  - singles-pro-men
+  - singles-pro-women
+  - doubles-open-men
+  - doubles-open-women
+  - doubles-open-mixed
+  - doubles-pro-men
+  - doubles-pro-women
+notes: |
+  Saison 2026/27, Rennen 1 von 3.
+notes_en: |
+  Season 2026/27, race 1 of 3.
+source_id: 019eacfb-9475-7cb1-b79d-9a8a9f35bd3f

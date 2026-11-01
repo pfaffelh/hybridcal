@@ -1,0 +1,30 @@
+slug: hybridx-jonkoping-2027-04
+name: HybridX Jönköping
+format: hybridx
+date_start: 2027-04-10
+date_end: 2027-04-10
+location:
+  city: Jönköping
+  country: SE
+  venue: Elmia
+  timezone: Europe/Stockholm
+  lat: 57.7855
+  lon: 14.2310
+url: https://hybridx.fit/en/purchase/019eb708-0a4b-7533-9447-e634e3712fa0
+status: tentative
+source: scraped
+categories:
+  - singles-open-men
+  - singles-open-women
+  - singles-pro-men
+  - singles-pro-women
+  - doubles-open-men
+  - doubles-open-women
+  - doubles-open-mixed
+  - doubles-pro-men
+  - doubles-pro-women
+notes: |
+  Saison 2026/27, Rennen 2 von 3. Anmeldung noch nicht geöffnet.
+notes_en: |
+  Season 2026/27, race 2 of 3. Registration not open yet.
+source_id: 019eb708-0a4b-7533-9447-e634e3712fa0

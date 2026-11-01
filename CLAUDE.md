@@ -179,6 +179,35 @@ Heutiges UA-Snippet, das überall durchkommt:
   umbenannt → bei Bedarf von Hand.
 - Farbe `#6bc299` = Logo-Mint (`APEX-GREEN.png`, = `--gcid-primary-color`).
 
+### HybridX (SE, `format: hybridx`)
+- **Event-Liste:** <https://hybridx.fit/en> (Next.js-SSR, Termine + Stationen
+  im HTML). Pro Rennen eine Kauf-/Notify-Seite
+  `hybridx.fit/en/purchase/<uuid>` (= `url:`), dort Venue + Datum
+  ("@ Scandinavium · January 24, 2027"). "Get notified" statt Kauf =
+  Anmeldung noch zu → `status: tentative`.
+- 8 Stationen ohne Laufrunden dazwischen (Ergs + Curve-Laufband 2500 m);
+  Pro-Gewichte stehen nur im Rulebook-PDF.
+- Farbe `#9d362f` = das rote "X" im Logo (`/hybridx-logo.png`).
+- **Reconciled** (`scripts/reconcile/sources/hybridx.py`): parst die
+  `<article>`-Karten der Startseite (stehen doppelt drin, Desktop + Mobil →
+  per UUID dedupliziert). `source_id` = Purchase-UUID; "Register" →
+  `confirmed`, "Get notified" → `tentative`; Venue "TBD" = fehlt.
+
+### The Yoddha Race (IN, `format: other`)
+- **Event-Liste:** <https://theyoddharace.com/find-race> (Next.js-SSR).
+  Die "GET TICKET"/"RACE INFO"-Elemente sind `<button>`s mit JS-Handler
+  → Ziele nur per Playwright-Klick: Info = `theyoddharace.com/city/<stadt>`
+  (= `url:`), Tickets = `getmybib.com/<id>/(category|register)?ename=…`
+  (in die Notes).
+- **Venues werden nicht veröffentlicht** (weder City-Seite noch getmybib)
+  → Stadtzentrum-Koordinaten, im Notes vermerkt. Grand Finale hat noch kein
+  Datum (erst nach dem letzten Regional).
+- Bewusst **`format: other`** statt eigenem Format (Entscheidung 2026-10-16);
+  Format-Kurzbeschreibung steht deshalb im ersten Absatz der `notes`.
+  Kein Reconciler: Ohne Playwright gibt es keine stabile ID (getmybib-IDs
+  nur hinter JS-Buttons), Venues werden nicht veröffentlicht → nur URL-Check.
+  Bei Saison 4 neu bewerten.
+
 ### Wild Hybrid (UK, `format: wild-hybrid`)
 - **Event-Liste:** <https://www.wildhybrid.co.uk/calendars/sport-events/>
   (Next.js-SSR, Events stehen im HTML). Veranstalter: Wild Deer Events,
@@ -300,7 +329,7 @@ geht durch menschliches Review.
 **Was der Reconciler tut:**
 
 1. Pro Format mit Quell-Plugin (`deadly-dozen`, `deka`, `hyrox`,
-   `hyrox-youngstars`, `athx`, `wild-hybrid`, `apex-games`) holt er die aktuelle
+   `hyrox-youngstars`, `athx`, `wild-hybrid`, `apex-games`, `hybridx`) holt er die aktuelle
    Event-Liste der Quelle und normalisiert sie in `SourceRecord`-Einträge
    mit stabiler `source_id`.
 2. Matching mit bestehenden YAMLs **ausschließlich über `source_id`**.
@@ -414,9 +443,9 @@ Profil: **Ausdauer + Kraft, niedrige Skill-Hürde, für jedermann.**
 Ausdauer ≠ nur Laufen — auch Row/Ski/Bike-Erg und Carries unter Last zählen.
 
 - Aufgenommen: HYROX, Deadly Dozen, ATHX, DEKA, Turf Games, Wild Hybrid,
-  Apex Games;
+  Apex Games, HybridX;
   kleinere als `format: other` (STYREKX, METRIX, Nuclear Fit, Hybrid Games
-  Basel).
+  Basel, The Yoddha Race).
 - **XENOM bewusst NICHT** aufgenommen: CrossFit-naher "Decathlon of Fitness"
   mit Muscle-Ups / HSPU / schweren Olympic-Lifts → andere Community, hohe
   Skill-Hürde, niedriger Ausdaueranteil.

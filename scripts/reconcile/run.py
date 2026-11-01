@@ -38,6 +38,7 @@ PLUGINS = {
     "athx":             "scripts.reconcile.sources.athx",
     "wild-hybrid":      "scripts.reconcile.sources.wild_hybrid",
     "apex-games":       "scripts.reconcile.sources.apex_games",
+    "hybridx":          "scripts.reconcile.sources.hybridx",
 }
 
 # Fields the reconciler updates automatically. Order = display order.
@@ -249,8 +250,8 @@ def render_pr_body(results: list[ReconcileResult], url_results) -> str:
                 detail = ("Affiliate-Gym-Records: Deadly Barbell / "
                           "Deadly ERG / DFT etc. an Partner-Gyms — "
                           "passen nicht ins Hybrid-Profil")
-            elif r.fmt == "apex-games":
-                detail = ("Saison-Karten ohne genaues Datum oder ohne "
+            elif r.fmt in ("apex-games", "hybridx"):
+                detail = ("Karten ohne genaues Datum oder ohne "
                           "Stadt — siehe Hinweise oben")
             else:
                 detail = "passen nicht ins Kalenderprofil"

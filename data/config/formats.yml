@@ -1111,6 +1111,110 @@ apex-games:
     [apexgames.fit](https://apexgames.fit/format/) are authoritative.
     Weights and distances may change from season to season.
 
+hybridx:
+  name: HybridX
+  type: Indoor Strength & Endurance Race
+  website: https://hybridx.fit
+  color: "#9d362f"  # HybridX-Logo-Rot (das "X")
+  description_de: >
+    Schwedisches Indoor-Hybrid-Race mit 8 Stationen in fester Reihenfolge,
+    ohne Laufrunden dazwischen: RowErg, Deadlift, Reverse Lunges, SkiErg,
+    Schulterdrücken, Burpees, BikeErg und zum Schluss 2,5 km auf dem
+    Curve-Laufband. Singles und Doubles, Open und Pro.
+  description_en: >
+    Swedish indoor hybrid race with 8 stations in fixed order and no run
+    laps in between: RowErg, deadlift, reverse lunges, SkiErg, shoulder
+    press, burpees, BikeErg and finally 2.5 km on a curved treadmill.
+    Singles and Doubles, Open and Pro.
+  long_description_de: |
+    ## Format
+
+    **HybridX** ist eine schwedische Hybrid-Serie („From gym floor to race
+    floor“), erstmals im September 2026 in Stockholm ausgetragen. Anders als
+    bei HYROX gibt es **keine Laufrunden zwischen den Stationen**: Die
+    Ausdauer steckt in den Ergometern und im abschließenden Lauf auf dem
+    Curve-Laufband. Die **8 Stationen** werden in fester Reihenfolge absolviert.
+
+    | # | Station | Volumen (Open) |
+    |---|---------|----------------|
+    | 1 | RowErg | 1500 m |
+    | 2 | Deadlift | 25 Wdh. @ 90 kg |
+    | 3 | Reverse Lunges | 50 Wdh. @ 2 × 15 kg |
+    | 4 | SkiErg | 1500 m |
+    | 5 | Seated Strict Shoulder Press | 25 Wdh. @ 2 × 15 kg |
+    | 6 | HybridX Burpee | 25 Wdh. |
+    | 7 | BikeErg | 5000 m |
+    | 8 | Curve Band Run | 2500 m |
+
+    Die Pro-Division läuft mit höheren Gewichten. Die genauen Lasten stehen
+    im Rulebook.
+
+    ## Regeln
+
+    - Judges zählen jede Wiederholung; eine ungültige Wiederholung zählt nicht,
+      es geht erst weiter, wenn der Judge abnimmt.
+    - Gemessen wird die Zeit von der Start- bis zur Ziellinie.
+    - Kreide stellt der Veranstalter; Knee Sleeves und Wrist Wraps sind
+      erlaubt (dann aber das ganze Rennen), **Handschuhe und Gürtel nicht**.
+    - Teilnahme ab 18 Jahren.
+
+    ## Kategorien
+
+    - **Singles** Open und Pro, jeweils Männer und Frauen
+    - **Doubles** Open (Männer, Frauen, Mixed) und Pro (Männer, Frauen). Die
+      Stationen werden beliebig aufgeteilt, beliebig viele Wechsel.
+    - **Altersklassen:** 35–39, 40–44, 45–49, 50–54, 55–59, 60+
+
+    Open ist für Einsteiger:innen gedacht, Pro für Erfahrene.
+
+    ## Hinweis
+
+    Verbindlich sind die Standards auf [hybridx.fit](https://hybridx.fit/en/about).
+  long_description_en: |
+    ## Format
+
+    **HybridX** is a Swedish hybrid series ("From gym floor to race floor"),
+    first held in Stockholm in September 2026. Unlike HYROX there are **no run
+    laps between stations**: the endurance work comes from the ergometers and
+    the final run on a curved treadmill. The **8 stations** are completed in
+    fixed order.
+
+    | # | Station | Volume (Open) |
+    |---|---------|---------------|
+    | 1 | RowErg | 1500 m |
+    | 2 | Deadlift | 25 reps @ 90 kg |
+    | 3 | Reverse Lunges | 50 reps @ 2 × 15 kg |
+    | 4 | SkiErg | 1500 m |
+    | 5 | Seated Strict Shoulder Press | 25 reps @ 2 × 15 kg |
+    | 6 | HybridX Burpee | 25 reps |
+    | 7 | BikeErg | 5000 m |
+    | 8 | Curve Band Run | 2500 m |
+
+    The Pro division uses heavier weights. Exact loads are in the rulebook.
+
+    ## Rules
+
+    - Judges count every rep; an invalid rep is no rep, and you continue
+      until the judge approves.
+    - Time runs from start line to finish line.
+    - Chalk is provided; knee sleeves and wrist wraps are allowed (but for
+      the whole race), **gloves and belts are not**.
+    - Minimum age 18.
+
+    ## Categories
+
+    - **Singles** Open and Pro, men and women
+    - **Doubles** Open (men, women, mixed) and Pro (men, women). Stations are
+      split freely, unlimited swaps.
+    - **Age groups:** 35–39, 40–44, 45–49, 50–54, 55–59, 60+
+
+    Open is meant for beginners, Pro for experienced athletes.
+
+    ## Note
+
+    The standards at [hybridx.fit](https://hybridx.fit/en/about) are
+    authoritative.
+
 other:
   name: Other
   name_de: Andere

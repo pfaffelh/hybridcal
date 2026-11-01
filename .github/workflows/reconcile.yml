@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: 'Restrict to one format (deadly-dozen | deka | hyrox | hyrox-youngstars | athx | wild-hybrid | apex-games). Empty = all.'
+        description: 'Restrict to one format (deadly-dozen | deka | hyrox | hyrox-youngstars | athx | wild-hybrid | apex-games | hybridx). Empty = all.'
         required: false
         default: ''
 

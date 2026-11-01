@@ -1,0 +1,29 @@
+slug: hybridx-stockholm-2027-05
+name: HybridX Stockholm
+format: hybridx
+date_start: 2027-05-15
+date_end: 2027-05-15
+location:
+  city: Stockholm
+  country: SE
+  timezone: Europe/Stockholm
+  lat: 59.3251
+  lon: 18.0711
+url: https://hybridx.fit/en/purchase/019ebaa7-e359-750e-9b20-43966145e1a6
+status: tentative
+source: scraped
+categories:
+  - singles-open-men
+  - singles-open-women
+  - singles-pro-men
+  - singles-pro-women
+  - doubles-open-men
+  - doubles-open-women
+  - doubles-open-mixed
+  - doubles-pro-men
+  - doubles-pro-women
+notes: |
+  Saison 2026/27, Rennen 3 von 3. Venue noch offen, Anmeldung noch nicht geöffnet; Koordinaten = Stadtzentrum.
+notes_en: |
+  Season 2026/27, race 3 of 3. Venue TBD, registration not open yet; coordinates = city centre.
+source_id: 019ebaa7-e359-750e-9b20-43966145e1a6

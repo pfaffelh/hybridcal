@@ -204,4 +204,33 @@ apex-games:
     label_de: Junior Doubles (13–15 J.)
     label_en: Junior Doubles (ages 13–15)
 
+hybridx:
+  - id: singles-open-men
+    label_de: Singles Open Männer
+    label_en: Singles Open Men
+  - id: singles-open-women
+    label_de: Singles Open Frauen
+    label_en: Singles Open Women
+  - id: singles-pro-men
+    label_de: Singles Pro Männer
+    label_en: Singles Pro Men
+  - id: singles-pro-women
+    label_de: Singles Pro Frauen
+    label_en: Singles Pro Women
+  - id: doubles-open-men
+    label_de: Doubles Open Männer
+    label_en: Doubles Open Men
+  - id: doubles-open-women
+    label_de: Doubles Open Frauen
+    label_en: Doubles Open Women
+  - id: doubles-open-mixed
+    label_de: Doubles Open Mixed
+    label_en: Doubles Open Mixed
+  - id: doubles-pro-men
+    label_de: Doubles Pro Männer
+    label_en: Doubles Pro Men
+  - id: doubles-pro-women
+    label_de: Doubles Pro Frauen
+    label_en: Doubles Pro Women
+
 other: []
