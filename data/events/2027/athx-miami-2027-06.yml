@@ -1,0 +1,15 @@
+slug: athx-miami-2027-06
+name: ATHX MIAMI 2027
+format: athx
+date_start: 2027-06-12
+date_end: 2027-06-12
+location:
+  city: Miami
+  country: "US"
+  venue: Miami Beach Convention Center
+  timezone: America/New_York
+url: "https://athxgames.com/events/01m49ena5z6exns2wbwhz0as69"
+status: confirmed
+source: scraped
+source_id: 01m49ena5z6exns2wbwhz0as69
+categories: []
