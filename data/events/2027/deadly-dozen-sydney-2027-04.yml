@@ -1,0 +1,16 @@
+slug: deadly-dozen-sydney-2027-04
+name: "Deadly Dozen AU: Sydney"
+format: deadly-dozen
+date_start: 2027-04-10
+date_end: 2027-04-10
+location:
+  city: Sydney
+  country: "AU"
+  timezone: Australia/Sydney
+  lat: -34.034949
+  lon: 150.7289255
+url: "https://in.njuko.com/deadly-dozen-sydney---10-april-27"
+status: confirmed
+source: scraped
+source_id: 324c8f0c-bd68-47c2-b01c-575e632b4dfc
+categories: []

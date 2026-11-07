@@ -1,0 +1,16 @@
+slug: deadly-dozen-tauranga-2027-02
+name: "Deadly Dozen NZ: Tauranga"
+format: deadly-dozen
+date_start: 2027-02-21
+date_end: 2027-02-21
+location:
+  city: Tauranga
+  country: "NZ"
+  timezone: Pacific/Auckland
+  lat: -37.6795746
+  lon: 176.1656383
+url: "https://in.njuko.com/deadly-dozen-tauranga---21-february-27"
+status: confirmed
+source: scraped
+source_id: 2794186b-56f0-4170-80e0-bda9d011599a
+categories: []

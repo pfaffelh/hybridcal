@@ -1,0 +1,19 @@
+slug: deka-ciudad-de-mexico-2027-04
+name: DEKA Fit abril 2027 Santa Fe CDMX
+format: deka
+date_start: 2027-04-17
+date_end: 2027-04-17
+location:
+  city: Ciudad de México
+  country: "MX"
+  venue: Expo Santa Fe Mexico
+  timezone: Etc/GMT-7
+  lat: 19.3632049
+  lon: -99.262907
+url: "https://tickets-mxdk.spartan.com/event/26"
+status: confirmed
+source: scraped
+source_id: "11765"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

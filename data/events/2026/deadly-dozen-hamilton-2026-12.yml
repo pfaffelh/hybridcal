@@ -1,0 +1,16 @@
+slug: deadly-dozen-hamilton-2026-12
+name: "Deadly Dozen NZ: Hamilton"
+format: deadly-dozen
+date_start: 2026-12-06
+date_end: 2026-12-06
+location:
+  city: Hamilton
+  country: "NZ"
+  timezone: Pacific/Auckland
+  lat: -37.7545019
+  lon: 175.2890167
+url: "https://in.njuko.com/deadly-dozen-hamilton---06-december-26"
+status: confirmed
+source: scraped
+source_id: b5be1ba1-5529-4857-a76e-8dfe0514f298
+categories: []

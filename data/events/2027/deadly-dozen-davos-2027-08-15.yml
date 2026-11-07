@@ -1,0 +1,16 @@
+slug: deadly-dozen-davos-2027-08-15
+name: "Deadly Dozen CH: Davos"
+format: deadly-dozen
+date_start: 2027-08-15
+date_end: 2027-08-15
+location:
+  city: Davos
+  country: "CH"
+  timezone: Europe/Zurich
+  lat: 46.7978459
+  lon: 9.8269748
+url: "https://in.njuko.com/deadly-dozen-davos---1415-august-27"
+status: confirmed
+source: scraped
+source_id: c06b649a-2b0e-4fe1-81c0-ed6fa92291bf
+categories: []

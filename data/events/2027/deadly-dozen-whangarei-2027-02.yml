@@ -1,0 +1,16 @@
+slug: deadly-dozen-whangarei-2027-02
+name: "Deadly Dozen NZ: Whangarei"
+format: deadly-dozen
+date_start: 2027-02-28
+date_end: 2027-02-28
+location:
+  city: Whangarei
+  country: "NZ"
+  timezone: Pacific/Auckland
+  lat: -35.706244
+  lon: 174.316743
+url: "https://in.njuko.com/deadly-dozen-whangarei---28-february-27"
+status: confirmed
+source: scraped
+source_id: 87c782fe-1c66-4e1a-8caa-843095a47d30
+categories: []

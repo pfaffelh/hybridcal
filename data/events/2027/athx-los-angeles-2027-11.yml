@@ -1,0 +1,15 @@
+slug: athx-los-angeles-2027-11
+name: ATHX LOS ANGELES 2027
+format: athx
+date_start: 2027-11-06
+date_end: 2027-11-06
+location:
+  city: Los Angeles
+  country: "US"
+  venue: Long Beach Convention & Entertainment Center
+  timezone: America/Los_Angeles
+url: "https://athxgames.com/events/01m6rptkbqnbtepc5cwfzbgh6g"
+status: confirmed
+source: scraped
+source_id: 01m6rptkbqnbtepc5cwfzbgh6g
+categories: []
