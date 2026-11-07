@@ -1,0 +1,19 @@
+slug: deka-anaheim-2027-05
+name: 2027 Anaheim DEKA FIT & Ultra
+format: deka
+date_start: 2027-05-01
+date_end: 2027-05-02
+location:
+  city: Anaheim
+  country: "US"
+  venue: Anaheim Convention Center
+  timezone: America/Los_Angeles
+  lat: 33.8030282
+  lon: -117.9213909
+url: "https://tickets-usdk.spartan.com/event/2032"
+status: confirmed
+source: scraped
+source_id: "11429"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

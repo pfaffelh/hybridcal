@@ -1,0 +1,20 @@
+slug: hyrox-youngstars-hong-kong-2027-01
+name: HYROX Youngstars Hong Kong
+format: hyrox-youngstars
+date_start: 2027-01-09
+date_end: 2027-01-10
+location:
+  city: Hong Kong
+  country: "HK"
+  timezone: Asia/Hong_Kong
+  lat: 22.3492155
+  lon: 114.1857978
+url: "https://hyrox.com/event/hyrox-youngstars-hong-kong/"
+status: confirmed
+source: scraped
+source_id: "58753"
+categories:
+  - youngstars-8-9
+  - youngstars-10-11
+  - youngstars-12-13
+  - youngstars-14-15

@@ -1,0 +1,16 @@
+slug: deadly-dozen-stockholm-2027-05
+name: "Deadly Dozen SE: Stockholm"
+format: deadly-dozen
+date_start: 2027-05-22
+date_end: 2027-05-22
+location:
+  city: Stockholm
+  country: "SE"
+  timezone: Europe/Stockholm
+  lat: 59.2902039
+  lon: 17.925714
+url: "https://in.njuko.com/deadly-dozen-stockholm---22-may"
+status: confirmed
+source: scraped
+source_id: 92166e6c-b768-4b95-9b71-c3e5f8758e89
+categories: []

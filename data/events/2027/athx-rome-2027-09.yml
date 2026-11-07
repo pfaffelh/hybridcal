@@ -1,0 +1,15 @@
+slug: athx-rome-2027-09
+name: ATHX ROME 2027
+format: athx
+date_start: 2027-09-04
+date_end: 2027-09-04
+location:
+  city: Rome
+  country: "IT"
+  venue: Fiera di Roma
+  timezone: Europe/Rome
+url: "https://athxgames.com/events/01m4r799gbhp53p6zjz8sayapk"
+status: confirmed
+source: scraped
+source_id: 01m4r799gbhp53p6zjz8sayapk
+categories: []

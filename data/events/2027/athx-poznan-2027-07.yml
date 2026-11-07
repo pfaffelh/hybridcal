@@ -1,0 +1,15 @@
+slug: athx-poznan-2027-07
+name: ATHX POZNAŃ 2027
+format: athx
+date_start: 2027-07-03
+date_end: 2027-07-03
+location:
+  city: Poznań
+  country: "PL"
+  venue: MTP Poznań Expo
+  timezone: Europe/Warsaw
+url: "https://athxgames.com/events/01m4r770hm4c8sv6pt8gy673fr"
+status: confirmed
+source: scraped
+source_id: 01m4r770hm4c8sv6pt8gy673fr
+categories: []
