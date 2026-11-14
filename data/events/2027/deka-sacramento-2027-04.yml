@@ -1,0 +1,19 @@
+slug: deka-sacramento-2027-04
+name: 2027 Sacramento DEKA FIT & Ultra
+format: deka
+date_start: 2027-04-24
+date_end: 2027-04-25
+location:
+  city: Sacramento
+  country: "US"
+  venue: Sacramento SAFE Credit Union Convention Center
+  timezone: America/Los_Angeles
+  lat: 38.5777649
+  lon: -121.529283
+url: "https://tickets-usdk.spartan.com/event/2030"
+status: confirmed
+source: scraped
+source_id: "11428"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

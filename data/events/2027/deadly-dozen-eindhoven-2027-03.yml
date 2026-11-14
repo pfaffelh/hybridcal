@@ -1,0 +1,16 @@
+slug: deadly-dozen-eindhoven-2027-03
+name: "Deadly Dozen NL: Eindhoven"
+format: deadly-dozen
+date_start: 2027-03-14
+date_end: 2027-03-14
+location:
+  city: Eindhoven
+  country: "NL"
+  timezone: Europe/Amsterdam
+  lat: 52.534448
+  lon: 6.081505
+url: "https://in.deadlydozen.events/deadly-dozen-eindhoven---14-march-27/"
+status: confirmed
+source: scraped
+source_id: 5c29faac-d3f3-4a64-bfd5-b50cb2206604
+categories: []

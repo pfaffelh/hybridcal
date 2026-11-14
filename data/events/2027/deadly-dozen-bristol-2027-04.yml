@@ -1,0 +1,16 @@
+slug: deadly-dozen-bristol-2027-04
+name: "Deadly Dozen GB: Bristol"
+format: deadly-dozen
+date_start: 2027-04-24
+date_end: 2027-04-24
+location:
+  city: Bristol
+  country: "GB"
+  timezone: Europe/London
+  lat: 51.5558357
+  lon: -2.4242513
+url: "https://in.njuko.com/deadly-dozen-bristol---24-april"
+status: confirmed
+source: scraped
+source_id: 2170130d-9f03-4d64-ad41-bbee081b4dc4
+categories: []

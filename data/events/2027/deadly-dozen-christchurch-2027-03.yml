@@ -1,0 +1,16 @@
+slug: deadly-dozen-christchurch-2027-03
+name: "Deadly Dozen NZ: Christchurch"
+format: deadly-dozen
+date_start: 2027-03-21
+date_end: 2027-03-21
+location:
+  city: Christchurch
+  country: "NZ"
+  timezone: Pacific/Auckland
+  lat: -43.5576322
+  lon: 172.5754872
+url: "https://in.njuko.com/deadly-dozen-christchurch---21-march-27"
+status: confirmed
+source: scraped
+source_id: 236e21e2-61e8-45ab-ae0d-bebe1957d1c1
+categories: []

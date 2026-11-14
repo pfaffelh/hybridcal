@@ -1,0 +1,15 @@
+slug: athx-malmo-2027-07
+name: ATHX MALMÖ 2027
+format: athx
+date_start: 2027-07-31
+date_end: 2027-07-31
+location:
+  city: Malmö
+  country: "SE"
+  venue: Exhibition Hall at Malmömässan
+  timezone: Europe/Stockholm
+url: "https://athxgames.com/events/01m4r73y2nbndczzrhkh09xccc"
+status: confirmed
+source: scraped
+source_id: 01m4r73y2nbndczzrhkh09xccc
+categories: []

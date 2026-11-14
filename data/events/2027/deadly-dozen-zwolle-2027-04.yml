@@ -1,0 +1,16 @@
+slug: deadly-dozen-zwolle-2027-04
+name: "Deadly Dozen NL: Zwolle"
+format: deadly-dozen
+date_start: 2027-04-11
+date_end: 2027-04-11
+location:
+  city: Zwolle
+  country: "NL"
+  timezone: Europe/Amsterdam
+  lat: 52.534448
+  lon: 6.081505
+url: "https://in.deadlydozen.events/deadly-dozen-zwolle---11-april-27/"
+status: confirmed
+source: scraped
+source_id: 1db0b3e4-2dc8-4aae-a3cd-3f8da2a60876
+categories: []

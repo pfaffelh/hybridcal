@@ -1,0 +1,19 @@
+slug: deka-tbd-2027-03
+name: 2027 DEKA FIT Cebu
+format: deka
+date_start: 2027-03-06
+date_end: 2027-03-06
+location:
+  city: ""
+  country: "PH"
+  venue: TBD
+  timezone: Asia/Manila
+  lat: 10.31563098
+  lon: 123.74144502
+url: "https://tickets-phdk.spartan.com/event/5"
+status: confirmed
+source: scraped
+source_id: "11812"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
