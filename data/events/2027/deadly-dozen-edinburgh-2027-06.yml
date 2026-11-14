@@ -1,0 +1,16 @@
+slug: deadly-dozen-edinburgh-2027-06
+name: "Deadly Dozen GB: Edinburgh"
+format: deadly-dozen
+date_start: 2027-06-19
+date_end: 2027-06-19
+location:
+  city: Edinburgh
+  country: "GB"
+  timezone: Europe/London
+  lat: 55.9563423
+  lon: -3.1569952
+url: "https://in.njuko.com/deadly-dozen-edinburgh---19-june-27"
+status: confirmed
+source: scraped
+source_id: 96ed4ddb-971e-4d12-aa81-b9de6b82a36a
+categories: []

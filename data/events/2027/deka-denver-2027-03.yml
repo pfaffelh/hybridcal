@@ -1,0 +1,19 @@
+slug: deka-denver-2027-03
+name: 2027 Denver DEKA FIT & Ultra
+format: deka
+date_start: 2027-03-27
+date_end: 2027-03-27
+location:
+  city: Denver
+  country: "US"
+  venue: TBD
+  timezone: America/Denver
+  lat: 39.781566
+  lon: -104.9727022
+url: "https://tickets-usdk.spartan.com/event/2029"
+status: confirmed
+source: scraped
+source_id: "11427"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

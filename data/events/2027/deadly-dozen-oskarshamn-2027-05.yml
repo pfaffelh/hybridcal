@@ -1,0 +1,16 @@
+slug: deadly-dozen-oskarshamn-2027-05
+name: "Deadly Dozen SE: Oskarshamn"
+format: deadly-dozen
+date_start: 2027-05-01
+date_end: 2027-05-01
+location:
+  city: Oskarshamn
+  country: "SE"
+  timezone: Europe/Stockholm
+  lat: 57.2640157
+  lon: 16.43571
+url: "https://in.njuko.com/deadly-dozen-oskarshamn---1-may-271792495810753"
+status: confirmed
+source: scraped
+source_id: 60222605-8efe-4f34-b8f4-cde1be2859b6
+categories: []

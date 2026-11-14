@@ -1,0 +1,19 @@
+slug: deka-laredo-2027-01
+name: 2027 Laredo DEKA FIT Road Show
+format: deka
+date_start: 2027-01-30
+date_end: 2027-01-30
+location:
+  city: Laredo
+  country: "US"
+  venue: Buena Vista Sports Complex
+  timezone: America/Chicago
+  lat: 27.4596
+  lon: -99.4438
+url: "https://tickets-usda.spartan.com/event/2378"
+status: confirmed
+source: scraped
+source_id: "11798"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

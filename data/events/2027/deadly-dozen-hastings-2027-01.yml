@@ -1,0 +1,16 @@
+slug: deadly-dozen-hastings-2027-01
+name: "Deadly Dozen NZ: Hastings"
+format: deadly-dozen
+date_start: 2027-01-10
+date_end: 2027-01-10
+location:
+  city: Hastings
+  country: "NZ"
+  timezone: Pacific/Auckland
+  lat: -39.6122836
+  lon: 176.8359807
+url: "https://in.njuko.com/deadly-dozen-hastings---10-january-27"
+status: confirmed
+source: scraped
+source_id: 09dc0bca-a0c3-4340-9c36-000ec7ae2749
+categories: []

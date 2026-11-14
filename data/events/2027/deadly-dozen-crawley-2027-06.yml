@@ -1,0 +1,16 @@
+slug: deadly-dozen-crawley-2027-06
+name: "Deadly Dozen GB: Crawley"
+format: deadly-dozen
+date_start: 2027-06-26
+date_end: 2027-06-26
+location:
+  city: Crawley
+  country: "GB"
+  timezone: Europe/London
+  lat: 51.0969456
+  lon: -0.1912781
+url: "https://in.njuko.com/deadly-dozen-crawley---26-june-27"
+status: confirmed
+source: scraped
+source_id: 4b2db513-9d37-4cd6-ba6c-ea8604ddb334
+categories: []

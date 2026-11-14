@@ -11,7 +11,7 @@ location:
   lat: 57.6993
   lon: 11.9877
 url: https://hybridx.fit/en/purchase/019eacfb-9475-7cb1-b79d-9a8a9f35bd3f
-status: confirmed
+status: tentative
 source: scraped
 categories:
   - singles-open-men

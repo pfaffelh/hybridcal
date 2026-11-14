@@ -10,8 +10,8 @@ location:
   timezone: Asia/Dubai
   lat: 24.4180
   lon: 54.3325
-url: https://tickets.trumin.com/2026-11-14/apex-games-abu-dhabi
-status: confirmed
+url: "https://apexgames.fit/events/"
+status: tentative
 source: scraped
 categories:
   - solo-pro-men

@@ -1,0 +1,19 @@
+slug: deka-kowloon-city-2026-12
+name: 2026 Hong Kong DEKA FIT
+format: deka
+date_start: 2026-12-25
+date_end: 2026-12-27
+location:
+  city: Kowloon City
+  country: "HK"
+  venue: Kai Tak Cruise Terminal
+  timezone: Hongkong
+  lat: 22.3060551
+  lon: 114.21323752
+url: "https://spartanchina.secaworld.com/group/index?signupMatchId=1391&version=1793628298"
+status: confirmed
+source: scraped
+source_id: "11799"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs

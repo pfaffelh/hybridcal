@@ -1,0 +1,19 @@
+slug: deka-tbd-2027-08
+name: 2027 DEKA FIT Manila
+format: deka
+date_start: 2027-08-21
+date_end: 2027-08-22
+location:
+  city: ""
+  country: "PH"
+  venue: TBD
+  timezone: Asia/Manila
+  lat: 14.55933264
+  lon: 121.02314734
+url: "https://tickets-phdk.spartan.com/event/6"
+status: confirmed
+source: scraped
+source_id: "11817"
+categories:
+  - deka-fit-singles
+  - deka-fit-pairs
