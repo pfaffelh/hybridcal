@@ -1,0 +1,16 @@
+slug: deadly-dozen-malaga-2027-10
+name: "Deadly Dozen ES: Malaga"
+format: deadly-dozen
+date_start: 2027-10-30
+date_end: 2027-10-30
+location:
+  city: Malaga
+  country: "ES"
+  timezone: Europe/Madrid
+  lat: 36.7188635
+  lon: -4.6166644
+url: "https://in.njuko.com/deadly-dozen-malaga---30-october-27/"
+status: confirmed
+source: scraped
+source_id: 0cd77106-01bb-4c31-ad7c-a300044a27f6
+categories: []
