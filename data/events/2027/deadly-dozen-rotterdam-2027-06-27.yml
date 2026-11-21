@@ -1,0 +1,16 @@
+slug: deadly-dozen-rotterdam-2027-06-27
+name: "Deadly Dozen NL: Rotterdam"
+format: deadly-dozen
+date_start: 2027-06-27
+date_end: 2027-06-27
+location:
+  city: Rotterdam
+  country: "NL"
+  timezone: Europe/Amsterdam
+  lat: 51.9252278
+  lon: 4.4583113
+url: "https://in.deadlydozen.events/deadly-dozen-rotterdam---27-june-27"
+status: confirmed
+source: scraped
+source_id: 9d26ebcc-dfbb-4b1f-93e0-fafc609d0973
+categories: []

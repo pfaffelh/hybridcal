@@ -1,0 +1,24 @@
+slug: hyrox-london-olympia-2027-04
+name: Original Source HYROX London Olympia
+format: hyrox
+date_start: 2027-04-24
+date_end: 2027-05-02
+location:
+  city: London Olympia
+  country: "GB"
+  timezone: Europe/London
+  lat: 51.4931447
+  lon: -0.2087093
+url: "https://hyrox.com/event/hyrox-london-olympia-2/"
+status: confirmed
+source: scraped
+source_id: "59077"
+categories:
+  - singles-pro-men
+  - singles-pro-women
+  - singles-open-men
+  - singles-open-women
+  - doubles-men
+  - doubles-women
+  - doubles-mixed
+  - relay-mixed
